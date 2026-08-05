@@ -3,16 +3,97 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Resultados de Lotería RD - Proyecto de Scraping Automático</title>
+<title>Resultados de Loterías Dominicanas de Hoy | Conéctate Lotería</title>
+<meta name="description" content="Resultados de las loterías dominicanas de hoy: Lotería Nacional, Leidsa, Lotería Real, Loteka, La Primera, La Suerte, LoteDom, Anguila, King Lottery y americanas. Números ganadores actualizados en vivo.">
+<meta name="keywords" content="resultados loterias dominicanas, loteria nacional, leidsa, loteria real, loteka, la primera, la suerte, lotedom, anguila, king lottery, quiniela, numeros ganadores, loteria de hoy, republica dominicana">
+<meta name="robots" content="index, follow">
+<link rel="canonical" href="https://conectateloteria.com/">
+<meta property="og:type" content="website">
+<meta property="og:locale" content="es_DO">
+<meta property="og:site_name" content="Conéctate Lotería">
+<meta property="og:title" content="Resultados de Loterías Dominicanas de Hoy | Conéctate Lotería">
+<meta property="og:description" content="Números ganadores de todas las loterías dominicanas de hoy, actualizados en vivo: Nacional, Leidsa, Real, Loteka, La Primera y más.">
+<meta property="og:url" content="https://conectateloteria.com/">
+<meta property="og:image" content="https://conectateloteria.com/png/logo1.png">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="Resultados de Loterías Dominicanas de Hoy">
+<meta name="twitter:description" content="Números ganadores de todas las loterías dominicanas, actualizados en vivo.">
+<meta name="twitter:image" content="https://conectateloteria.com/png/logo1.png">
+<link rel="icon" type="image/png" href="png/icono.png">
+<link rel="apple-touch-icon" href="png/icono.png">
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "WebSite",
+  "name": "Conéctate Lotería",
+  "alternateName": "Resultados de Loterías Dominicanas",
+  "url": "https://conectateloteria.com/",
+  "inLanguage": "es-DO",
+  "description": "Resultados y números ganadores de todas las loterías de la República Dominicana, actualizados en vivo.",
+  "publisher": {
+    "@type": "Organization",
+    "name": "Conéctate Lotería",
+    "url": "https://conectateloteria.com/",
+    "logo": {
+      "@type": "ImageObject",
+      "url": "https://conectateloteria.com/png/logo1.png"
+    }
+  }
+}
+</script>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": [
+    {
+      "@type": "Question",
+      "name": "¿Qué loterías dominicanas puedo consultar?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Lotería Nacional, Leidsa, Lotería Real, Loteka, La Primera, La Suerte, LoteDom, Anguila, King Lottery y las loterías americanas (New York, Florida, Mega Millions y PowerBall)."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "¿Cada cuánto se actualizan los números ganadores?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Los resultados se refrescan de forma continua a lo largo del día, así que apenas sale un sorteo aparece publicado sin necesidad de recargar la página."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "¿Cómo busco los resultados de una lotería específica?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Usa el buscador de la parte superior: escribe el nombre de la lotería o del juego, por ejemplo Leidsa, Quiniela o Anguila, y la página mostrará únicamente los sorteos que coincidan."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "¿Los resultados son oficiales?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Los números son de referencia y provienen de información pública. Para reclamar un premio, verifica siempre con la banca o el operador oficial de la lotería correspondiente."
+      }
+    }
+  ]
+}
+</script>
+<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-6133777619698250"
+     crossorigin="anonymous"></script>
 <style>
   :root {
-    --bg: #0f172a;
-    --bg2: #111827;
-    --card: #1e293b;
+    --bg: #ffffff;
+    --bg2: #f7f8fa;
+    --card: #ffffff;
     --accent: #f97316;
-    --accent2: #fb923c;
-    --text: #e2e8f0;
-    --muted: #94a3b8;
+    --accent2: #ea580c;
+    --text: #0f172a;
+    --muted: #64748b;
+    --borde: #e2e8f0;
+    --live: #16a34a;
   }
   * { box-sizing: border-box; }
   html { scroll-behavior: smooth; }
@@ -22,195 +103,453 @@
     background: var(--bg);
     color: var(--text);
   }
-  .contenedor { max-width: 1000px; margin: 0 auto; padding: 0 20px; }
+  .contenedor { max-width: 1160px; margin: 0 auto; padding: 0 24px; }
+
+  /* --- Navbar --- */
+  .navbar {
+    position: sticky;
+    top: 0;
+    z-index: 100;
+    background: var(--accent);
+    box-shadow: 0 2px 12px rgba(15, 23, 42, 0.14);
+  }
+  .navbar-inner {
+    position: relative;
+    max-width: 1160px;
+    margin: 0 auto;
+    padding: 13px 24px;
+    display: flex;
+    align-items: center;
+    gap: 20px;
+  }
+  .navbar .logo {
+    font-weight: 800;
+    font-size: 1.2rem;
+    color: #ffffff;
+    text-decoration: none;
+    white-space: nowrap;
+    flex-shrink: 0;
+    display: flex;
+    align-items: center;
+  }
+  .navbar .logo img { height: 30px; width: auto; display: block; }
+
+  /* Botón "Lotería": despliega la lista completa, en celular y en computadora */
+  .navbar .menu-toggle {
+    display: inline-flex;
+    align-items: center;
+    gap: 10px;
+    margin-left: auto;
+    background: rgba(255, 255, 255, 0.16);
+    border: 1px solid rgba(255, 255, 255, 0.5);
+    border-radius: 10px;
+    color: #ffffff;
+    font-family: inherit;
+    font-weight: 700;
+    font-size: 1.02rem;
+    line-height: 1;
+    padding: 12px 20px;
+    cursor: pointer;
+    transition: background 0.15s ease;
+  }
+  .navbar .menu-toggle:hover { background: rgba(255, 255, 255, 0.28); }
+  .navbar .menu-toggle .flecha {
+    font-size: 0.7rem;
+    transition: transform 0.18s ease;
+  }
+  .navbar .menu-toggle[aria-expanded="true"] .flecha { transform: rotate(180deg); }
+
+  /* Panel desplegable con todas las loterías */
+  .navbar .links {
+    display: none;
+    position: absolute;
+    top: calc(100% + 10px);
+    right: 24px;
+    min-width: 270px;
+    max-height: 70vh;
+    overflow-y: auto;
+    flex-direction: column;
+    gap: 2px;
+    background: #ffffff;
+    border: 1px solid var(--borde);
+    border-radius: 14px;
+    box-shadow: 0 18px 44px rgba(15, 23, 42, 0.2);
+    padding: 10px;
+  }
+  .navbar .links.abierto { display: flex; }
+  .navbar .links a {
+    white-space: nowrap;
+    padding: 13px 16px;
+    border-radius: 9px;
+    color: var(--text);
+    text-decoration: none;
+    font-weight: 600;
+    font-size: 1rem;
+    transition: background 0.15s ease, color 0.15s ease;
+  }
+  .navbar .links a:hover { background: #fff3e8; color: var(--accent2); }
+
+  @media (max-width: 760px) {
+    .navbar-inner { padding: 12px 16px; }
+    .navbar .logo img { height: 26px; }
+    .navbar .menu-toggle { padding: 11px 16px; font-size: 0.98rem; }
+    .navbar .links { left: 16px; right: 16px; min-width: 0; }
+  }
+
+  /* --- Anuncios laterales --- */
+  .ad-lateral {
+    position: fixed;
+    top: 130px;
+    width: 160px;
+    z-index: 20;
+  }
+  .ad-izquierda { left: 12px; }
+  .ad-derecha { right: 12px; }
+  @media (max-width: 1400px) {
+    .ad-lateral { display: none; }
+  }
 
   /* --- Hero --- */
   .hero {
     text-align: center;
-    padding: 90px 20px 70px;
-    background: radial-gradient(circle at top, #1e293b 0%, var(--bg) 65%);
+    padding: 64px 20px 60px;
+    background: radial-gradient(circle at top, #fff7ed 0%, var(--bg) 65%);
   }
   .hero .etiqueta {
     display: inline-block;
-    background: rgba(249, 115, 22, 0.15);
+    background: rgba(249, 115, 22, 0.1);
     color: var(--accent2);
-    border: 1px solid rgba(249, 115, 22, 0.35);
-    padding: 6px 14px;
+    border: 1px solid rgba(249, 115, 22, 0.3);
+    padding: 9px 20px;
     border-radius: 999px;
-    font-size: 0.8rem;
-    margin-bottom: 20px;
+    font-size: 1.05rem;
+    font-weight: 600;
+    margin-bottom: 26px;
   }
   .hero h1 {
-    font-size: clamp(2rem, 5vw, 3rem);
-    margin: 0 0 16px;
-    line-height: 1.15;
+    font-size: clamp(2.6rem, 6.5vw, 4.4rem);
+    margin: 0 0 22px;
+    line-height: 1.12;
+    font-weight: 800;
   }
   .hero h1 span { color: var(--accent); }
   .hero p.sub {
     color: var(--muted);
-    font-size: 1.1rem;
-    max-width: 620px;
-    margin: 0 auto 34px;
+    font-size: 1.4rem;
+    max-width: 720px;
+    margin: 0 auto 42px;
     line-height: 1.6;
   }
   .cta {
     display: inline-flex;
     align-items: center;
-    gap: 8px;
+    gap: 10px;
     background: var(--accent);
-    color: #1a1a1a;
+    color: #ffffff;
     font-weight: 700;
-    padding: 14px 28px;
-    border-radius: 10px;
+    padding: 20px 40px;
+    border-radius: 12px;
     text-decoration: none;
-    font-size: 1rem;
+    font-size: 1.25rem;
     transition: transform 0.15s ease, background 0.15s ease;
+    border: none;
+    cursor: pointer;
   }
   .cta:hover { background: var(--accent2); transform: translateY(-2px); }
   .cta-secundario {
     display: inline-block;
-    margin-left: 14px;
+    margin-left: 20px;
     color: var(--muted);
     text-decoration: none;
-    font-size: 0.95rem;
+    font-size: 1.15rem;
   }
   .cta-secundario:hover { color: var(--text); }
 
-  /* --- Vista previa --- */
-  .vista-previa {
-    padding: 0 20px 80px;
-    text-align: center;
-  }
-  .vista-previa img {
-    max-width: 100%;
-    width: 780px;
+  /* --- Buscador --- */
+  .buscador { max-width: 640px; margin: 34px auto 0; }
+  .buscador-caja {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    background: var(--card);
+    border: 2px solid var(--borde);
     border-radius: 14px;
-    border: 1px solid #334155;
-    box-shadow: 0 20px 50px rgba(0,0,0,0.45);
+    padding: 6px 18px;
+    box-shadow: 0 6px 20px rgba(15, 23, 42, 0.07);
+    transition: border-color 0.15s ease, box-shadow 0.15s ease;
+  }
+  .buscador-caja:focus-within {
+    border-color: var(--accent);
+    box-shadow: 0 6px 22px rgba(249, 115, 22, 0.22);
+  }
+  .buscador-icono { width: 22px; height: 22px; color: var(--muted); flex-shrink: 0; }
+  .buscador input {
+    flex: 1;
+    border: none;
+    outline: none;
+    background: transparent;
+    font-size: 1.15rem;
+    font-family: inherit;
+    color: var(--text);
+    padding: 14px 0;
+    min-width: 0;
+  }
+  .buscador input::placeholder { color: var(--muted); }
+  .buscador input::-webkit-search-cancel-button { display: none; }
+  .buscador button {
+    border: none;
+    background: var(--bg2);
+    color: var(--muted);
+    font-size: 1.35rem;
+    line-height: 1;
+    width: 32px;
+    height: 32px;
+    border-radius: 50%;
+    cursor: pointer;
+    flex-shrink: 0;
+  }
+  .buscador button:hover { background: #e2e8f0; color: var(--text); }
+  #buscador-info {
+    margin: 14px 0 0;
+    min-height: 22px;
+    font-size: 1.02rem;
+    color: var(--muted);
+  }
+  .sin-resultados {
+    text-align: center;
+    color: var(--muted);
+    font-size: 1.15rem;
+    padding: 40px 20px;
+  }
+
+  /* --- Resultados (sección principal) --- */
+  .resultados {
+    padding: 30px 20px 100px;
+  }
+  #estado {
+    text-align: center;
+    font-size: 1.15rem;
+    color: var(--muted);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 8px;
+    margin-bottom: 48px;
+  }
+  #estado .punto { width: 10px; height: 10px; border-radius: 50%; background: var(--muted); }
+  #estado.en-vivo .punto { background: var(--live); }
+  .fecha-hoy {
+    text-align: center;
+    color: var(--muted);
+    font-size: 1.12rem;
+    margin: 0 0 40px;
+  }
+  .grupo { margin-bottom: 48px; scroll-margin-top: 90px; }
+  #resultados { scroll-margin-top: 70px; }
+  .grupo h2 {
+    font-size: 1.7rem;
+    font-weight: 800;
+    color: var(--text);
+    border-bottom: 2px solid var(--borde);
+    padding-bottom: 16px;
+    margin: 0 0 24px;
+  }
+  .grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(340px, 1fr));
+    gap: 24px;
+  }
+  .card {
+    background: var(--card);
+    border-radius: 16px;
+    padding: 26px 28px;
+    border: 1px solid var(--borde);
+    box-shadow: 0 6px 18px rgba(15, 23, 42, 0.06);
+  }
+  .card-header { display: flex; justify-content: space-between; align-items: center; margin-bottom: 18px; }
+  .juego { font-weight: 700; font-size: 1.35rem; }
+  .fecha { background: #f1f5f9; color: var(--muted); font-size: 0.95rem; padding: 5px 12px; border-radius: 8px; font-weight: 600; }
+  .numeros { display: flex; flex-wrap: wrap; gap: 12px; }
+  .bola {
+    width: 48px; height: 48px; border-radius: 50%;
+    background: var(--accent); color: #ffffff;
+    display: flex; align-items: center; justify-content: center;
+    font-weight: 700; font-size: 1.1rem;
   }
 
   /* --- Features --- */
   .features {
     background: var(--bg2);
-    padding: 70px 20px;
+    padding: 90px 20px;
   }
   .features h2 {
     text-align: center;
-    font-size: 1.6rem;
-    margin: 0 0 42px;
+    font-size: 2.2rem;
+    margin: 0 0 54px;
+    font-weight: 800;
   }
   .grid-features {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
-    gap: 20px;
-    max-width: 960px;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 26px;
+    max-width: 1120px;
     margin: 0 auto;
   }
   .feature-card {
     background: var(--card);
-    border-radius: 14px;
-    padding: 26px 22px;
-    border: 1px solid #263349;
+    border-radius: 18px;
+    padding: 36px 30px;
+    border: 1px solid var(--borde);
+    box-shadow: 0 4px 16px rgba(15, 23, 42, 0.05);
   }
   .feature-card .icono {
-    width: 40px; height: 40px;
-    border-radius: 10px;
-    background: rgba(249, 115, 22, 0.15);
+    width: 54px; height: 54px;
+    border-radius: 12px;
+    background: rgba(249, 115, 22, 0.12);
     color: var(--accent);
     display: flex; align-items: center; justify-content: center;
     font-weight: 700;
-    margin-bottom: 14px;
+    font-size: 1.3rem;
+    margin-bottom: 20px;
   }
-  .feature-card h3 { margin: 0 0 8px; font-size: 1.05rem; }
-  .feature-card p { margin: 0; color: var(--muted); font-size: 0.92rem; line-height: 1.5; }
+  .feature-card h3 { margin: 0 0 12px; font-size: 1.4rem; }
+  .feature-card p { margin: 0; color: var(--muted); font-size: 1.1rem; line-height: 1.6; }
 
   /* --- Como funciona --- */
   .como-funciona {
-    padding: 70px 20px;
+    padding: 90px 20px;
   }
   .como-funciona h2 {
     text-align: center;
-    font-size: 1.6rem;
-    margin: 0 0 42px;
+    font-size: 2.2rem;
+    margin: 0 0 54px;
+    font-weight: 800;
   }
   .pasos {
-    max-width: 700px;
+    max-width: 820px;
     margin: 0 auto;
     display: flex;
     flex-direction: column;
-    gap: 18px;
+    gap: 24px;
   }
   .paso {
     display: flex;
-    gap: 16px;
+    gap: 22px;
     align-items: flex-start;
     background: var(--card);
-    border: 1px solid #263349;
-    border-radius: 12px;
-    padding: 18px 20px;
+    border: 1px solid var(--borde);
+    border-radius: 16px;
+    padding: 26px 28px;
+    box-shadow: 0 4px 16px rgba(15, 23, 42, 0.05);
   }
   .paso .num {
     flex-shrink: 0;
-    width: 30px; height: 30px;
+    width: 42px; height: 42px;
     border-radius: 50%;
     background: var(--accent);
-    color: #1a1a1a;
+    color: #ffffff;
     font-weight: 700;
     display: flex; align-items: center; justify-content: center;
-    font-size: 0.9rem;
+    font-size: 1.15rem;
   }
-  .paso p { margin: 0; color: var(--muted); line-height: 1.5; font-size: 0.95rem; }
+  .paso p { margin: 0; color: var(--muted); line-height: 1.6; font-size: 1.2rem; }
   .paso strong { color: var(--text); }
 
   /* --- Footer --- */
   footer {
     text-align: center;
     color: var(--muted);
-    font-size: 0.8rem;
-    padding: 40px 20px 50px;
-    border-top: 1px solid #1e293b;
+    font-size: 1rem;
+    padding: 50px 20px 60px;
+    border-top: 1px solid var(--borde);
   }
   footer a { color: var(--accent2); text-decoration: none; }
+  footer img { height: 34px; width: auto; margin-bottom: 16px; }
+  .pie-seccion { max-width: 1000px; margin: 0 auto 26px; }
+  .pie-seccion h3 {
+    font-size: 0.95rem; text-transform: uppercase; letter-spacing: 0.06em;
+    color: var(--text); margin: 0 0 12px; font-weight: 700;
+  }
+  .pie-links {
+    display: flex; flex-wrap: wrap; gap: 8px 20px; justify-content: center;
+    margin: 0; padding: 0; list-style: none; font-size: 1rem;
+  }
 </style>
 </head>
 <body>
 
+<div class="ad-lateral ad-izquierda">
+  <ins class="adsbygoogle"
+       style="display:block"
+       data-ad-client="ca-pub-6133777619698250"
+       data-ad-format="auto"
+       data-full-width-responsive="true"></ins>
+  <script>(adsbygoogle = window.adsbygoogle || []).push({});</script>
+</div>
+<div class="ad-lateral ad-derecha">
+  <ins class="adsbygoogle"
+       style="display:block"
+       data-ad-client="ca-pub-6133777619698250"
+       data-ad-format="auto"
+       data-full-width-responsive="true"></ins>
+  <script>(adsbygoogle = window.adsbygoogle || []).push({});</script>
+</div>
+
+<nav class="navbar" id="top">
+  <div class="navbar-inner">
+    <a class="logo" href="#top"><img src="png/logo2.png" alt="Conéctate Lotería"></a>
+    <button class="menu-toggle" id="menu-toggle" aria-expanded="false" aria-controls="nav-links">
+      Lotería <span class="flecha" aria-hidden="true">&#9660;</span>
+    </button>
+    <div class="links" id="nav-links">
+      <a href="#resultados">Resultados</a><!--NAVLINKS-->
+    </div>
+  </div>
+</nav>
+
 <section class="hero">
   <div class="contenedor">
-    <span class="etiqueta">Proyecto educativo de web scraping</span>
-    <h1>Resultados de lotería,<br><span>actualizados solos</span> cada 5 minutos</h1>
-    <p class="sub">
-      Un scraper visita el sitio real, lee los números ganadores y los
-      publica aquí automáticamente — sin servidores que mantener, sin
-      tocar nada a mano. Corre gratis con GitHub Actions y GitHub Pages.
-    </p>
-    <a class="cta" href="resultados.html">Ver resultados en vivo &rarr;</a>
-    <a class="cta-secundario" href="#como-funciona">¿Cómo funciona?</a>
+    <h1>Resultados de <span>Lotería</span> de la República Dominicana</h1>
+    <div class="buscador">
+      <label class="buscador-caja" for="buscar">
+        <svg class="buscador-icono" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+             stroke-width="2.2" stroke-linecap="round" aria-hidden="true">
+          <circle cx="11" cy="11" r="7"></circle><line x1="16.5" y1="16.5" x2="21" y2="21"></line>
+        </svg>
+        <input type="search" id="buscar" placeholder="Buscar lotería o juego (ej. Leidsa, Quiniela, Anguila)"
+               autocomplete="off" aria-label="Buscar lotería">
+        <button type="button" id="limpiar-busqueda" aria-label="Limpiar búsqueda" hidden>&times;</button>
+      </label>
+      <p id="buscador-info"></p>
+    </div>
   </div>
 </section>
 
-<div class="vista-previa">
-  <img src="vista-previa.png" alt="Vista previa de la página de resultados">
-</div>
+<section class="resultados" id="resultados">
+  <div class="contenedor">
+    <p class="fecha-hoy" id="fecha-hoy"><!--FECHA--></p>
+    <div id="contenedor-resultados"><!--RESULTADOS--></div>
+  </div>
+</section>
 
 <section class="features">
   <div class="contenedor">
-    <h2>Por qué es distinto a una página estática</h2>
+    <h2>Todas las loterías dominicanas en un solo lugar</h2>
     <div class="grid-features">
       <div class="feature-card">
         <div class="icono">↻</div>
-        <h3>Se actualiza sola</h3>
-        <p>Un workflow de GitHub Actions corre el scraper cada 5 minutos y publica los datos nuevos, sin intervención manual.</p>
+        <h3>Resultados de hoy, en vivo</h3>
+        <p>Los números ganadores de la Lotería Nacional, Leidsa, Lotería Real, Loteka y las demás se actualizan solos durante todo el día, sin que tengas que recargar la página.</p>
+      </div>
+      <div class="feature-card">
+        <div class="icono">Q</div>
+        <h3>Busca tu lotería al instante</h3>
+        <p>Escribe el nombre de la lotería o del juego —Quiniela, Loto Pool, Anguila, Mega Chances— y verás solo esos resultados, sin tener que bajar por toda la página.</p>
       </div>
       <div class="feature-card">
         <div class="icono">$</div>
-        <h3>100% gratis</h3>
-        <p>GitHub Pages para el hosting y GitHub Actions para la automatización no cuestan nada dentro de los límites gratuitos.</p>
-      </div>
-      <div class="feature-card">
-        <div class="icono">{ }</div>
-        <h3>Código abierto y editable</h3>
-        <p>Todo el scraper (Python + Playwright) y la página (HTML/CSS/JS) están incluidos para estudiar, copiar o modificar.</p>
+        <h3>Gratis y sin registro</h3>
+        <p>Consulta los números ganadores cuantas veces quieras, desde el celular o la computadora. No hay que crear cuenta ni pagar nada.</p>
       </div>
     </div>
   </div>
@@ -218,32 +557,223 @@
 
 <section class="como-funciona" id="como-funciona">
   <div class="contenedor">
-    <h2>Cómo funciona por dentro</h2>
+    <h2>Preguntas frecuentes sobre las loterías dominicanas</h2>
     <div class="pasos">
       <div class="paso">
         <div class="num">1</div>
-        <p><strong>GitHub Actions</strong> despierta cada 5 minutos y ejecuta <code>actualizar_datos.py</code>.</p>
+        <p><strong>¿Qué loterías puedo consultar aquí?</strong> Encontrarás los resultados de Lotería Nacional, Leidsa, Lotería Real, Loteka, La Primera, La Suerte, LoteDom, Anguila, King Lottery y las loterías americanas (New York, Florida, Mega Millions y PowerBall).</p>
       </div>
       <div class="paso">
         <div class="num">2</div>
-        <p>Ese script abre un navegador headless (Playwright), <strong>renderiza el JavaScript</strong> del sitio de lotería y lee los números ya insertados en la página.</p>
+        <p><strong>¿Cada cuánto se actualizan los números?</strong> Los resultados se refrescan de forma continua a lo largo del día, así que apenas sale un sorteo lo verás publicado aquí sin tener que hacer nada.</p>
       </div>
       <div class="paso">
         <div class="num">3</div>
-        <p>Los resultados se guardan en <strong>datos_loteria.json</strong> y la Action hace commit y push del archivo si cambió.</p>
+        <p><strong>¿Cómo busco una lotería específica?</strong> Usa el buscador que está arriba: escribe por ejemplo «Leidsa», «Quiniela» o «Anguila» y la página mostrará únicamente los sorteos que coincidan con lo que escribiste.</p>
       </div>
       <div class="paso">
         <div class="num">4</div>
-        <p>La página <strong>resultados.html</strong>, ya publicada en GitHub Pages, lee ese JSON con <code>fetch()</code> y repinta las tarjetas — visible para cualquiera que entre al link.</p>
+        <p><strong>¿Los resultados son oficiales?</strong> Los números que ves aquí son de referencia y provienen de información pública. Para reclamar un premio, verifica siempre con la banca o el operador oficial de la lotería correspondiente.</p>
       </div>
     </div>
   </div>
 </section>
 
 <footer>
-  Proyecto educativo, no oficial — los datos son de referencia. Basado en información pública de
-  <a href="https://www.conectate.com.do" target="_blank" rel="noopener">conectate.com.do</a>.
+  <img src="png/logo3.png" alt="Conéctate Lotería">
+
+  <div class="pie-seccion">
+    <h3>Resultados por lotería</h3>
+    <ul class="pie-links">
+      <li><a href="loteria-nacional.html">Lotería Nacional</a></li>
+      <li><a href="leidsa.html">Leidsa</a></li>
+      <li><a href="loteria-real.html">Lotería Real</a></li>
+      <li><a href="loteka.html">Loteka</a></li>
+      <li><a href="la-primera.html">La Primera</a></li>
+      <li><a href="la-suerte.html">La Suerte</a></li>
+      <li><a href="lotedom.html">LoteDom</a></li>
+      <li><a href="anguila.html">Anguila</a></li>
+      <li><a href="king-lottery.html">King Lottery</a></li>
+      <li><a href="americanas.html">Americanas (NY)</a></li>
+    </ul>
+  </div>
+
+  <div class="pie-seccion">
+    <h3>Guías</h3>
+    <ul class="pie-links">
+      <li><a href="horarios-loterias-dominicanas.html">Horarios de los sorteos</a></li>
+      <li><a href="como-se-juega-la-quiniela.html">Cómo se juega la quiniela</a></li>
+      <li><a href="que-hacer-si-ganas.html">Qué hacer si ganas</a></li>
+    </ul>
+  </div>
+
+  <div class="pie-seccion">
+    <h3>El sitio</h3>
+    <ul class="pie-links">
+      <li><a href="sobre-nosotros.html">Sobre Nosotros</a></li>
+      <li><a href="contacto.html">Contacto</a></li>
+      <li><a href="politica-de-privacidad.html">Política de Privacidad</a></li>
+      <li><a href="aviso-legal.html">Aviso Legal</a></li>
+    </ul>
+  </div>
+
+  Los datos son de referencia y provienen de información pública.
+  Verifica siempre con la banca u operador oficial antes de reclamar un premio.
 </footer>
+
+<script>
+  const POLL_MS = 60000; // revisa cada 1 min si datos_loteria.json cambió (el dato en sí se refresca cada 5 min en GitHub)
+
+  // Convierte "Lotería Nacional" -> "cat-loteria-nacional" para usarlo
+  // como id de sección y como href del link del nav.
+  function slug(texto) {
+    return "cat-" + texto
+      .toLowerCase()
+      .normalize("NFD").replace(/[̀-ͯ]/g, "") // quita acentos
+      .replace(/[^a-z0-9]+/g, "-")
+      .replace(/(^-|-$)/g, "");
+  }
+
+  // Quita acentos y pasa a minúsculas, para que "loteria" encuentre "Lotería".
+  function normalizar(texto) {
+    return (texto || "")
+      .toLowerCase()
+      .normalize("NFD").replace(/[̀-ͯ]/g, "");
+  }
+
+  function pintarResultados(lista) {
+    const contenedor = document.getElementById("contenedor-resultados");
+    const navLinks = document.getElementById("nav-links");
+    contenedor.innerHTML = "";
+    navLinks.innerHTML = `<a href="#resultados">Resultados</a>`;
+
+    if (!lista.length) {
+      contenedor.innerHTML = `<p class="sin-resultados">No encontramos ninguna lotería con ese nombre. Prueba con "Leidsa", "Nacional", "Quiniela" o "Anguila".</p>`;
+      return;
+    }
+
+    // Agrupar por empresa (Leidsa, Lotería Real, Nacional, etc.) para que
+    // se lea claro con varias decenas de juegos: una sección por categoría.
+    const grupos = {};
+    lista.forEach(item => {
+      const empresa = item.empresa || "Otras";
+      if (!grupos[empresa]) grupos[empresa] = [];
+      grupos[empresa].push(item);
+    });
+
+    Object.entries(grupos).forEach(([empresa, juegos]) => {
+      const id = slug(empresa);
+
+      // Link en el nav de arriba que salta directo a esta lotería
+      const link = document.createElement("a");
+      link.href = "#" + id;
+      link.textContent = empresa;
+      navLinks.appendChild(link);
+
+      const seccion = document.createElement("div");
+      seccion.className = "grupo";
+      seccion.id = id;
+
+      const grid = juegos.map(item => {
+        const bolas = item.numeros.map(n => `<div class="bola">${n}</div>`).join("");
+        return `
+          <div class="card">
+            <div class="card-header">
+              <span class="juego">${item.juego}</span>
+              <span class="fecha">${item.fecha}</span>
+            </div>
+            <div class="numeros">${bolas}</div>
+          </div>
+        `;
+      }).join("");
+
+      seccion.innerHTML = `<h2>${empresa}</h2><div class="grid">${grid}</div>`;
+      contenedor.appendChild(seccion);
+    });
+  }
+
+  // Guardamos la lista completa aparte para poder filtrarla sin volver a pedirla.
+  let todosLosResultados = [];
+
+  const campoBuscar = document.getElementById("buscar");
+  const botonLimpiar = document.getElementById("limpiar-busqueda");
+  const infoBusqueda = document.getElementById("buscador-info");
+
+  // Deja solo las loterías/juegos cuyo nombre coincide con lo que se escribió.
+  function aplicarFiltro() {
+    const termino = normalizar(campoBuscar.value.trim());
+    botonLimpiar.hidden = termino === "";
+
+    if (!termino) {
+      infoBusqueda.textContent = "";
+      pintarResultados(todosLosResultados);
+      return;
+    }
+
+    const filtrados = todosLosResultados.filter(item =>
+      normalizar(item.empresa).includes(termino) ||
+      normalizar(item.juego).includes(termino)
+    );
+
+    const empresas = new Set(filtrados.map(i => i.empresa));
+    infoBusqueda.textContent = filtrados.length
+      ? `${filtrados.length} juego${filtrados.length === 1 ? "" : "s"} en ${empresas.size} lotería${empresas.size === 1 ? "" : "s"}.`
+      : "Sin coincidencias.";
+
+    pintarResultados(filtrados);
+  }
+
+  campoBuscar.addEventListener("input", aplicarFiltro);
+  botonLimpiar.addEventListener("click", () => {
+    campoBuscar.value = "";
+    campoBuscar.focus();
+    aplicarFiltro();
+  });
+
+  async function cargarDatos() {
+    try {
+      const res = await fetch("datos_loteria.json?_=" + Date.now()); // evita caché
+      const paquete = await res.json();
+      todosLosResultados = paquete.resultados || [];
+      aplicarFiltro(); // respeta lo que el usuario tenga escrito al recargarse
+    } catch (err) {
+      document.getElementById("contenedor-resultados").innerHTML =
+        `<p class="sin-resultados">No pudimos cargar los resultados en este momento. Intenta de nuevo en unos minutos.</p>`;
+    }
+  }
+
+  cargarDatos();
+  setInterval(cargarDatos, POLL_MS);
+
+  // Menú hamburguesa para celular: abre/cierra la lista de loterías,
+  // y se cierra solo apenas se toca un link.
+  const botonMenu = document.getElementById("menu-toggle");
+  const linksNav = document.getElementById("nav-links");
+
+  function cerrarMenu() {
+    linksNav.classList.remove("abierto");
+    botonMenu.setAttribute("aria-expanded", "false");
+  }
+
+  botonMenu.addEventListener("click", (e) => {
+    e.stopPropagation();
+    const abierto = linksNav.classList.toggle("abierto");
+    botonMenu.setAttribute("aria-expanded", abierto ? "true" : "false");
+  });
+
+  // Al elegir una lotería, el panel se cierra solo.
+  linksNav.addEventListener("click", (e) => {
+    if (e.target.tagName === "A") cerrarMenu();
+  });
+
+  // También se cierra si se toca fuera del panel o se presiona Escape.
+  document.addEventListener("click", (e) => {
+    if (!linksNav.contains(e.target) && e.target !== botonMenu) cerrarMenu();
+  });
+  document.addEventListener("keydown", (e) => {
+    if (e.key === "Escape") cerrarMenu();
+  });
+</script>
 
 </body>
 </html>
