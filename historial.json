@@ -494,6 +494,44 @@
      "65",
      "37"
     ]
+   },
+   {
+    "empresa": "Lotería Nacional",
+    "juego": "Juega + Pega +",
+    "numeros": [
+     "07",
+     "06",
+     "05",
+     "01",
+     "02"
+    ]
+   },
+   {
+    "empresa": "Lotería Nacional",
+    "juego": "Gana Más",
+    "numeros": [
+     "66",
+     "49",
+     "04"
+    ]
+   },
+   {
+    "empresa": "Americanas (NY)",
+    "juego": "New York Tarde",
+    "numeros": [
+     "85",
+     "70",
+     "82"
+    ]
+   },
+   {
+    "empresa": "Anguila",
+    "juego": "Anguila 3:00 PM",
+    "numeros": [
+     "13",
+     "30",
+     "40"
+    ]
    }
   ],
   "2026-08-02": [
