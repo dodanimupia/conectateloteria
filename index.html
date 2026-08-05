@@ -348,17 +348,18 @@
   .atajo-historial {
     display: inline-block;
     margin-top: 6px;
-    padding: 11px 22px;
-    border: 1px solid var(--borde);
+    padding: 12px 26px;
+    border: none;
     border-radius: 999px;
-    background: var(--card);
-    color: var(--accent2);
+    background: var(--accent);
+    color: #ffffff;
     font-weight: 700;
     font-size: 1.02rem;
     text-decoration: none;
-    transition: background 0.15s ease, border-color 0.15s ease;
+    box-shadow: 0 4px 14px rgba(249, 115, 22, 0.3);
+    transition: background 0.15s ease, transform 0.15s ease;
   }
-  .atajo-historial:hover { background: #fff3e8; border-color: var(--accent); }
+  .atajo-historial:hover { background: var(--accent2); transform: translateY(-1px); }
 
   /* --- Historial de días anteriores (portada) --- */
   .historial-portada { margin-top: 70px; scroll-margin-top: 80px; }
