@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Resultados de Lotería - Auto-actualizable</title>
+<style>
+  :root {
+    --bg: #0f172a;
+    --card: #1e293b;
+    --accent: #f97316;
+    --text: #e2e8f0;
+    --muted: #94a3b8;
+    --live: #22c55e;
+  }
+  * { box-sizing: border-box; }
+  body {
+    margin: 0;
+    font-family: "Segoe UI", Arial, sans-serif;
+    background: var(--bg);
+    color: var(--text);
+    padding: 32px 16px 64px;
+  }
+  a.volver {
+    display: inline-block;
+    color: var(--muted);
+    text-decoration: none;
+    font-size: 0.85rem;
+    margin-bottom: 20px;
+  }
+  a.volver:hover { color: var(--text); }
+  header { text-align: center; margin-bottom: 32px; }
+  header h1 { margin: 0 0 6px; font-size: 1.8rem; }
+  header p { color: var(--muted); margin: 0; font-size: 0.95rem; }
+  #estado {
+    margin-top: 10px;
+    font-size: 0.85rem;
+    color: var(--muted);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 6px;
+  }
+  #estado .punto { width: 8px; height: 8px; border-radius: 50%; background: var(--muted); }
+  #estado.en-vivo .punto { background: var(--live); }
+  .contenedor { max-width: 1100px; margin: 0 auto; }
+  .grupo { margin-bottom: 30px; }
+  .grupo h2 {
+    font-size: 1.05rem;
+    color: var(--muted);
+    border-bottom: 1px solid #334155;
+    padding-bottom: 8px;
+    margin: 0 0 14px;
+  }
+  .grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+    gap: 16px;
+  }
+  .card { background: var(--card); border-radius: 12px; padding: 18px 20px; box-shadow: 0 4px 10px rgba(0,0,0,0.3); }
+  .card-header { display: flex; justify-content: space-between; align-items: center; margin-bottom: 12px; }
+  .juego { font-weight: 600; font-size: 1.05rem; }
+  .fecha { background: #334155; color: var(--muted); font-size: 0.75rem; padding: 3px 8px; border-radius: 6px; }
+  .numeros { display: flex; flex-wrap: wrap; gap: 8px; }
+  .bola {
+    width: 34px; height: 34px; border-radius: 50%;
+    background: var(--accent); color: #1a1a1a;
+    display: flex; align-items: center; justify-content: center;
+    font-weight: 700; font-size: 0.85rem;
+  }
+  footer { text-align: center; color: var(--muted); font-size: 0.8rem; margin-top: 40px; }
+</style>
+</head>
+<body>
+
+<a class="volver" href="index.html">&larr; Volver a la portada</a>
+
+<header>
+  <h1>Resultados de Lotería (Auto-actualizable)</h1>
+  <p>datos_loteria.json se regenera solo cada 5 minutos con GitHub Actions</p>
+  <div id="estado"><span class="punto"></span><span id="estado-texto">Cargando...</span></div>
+</header>
+
+<div class="contenedor" id="contenedor"></div>
+
+<footer>
+  Proyecto educativo — no oficial. Datos de referencia tomados de conectate.com.do
+</footer>
+
+<script>
+  const POLL_MS = 60000; // revisa cada 1 min si datos_loteria.json cambió (el dato en sí se refresca cada 5 min en GitHub)
+
+  function pintarResultados(lista) {
+    const contenedor = document.getElementById("contenedor");
+    contenedor.innerHTML = "";
+
+    // Agrupar por empresa (Leidsa, Lotería Real, Nacional, etc.), igual
+    // que en la portada del sitio real, para que se lea claro con
+    // varias decenas de juegos.
+    const grupos = {};
+    lista.forEach(item => {
+      const empresa = item.empresa || "Otras";
+      if (!grupos[empresa]) grupos[empresa] = [];
+      grupos[empresa].push(item);
+    });
+
+    Object.entries(grupos).forEach(([empresa, juegos]) => {
+      const seccion = document.createElement("div");
+      seccion.className = "grupo";
+
+      const grid = juegos.map(item => {
+        const bolas = item.numeros.map(n => `<div class="bola">${n}</div>`).join("");
+        return `
+          <div class="card">
+            <div class="card-header">
+              <span class="juego">${item.juego}</span>
+              <span class="fecha">${item.fecha}</span>
+            </div>
+            <div class="numeros">${bolas}</div>
+          </div>
+        `;
+      }).join("");
+
+      seccion.innerHTML = `<h2>${empresa}</h2><div class="grid">${grid}</div>`;
+      contenedor.appendChild(seccion);
+    });
+  }
+
+  async function cargarDatos() {
+    const estadoDiv = document.getElementById("estado");
+    const estadoTexto = document.getElementById("estado-texto");
+    try {
+      const res = await fetch("datos_loteria.json?_=" + Date.now()); // evita caché
+      const paquete = await res.json();
+
+      pintarResultados(paquete.resultados);
+
+      const hora = new Date(paquete.actualizado).toLocaleString("es-DO");
+      estadoTexto.textContent = (paquete.en_vivo ? "En vivo" : "Snapshot de respaldo") + " · actualizado " + hora;
+      estadoDiv.classList.toggle("en-vivo", paquete.en_vivo);
+    } catch (err) {
+      estadoTexto.textContent = "No se pudo leer datos_loteria.json";
+    }
+  }
+
+  cargarDatos();
+  setInterval(cargarDatos, POLL_MS);
+</script>
+
+</body>
+</html>
