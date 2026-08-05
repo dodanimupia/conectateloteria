@@ -77,3 +77,7 @@ jobs:
           local-dir: "./publicar/"
           server-dir: "/conectateloteria.com/public_html/"
           dangerous-clean-slate: false
+          # Ahora se suben ~22 archivos (antes 11). Con el tiempo de espera
+          # por defecto (30s) la conexión se cortaba a mitad de la subida
+          # con "Timeout (control socket)", así que le damos margen.
+          timeout: 180000
