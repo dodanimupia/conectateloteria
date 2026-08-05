@@ -1,0 +1,426 @@
+{
+ "dias": {
+  "2026-08-04": [
+   {
+    "empresa": "Lotería Nacional",
+    "juego": "Juega + Pega +",
+    "numeros": [
+     "23",
+     "12",
+     "17",
+     "15",
+     "06"
+    ]
+   },
+   {
+    "empresa": "Lotería Nacional",
+    "juego": "Gana Más",
+    "numeros": [
+     "04",
+     "17",
+     "95"
+    ]
+   },
+   {
+    "empresa": "Lotería Real",
+    "juego": "Loto Pool",
+    "numeros": [
+     "27",
+     "70",
+     "71",
+     "89"
+    ]
+   },
+   {
+    "empresa": "Lotería Real",
+    "juego": "Quiniela Real",
+    "numeros": [
+     "55",
+     "02",
+     "62"
+    ]
+   },
+   {
+    "empresa": "Americanas (NY)",
+    "juego": "New York Tarde",
+    "numeros": [
+     "70",
+     "87",
+     "98"
+    ]
+   },
+   {
+    "empresa": "Americanas (NY)",
+    "juego": "Florida Día",
+    "numeros": [
+     "82",
+     "18",
+     "16"
+    ]
+   },
+   {
+    "empresa": "Americanas (NY)",
+    "juego": "PowerBall",
+    "numeros": [
+     "08",
+     "30",
+     "41",
+     "48",
+     "54",
+     "04"
+    ]
+   },
+   {
+    "empresa": "La Primera",
+    "juego": "La Primera Día",
+    "numeros": [
+     "39",
+     "13",
+     "26"
+    ]
+   },
+   {
+    "empresa": "La Primera",
+    "juego": "Loto 5",
+    "numeros": [
+     "11",
+     "19",
+     "25",
+     "31",
+     "36",
+     "06"
+    ]
+   },
+   {
+    "empresa": "La Primera",
+    "juego": "Primera Noche",
+    "numeros": [
+     "80",
+     "12",
+     "10"
+    ]
+   },
+   {
+    "empresa": "La Suerte",
+    "juego": "La Suerte Día",
+    "numeros": [
+     "14",
+     "27",
+     "58"
+    ]
+   },
+   {
+    "empresa": "La Suerte",
+    "juego": "La Suerte Tarde",
+    "numeros": [
+     "54",
+     "54",
+     "87"
+    ]
+   },
+   {
+    "empresa": "LoteDom",
+    "juego": "LoteDom",
+    "numeros": [
+     "18",
+     "80",
+     "93"
+    ]
+   },
+   {
+    "empresa": "LoteDom",
+    "juego": "El Quemaito Mayor",
+    "numeros": [
+     "44"
+    ]
+   },
+   {
+    "empresa": "Anguila",
+    "juego": "Anguila 12:00 PM",
+    "numeros": [
+     "33",
+     "74",
+     "79"
+    ]
+   },
+   {
+    "empresa": "Anguila",
+    "juego": "Anguila 2:00 PM",
+    "numeros": [
+     "86",
+     "26",
+     "08"
+    ]
+   },
+   {
+    "empresa": "Anguila",
+    "juego": "Anguila 3:00 PM",
+    "numeros": [
+     "97",
+     "89",
+     "23"
+    ]
+   },
+   {
+    "empresa": "Anguila",
+    "juego": "Anguila 4:00 PM",
+    "numeros": [
+     "68",
+     "58",
+     "75"
+    ]
+   },
+   {
+    "empresa": "Anguila",
+    "juego": "Anguila 5:00 PM",
+    "numeros": [
+     "75",
+     "01",
+     "40"
+    ]
+   },
+   {
+    "empresa": "Anguila",
+    "juego": "Anguila 6:00 PM",
+    "numeros": [
+     "64",
+     "73",
+     "33"
+    ]
+   },
+   {
+    "empresa": "Anguila",
+    "juego": "Anguila 7:00 PM",
+    "numeros": [
+     "33",
+     "55",
+     "99"
+    ]
+   },
+   {
+    "empresa": "King Lottery",
+    "juego": "King Lottery Día",
+    "numeros": [
+     "23",
+     "66",
+     "70"
+    ]
+   },
+   {
+    "empresa": "King Lottery",
+    "juego": "King Lottery Noche",
+    "numeros": [
+     "04",
+     "26",
+     "08"
+    ]
+   }
+  ],
+  "2026-08-05": [
+   {
+    "empresa": "Lotería Nacional",
+    "juego": "Lotería Nacional",
+    "numeros": [
+     "31",
+     "47",
+     "40"
+    ]
+   },
+   {
+    "empresa": "Leidsa",
+    "juego": "Pega 3 Más",
+    "numeros": [
+     "20",
+     "26",
+     "39"
+    ]
+   },
+   {
+    "empresa": "Leidsa",
+    "juego": "Loto Pool",
+    "numeros": [
+     "06",
+     "14",
+     "15",
+     "18",
+     "25"
+    ]
+   },
+   {
+    "empresa": "Leidsa",
+    "juego": "Super Kino TV",
+    "numeros": [
+     "02",
+     "11",
+     "12",
+     "14",
+     "26",
+     "27",
+     "30",
+     "36",
+     "37",
+     "40",
+     "44",
+     "53",
+     "55",
+     "57",
+     "58",
+     "63",
+     "69",
+     "72",
+     "75",
+     "78"
+    ]
+   },
+   {
+    "empresa": "Leidsa",
+    "juego": "Quiniela Leidsa",
+    "numeros": [
+     "90",
+     "09",
+     "24"
+    ]
+   },
+   {
+    "empresa": "Lotería Real",
+    "juego": "Loto Real",
+    "numeros": [
+     "09",
+     "15",
+     "16",
+     "24",
+     "26",
+     "28"
+    ]
+   },
+   {
+    "empresa": "Loteka",
+    "juego": "Mega Chances",
+    "numeros": [
+     "64",
+     "78",
+     "85",
+     "91",
+     "94"
+    ]
+   },
+   {
+    "empresa": "Loteka",
+    "juego": "Quiniela Loteka",
+    "numeros": [
+     "70",
+     "14",
+     "05"
+    ]
+   },
+   {
+    "empresa": "Americanas (NY)",
+    "juego": "New York Noche",
+    "numeros": [
+     "91",
+     "92",
+     "26"
+    ]
+   },
+   {
+    "empresa": "Americanas (NY)",
+    "juego": "Florida Noche",
+    "numeros": [
+     "50",
+     "62",
+     "28"
+    ]
+   },
+   {
+    "empresa": "Americanas (NY)",
+    "juego": "Mega Millions",
+    "numeros": [
+     "14",
+     "21",
+     "51",
+     "55",
+     "65",
+     "21"
+    ]
+   },
+   {
+    "empresa": "Anguila",
+    "juego": "Anguila 8:00  AM",
+    "numeros": [
+     "86",
+     "79",
+     "87"
+    ]
+   },
+   {
+    "empresa": "Anguila",
+    "juego": "Anguila 9:00 AM",
+    "numeros": [
+     "81",
+     "89",
+     "08"
+    ]
+   },
+   {
+    "empresa": "Anguila",
+    "juego": "Anguila 10:00 AM",
+    "numeros": [
+     "73",
+     "34",
+     "47"
+    ]
+   },
+   {
+    "empresa": "Anguila",
+    "juego": "Anguila 11:00 AM",
+    "numeros": [
+     "46",
+     "00"
+    ]
+   },
+   {
+    "empresa": "Anguila",
+    "juego": "Anguila 8:00 PM",
+    "numeros": [
+     "27",
+     "47",
+     "75"
+    ]
+   },
+   {
+    "empresa": "Anguila",
+    "juego": "Anguila 9:00 PM",
+    "numeros": [
+     "45",
+     "73",
+     "77"
+    ]
+   },
+   {
+    "empresa": "Anguila",
+    "juego": "Anguila 10:00 PM",
+    "numeros": [
+     "39",
+     "94",
+     "60"
+    ]
+   }
+  ],
+  "2026-08-02": [
+   {
+    "empresa": "Leidsa",
+    "juego": "Loto - Loto Más",
+    "numeros": [
+     "07",
+     "14",
+     "16",
+     "21",
+     "27",
+     "29",
+     "01",
+     "03"
+    ]
+   }
+  ]
+ }
+}
