@@ -39,6 +39,14 @@ jobs:
           git diff --cached --quiet || git commit -m "Actualizar resultados de lotería [skip ci]"
           git push
 
+      # Copia el JSON a una carpeta aparte que solo tiene ese archivo,
+      # para subir SOLO ese archivo por FTP (la Action no soporta un
+      # parámetro "include": solo sabe sincronizar carpetas completas).
+      - name: Preparar carpeta para subir
+        run: |
+          mkdir -p publicar
+          cp datos_loteria.json publicar/datos_loteria.json
+
       # Sube el JSON actualizado al hosting real (SiteGround) por FTPS
       # (FTP cifrado con TLS), para que conectateloteria.com muestre
       # siempre el dato más reciente. Requiere 2 secrets en el repo
@@ -53,8 +61,6 @@ jobs:
           protocol: ftps
           username: ${{ secrets.FTP_USERNAME }}
           password: ${{ secrets.FTP_PASSWORD }}
-          local-dir: "./"
+          local-dir: "./publicar/"
           server-dir: "/public_html/"
-          include: "datos_loteria.json"
-          exclude: "**"
           dangerous-clean-slate: false
