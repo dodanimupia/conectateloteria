@@ -153,6 +153,45 @@ def html_historial(historial, empresa, hoy_iso):
     return "".join(bloques)
 
 
+def html_historial_portada(historial, hoy_iso):
+    """
+    Historial para la página principal: un bloque plegable por día.
+
+    En la portada están las 10 loterías a la vez, así que mostrar todo
+    abierto sería un muro de cientos de números y la página pesaría
+    demasiado. Con <details> el contenido sigue estando en el HTML (que es
+    lo que Google necesita) pero el visitante solo ve la lista de días y
+    abre el que le interesa. Y no hace falta JavaScript.
+    """
+    dias = hist.dias_ordenados(historial, excluir=hoy_iso)
+    if not dias:
+        return ('<p class="cargando">El historial se est&aacute; construyendo. '
+                'Ma&ntilde;ana aparecer&aacute;n aqu&iacute; los resultados de hoy.</p>')
+
+    bloques = []
+    for clave in dias:
+        grupos = agrupar(historial["dias"][clave])
+        total = sum(len(j) for j in grupos.values())
+        cuerpo = []
+        for empresa, juegos in grupos.items():
+            filas = "".join(
+                '<tr><td>%s</td><td><div class="numeros numeros-mini">%s</div></td></tr>'
+                % (escapar(j.get("juego", "")),
+                   "".join('<div class="bola bola-mini">%s</div>' % escapar(n)
+                           for n in j.get("numeros", [])))
+                for j in juegos
+            )
+            cuerpo.append('<h4>%s</h4><table class="tabla tabla-historial">'
+                          '<tbody>%s</tbody></table>' % (escapar(empresa), filas))
+        bloques.append(
+            '<details class="dia-historial">'
+            '<summary>%s <span class="cuenta">%d sorteos</span></summary>'
+            '<div class="dia-cuerpo">%s</div>'
+            '</details>' % (hist.fecha_bonita(clave), total, "".join(cuerpo))
+        )
+    return "".join(bloques)
+
+
 def escribir(nombre, contenido):
     destino = os.path.join(SALIDA, nombre)
     with open(destino, "w", encoding="utf-8") as f:
@@ -191,6 +230,7 @@ def main():
         escribir("index.html", plantilla
                  .replace("<!--RESULTADOS-->", secciones)
                  .replace("<!--NAVLINKS-->", enlaces)
+                 .replace("<!--HISTORIAL-->", html_historial_portada(historial, hoy_iso))
                  .replace("<!--FECHA-->", escapar(fecha)))
     else:
         print("  aviso: no existe index.html, me lo salto")

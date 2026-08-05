@@ -344,6 +344,62 @@
     font-size: 1.12rem;
     margin: 0 0 40px;
   }
+
+  /* --- Historial de días anteriores (portada) --- */
+  .historial-portada { margin-top: 70px; }
+  .historial-portada h2 {
+    font-size: 1.7rem; font-weight: 800; margin: 0 0 10px;
+    border-bottom: 2px solid var(--borde); padding-bottom: 16px;
+  }
+  .historial-intro { color: var(--muted); font-size: 1.08rem; margin: 0 0 22px; }
+  .dia-historial {
+    border: 1px solid var(--borde);
+    border-radius: 12px;
+    margin-bottom: 12px;
+    background: var(--card);
+    overflow: hidden;
+  }
+  .dia-historial summary {
+    cursor: pointer;
+    padding: 18px 22px;
+    font-weight: 700;
+    font-size: 1.12rem;
+    list-style: none;
+    display: flex;
+    align-items: center;
+    gap: 12px;
+  }
+  .dia-historial summary::-webkit-details-marker { display: none; }
+  .dia-historial summary::before {
+    content: "▸";
+    color: var(--accent);
+    font-size: 0.9rem;
+    transition: transform 0.18s ease;
+  }
+  .dia-historial[open] summary::before { transform: rotate(90deg); }
+  .dia-historial summary:hover { background: #fff7ed; }
+  .dia-historial .cuenta {
+    margin-left: auto; font-weight: 600; font-size: 0.95rem; color: var(--muted);
+  }
+  .dia-cuerpo { padding: 4px 22px 20px; border-top: 1px solid var(--borde); }
+  .dia-cuerpo h4 {
+    font-size: 1.08rem; margin: 20px 0 8px; color: var(--accent2); font-weight: 700;
+  }
+  .tabla { width: 100%; border-collapse: collapse; font-size: 1.02rem; }
+  .tabla td { padding: 10px 8px; border-bottom: 1px solid var(--borde); }
+  .tabla-historial td:first-child {
+    white-space: nowrap; color: var(--muted); font-weight: 600; width: 1%; padding-right: 20px;
+  }
+  .numeros-mini { gap: 8px; }
+  .bola-mini { width: 36px; height: 36px; font-size: 0.9rem; }
+  .cargando { color: var(--muted); font-size: 1.08rem; }
+  @media (max-width: 760px) {
+    .dia-historial summary { padding: 15px 16px; font-size: 1.02rem; }
+    .dia-cuerpo { padding: 4px 14px 16px; }
+    .bola-mini { width: 32px; height: 32px; font-size: 0.82rem; }
+    .numeros-mini { gap: 6px; }
+    .tabla-historial td:first-child { padding-right: 10px; white-space: normal; }
+  }
   .grupo { margin-bottom: 48px; scroll-margin-top: 90px; }
   #resultados { scroll-margin-top: 70px; }
   .grupo h2 {
@@ -529,6 +585,14 @@
   <div class="contenedor">
     <p class="fecha-hoy" id="fecha-hoy"><!--FECHA--></p>
     <div id="contenedor-resultados"><!--RESULTADOS--></div>
+
+    <div class="historial-portada" id="historial">
+      <h2>Resultados de los últimos 7 días</h2>
+      <p class="historial-intro">
+        Toca un día para ver todos los sorteos de esa fecha, lotería por lotería.
+      </p>
+      <!--HISTORIAL-->
+    </div>
   </div>
 </section>
 
