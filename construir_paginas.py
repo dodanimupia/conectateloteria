@@ -25,9 +25,12 @@ import shutil
 import unicodedata
 from datetime import datetime, timezone, timedelta
 
+import historial as hist
+
 RAIZ = os.path.dirname(os.path.abspath(__file__))
 SALIDA = os.path.join(RAIZ, "publicar")
 JSON_DATOS = os.path.join(RAIZ, "datos_loteria.json")
+JSON_HISTORIAL = os.path.join(RAIZ, "historial.json")
 
 # Qué archivo corresponde a cada lotería (tal como aparece en el JSON).
 PAGINAS_LOTERIA = {
@@ -119,6 +122,37 @@ def html_una_loteria(resultados, empresa):
     return '<div class="grid">%s</div>' % "".join(tarjeta(j) for j in juegos)
 
 
+def html_historial(historial, empresa, hoy_iso):
+    """
+    Tabla con los sorteos de los días anteriores, agrupados por juego.
+
+    Es la sección que ningún competidor ofrece: si alguien busca qué salió
+    ayer o el lunes pasado, aquí lo encuentra sin tener que rebuscar.
+    """
+    juegos = hist.por_juego(historial, empresa, hoy_iso)
+    if not juegos:
+        return ('<p class="cargando">El historial se est&aacute; construyendo. '
+                'Vuelve ma&ntilde;ana para ver los resultados de d&iacute;as '
+                'anteriores.</p>')
+
+    bloques = []
+    for juego, dias in juegos:
+        filas = "".join(
+            '<tr><td>%s</td><td><div class="numeros numeros-mini">%s</div></td></tr>'
+            % (hist.fecha_bonita(f),
+               "".join('<div class="bola bola-mini">%s</div>' % escapar(n)
+                       for n in numeros))
+            for f, numeros in dias
+        )
+        bloques.append(
+            '<h3>%s</h3>'
+            '<table class="tabla tabla-historial">'
+            '<thead><tr><th>Fecha</th><th>N&uacute;meros ganadores</th></tr></thead>'
+            '<tbody>%s</tbody></table>' % (escapar(juego), filas)
+        )
+    return "".join(bloques)
+
+
 def escribir(nombre, contenido):
     destino = os.path.join(SALIDA, nombre)
     with open(destino, "w", encoding="utf-8") as f:
@@ -137,6 +171,13 @@ def main():
 
     os.makedirs(SALIDA, exist_ok=True)
     shutil.copy(JSON_DATOS, os.path.join(SALIDA, "datos_loteria.json"))
+
+    # El historial se acumula: guarda lo de hoy y conserva los días previos.
+    hoy = datetime.now(timezone(timedelta(hours=-4))).date()
+    hoy_iso = hoy.isoformat()
+    historial = hist.actualizar(hist.cargar(JSON_HISTORIAL), resultados, hoy)
+    hist.guardar(historial, JSON_HISTORIAL)
+    print("Historial: %d dias guardados" % len(historial.get("dias", {})))
 
     fecha = "Resultados del %s" % fecha_en_texto()
     print("Construyendo paginas con %d resultados (%s)" % (len(resultados), fecha))
@@ -164,6 +205,7 @@ def main():
             plantilla = f.read()
         escribir(archivo, plantilla
                  .replace("<!--RESULTADOS-->", html_una_loteria(resultados, empresa))
+                 .replace("<!--HISTORIAL-->", html_historial(historial, empresa, hoy_iso))
                  .replace("<!--FECHA-->", escapar(fecha)))
 
     print("Listo. Todo en ./publicar/")
