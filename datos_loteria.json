@@ -1,5 +1,5 @@
 {
-  "actualizado": "2026-08-05T13:01:13",
+  "actualizado": "2026-08-05T14:57:14",
   "en_vivo": true,
   "resultados": [
     {
@@ -316,17 +316,19 @@
       "juego": "Anguila 9:00 AM",
       "fecha": "05-08",
       "numeros": [
-        "81"
+        "81",
+        "89",
+        "08"
       ]
     },
     {
       "empresa": "Anguila",
       "juego": "Anguila 10:00 AM",
-      "fecha": "04-08",
+      "fecha": "05-08",
       "numeros": [
-        "88",
-        "55",
-        "23"
+        "73",
+        "34",
+        "47"
       ]
     },
     {
@@ -468,18 +470,6 @@
         "37",
         "49",
         "77"
-      ]
-    },
-    {
-      "empresa": "Lotería Real",
-      "juego": "Chance Real",
-      "fecha": null,
-      "numeros": [
-        "03",
-        "24",
-        "59",
-        "70",
-        "78"
       ]
     }
   ]
