@@ -1,5 +1,5 @@
 {
-  "actualizado": "2026-08-05T16:54:33",
+  "actualizado": "2026-08-05T18:13:57",
   "en_vivo": true,
   "resultados": [
     {
@@ -111,22 +111,22 @@
     {
       "empresa": "Lotería Real",
       "juego": "Loto Pool",
-      "fecha": "04-08",
+      "fecha": "05-08",
       "numeros": [
-        "27",
-        "70",
-        "71",
-        "89"
+        "34",
+        "45",
+        "90",
+        "96"
       ]
     },
     {
       "empresa": "Lotería Real",
       "juego": "Quiniela Real",
-      "fecha": "04-08",
+      "fecha": "05-08",
       "numeros": [
-        "55",
-        "02",
-        "62"
+        "24",
+        "87",
+        "43"
       ]
     },
     {
@@ -187,11 +187,11 @@
     {
       "empresa": "Americanas (NY)",
       "juego": "Florida Día",
-      "fecha": "04-08",
+      "fecha": "05-08",
       "numeros": [
-        "82",
-        "18",
-        "16"
+        "76",
+        "39",
+        "07"
       ]
     },
     {
@@ -269,7 +269,8 @@
       "fecha": "05-08",
       "numeros": [
         "29",
-        "34"
+        "34",
+        "63"
       ]
     },
     {
@@ -353,11 +354,11 @@
     {
       "empresa": "Anguila",
       "juego": "Anguila 2:00 PM",
-      "fecha": "04-08",
+      "fecha": "05-08",
       "numeros": [
-        "86",
-        "26",
-        "08"
+        "02",
+        "65",
+        "37"
       ]
     },
     {
@@ -458,6 +459,16 @@
         "04",
         "26",
         "08"
+      ]
+    },
+    {
+      "empresa": "Lotería Real",
+      "juego": "Nueva Yol Real",
+      "fecha": null,
+      "numeros": [
+        "56",
+        "66",
+        "62"
       ]
     }
   ]
