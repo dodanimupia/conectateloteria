@@ -1,5 +1,5 @@
 {
-  "actualizado": "2026-08-05T15:47:26",
+  "actualizado": "2026-08-05T16:04:06",
   "en_vivo": true,
   "resultados": [
     {
@@ -233,11 +233,10 @@
     {
       "empresa": "La Primera",
       "juego": "La Primera Día",
-      "fecha": "04-08",
+      "fecha": "05-08",
       "numeros": [
-        "39",
-        "13",
-        "26"
+        "63",
+        "65"
       ]
     },
     {
@@ -286,19 +285,19 @@
     {
       "empresa": "LoteDom",
       "juego": "LoteDom",
-      "fecha": "04-08",
+      "fecha": "05-08",
       "numeros": [
-        "18",
-        "80",
-        "93"
+        "42",
+        "46",
+        "03"
       ]
     },
     {
       "empresa": "LoteDom",
       "juego": "El Quemaito Mayor",
-      "fecha": "04-08",
+      "fecha": "05-08",
       "numeros": [
-        "44"
+        "51"
       ]
     },
     {
@@ -344,11 +343,11 @@
     {
       "empresa": "Anguila",
       "juego": "Anguila 12:00 PM",
-      "fecha": "04-08",
+      "fecha": "05-08",
       "numeros": [
-        "33",
-        "74",
-        "79"
+        "35",
+        "68",
+        "19"
       ]
     },
     {
@@ -459,17 +458,6 @@
         "04",
         "26",
         "08"
-      ]
-    },
-    {
-      "empresa": "Lotería Real",
-      "juego": "Loto Pool Noche",
-      "fecha": null,
-      "numeros": [
-        "04",
-        "37",
-        "49",
-        "77"
       ]
     }
   ]
