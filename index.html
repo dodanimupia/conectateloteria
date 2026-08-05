@@ -528,23 +528,60 @@
   .paso strong { color: var(--text); }
 
   /* --- Footer --- */
+  /* --- Pie de página --- */
   footer {
-    text-align: center;
-    color: var(--muted);
+    background: var(--accent);
+    color: rgba(255, 255, 255, 0.92);
     font-size: 1rem;
-    padding: 50px 20px 60px;
-    border-top: 1px solid var(--borde);
+    padding: 58px 24px 0;
+    margin-top: 80px;
   }
-  footer a { color: var(--accent2); text-decoration: none; }
-  footer img { height: 34px; width: auto; margin-bottom: 16px; }
-  .pie-seccion { max-width: 1000px; margin: 0 auto 26px; }
-  .pie-seccion h3 {
-    font-size: 0.95rem; text-transform: uppercase; letter-spacing: 0.06em;
-    color: var(--text); margin: 0 0 12px; font-weight: 700;
+  .pie-inner {
+    max-width: 1160px;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: 1.5fr 1fr 1fr 1fr;
+    gap: 44px 36px;
   }
-  .pie-links {
-    display: flex; flex-wrap: wrap; gap: 8px 20px; justify-content: center;
-    margin: 0; padding: 0; list-style: none; font-size: 1rem;
+  .pie-marca img { height: 48px; width: auto; margin-bottom: 18px; display: block; }
+  .pie-marca p {
+    margin: 0; line-height: 1.65; max-width: 300px;
+    color: rgba(255, 255, 255, 0.85);
+  }
+  .pie-col h3 {
+    font-size: 0.88rem; text-transform: uppercase; letter-spacing: 0.09em;
+    color: #ffffff; margin: 0 0 16px; font-weight: 800;
+  }
+  .pie-col ul { list-style: none; margin: 0; padding: 0; }
+  .pie-col li { margin-bottom: 11px; }
+  .pie-col a {
+    color: rgba(255, 255, 255, 0.88);
+    text-decoration: none;
+    transition: color 0.15s ease;
+  }
+  .pie-col a:hover { color: #ffffff; text-decoration: underline; }
+  .pie-abajo {
+    max-width: 1160px;
+    margin: 46px auto 0;
+    padding: 22px 0 32px;
+    border-top: 1px solid rgba(255, 255, 255, 0.25);
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px 30px;
+    justify-content: space-between;
+    align-items: center;
+    color: rgba(255, 255, 255, 0.82);
+    font-size: 0.95rem;
+  }
+  .pie-abajo p { margin: 0; max-width: 720px; }
+  @media (max-width: 900px) {
+    .pie-inner { grid-template-columns: 1fr 1fr; }
+    .pie-marca { grid-column: 1 / -1; }
+  }
+  @media (max-width: 560px) {
+    footer { padding: 44px 18px 0; }
+    .pie-inner { grid-template-columns: 1fr; gap: 32px; }
+    .pie-abajo { flex-direction: column; align-items: flex-start; }
   }
 </style>
 </head>
@@ -664,45 +701,60 @@
 </section>
 
 <footer>
-  <img src="png/logo3.png" alt="Conéctate Lotería">
+  <div class="pie-inner">
 
-  <div class="pie-seccion">
-    <h3>Resultados por lotería</h3>
-    <ul class="pie-links">
-      <li><a href="loteria-nacional.html">Lotería Nacional</a></li>
-      <li><a href="leidsa.html">Leidsa</a></li>
-      <li><a href="loteria-real.html">Lotería Real</a></li>
-      <li><a href="loteka.html">Loteka</a></li>
-      <li><a href="la-primera.html">La Primera</a></li>
-      <li><a href="la-suerte.html">La Suerte</a></li>
-      <li><a href="lotedom.html">LoteDom</a></li>
-      <li><a href="anguila.html">Anguila</a></li>
-      <li><a href="king-lottery.html">King Lottery</a></li>
-      <li><a href="americanas.html">Americanas (NY)</a></li>
-    </ul>
+    <div class="pie-marca">
+      <img src="png/logo4.png" alt="Conéctate Lotería">
+      <p>Los resultados de todas las loterías dominicanas en un solo lugar,
+      actualizados durante todo el día. Rápido, gratis y sin registro.</p>
+    </div>
+
+    <div class="pie-col">
+      <h3>Loterías</h3>
+      <ul>
+        <li><a href="loteria-nacional.html">Lotería Nacional</a></li>
+        <li><a href="leidsa.html">Leidsa</a></li>
+        <li><a href="loteria-real.html">Lotería Real</a></li>
+        <li><a href="loteka.html">Loteka</a></li>
+        <li><a href="la-primera.html">La Primera</a></li>
+        <li><a href="la-suerte.html">La Suerte</a></li>
+      </ul>
+    </div>
+
+    <div class="pie-col">
+      <h3>Más loterías</h3>
+      <ul>
+        <li><a href="lotedom.html">LoteDom</a></li>
+        <li><a href="anguila.html">Anguila</a></li>
+        <li><a href="king-lottery.html">King Lottery</a></li>
+        <li><a href="americanas.html">Americanas (NY)</a></li>
+      </ul>
+      <h3 style="margin-top:26px">Guías</h3>
+      <ul>
+        <li><a href="horarios-loterias-dominicanas.html">Horarios de los sorteos</a></li>
+        <li><a href="como-se-juega-la-quiniela.html">Cómo se juega la quiniela</a></li>
+        <li><a href="que-hacer-si-ganas.html">Qué hacer si ganas</a></li>
+      </ul>
+    </div>
+
+    <div class="pie-col">
+      <h3>El sitio</h3>
+      <ul>
+        <li><a href="sobre-nosotros.html">Sobre Nosotros</a></li>
+        <li><a href="contacto.html">Contacto</a></li>
+        <li><a href="politica-de-privacidad.html">Política de Privacidad</a></li>
+        <li><a href="aviso-legal.html">Aviso Legal</a></li>
+      </ul>
+    </div>
+
   </div>
 
-  <div class="pie-seccion">
-    <h3>Guías</h3>
-    <ul class="pie-links">
-      <li><a href="horarios-loterias-dominicanas.html">Horarios de los sorteos</a></li>
-      <li><a href="como-se-juega-la-quiniela.html">Cómo se juega la quiniela</a></li>
-      <li><a href="que-hacer-si-ganas.html">Qué hacer si ganas</a></li>
-    </ul>
+  <div class="pie-abajo">
+    <p>Los datos son de referencia y provienen de información pública.
+    Verifica siempre con la banca u operador oficial antes de reclamar un premio.
+    Solo para mayores de 18 años.</p>
+    <span>&copy; 2026 Conéctate Lotería</span>
   </div>
-
-  <div class="pie-seccion">
-    <h3>El sitio</h3>
-    <ul class="pie-links">
-      <li><a href="sobre-nosotros.html">Sobre Nosotros</a></li>
-      <li><a href="contacto.html">Contacto</a></li>
-      <li><a href="politica-de-privacidad.html">Política de Privacidad</a></li>
-      <li><a href="aviso-legal.html">Aviso Legal</a></li>
-    </ul>
-  </div>
-
-  Los datos son de referencia y provienen de información pública.
-  Verifica siempre con la banca u operador oficial antes de reclamar un premio.
 </footer>
 
 <script>
