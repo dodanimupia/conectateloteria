@@ -214,6 +214,15 @@
      "26",
      "08"
     ]
+   },
+   {
+    "empresa": "haiti-bolet",
+    "juego": "Haiti Bolet 7:30 PM",
+    "numeros": [
+     "44",
+     "23",
+     "96"
+    ]
    }
   ],
   "2026-08-05": [
@@ -540,6 +549,24 @@
      "90",
      "18",
      "63"
+    ]
+   },
+   {
+    "empresa": "Anguila",
+    "juego": "Anguila 1:00 PM",
+    "numeros": [
+     "85",
+     "47",
+     "26"
+    ]
+   },
+   {
+    "empresa": "haiti-bolet",
+    "juego": "Haiti Bolet 9:30 AM",
+    "numeros": [
+     "08",
+     "14",
+     "57"
     ]
    }
   ],

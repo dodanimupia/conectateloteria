@@ -1,5 +1,5 @@
 {
-  "actualizado": "2026-08-05T20:50:27",
+  "actualizado": "2026-08-05T22:00:07",
   "en_vivo": true,
   "resultados": [
     {
@@ -303,26 +303,6 @@
     },
     {
       "empresa": "Anguila",
-      "juego": "Anguila 8:00  AM",
-      "fecha": "05-08",
-      "numeros": [
-        "86",
-        "79",
-        "87"
-      ]
-    },
-    {
-      "empresa": "Anguila",
-      "juego": "Anguila 9:00 AM",
-      "fecha": "05-08",
-      "numeros": [
-        "81",
-        "89",
-        "08"
-      ]
-    },
-    {
-      "empresa": "Anguila",
       "juego": "Anguila 10:00 AM",
       "fecha": "05-08",
       "numeros": [
@@ -333,92 +313,12 @@
     },
     {
       "empresa": "Anguila",
-      "juego": "Anguila 11:00 AM",
+      "juego": "Anguila 1:00 PM",
       "fecha": "05-08",
       "numeros": [
-        "46",
-        "00",
-        "07"
-      ]
-    },
-    {
-      "empresa": "Anguila",
-      "juego": "Anguila 12:00 PM",
-      "fecha": "05-08",
-      "numeros": [
-        "35",
-        "68",
-        "19"
-      ]
-    },
-    {
-      "empresa": "Anguila",
-      "juego": "Anguila 2:00 PM",
-      "fecha": "05-08",
-      "numeros": [
-        "02",
-        "65",
-        "37"
-      ]
-    },
-    {
-      "empresa": "Anguila",
-      "juego": "Anguila 3:00 PM",
-      "fecha": "05-08",
-      "numeros": [
-        "13",
-        "30",
-        "40"
-      ]
-    },
-    {
-      "empresa": "Anguila",
-      "juego": "Anguila 4:00 PM",
-      "fecha": "05-08",
-      "numeros": [
-        "90",
-        "18",
-        "63"
-      ]
-    },
-    {
-      "empresa": "Anguila",
-      "juego": "Anguila 5:00 PM",
-      "fecha": "04-08",
-      "numeros": [
-        "75",
-        "01",
-        "40"
-      ]
-    },
-    {
-      "empresa": "Anguila",
-      "juego": "Anguila 6:00 PM",
-      "fecha": "04-08",
-      "numeros": [
-        "64",
-        "73",
-        "33"
-      ]
-    },
-    {
-      "empresa": "Anguila",
-      "juego": "Anguila 7:00 PM",
-      "fecha": "04-08",
-      "numeros": [
-        "33",
-        "55",
-        "99"
-      ]
-    },
-    {
-      "empresa": "Anguila",
-      "juego": "Anguila 8:00 PM",
-      "fecha": "05-08",
-      "numeros": [
-        "27",
+        "85",
         "47",
-        "75"
+        "26"
       ]
     },
     {
@@ -429,16 +329,6 @@
         "45",
         "73",
         "77"
-      ]
-    },
-    {
-      "empresa": "Anguila",
-      "juego": "Anguila 10:00 PM",
-      "fecha": "05-08",
-      "numeros": [
-        "39",
-        "94",
-        "60"
       ]
     },
     {
@@ -459,6 +349,84 @@
         "04",
         "26",
         "08"
+      ]
+    },
+    {
+      "empresa": "haiti-bolet",
+      "juego": "Haiti Bolet 9:30 AM",
+      "fecha": "05-08",
+      "numeros": [
+        "08",
+        "14",
+        "57"
+      ]
+    },
+    {
+      "empresa": "haiti-bolet",
+      "juego": "Haiti Bolet 7:30 PM",
+      "fecha": "04-08",
+      "numeros": [
+        "44",
+        "23",
+        "96"
+      ]
+    },
+    {
+      "empresa": "Anguila",
+      "juego": "Anguila 6:00 PM",
+      "fecha": null,
+      "numeros": [
+        "62"
+      ]
+    },
+    {
+      "empresa": "haiti-bolet",
+      "juego": "Haiti Bolet 5:30 PM",
+      "fecha": null,
+      "numeros": [
+        "73",
+        "86",
+        "27"
+      ]
+    },
+    {
+      "empresa": "Anguila",
+      "juego": "Anguila 5:00 PM",
+      "fecha": null,
+      "numeros": [
+        "04",
+        "24",
+        "68"
+      ]
+    },
+    {
+      "empresa": "Anguila",
+      "juego": "Anguila 4:00 PM",
+      "fecha": null,
+      "numeros": [
+        "90",
+        "18",
+        "63"
+      ]
+    },
+    {
+      "empresa": "Anguila",
+      "juego": "Anguila 3:00 PM",
+      "fecha": null,
+      "numeros": [
+        "13",
+        "30",
+        "40"
+      ]
+    },
+    {
+      "empresa": "Anguila",
+      "juego": "Anguila 2:00 PM",
+      "fecha": null,
+      "numeros": [
+        "02",
+        "65",
+        "37"
       ]
     },
     {
