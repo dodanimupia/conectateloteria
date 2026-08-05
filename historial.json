@@ -577,6 +577,45 @@
      "23",
      "64"
     ]
+   },
+   {
+    "empresa": "La Primera",
+    "juego": "Loto 5",
+    "numeros": [
+     "02",
+     "08",
+     "14",
+     "17",
+     "30",
+     "02"
+    ]
+   },
+   {
+    "empresa": "La Primera",
+    "juego": "Primera Noche",
+    "numeros": [
+     "27",
+     "15",
+     "75"
+    ]
+   },
+   {
+    "empresa": "King Lottery",
+    "juego": "King Lottery Noche",
+    "numeros": [
+     "35",
+     "06",
+     "06"
+    ]
+   },
+   {
+    "empresa": "haiti-bolet",
+    "juego": "Haiti Bolet 7:30 PM",
+    "numeros": [
+     "79",
+     "04",
+     "05"
+    ]
    }
   ],
   "2026-08-02": [
