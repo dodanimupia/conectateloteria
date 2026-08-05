@@ -411,7 +411,8 @@
     "juego": "La Primera Día",
     "numeros": [
      "63",
-     "65"
+     "65",
+     "73"
     ]
    },
    {
@@ -437,6 +438,23 @@
      "35",
      "68",
      "19"
+    ]
+   },
+   {
+    "empresa": "La Suerte",
+    "juego": "La Suerte Día",
+    "numeros": [
+     "29",
+     "34"
+    ]
+   },
+   {
+    "empresa": "King Lottery",
+    "juego": "King Lottery Día",
+    "numeros": [
+     "86",
+     "28",
+     "04"
     ]
    }
   ],
