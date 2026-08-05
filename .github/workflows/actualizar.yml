@@ -1,0 +1,60 @@
+name: Actualizar resultados de lotería
+
+# Se ejecuta sola cada 5 minutos, y también se puede lanzar a mano
+# desde la pestaña "Actions" del repositorio en GitHub (botón "Run workflow").
+on:
+  schedule:
+    - cron: "*/5 * * * *"
+  workflow_dispatch: {}
+
+# Necesario para que la Action pueda hacer commit y push del JSON actualizado
+permissions:
+  contents: write
+
+jobs:
+  actualizar:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Descargar el repositorio
+        uses: actions/checkout@v4
+
+      - name: Preparar Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.11"
+
+      - name: Instalar dependencias
+        run: |
+          pip install playwright beautifulsoup4
+          playwright install --with-deps chromium
+
+      - name: Ejecutar el scraper
+        run: python actualizar_datos.py
+
+      - name: Guardar datos_loteria.json si cambió
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+          git add datos_loteria.json
+          git diff --cached --quiet || git commit -m "Actualizar resultados de lotería [skip ci]"
+          git push
+
+      # Sube el JSON actualizado al hosting real (SiteGround) por FTPS
+      # (FTP cifrado con TLS), para que conectateloteria.com muestre
+      # siempre el dato más reciente. Requiere 2 secrets en el repo
+      # (Settings -> Secrets and variables -> Actions):
+      # FTP_USERNAME y FTP_PASSWORD. Se crean en SiteGround:
+      # Site Tools -> Sitio web -> Cuentas FTP -> "Crear cuenta nueva FTP".
+      - name: Subir datos_loteria.json a SiteGround por FTP
+        uses: SamKirkland/FTP-Deploy-Action@v4.3.4
+        with:
+          server: ftp.conectateloteria.com
+          port: 21
+          protocol: ftps
+          username: ${{ secrets.FTP_USERNAME }}
+          password: ${{ secrets.FTP_PASSWORD }}
+          local-dir: "./"
+          server-dir: "/public_html/"
+          include: "datos_loteria.json"
+          exclude: "**"
+          dangerous-clean-slate: false
