@@ -345,8 +345,23 @@
     margin: 0 0 40px;
   }
 
+  .atajo-historial {
+    display: inline-block;
+    margin-top: 6px;
+    padding: 11px 22px;
+    border: 1px solid var(--borde);
+    border-radius: 999px;
+    background: var(--card);
+    color: var(--accent2);
+    font-weight: 700;
+    font-size: 1.02rem;
+    text-decoration: none;
+    transition: background 0.15s ease, border-color 0.15s ease;
+  }
+  .atajo-historial:hover { background: #fff3e8; border-color: var(--accent); }
+
   /* --- Historial de días anteriores (portada) --- */
-  .historial-portada { margin-top: 70px; }
+  .historial-portada { margin-top: 70px; scroll-margin-top: 80px; }
   .historial-portada h2 {
     font-size: 1.7rem; font-weight: 800; margin: 0 0 10px;
     border-bottom: 2px solid var(--borde); padding-bottom: 16px;
@@ -558,7 +573,8 @@
       Lotería <span class="flecha" aria-hidden="true">&#9660;</span>
     </button>
     <div class="links" id="nav-links">
-      <a href="#resultados">Resultados</a><!--NAVLINKS-->
+      <a href="#resultados">Resultados de hoy</a>
+      <a href="#historial">Últimos 7 días</a><!--NAVLINKS-->
     </div>
   </div>
 </nav>
@@ -577,6 +593,9 @@
         <button type="button" id="limpiar-busqueda" aria-label="Limpiar búsqueda" hidden>&times;</button>
       </label>
       <p id="buscador-info"></p>
+      <a class="atajo-historial" href="#historial">
+        Ver los resultados de los últimos 7 días &darr;
+      </a>
     </div>
   </div>
 </section>
@@ -709,7 +728,10 @@
     const contenedor = document.getElementById("contenedor-resultados");
     const navLinks = document.getElementById("nav-links");
     contenedor.innerHTML = "";
-    navLinks.innerHTML = `<a href="#resultados">Resultados</a>`;
+    // Ojo: estos dos enlaces fijos deben coincidir con los del HTML,
+    // porque esta línea reemplaza todo el contenido del menú.
+    navLinks.innerHTML = `<a href="#resultados">Resultados de hoy</a>`
+                       + `<a href="#historial">Últimos 7 días</a>`;
 
     if (!lista.length) {
       contenedor.innerHTML = `<p class="sin-resultados">No encontramos ninguna lotería con ese nombre. Prueba con "Leidsa", "Nacional", "Quiniela" o "Anguila".</p>`;
