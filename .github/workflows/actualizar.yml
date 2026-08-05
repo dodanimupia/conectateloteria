@@ -39,21 +39,26 @@ jobs:
           git diff --cached --quiet || git commit -m "Actualizar resultados de lotería [skip ci]"
           git push
 
-      # Copia el JSON a una carpeta aparte que solo tiene ese archivo,
-      # para subir SOLO ese archivo por FTP (la Action no soporta un
-      # parámetro "include": solo sabe sincronizar carpetas completas).
-      - name: Preparar carpeta para subir
-        run: |
-          mkdir -p publicar
-          cp datos_loteria.json publicar/datos_loteria.json
+      # Escribe los números YA DENTRO del HTML (portada + una página por
+      # lotería) y deja todo listo en la carpeta "publicar".
+      #
+      # Esto es importante para Google: si las bolas se dibujaran solo con
+      # JavaScript, el buscador recibiría el HTML vacío y tendría que volver
+      # más tarde a ejecutar el script. Para una página de "resultados de hoy"
+      # esa demora hace que nunca posicione. Con los números ya escritos, el
+      # buscador los ve en la primera visita.
+      - name: Construir las páginas con los números dentro
+        run: python construir_paginas.py
 
-      # Sube el JSON actualizado al hosting real (SiteGround) por FTPS
-      # (FTP cifrado con TLS), para que conectateloteria.com muestre
-      # siempre el dato más reciente. Requiere 2 secrets en el repo
+      # Sube a SiteGround por FTPS (FTP cifrado con TLS) el JSON y las páginas
+      # ya construidas. Requiere 2 secrets en el repo
       # (Settings -> Secrets and variables -> Actions):
       # FTP_USERNAME y FTP_PASSWORD. Se crean en SiteGround:
       # Site Tools -> Sitio web -> Cuentas FTP -> "Crear cuenta nueva FTP".
-      - name: Subir datos_loteria.json a SiteGround por FTP
+      #
+      # Solo se suben los archivos de "publicar", así que las páginas que no
+      # cambian (legales, guías, estilos, logos) quedan intactas en el servidor.
+      - name: Subir resultados y páginas a SiteGround por FTP
         uses: SamKirkland/FTP-Deploy-Action@v4.3.4
         with:
           server: ftp.conectateloteria.com
