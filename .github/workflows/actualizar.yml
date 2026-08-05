@@ -62,5 +62,5 @@ jobs:
           username: ${{ secrets.FTP_USERNAME }}
           password: ${{ secrets.FTP_PASSWORD }}
           local-dir: "./publicar/"
-          server-dir: "/public_html/"
+          server-dir: "/conectateloteria.com/public_html/"
           dangerous-clean-slate: false
