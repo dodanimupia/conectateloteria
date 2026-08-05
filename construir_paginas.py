@@ -46,6 +46,25 @@ PAGINAS_LOTERIA = {
     "king-lottery.html": "King Lottery",
 }
 
+# Archivos que no se generan: se copian tal cual a "publicar" para que el
+# FTP también los suba. Antes quedaban fuera y había que subirlos a mano,
+# así que un cambio en el pie de página o en los textos legales no llegaba
+# al sitio. Ahora todo viaja en la misma subida.
+ARCHIVOS_ESTATICOS = [
+    "estilos.css",
+    "robots.txt",
+    "sitemap.xml",
+    # Guías
+    "horarios-loterias-dominicanas.html",
+    "como-se-juega-la-quiniela.html",
+    "que-hacer-si-ganas.html",
+    # Páginas legales y de información
+    "sobre-nosotros.html",
+    "contacto.html",
+    "politica-de-privacidad.html",
+    "aviso-legal.html",
+]
+
 DIAS = ["lunes", "martes", "miércoles", "jueves", "viernes", "sábado", "domingo"]
 MESES = ["enero", "febrero", "marzo", "abril", "mayo", "junio", "julio",
          "agosto", "septiembre", "octubre", "noviembre", "diciembre"]
@@ -247,6 +266,16 @@ def main():
                  .replace("<!--RESULTADOS-->", html_una_loteria(resultados, empresa))
                  .replace("<!--HISTORIAL-->", html_historial(historial, empresa, hoy_iso))
                  .replace("<!--FECHA-->", escapar(fecha)))
+
+    # --- Archivos que se copian sin modificar ---
+    print("Copiando archivos estaticos:")
+    for nombre in ARCHIVOS_ESTATICOS:
+        origen = os.path.join(RAIZ, nombre)
+        if not os.path.exists(origen):
+            print("  aviso: falta %s, me lo salto" % nombre)
+            continue
+        shutil.copy(origen, os.path.join(SALIDA, nombre))
+        print("  %-34s copiado" % nombre)
 
     print("Listo. Todo en ./publicar/")
 

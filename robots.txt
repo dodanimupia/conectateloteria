@@ -1,0 +1,5 @@
+User-agent: *
+Allow: /
+Disallow: /.github/
+
+Sitemap: https://conectateloteria.com/sitemap.xml
