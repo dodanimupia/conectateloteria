@@ -114,16 +114,19 @@ def tarjeta(item):
     """Una tarjeta de juego con sus bolas de números."""
     bolas = "".join('<div class="bola">%s</div>' % escapar(n)
                     for n in item.get("numeros", []))
+    # Algunos sorteos llegan sin fecha desde la fuente. En ese caso no se
+    # pinta la pastilla: una pastilla vacia se ve como un error.
     fecha = item.get("fecha") or ""
+    pastilla = ('<span class="fecha">%s</span>' % escapar(fecha)) if fecha else ""
     return (
         '<div class="card">'
         '<div class="card-header">'
         '<span class="juego">%s</span>'
-        '<span class="fecha">%s</span>'
+        '%s'
         '</div>'
         '<div class="numeros">%s</div>'
         '</div>'
-    ) % (escapar(item.get("juego", "")), escapar(fecha), bolas)
+    ) % (escapar(item.get("juego", "")), pastilla, bolas)
 
 
 def nombre_empresa(bruto):
