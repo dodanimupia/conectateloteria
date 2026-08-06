@@ -25,13 +25,14 @@ Formato de historial.json:
 
 import json
 import os
+import re
 from datetime import date, timedelta
 
 DIAS_A_GUARDAR = 8          # 7 días de historial + el día en curso
 DIAS_SEMANA = ["lunes", "martes", "miércoles", "jueves",
                "viernes", "sábado", "domingo"]
-MESES_CORTOS = ["ene", "feb", "mar", "abr", "may", "jun",
-                "jul", "ago", "sep", "oct", "nov", "dic"]
+MESES = ["enero", "febrero", "marzo", "abril", "mayo", "junio", "julio",
+         "agosto", "septiembre", "octubre", "noviembre", "diciembre"]
 
 
 def fecha_completa(ddmm, hoy):
@@ -56,6 +57,17 @@ def fecha_completa(ddmm, hoy):
         except ValueError:
             return None
     return candidata
+
+
+def limpiar_nombre(texto):
+    """
+    Deja el nombre de un juego en una forma estable.
+
+    La fuente a veces escribe "Anguila 8:00  AM" con dos espacios y otras
+    con uno. Sin normalizar, el historial guardaria ambos como si fueran
+    sorteos distintos y apareceran duplicados.
+    """
+    return " ".join(str(texto or "").split())
 
 
 def cargar(ruta):
@@ -92,8 +104,8 @@ def actualizar(historial, resultados, hoy):
         delDia = dias.setdefault(clave, [])
 
         nuevo = {
-            "empresa": item.get("empresa", ""),
-            "juego": item.get("juego", ""),
+            "empresa": limpiar_nombre(item.get("empresa", "")),
+            "juego": limpiar_nombre(item.get("juego", "")),
             "numeros": item.get("numeros", []),
         }
         for i, guardado in enumerate(delDia):
@@ -121,10 +133,37 @@ def guardar(historial, ruta):
         json.dump(historial, f, ensure_ascii=False, indent=1)
 
 
-def fecha_bonita(iso):
-    """'2026-08-04' -> 'martes 4 ago'"""
+def fecha_bonita(iso, hoy=None):
+    """
+    '2026-08-05' -> 'Ayer, miercoles 5 de agosto'  (si ayer fue ese dia)
+                 -> 'Martes 4 de agosto'           (en los demas casos)
+
+    Poner "Ayer" delante ayuda a orientarse de un vistazo, que es justo
+    lo que busca quien entra a mirar el sorteo que se le paso.
+    """
     f = date.fromisoformat(iso)
-    return "%s %d %s" % (DIAS_SEMANA[f.weekday()], f.day, MESES_CORTOS[f.month - 1])
+    texto = "%s %d de %s" % (DIAS_SEMANA[f.weekday()], f.day, MESES[f.month - 1])
+    if hoy and (hoy - f).days == 1:
+        return "Ayer, " + texto
+    return texto[0].upper() + texto[1:]
+
+
+def orden_juego(nombre):
+    """
+    Clave para ordenar los juegos de una loteria.
+
+    Anguila sortea cada hora, asi que ordenarlos alfabeticamente los deja
+    revueltos ("Anguila 10:00 AM" antes que "Anguila 8:00 AM"). Esta funcion
+    detecta la hora y ordena de la manana a la noche; el resto de juegos
+    quedan en orden alfabetico al final.
+    """
+    m = re.search(r"(\d{1,2}):(\d{2})\s*(AM|PM)", nombre, re.I)
+    if not m:
+        return (1, nombre.lower(), 0)
+    hora = int(m.group(1)) % 12
+    if m.group(3).upper() == "PM":
+        hora += 12
+    return (0, "", hora * 60 + int(m.group(2)))
 
 
 def dias_ordenados(historial, excluir=None):
