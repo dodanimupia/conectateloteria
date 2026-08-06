@@ -422,9 +422,10 @@
   }
   .hj-lista li:last-child { border-bottom: none; }
   .hj-juego {
-    flex: 1; min-width: 0; font-size: 1rem; color: var(--muted); font-weight: 600;
+    flex: 1 1 44%; min-width: 88px; font-size: 1rem; color: var(--muted);
+    font-weight: 600; line-height: 1.35; overflow-wrap: anywhere;
   }
-  .hj-lista .numeros { flex-shrink: 0; }
+  .hj-lista .numeros { flex: 0 1 auto; flex-wrap: wrap; justify-content: flex-end; }
   .tabla { width: 100%; border-collapse: collapse; font-size: 1.02rem; }
   .tabla td { padding: 10px 8px; border-bottom: 1px solid var(--borde); }
   .tabla-historial td:first-child {
@@ -843,7 +844,7 @@
           <div class="card">
             <div class="card-header">
               <span class="juego">${item.juego}</span>
-              <span class="fecha">${item.fecha}</span>
+              ${item.fecha ? `<span class="fecha">${item.fecha}</span>` : ""}
             </div>
             <div class="numeros">${bolas}</div>
           </div>
