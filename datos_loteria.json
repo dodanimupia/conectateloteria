@@ -1,5 +1,5 @@
 {
-  "actualizado": "2026-08-06T02:14:28",
+  "actualizado": "2026-08-06T05:27:29",
   "en_vivo": true,
   "resultados": [
     {
@@ -177,11 +177,11 @@
     {
       "empresa": "Americanas (NY)",
       "juego": "New York Noche",
-      "fecha": "05-08",
+      "fecha": "06-08",
       "numeros": [
         "91",
-        "92",
-        "26"
+        "85",
+        "49"
       ]
     },
     {
@@ -220,14 +220,14 @@
     {
       "empresa": "Americanas (NY)",
       "juego": "PowerBall",
-      "fecha": "04-08",
+      "fecha": "06-08",
       "numeros": [
-        "08",
-        "30",
-        "41",
-        "48",
-        "54",
-        "04"
+        "14",
+        "20",
+        "59",
+        "60",
+        "61",
+        "25"
       ]
     },
     {
@@ -400,18 +400,6 @@
         "29",
         "95",
         "99"
-      ]
-    },
-    {
-      "empresa": "Lotería Real",
-      "juego": "Chance Real",
-      "fecha": null,
-      "numeros": [
-        "08",
-        "12",
-        "28",
-        "33",
-        "48"
       ]
     }
   ]
