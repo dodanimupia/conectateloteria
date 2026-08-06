@@ -290,7 +290,7 @@ def main():
     hist.guardar(historial, JSON_HISTORIAL)
     print("Historial: %d dias guardados" % len(historial.get("dias", {})))
 
-    fecha = "Resultados del %s" % fecha_en_texto()
+    fecha = "Resultados de hoy, %s" % fecha_en_texto()
     print("Construyendo paginas con %d resultados (%s)" % (len(resultados), fecha))
 
     # --- Portada ---
