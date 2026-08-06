@@ -1,0 +1,14 @@
+# El HTML cambia cada 5 minutos: hay que revalidarlo siempre.
+# Sin esto el navegador servia la pagina del dia anterior.
+<IfModule mod_headers.c>
+  <FilesMatch "\.(html|json)$">
+  Header set Cache-Control "no-cache, must-revalidate"
+  </FilesMatch>
+  <FilesMatch "\.(css|png|jpg|svg|ico)$">
+  Header set Cache-Control "public, max-age=604800"
+  </FilesMatch>
+  </IfModule>
+  <IfModule mod_deflate.c>
+  AddOutputFilterByType DEFLATE text/html text/css text/plain application/json application/xml
+  </IfModule>
+  
