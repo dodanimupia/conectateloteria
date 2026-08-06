@@ -51,6 +51,7 @@ PAGINAS_LOTERIA = {
 # así que un cambio en el pie de página o en los textos legales no llegaba
 # al sitio. Ahora todo viaja en la misma subida.
 ARCHIVOS_ESTATICOS = [
+    ".htaccess",      # reglas de cache: sin esto el navegador sirve paginas viejas
     "estilos.css",
     "robots.txt",
     "sitemap.xml",
