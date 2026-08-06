@@ -397,10 +397,34 @@
   .dia-historial .cuenta {
     margin-left: auto; font-weight: 600; font-size: 0.95rem; color: var(--muted);
   }
-  .dia-cuerpo { padding: 4px 22px 20px; border-top: 1px solid var(--borde); }
-  .dia-cuerpo h4 {
-    font-size: 1.08rem; margin: 20px 0 8px; color: var(--accent2); font-weight: 700;
+  .dia-historial .dia-nombre { font-weight: 700; }
+  .dia-cuerpo {
+    padding: 6px 22px 22px;
+    border-top: 1px solid var(--borde);
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(310px, 1fr));
+    gap: 4px 34px;
   }
+  .hj-loteria { padding: 14px 0 4px; }
+  .hj-loteria h4 {
+    display: flex; align-items: center; gap: 9px;
+    font-size: 0.92rem; text-transform: uppercase; letter-spacing: 0.06em;
+    margin: 0 0 6px; color: var(--accent2); font-weight: 800;
+  }
+  .hj-cuenta {
+    background: #fff3e8; color: var(--accent2);
+    font-size: 0.78rem; letter-spacing: 0; padding: 2px 8px; border-radius: 999px;
+  }
+  .hj-lista { list-style: none; margin: 0; padding: 0; }
+  .hj-lista li {
+    display: flex; align-items: center; gap: 12px;
+    padding: 8px 0; border-bottom: 1px solid var(--borde);
+  }
+  .hj-lista li:last-child { border-bottom: none; }
+  .hj-juego {
+    flex: 1; min-width: 0; font-size: 1rem; color: var(--muted); font-weight: 600;
+  }
+  .hj-lista .numeros { flex-shrink: 0; }
   .tabla { width: 100%; border-collapse: collapse; font-size: 1.02rem; }
   .tabla td { padding: 10px 8px; border-bottom: 1px solid var(--borde); }
   .tabla-historial td:first-child {
@@ -619,7 +643,7 @@
 
 <section class="hero">
   <div class="contenedor">
-    <h1>Resultados de <span>Lotería</span> de la República Dominicana</h1>
+    <h1>Resultados de <span>Loterías</span>, República Dominicana y <span>más</span>.</h1>
     <div class="buscador">
       <label class="buscador-caja" for="buscar">
         <svg class="buscador-icono" viewBox="0 0 24 24" fill="none" stroke="currentColor"
