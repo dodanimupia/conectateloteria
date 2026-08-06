@@ -633,6 +633,124 @@
      "03"
     ]
    }
+  ],
+  "2026-08-06": [
+   {
+    "empresa": "Lotería Nacional",
+    "juego": "Lotería Nacional",
+    "numeros": [
+     "01",
+     "29",
+     "31"
+    ]
+   },
+   {
+    "empresa": "Leidsa",
+    "juego": "Pega 3 Más",
+    "numeros": [
+     "20",
+     "19",
+     "01"
+    ]
+   },
+   {
+    "empresa": "Leidsa",
+    "juego": "Loto Pool",
+    "numeros": [
+     "05",
+     "06",
+     "10",
+     "12",
+     "16"
+    ]
+   },
+   {
+    "empresa": "Leidsa",
+    "juego": "Super Kino TV",
+    "numeros": [
+     "11",
+     "13",
+     "16",
+     "17",
+     "19",
+     "25",
+     "27",
+     "32",
+     "33",
+     "35",
+     "38",
+     "40",
+     "44",
+     "52",
+     "55",
+     "58",
+     "59",
+     "62",
+     "63",
+     "65"
+    ]
+   },
+   {
+    "empresa": "Leidsa",
+    "juego": "Quiniela Leidsa",
+    "numeros": [
+     "87",
+     "15",
+     "80"
+    ]
+   },
+   {
+    "empresa": "Leidsa",
+    "juego": "Loto - Loto Más",
+    "numeros": [
+     "09",
+     "10",
+     "24",
+     "32",
+     "35",
+     "37",
+     "01",
+     "13"
+    ]
+   },
+   {
+    "empresa": "Loteka",
+    "juego": "Mega Chances",
+    "numeros": [
+     "21",
+     "41",
+     "65",
+     "72",
+     "87"
+    ]
+   },
+   {
+    "empresa": "Loteka",
+    "juego": "Quiniela Loteka",
+    "numeros": [
+     "62",
+     "28",
+     "69"
+    ]
+   },
+   {
+    "empresa": "Americanas (NY)",
+    "juego": "Florida Noche",
+    "numeros": [
+     "52",
+     "09",
+     "41"
+    ]
+   },
+   {
+    "empresa": "Anguila",
+    "juego": "Anguila 9:00 PM",
+    "numeros": [
+     "49",
+     "10",
+     "28"
+    ]
+   }
   ]
  }
 }
