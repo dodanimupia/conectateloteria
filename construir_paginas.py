@@ -23,7 +23,7 @@ import json
 import os
 import shutil
 import unicodedata
-from datetime import datetime, timezone, timedelta
+from datetime import date, datetime, timezone, timedelta
 
 import historial as hist
 
@@ -64,6 +64,21 @@ ARCHIVOS_ESTATICOS = [
     "contacto.html",
     "politica-de-privacidad.html",
     "aviso-legal.html",
+]
+
+# La fuente a veces entrega el identificador interno en vez del nombre.
+# Aqui se traduce a algo presentable antes de mostrarlo.
+NOMBRES_BONITOS = {
+    "haiti-bolet": "Haiti Bolet",
+}
+
+# Orden en que se muestran las loterias. Sin esto salen en el orden en que
+# la fuente las devuelve, que cambia de un dia a otro y hace que el
+# historial se vea desordenado al compararlo entre fechas.
+ORDEN_EMPRESAS = [
+    "Loteria Nacional", "Lotería Nacional", "Leidsa", "Lotería Real",
+    "Loteka", "La Primera", "La Suerte", "LoteDom", "Anguila",
+    "King Lottery", "Haiti Bolet", "Americanas (NY)",
 ]
 
 DIAS = ["lunes", "martes", "miércoles", "jueves", "viernes", "sábado", "domingo"]
@@ -111,13 +126,36 @@ def tarjeta(item):
     ) % (escapar(item.get("juego", "")), escapar(fecha), bolas)
 
 
-def agrupar(resultados):
-    """Agrupa los juegos por empresa, conservando el orden de aparición."""
+def nombre_empresa(bruto):
+    """Traduce el identificador de la fuente al nombre que se muestra."""
+    limpio = " ".join(str(bruto or "").split()) or "Otras"
+    return NOMBRES_BONITOS.get(limpio, limpio)
+
+
+def agrupar(resultados, ordenar=False):
+    """
+    Agrupa los juegos por loteria.
+
+    Con ordenar=True las loterias salen siempre en el mismo orden y los
+    juegos de cada una ordenados por hora. Eso es lo que hace que el
+    historial se pueda comparar de un dia a otro sin marearse.
+    """
     grupos = {}
     for item in resultados:
-        empresa = item.get("empresa") or "Otras"
-        grupos.setdefault(empresa, []).append(item)
-    return grupos
+        grupos.setdefault(nombre_empresa(item.get("empresa")), []).append(item)
+
+    if not ordenar:
+        return grupos
+
+    def puesto(nombre):
+        return (ORDEN_EMPRESAS.index(nombre)
+                if nombre in ORDEN_EMPRESAS else len(ORDEN_EMPRESAS))
+
+    ordenado = {}
+    for empresa in sorted(grupos, key=lambda e: (puesto(e), e)):
+        ordenado[empresa] = sorted(
+            grupos[empresa], key=lambda j: hist.orden_juego(j.get("juego", "")))
+    return ordenado
 
 
 def html_portada(resultados):
@@ -159,7 +197,7 @@ def html_historial(historial, empresa, hoy_iso):
     for juego, dias in juegos:
         filas = "".join(
             '<tr><td>%s</td><td><div class="numeros numeros-mini">%s</div></td></tr>'
-            % (hist.fecha_bonita(f),
+            % (hist.fecha_bonita(f, date.fromisoformat(hoy_iso)),
                "".join('<div class="bola bola-mini">%s</div>' % escapar(n)
                        for n in numeros))
             for f, numeros in dias
@@ -188,26 +226,37 @@ def html_historial_portada(historial, hoy_iso):
         return ('<p class="cargando">El historial se est&aacute; construyendo. '
                 'Ma&ntilde;ana aparecer&aacute;n aqu&iacute; los resultados de hoy.</p>')
 
+    hoy = date.fromisoformat(hoy_iso)
     bloques = []
     for clave in dias:
-        grupos = agrupar(historial["dias"][clave])
+        grupos = agrupar(historial["dias"][clave], ordenar=True)
         total = sum(len(j) for j in grupos.values())
+
         cuerpo = []
         for empresa, juegos in grupos.items():
             filas = "".join(
-                '<tr><td>%s</td><td><div class="numeros numeros-mini">%s</div></td></tr>'
-                % (escapar(j.get("juego", "")),
-                   "".join('<div class="bola bola-mini">%s</div>' % escapar(n)
+                '<li><span class="hj-juego">%s</span>'
+                '<span class="numeros numeros-mini">%s</span></li>'
+                % (escapar(hist.limpiar_nombre(j.get("juego", ""))),
+                   "".join('<span class="bola bola-mini">%s</span>' % escapar(n)
                            for n in j.get("numeros", [])))
                 for j in juegos
             )
-            cuerpo.append('<h4>%s</h4><table class="tabla tabla-historial">'
-                          '<tbody>%s</tbody></table>' % (escapar(empresa), filas))
+            cuerpo.append(
+                '<div class="hj-loteria">'
+                '<h4>%s <span class="hj-cuenta">%d</span></h4>'
+                '<ul class="hj-lista">%s</ul>'
+                '</div>' % (escapar(empresa), len(juegos), filas)
+            )
+
         bloques.append(
             '<details class="dia-historial">'
-            '<summary>%s <span class="cuenta">%d sorteos</span></summary>'
+            '<summary><span class="dia-nombre">%s</span>'
+            '<span class="cuenta">%d %s</span></summary>'
             '<div class="dia-cuerpo">%s</div>'
-            '</details>' % (hist.fecha_bonita(clave), total, "".join(cuerpo))
+            '</details>'
+            % (escapar(hist.fecha_bonita(clave, hoy)), total,
+               "sorteo" if total == 1 else "sorteos", "".join(cuerpo))
         )
     return "".join(bloques)
 
