@@ -1,5 +1,5 @@
 {
-  "actualizado": "2026-08-07T16:13:17",
+  "actualizado": "2026-08-07T17:06:46",
   "en_vivo": true,
   "resultados": [
     {
@@ -111,22 +111,22 @@
     {
       "empresa": "Lotería Real",
       "juego": "Loto Pool",
-      "fecha": "06-08",
+      "fecha": "07-08",
       "numeros": [
         "15",
-        "44",
-        "69",
-        "97"
+        "40",
+        "50",
+        "54"
       ]
     },
     {
       "empresa": "Lotería Real",
       "juego": "Quiniela Real",
-      "fecha": "06-08",
+      "fecha": "07-08",
       "numeros": [
-        "68",
-        "62",
-        "25"
+        "66",
+        "90",
+        "83"
       ]
     },
     {
@@ -266,11 +266,11 @@
     {
       "empresa": "La Suerte",
       "juego": "La Suerte Día",
-      "fecha": "06-08",
+      "fecha": "07-08",
       "numeros": [
-        "35",
-        "53",
-        "53"
+        "51",
+        "54",
+        "57"
       ]
     },
     {
@@ -314,11 +314,11 @@
     {
       "empresa": "Anguila",
       "juego": "Anguila 1:00 PM",
-      "fecha": "06-08",
+      "fecha": "07-08",
       "numeros": [
-        "98",
-        "31",
-        "41"
+        "80",
+        "43",
+        "50"
       ]
     },
     {
@@ -334,11 +334,11 @@
     {
       "empresa": "King Lottery",
       "juego": "King Lottery Día",
-      "fecha": "06-08",
+      "fecha": "07-08",
       "numeros": [
-        "14",
-        "61",
-        "20"
+        "32",
+        "90",
+        "83"
       ]
     },
     {
@@ -369,6 +369,16 @@
         "90",
         "28",
         "37"
+      ]
+    },
+    {
+      "empresa": "Lotería Real",
+      "juego": "Nueva Yol Real",
+      "fecha": null,
+      "numeros": [
+        "86",
+        "67",
+        "62"
       ]
     },
     {
@@ -419,16 +429,6 @@
         "92",
         "86",
         "46"
-      ]
-    },
-    {
-      "empresa": "Anguila",
-      "juego": "Anguila 10:00 PM",
-      "fecha": null,
-      "numeros": [
-        "55",
-        "47",
-        "61"
       ]
     }
   ]
