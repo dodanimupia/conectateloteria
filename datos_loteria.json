@@ -1,5 +1,5 @@
 {
-  "actualizado": "2026-08-07T23:29:00",
+  "actualizado": "2026-08-07T23:58:14",
   "en_vivo": true,
   "resultados": [
     {
@@ -344,11 +344,11 @@
     {
       "empresa": "King Lottery",
       "juego": "King Lottery Noche",
-      "fecha": "06-08",
+      "fecha": "07-08",
       "numeros": [
-        "54",
-        "98",
-        "76"
+        "16",
+        "60",
+        "64"
       ]
     },
     {
@@ -364,11 +364,23 @@
     {
       "empresa": "haiti-bolet",
       "juego": "Haiti Bolet 7:30 PM",
-      "fecha": "06-08",
+      "fecha": "07-08",
       "numeros": [
-        "90",
+        "85",
+        "63",
+        "18"
+      ]
+    },
+    {
+      "empresa": "Lotería Real",
+      "juego": "Chance Real",
+      "fecha": null,
+      "numeros": [
+        "10",
         "28",
-        "37"
+        "53",
+        "82",
+        "85"
       ]
     },
     {
