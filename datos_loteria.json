@@ -1,5 +1,5 @@
 {
-  "actualizado": "2026-08-07T00:13:27",
+  "actualizado": "2026-08-07T03:15:08",
   "en_vivo": true,
   "resultados": [
     {
@@ -27,70 +27,70 @@
     {
       "empresa": "Lotería Nacional",
       "juego": "Lotería Nacional",
-      "fecha": "06-08",
+      "fecha": "07-08",
       "numeros": [
-        "01",
-        "29",
-        "31"
+        "54",
+        "03",
+        "04"
       ]
     },
     {
       "empresa": "Leidsa",
       "juego": "Pega 3 Más",
-      "fecha": "06-08",
+      "fecha": "07-08",
       "numeros": [
-        "20",
-        "19",
-        "01"
+        "06",
+        "18",
+        "28"
       ]
     },
     {
       "empresa": "Leidsa",
       "juego": "Loto Pool",
-      "fecha": "06-08",
+      "fecha": "07-08",
       "numeros": [
-        "05",
-        "06",
         "10",
-        "12",
-        "16"
+        "13",
+        "16",
+        "22",
+        "25"
       ]
     },
     {
       "empresa": "Leidsa",
       "juego": "Super Kino TV",
-      "fecha": "06-08",
+      "fecha": "07-08",
       "numeros": [
-        "11",
-        "13",
+        "02",
+        "05",
+        "09",
+        "10",
         "16",
-        "17",
-        "19",
         "25",
-        "27",
-        "32",
-        "33",
-        "35",
-        "38",
+        "26",
         "40",
+        "41",
         "44",
+        "47",
+        "48",
+        "49",
         "52",
-        "55",
-        "58",
         "59",
-        "62",
-        "63",
-        "65"
+        "61",
+        "65",
+        "70",
+        "74",
+        "79"
       ]
     },
     {
       "empresa": "Leidsa",
       "juego": "Quiniela Leidsa",
-      "fecha": "06-08",
+      "fecha": "07-08",
       "numeros": [
-        "87",
-        "15",
-        "80"
+        "24",
+        "90",
+        "97"
       ]
     },
     {
@@ -177,11 +177,11 @@
     {
       "empresa": "Americanas (NY)",
       "juego": "New York Noche",
-      "fecha": "06-08",
+      "fecha": "07-08",
       "numeros": [
-        "91",
-        "85",
-        "49"
+        "08",
+        "61",
+        "48"
       ]
     },
     {
@@ -197,11 +197,11 @@
     {
       "empresa": "Americanas (NY)",
       "juego": "Florida Noche",
-      "fecha": "06-08",
+      "fecha": "07-08",
       "numeros": [
-        "52",
-        "09",
-        "41"
+        "56",
+        "10",
+        "48"
       ]
     },
     {
@@ -324,11 +324,11 @@
     {
       "empresa": "Anguila",
       "juego": "Anguila 9:00 PM",
-      "fecha": "06-08",
+      "fecha": "07-08",
       "numeros": [
-        "49",
-        "10",
-        "28"
+        "60",
+        "97",
+        "88"
       ]
     },
     {
@@ -369,6 +369,16 @@
         "90",
         "28",
         "37"
+      ]
+    },
+    {
+      "empresa": "Anguila",
+      "juego": "Anguila 10:00 PM",
+      "fecha": null,
+      "numeros": [
+        "55",
+        "47",
+        "61"
       ]
     },
     {
@@ -417,66 +427,6 @@
         "52",
         "64",
         "76"
-      ]
-    },
-    {
-      "empresa": "Anguila",
-      "juego": "Anguila 7:00 PM",
-      "fecha": null,
-      "numeros": [
-        "28",
-        "01",
-        "58"
-      ]
-    },
-    {
-      "empresa": "haiti-bolet",
-      "juego": "Haiti Bolet 6:30 PM",
-      "fecha": null,
-      "numeros": [
-        "93",
-        "88",
-        "36"
-      ]
-    },
-    {
-      "empresa": "Anguila",
-      "juego": "Anguila 6:00 PM",
-      "fecha": null,
-      "numeros": [
-        "15",
-        "29",
-        "32"
-      ]
-    },
-    {
-      "empresa": "haiti-bolet",
-      "juego": "Haiti Bolet 5:30 PM",
-      "fecha": null,
-      "numeros": [
-        "87",
-        "73",
-        "86"
-      ]
-    },
-    {
-      "empresa": "Anguila",
-      "juego": "Anguila 5:00 PM",
-      "fecha": null,
-      "numeros": [
-        "83",
-        "70",
-        "26"
-      ]
-    },
-    {
-      "empresa": "Anguila",
-      "juego": "Anguila 4:00 PM",
-      "fecha": null,
-      "numeros": [
-        "42",
-        "66",
-        "98"
       ]
     }
   ]
