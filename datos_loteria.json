@@ -1,5 +1,5 @@
 {
-  "actualizado": "2026-08-07T15:23:14",
+  "actualizado": "2026-08-07T16:13:17",
   "en_vivo": true,
   "resultados": [
     {
@@ -233,11 +233,11 @@
     {
       "empresa": "La Primera",
       "juego": "La Primera Día",
-      "fecha": "06-08",
+      "fecha": "07-08",
       "numeros": [
-        "74",
-        "32",
-        "72"
+        "12",
+        "98",
+        "37"
       ]
     },
     {
@@ -286,19 +286,19 @@
     {
       "empresa": "LoteDom",
       "juego": "LoteDom",
-      "fecha": "06-08",
+      "fecha": "07-08",
       "numeros": [
-        "26",
+        "14",
         "96",
-        "97"
+        "67"
       ]
     },
     {
       "empresa": "LoteDom",
       "juego": "El Quemaito Mayor",
-      "fecha": "06-08",
+      "fecha": "07-08",
       "numeros": [
-        "34"
+        "73"
       ]
     },
     {
@@ -369,6 +369,16 @@
         "90",
         "28",
         "37"
+      ]
+    },
+    {
+      "empresa": "haiti-bolet",
+      "juego": "Haiti Bolet 11:30 AM",
+      "fecha": null,
+      "numeros": [
+        "07",
+        "89",
+        "38"
       ]
     },
     {
