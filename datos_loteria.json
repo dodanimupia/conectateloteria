@@ -1,5 +1,5 @@
 {
-  "actualizado": "2026-08-08T01:13:04",
+  "actualizado": "2026-08-08T03:00:46",
   "en_vivo": true,
   "resultados": [
     {
@@ -177,11 +177,11 @@
     {
       "empresa": "Americanas (NY)",
       "juego": "New York Noche",
-      "fecha": "07-08",
+      "fecha": "08-08",
       "numeros": [
-        "08",
-        "61",
-        "48"
+        "38",
+        "18",
+        "96"
       ]
     },
     {
@@ -197,11 +197,11 @@
     {
       "empresa": "Americanas (NY)",
       "juego": "Florida Noche",
-      "fecha": "07-08",
+      "fecha": "08-08",
       "numeros": [
-        "56",
-        "10",
-        "48"
+        "49",
+        "77",
+        "66"
       ]
     },
     {
@@ -373,6 +373,16 @@
     },
     {
       "empresa": "Anguila",
+      "juego": "Anguila 10:00 PM",
+      "fecha": null,
+      "numeros": [
+        "46",
+        "74",
+        "32"
+      ]
+    },
+    {
+      "empresa": "Anguila",
       "juego": "Anguila 8:00 PM",
       "fecha": null,
       "numeros": [
@@ -402,16 +412,6 @@
         "53",
         "82",
         "85"
-      ]
-    },
-    {
-      "empresa": "Anguila",
-      "juego": "Anguila 7:00 PM",
-      "fecha": null,
-      "numeros": [
-        "33",
-        "27",
-        "33"
       ]
     }
   ]

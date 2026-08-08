@@ -1341,6 +1341,24 @@
      "50",
      "10"
     ]
+   },
+   {
+    "empresa": "Americanas (NY)",
+    "juego": "New York Noche",
+    "numeros": [
+     "38",
+     "18",
+     "96"
+    ]
+   },
+   {
+    "empresa": "Americanas (NY)",
+    "juego": "Florida Noche",
+    "numeros": [
+     "49",
+     "77",
+     "66"
+    ]
    }
   ]
  }
