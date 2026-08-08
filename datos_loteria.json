@@ -1,5 +1,5 @@
 {
-  "actualizado": "2026-08-07T23:58:14",
+  "actualizado": "2026-08-08T01:13:04",
   "en_vivo": true,
   "resultados": [
     {
@@ -27,70 +27,70 @@
     {
       "empresa": "Lotería Nacional",
       "juego": "Lotería Nacional",
-      "fecha": "07-08",
+      "fecha": "08-08",
       "numeros": [
-        "54",
-        "03",
-        "04"
+        "34",
+        "07",
+        "06"
       ]
     },
     {
       "empresa": "Leidsa",
       "juego": "Pega 3 Más",
-      "fecha": "07-08",
+      "fecha": "08-08",
       "numeros": [
-        "06",
-        "18",
-        "28"
+        "32",
+        "02",
+        "45"
       ]
     },
     {
       "empresa": "Leidsa",
       "juego": "Loto Pool",
-      "fecha": "07-08",
+      "fecha": "08-08",
       "numeros": [
-        "10",
-        "13",
-        "16",
-        "22",
-        "25"
+        "02",
+        "06",
+        "07",
+        "14",
+        "21"
       ]
     },
     {
       "empresa": "Leidsa",
       "juego": "Super Kino TV",
-      "fecha": "07-08",
+      "fecha": "08-08",
       "numeros": [
-        "02",
-        "05",
-        "09",
-        "10",
-        "16",
-        "25",
+        "04",
+        "07",
+        "12",
+        "18",
+        "19",
         "26",
-        "40",
+        "30",
+        "38",
         "41",
-        "44",
+        "42",
+        "43",
         "47",
         "48",
-        "49",
+        "50",
+        "51",
         "52",
-        "59",
-        "61",
-        "65",
-        "70",
-        "74",
-        "79"
+        "58",
+        "62",
+        "71",
+        "72"
       ]
     },
     {
       "empresa": "Leidsa",
       "juego": "Quiniela Leidsa",
-      "fecha": "07-08",
+      "fecha": "08-08",
       "numeros": [
-        "24",
-        "90",
-        "97"
+        "01",
+        "42",
+        "53"
       ]
     },
     {
@@ -132,36 +132,36 @@
     {
       "empresa": "Lotería Real",
       "juego": "Loto Real",
-      "fecha": "05-08",
+      "fecha": "08-08",
       "numeros": [
-        "09",
-        "15",
-        "16",
+        "02",
+        "04",
+        "08",
+        "12",
         "24",
-        "26",
-        "28"
+        "27"
       ]
     },
     {
       "empresa": "Loteka",
       "juego": "Mega Chances",
-      "fecha": "07-08",
+      "fecha": "08-08",
       "numeros": [
-        "03",
-        "31",
-        "39",
-        "54",
+        "08",
+        "13",
+        "14",
+        "86",
         "91"
       ]
     },
     {
       "empresa": "Loteka",
       "juego": "Quiniela Loteka",
-      "fecha": "07-08",
+      "fecha": "08-08",
       "numeros": [
-        "24",
-        "05",
-        "12"
+        "67",
+        "17",
+        "38"
       ]
     },
     {
@@ -324,11 +324,11 @@
     {
       "empresa": "Anguila",
       "juego": "Anguila 9:00 PM",
-      "fecha": "07-08",
+      "fecha": "08-08",
       "numeros": [
-        "60",
-        "97",
-        "88"
+        "12",
+        "50",
+        "10"
       ]
     },
     {
@@ -372,6 +372,27 @@
       ]
     },
     {
+      "empresa": "Anguila",
+      "juego": "Anguila 8:00 PM",
+      "fecha": null,
+      "numeros": [
+        "00",
+        "53",
+        "79"
+      ]
+    },
+    {
+      "empresa": "Lotería Real",
+      "juego": "Loto Pool Noche",
+      "fecha": null,
+      "numeros": [
+        "07",
+        "12",
+        "28",
+        "43"
+      ]
+    },
+    {
       "empresa": "Lotería Real",
       "juego": "Chance Real",
       "fecha": null,
@@ -391,76 +412,6 @@
         "33",
         "27",
         "33"
-      ]
-    },
-    {
-      "empresa": "haiti-bolet",
-      "juego": "Haiti Bolet 6:30 PM",
-      "fecha": null,
-      "numeros": [
-        "35",
-        "17",
-        "69"
-      ]
-    },
-    {
-      "empresa": "Anguila",
-      "juego": "Anguila 6:00 PM",
-      "fecha": null,
-      "numeros": [
-        "36",
-        "56",
-        "80"
-      ]
-    },
-    {
-      "empresa": "haiti-bolet",
-      "juego": "Haiti Bolet 5:30 PM",
-      "fecha": null,
-      "numeros": [
-        "64",
-        "88",
-        "80"
-      ]
-    },
-    {
-      "empresa": "Anguila",
-      "juego": "Anguila 5:00 PM",
-      "fecha": null,
-      "numeros": [
-        "67",
-        "20",
-        "65"
-      ]
-    },
-    {
-      "empresa": "Anguila",
-      "juego": "Anguila 4:00 PM",
-      "fecha": null,
-      "numeros": [
-        "79",
-        "65",
-        "60"
-      ]
-    },
-    {
-      "empresa": "Anguila",
-      "juego": "Anguila 3:00 PM",
-      "fecha": null,
-      "numeros": [
-        "26",
-        "65",
-        "91"
-      ]
-    },
-    {
-      "empresa": "Anguila",
-      "juego": "Anguila 2:00 PM",
-      "fecha": null,
-      "numeros": [
-        "16",
-        "43",
-        "85"
       ]
     }
   ]
