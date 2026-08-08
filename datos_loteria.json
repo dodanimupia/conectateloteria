@@ -1,5 +1,5 @@
 {
-  "actualizado": "2026-08-08T22:57:44",
+  "actualizado": "2026-08-08T23:22:17",
   "en_vivo": true,
   "resultados": [
     {
@@ -243,24 +243,24 @@
     {
       "empresa": "La Primera",
       "juego": "Loto 5",
-      "fecha": "07-08",
+      "fecha": "08-08",
       "numeros": [
-        "08",
-        "14",
+        "05",
+        "11",
+        "23",
+        "31",
         "34",
-        "35",
-        "37",
-        "01"
+        "03"
       ]
     },
     {
       "empresa": "La Primera",
       "juego": "Primera Noche",
-      "fecha": "07-08",
+      "fecha": "08-08",
       "numeros": [
-        "19",
-        "68",
-        "86"
+        "84",
+        "21",
+        "58"
       ]
     },
     {
@@ -372,6 +372,16 @@
       ]
     },
     {
+      "empresa": "Anguila",
+      "juego": "Anguila 7:00 PM",
+      "fecha": null,
+      "numeros": [
+        "33",
+        "60",
+        "60"
+      ]
+    },
+    {
       "empresa": "haiti-bolet",
       "juego": "Haiti Bolet 6:30 PM",
       "fecha": null,
@@ -439,16 +449,6 @@
         "64",
         "25",
         "24"
-      ]
-    },
-    {
-      "empresa": "Lotería Real",
-      "juego": "Nueva Yol Real",
-      "fecha": null,
-      "numeros": [
-        "56",
-        "72",
-        "77"
       ]
     }
   ]

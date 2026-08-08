@@ -1507,6 +1507,27 @@
      "35",
      "24"
     ]
+   },
+   {
+    "empresa": "La Primera",
+    "juego": "Loto 5",
+    "numeros": [
+     "05",
+     "11",
+     "23",
+     "31",
+     "34",
+     "03"
+    ]
+   },
+   {
+    "empresa": "La Primera",
+    "juego": "Primera Noche",
+    "numeros": [
+     "84",
+     "21",
+     "58"
+    ]
    }
   ]
  }
