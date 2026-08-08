@@ -31,6 +31,7 @@ RAIZ = os.path.dirname(os.path.abspath(__file__))
 SALIDA = os.path.join(RAIZ, "publicar")
 JSON_DATOS = os.path.join(RAIZ, "datos_loteria.json")
 JSON_HISTORIAL = os.path.join(RAIZ, "historial.json")
+DOMINIO = "https://conectateloteria.com/"
 
 # Qué archivo corresponde a cada lotería (tal como aparece en el JSON).
 PAGINAS_LOTERIA = {
@@ -54,7 +55,6 @@ ARCHIVOS_ESTATICOS = [
     ".htaccess",      # reglas de cache: sin esto el navegador sirve paginas viejas
     "estilos.css",
     "robots.txt",
-    "sitemap.xml",
     # Guías
     "horarios-loterias-dominicanas.html",
     "como-se-juega-la-quiniela.html",
@@ -271,6 +271,60 @@ def escribir(nombre, contenido):
     print("  %-34s %6d bytes" % (nombre, len(contenido)))
 
 
+# --- Sitemap -----------------------------------------------------------
+# La fecha de estas paginas va escrita a mano a proposito. En GitHub Actions
+# el repositorio se descarga de cero cada vez, asi que la fecha de
+# modificacion del archivo seria la de hoy aunque el texto lleve semanas
+# igual: justo la mentira que hace que Google deje de fiarse del sitemap.
+# Al tocar una de estas paginas, actualiza su fecha aqui.
+PAGINAS_FIJAS = [
+    ("horarios-loterias-dominicanas.html", "2026-08-05", "monthly", "0.6"),
+    ("como-se-juega-la-quiniela.html", "2026-08-05", "monthly", "0.6"),
+    ("que-hacer-si-ganas.html", "2026-08-05", "monthly", "0.6"),
+    ("sobre-nosotros.html", "2026-08-05", "yearly", "0.3"),
+    ("contacto.html", "2026-08-05", "yearly", "0.3"),
+    ("politica-de-privacidad.html", "2026-08-05", "yearly", "0.2"),
+    ("aviso-legal.html", "2026-08-05", "yearly", "0.2"),
+]
+
+
+def escribir_sitemap(hoy_iso):
+    """
+    Genera sitemap.xml con la fecha de hoy en las paginas de resultados.
+
+    Antes el sitemap era un archivo fijo con una fecha escrita a mano. Al
+    quedarse congelada mientras el contenido si cambiaba, Google acaba
+    ignorando el <lastmod>. Ahora la portada y las paginas de loteria
+    llevan la fecha real de esta construccion; las guias y legales
+    conservan la suya, que es la verdad.
+    """
+    partes = ['<?xml version="1.0" encoding="UTF-8"?>',
+              '<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">']
+
+    def url(loc, lastmod, freq, prioridad):
+        partes.append("  <url>")
+        partes.append("    <loc>%s%s</loc>" % (DOMINIO, loc))
+        partes.append("    <lastmod>%s</lastmod>" % lastmod)
+        partes.append("    <changefreq>%s</changefreq>" % freq)
+        partes.append("    <priority>%s</priority>" % prioridad)
+        partes.append("  </url>")
+
+    url("", hoy_iso, "hourly", "1.0")
+    for archivo in PAGINAS_LOTERIA:
+        url(archivo, hoy_iso, "hourly", "0.9")
+
+    for archivo, modificado, freq, prioridad in PAGINAS_FIJAS:
+        if not os.path.exists(os.path.join(RAIZ, archivo)):
+            continue
+        url(archivo, modificado, freq, prioridad)
+
+    partes.append("</urlset>")
+    partes.append("")
+    escribir("sitemap.xml", "\n".join(partes))
+    print("  %-34s %d URLs" % ("sitemap.xml",
+                               len(PAGINAS_LOTERIA) + len(PAGINAS_FIJAS) + 1))
+
+
 def main():
     if not os.path.exists(JSON_DATOS):
         raise SystemExit("No encuentro datos_loteria.json. "
@@ -329,6 +383,8 @@ def main():
             continue
         shutil.copy(origen, os.path.join(SALIDA, nombre))
         print("  %-34s copiado" % nombre)
+
+    escribir_sitemap(hoy_iso)
 
     print("Listo. Todo en ./publicar/")
 
