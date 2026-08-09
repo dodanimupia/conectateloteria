@@ -1,5 +1,5 @@
 {
-  "actualizado": "2026-08-09T22:03:51",
+  "actualizado": "2026-08-09T22:40:53",
   "en_vivo": true,
   "resultados": [
     {
@@ -29,9 +29,9 @@
       "juego": "Lotería Nacional",
       "fecha": "09-08",
       "numeros": [
-        "30",
-        "32",
-        "41"
+        "39",
+        "98",
+        "37"
       ]
     },
     {
@@ -276,11 +276,11 @@
     {
       "empresa": "La Suerte",
       "juego": "La Suerte Tarde",
-      "fecha": "08-08",
+      "fecha": "09-08",
       "numeros": [
-        "79",
-        "35",
-        "24"
+        "91",
+        "51",
+        "81"
       ]
     },
     {
@@ -372,6 +372,24 @@
       ]
     },
     {
+      "empresa": "haiti-bolet",
+      "juego": "Haiti Bolet 6:30 PM",
+      "fecha": null,
+      "numeros": [
+        "45",
+        "68",
+        "97"
+      ]
+    },
+    {
+      "empresa": "Lotería Nacional",
+      "juego": "Billetes Domingo",
+      "fecha": null,
+      "numeros": [
+        "1181399"
+      ]
+    },
+    {
       "empresa": "Anguila",
       "juego": "Anguila 6:00 PM",
       "fecha": null,
@@ -419,16 +437,6 @@
         "76",
         "14",
         "66"
-      ]
-    },
-    {
-      "empresa": "Anguila",
-      "juego": "Anguila 2:00 PM",
-      "fecha": null,
-      "numeros": [
-        "62",
-        "45",
-        "44"
       ]
     }
   ]

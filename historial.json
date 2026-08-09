@@ -1573,9 +1573,9 @@
     "empresa": "Lotería Nacional",
     "juego": "Lotería Nacional",
     "numeros": [
-     "30",
-     "32",
-     "41"
+     "39",
+     "98",
+     "37"
     ]
    },
    {
@@ -1811,6 +1811,15 @@
      "52",
      "33",
      "73"
+    ]
+   },
+   {
+    "empresa": "La Suerte",
+    "juego": "La Suerte Tarde",
+    "numeros": [
+     "91",
+     "51",
+     "81"
     ]
    }
   ]
