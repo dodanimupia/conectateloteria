@@ -1,5 +1,5 @@
 {
-  "actualizado": "2026-08-09T23:04:40",
+  "actualizado": "2026-08-09T23:40:09",
   "en_vivo": true,
   "resultados": [
     {
@@ -256,11 +256,11 @@
     {
       "empresa": "La Primera",
       "juego": "Primera Noche",
-      "fecha": "08-08",
+      "fecha": "09-08",
       "numeros": [
-        "84",
-        "21",
-        "58"
+        "66",
+        "72",
+        "37"
       ]
     },
     {
@@ -344,11 +344,11 @@
     {
       "empresa": "King Lottery",
       "juego": "King Lottery Noche",
-      "fecha": "08-08",
+      "fecha": "09-08",
       "numeros": [
-        "98",
-        "16",
-        "71"
+        "04",
+        "96",
+        "25"
       ]
     },
     {
@@ -364,11 +364,11 @@
     {
       "empresa": "haiti-bolet",
       "juego": "Haiti Bolet 7:30 PM",
-      "fecha": "08-08",
+      "fecha": "09-08",
       "numeros": [
-        "08",
-        "25",
-        "41"
+        "09",
+        "20",
+        "28"
       ]
     },
     {
@@ -437,16 +437,6 @@
         "87",
         "07",
         "10"
-      ]
-    },
-    {
-      "empresa": "Anguila",
-      "juego": "Anguila 3:00 PM",
-      "fecha": null,
-      "numeros": [
-        "76",
-        "14",
-        "66"
       ]
     }
   ]

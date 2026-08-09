@@ -1833,6 +1833,33 @@
      "37",
      "03"
     ]
+   },
+   {
+    "empresa": "La Primera",
+    "juego": "Primera Noche",
+    "numeros": [
+     "66",
+     "72",
+     "37"
+    ]
+   },
+   {
+    "empresa": "King Lottery",
+    "juego": "King Lottery Noche",
+    "numeros": [
+     "04",
+     "96",
+     "25"
+    ]
+   },
+   {
+    "empresa": "haiti-bolet",
+    "juego": "Haiti Bolet 7:30 PM",
+    "numeros": [
+     "09",
+     "20",
+     "28"
+    ]
    }
   ]
  }
