@@ -1685,6 +1685,22 @@
      "63",
      "07"
     ]
+   },
+   {
+    "empresa": "Anguila",
+    "juego": "Anguila 10:00 AM",
+    "numeros": [
+     "34"
+    ]
+   },
+   {
+    "empresa": "haiti-bolet",
+    "juego": "Haiti Bolet 9:30 AM",
+    "numeros": [
+     "67",
+     "56",
+     "89"
+    ]
    }
   ]
  }
