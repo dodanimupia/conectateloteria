@@ -1,5 +1,5 @@
 {
-  "actualizado": "2026-08-09T02:37:59",
+  "actualizado": "2026-08-09T04:03:20",
   "en_vivo": true,
   "resultados": [
     {
@@ -220,14 +220,14 @@
     {
       "empresa": "Americanas (NY)",
       "juego": "PowerBall",
-      "fecha": "06-08",
+      "fecha": "09-08",
       "numeros": [
-        "14",
-        "20",
-        "59",
-        "60",
-        "61",
-        "25"
+        "05",
+        "09",
+        "35",
+        "54",
+        "63",
+        "07"
       ]
     },
     {
@@ -400,18 +400,6 @@
         "27",
         "44",
         "86"
-      ]
-    },
-    {
-      "empresa": "Lotería Real",
-      "juego": "Chance Real",
-      "fecha": null,
-      "numeros": [
-        "14",
-        "16",
-        "23",
-        "55",
-        "85"
       ]
     }
   ]
