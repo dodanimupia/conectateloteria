@@ -1,5 +1,5 @@
 {
-  "actualizado": "2026-08-10T20:00:50",
+  "actualizado": "2026-08-10T20:36:58",
   "en_vivo": true,
   "resultados": [
     {
@@ -377,7 +377,8 @@
       "fecha": null,
       "numeros": [
         "81",
-        "13"
+        "13",
+        "31"
       ]
     },
     {
