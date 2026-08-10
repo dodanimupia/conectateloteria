@@ -618,22 +618,6 @@
     ]
    }
   ],
-  "2026-08-02": [
-   {
-    "empresa": "Leidsa",
-    "juego": "Loto - Loto Más",
-    "numeros": [
-     "07",
-     "14",
-     "16",
-     "21",
-     "27",
-     "29",
-     "01",
-     "03"
-    ]
-   }
-  ],
   "2026-08-06": [
    {
     "empresa": "Lotería Nacional",
@@ -1899,6 +1883,15 @@
      "43",
      "52",
      "02"
+    ]
+   },
+   {
+    "empresa": "Americanas (NY)",
+    "juego": "New York Noche",
+    "numeros": [
+     "73",
+     "88",
+     "89"
     ]
    }
   ]
