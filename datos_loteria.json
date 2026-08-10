@@ -1,5 +1,5 @@
 {
-  "actualizado": "2026-08-10T12:27:46",
+  "actualizado": "2026-08-10T13:53:14",
   "en_vivo": true,
   "resultados": [
     {
@@ -354,11 +354,11 @@
     {
       "empresa": "haiti-bolet",
       "juego": "Haiti Bolet 9:30 AM",
-      "fecha": "09-08",
+      "fecha": "10-08",
       "numeros": [
-        "67",
-        "56",
-        "89"
+        "85",
+        "34",
+        "56"
       ]
     },
     {
@@ -369,6 +369,16 @@
         "09",
         "20",
         "28"
+      ]
+    },
+    {
+      "empresa": "Anguila",
+      "juego": "Anguila 9:00 AM",
+      "fecha": null,
+      "numeros": [
+        "70",
+        "83",
+        "82"
       ]
     },
     {
@@ -422,26 +432,6 @@
         "71",
         "84",
         "86"
-      ]
-    },
-    {
-      "empresa": "Anguila",
-      "juego": "Anguila 7:00 PM",
-      "fecha": null,
-      "numeros": [
-        "65",
-        "80",
-        "09"
-      ]
-    },
-    {
-      "empresa": "haiti-bolet",
-      "juego": "Haiti Bolet 6:30 PM",
-      "fecha": null,
-      "numeros": [
-        "45",
-        "68",
-        "97"
       ]
     }
   ]
