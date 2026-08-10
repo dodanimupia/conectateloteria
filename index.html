@@ -405,7 +405,8 @@
     margin-bottom: 14px;
   }
   .hj-loteria:last-child { margin-bottom: 0; }
-  .hj-loteria h4 {
+  .hj-loteria h4,
+  .hj-loteria h3 {
     display: flex; align-items: center; gap: 10px;
     margin: 0; padding: 12px 18px;
     background: #fff7ed;
@@ -441,6 +442,31 @@
   }
   .numeros-mini { gap: 6px; }
   .bola-mini { width: 32px; height: 32px; font-size: 0.84rem; }
+  /* --- Paginas de un dia y de estadisticas --- */
+  .miga { color: var(--muted); font-size: 0.95rem; margin: 0 0 18px; }
+  .miga a { color: var(--accent2); text-decoration: none; }
+  .miga a:hover { text-decoration: underline; }
+  .entradilla { font-size: 1.1rem; line-height: 1.65; color: var(--text); margin: 0 0 26px; }
+  .dia-cuerpo.suelto { border-top: none; background: transparent; padding: 0; }
+  .nota-dia { color: var(--muted); font-size: 1rem; line-height: 1.6; border-left: 3px solid var(--borde); padding-left: 16px; margin: 30px 0; }
+  .nota-dia a, .aviso-honesto a { color: var(--accent2); }
+  .saltos { display: flex; flex-wrap: wrap; gap: 10px; margin: 26px 0 40px; }
+  .salto { padding: 11px 20px; border: 1px solid var(--borde); border-radius: 999px; background: var(--card); color: var(--text); text-decoration: none; font-weight: 600; font-size: 0.98rem; }
+  .salto:hover { background: #fff7ed; color: var(--accent2); border-color: #fed7aa; }
+  .lista-dias { list-style: none; padding: 0; margin: 0 0 20px; display: grid; grid-template-columns: repeat(auto-fill, minmax(240px, 1fr)); gap: 8px; }
+  .lista-dias a { display: block; padding: 11px 14px; border: 1px solid var(--borde); border-radius: 10px; color: var(--text); text-decoration: none; font-weight: 600; }
+  .lista-dias a:hover { background: #fff7ed; color: var(--accent2); }
+  .aviso-honesto { background: #fff7ed; border: 1px solid #fed7aa; border-radius: 12px; padding: 4px 20px; margin: 0 0 34px; }
+  .aviso-honesto p { line-height: 1.65; color: var(--text); }
+  .frecuencias { list-style: none; padding: 0; margin: 0 0 10px; display: grid; grid-template-columns: repeat(auto-fill, minmax(170px, 1fr)); gap: 6px 20px; }
+  .frecuencias li { display: flex; align-items: center; gap: 10px; padding: 8px 0; border-bottom: 1px solid #f1f5f9; }
+  .frec-veces { font-weight: 600; color: var(--text); font-size: 0.95rem; }
+  .frec-pct { margin-left: auto; color: var(--muted); font-size: 0.88rem; }
+  .intro-loteria { margin: 0 0 30px; }
+  .intro-loteria p { font-size: 1.06rem; line-height: 1.7; color: var(--text); margin: 0 0 14px; }
+  .ver-dia { margin: 16px 0 4px; }
+  .ver-dia a { color: var(--accent2); font-weight: 700; text-decoration: none; }
+  .ver-dia a:hover { text-decoration: underline; }
   .cargando { color: var(--muted); font-size: 1.08rem; }
   @media (max-width: 760px) {
     .dia-historial summary { padding: 15px 16px; font-size: 1.02rem; }
@@ -765,6 +791,7 @@
       <h3 style="margin-top:26px">Guías</h3>
       <ul>
         <li><a href="horarios-loterias-dominicanas.html">Horarios de los sorteos</a></li>
+        <li><a href="estadisticas.html">Números más salidos</a></li>
         <li><a href="como-se-juega-la-quiniela.html">Cómo se juega la quiniela</a></li>
         <li><a href="que-hacer-si-ganas.html">Qué hacer si ganas</a></li>
       </ul>
