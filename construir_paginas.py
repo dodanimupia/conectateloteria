@@ -21,6 +21,7 @@ Salida: carpeta ./publicar/ con el JSON y todas las páginas ya rellenas.
 
 import json
 import os
+import re
 import shutil
 import unicodedata
 from datetime import date, datetime, timezone, timedelta
@@ -55,6 +56,7 @@ ARCHIVOS_ESTATICOS = [
     ".htaccess",      # reglas de cache: sin esto el navegador sirve paginas viejas
     "estilos.css",
     "robots.txt",
+    "ads.txt",       # AdSense lo exige en la raiz del dominio
     # Guías
     "horarios-loterias-dominicanas.html",
     "como-se-juega-la-quiniela.html",
@@ -175,12 +177,14 @@ def html_portada(resultados):
 
 
 def html_una_loteria(resultados, empresa):
-    """Solo las tarjetas de una lotería concreta."""
+    """Texto propio de la lotería más las tarjetas de sus juegos."""
+    intro = html_texto_loteria(empresa)
     juegos = [r for r in resultados if r.get("empresa") == empresa]
     if not juegos:
-        return ('<p class="cargando">A&uacute;n no hay resultados publicados '
-                'para esta loter&iacute;a.</p>')
-    return '<div class="grid">%s</div>' % "".join(tarjeta(j) for j in juegos)
+        return intro + ('<p class="cargando">A&uacute;n no hay resultados '
+                        'publicados para esta loter&iacute;a.</p>')
+    return intro + ('<div class="grid">%s</div>'
+                    % "".join(tarjeta(j) for j in juegos))
 
 
 def html_historial(historial, empresa, hoy_iso):
@@ -256,10 +260,13 @@ def html_historial_portada(historial, hoy_iso):
             '<details class="dia-historial">'
             '<summary><span class="dia-nombre">%s</span>'
             '<span class="cuenta">%d %s</span></summary>'
-            '<div class="dia-cuerpo">%s</div>'
+            '<div class="dia-cuerpo">%s'
+            '<p class="ver-dia"><a href="%s">Ver la p&aacute;gina de este d&iacute;a &rarr;</a></p>'
+            '</div>'
             '</details>'
             % (escapar(hist.fecha_bonita(clave, hoy)), total,
-               "sorteo" if total == 1 else "sorteos", "".join(cuerpo))
+               "sorteo" if total == 1 else "sorteos", "".join(cuerpo),
+               ruta_dia(clave))
         )
     return "".join(bloques)
 
@@ -269,6 +276,409 @@ def escribir(nombre, contenido):
     with open(destino, "w", encoding="utf-8") as f:
         f.write(contenido)
     print("  %-34s %6d bytes" % (nombre, len(contenido)))
+
+
+# --- Texto propio de cada loteria ---------------------------------------
+# Sin esto cada pagina de loteria era la misma plantilla con numeros
+# distintos. Un buscador (y un revisor de AdSense) lo lee como contenido
+# duplicado. Cada entrada describe una loteria concreta: que juegos tiene,
+# a que hora sortea y que conviene saber para leer sus resultados.
+TEXTO_LOTERIA = {
+    "Lotería Nacional": (
+        "La Lotería Nacional es la lotería estatal dominicana y la más "
+        "antigua del país: lleva sorteándose desde 1930. Es la única "
+        "operada directamente por el Estado, y sus beneficios se destinan "
+        "por ley a programas sociales.",
+        "En esta página verás tres juegos distintos. El sorteo principal, "
+        "que también se llama Lotería Nacional, reparte tres números de dos "
+        "cifras: el primero es el premio mayor, y el segundo y el tercero "
+        "son las llamadas segunda y tercera. Gana Más es una quiniela con "
+        "sorteos de lunes a sábado, y Juega + Pega + añade una modalidad de "
+        "cinco números con premios por aciertos parciales.",
+    ),
+    "Leidsa": (
+        "Leidsa es la lotería privada con más juegos en una sola tanda del "
+        "país, y por eso su sorteo nocturno es de los más seguidos: en una "
+        "misma emisión salen desde la quiniela clásica hasta loterías de "
+        "pozo acumulado que pueden arrastrarse durante semanas.",
+        "Aquí encontrarás la Quiniela Leidsa, de tres números; Pega 3 Más, "
+        "que exige acertar el orden; Loto Pool, con cinco números; Super "
+        "Kino TV, que saca veinte números de una vez y se juega marcando "
+        "cuántos quieras de ellos; y Loto - Loto Más, el juego de pozo "
+        "acumulado que reparte los premios más grandes. Cada uno tiene su "
+        "propia estructura de premios, así que conviene mirar el nombre del "
+        "juego y no solo los números.",
+    ),
+    "Lotería Real": (
+        "Lotería Real empezó como una banca regional y hoy sortea a diario "
+        "en todo el país. Su tanda de la tarde la convierte en una de las "
+        "primeras loterías grandes del día, antes de que salgan las "
+        "nocturnas.",
+        "En esta página se publican la Quiniela Real, de tres números; Loto "
+        "Pool, con cuatro; Nueva Yol Real, que replica el formato de las "
+        "americanas; y Loto Real, el sorteo de pozo acumulado con seis "
+        "números que solo se juega algunos días de la semana. Si un juego "
+        "no aparece con la fecha de hoy, es porque ese día no le toca "
+        "sorteo.",
+    ),
+    "Loteka": (
+        "Loteka fue una de las primeras loterías privadas dominicanas en "
+        "apostar por los juegos de pozo acumulado. Sortea a las 7:55 de la "
+        "noche, justo antes que Leidsa, así que mucha gente sigue las dos "
+        "tandas seguidas.",
+        "Publicamos aquí la Quiniela Loteka, de tres números, y Mega "
+        "Chances, que saca cinco números y admite premios por aciertos "
+        "parciales. Loteka también organiza sorteos especiales en fechas "
+        "señaladas; cuando los hay, aparecen en esta misma lista con su "
+        "nombre propio.",
+    ),
+    "Americanas (NY)": (
+        "Las llamadas americanas no son loterías dominicanas: son sorteos "
+        "de Estados Unidos que las bancas del país ofrecen igualmente. Se "
+        "siguen tanto como las locales porque suman varias tandas al día y "
+        "porque los pozos de PowerBall y Mega Millions llegan a cifras que "
+        "ninguna lotería dominicana alcanza.",
+        "Verás aquí New York Tarde y New York Noche, que son quinielas de "
+        "tres números; Florida Día y Florida Noche, con el mismo formato; y "
+        "los dos grandes acumulados, PowerBall y Mega Millions, que sortean "
+        "solo unos días por semana. Ten en cuenta el horario: al salir en "
+        "Estados Unidos, los resultados de la noche pueden publicarse ya "
+        "entrada la madrugada en República Dominicana.",
+    ),
+    "La Primera": (
+        "La Primera debe su nombre al horario: durante años fue la primera "
+        "tanda del día en salir, cuando casi todas las demás sorteaban de "
+        "noche. Hoy mantiene sorteos de día y de noche.",
+        "En esta página aparecen La Primera Día y Primera Noche, ambas "
+        "quinielas de tres números, y Loto 5, un juego de cinco números más "
+        "uno adicional. Si buscas el resultado de una tanda concreta, "
+        "fíjate en el nombre del juego: el de la mañana y el de la noche se "
+        "publican por separado.",
+    ),
+    "La Suerte": (
+        "La Suerte Dominicana es una de las bancas más extendidas en el "
+        "interior del país. Sus dos tandas diarias, de día y de tarde, la "
+        "hacen popular entre quienes juegan antes de que salgan las "
+        "loterías nocturnas.",
+        "Aquí se publican La Suerte Día y La Suerte Tarde, las dos "
+        "quinielas de tres números. Al ser sorteos cortos, sus resultados "
+        "suelen aparecer pocos minutos después de la hora del sorteo.",
+    ),
+    "LoteDom": (
+        "LoteDom combina una quiniela tradicional con El Quemaito Mayor, un "
+        "juego de un solo número que es su sello propio y no tiene "
+        "equivalente en las demás loterías dominicanas.",
+        "El Quemaito Mayor saca una sola cifra, así que su casilla se ve "
+        "distinta al resto: una bola en lugar de tres. La quiniela LoteDom "
+        "funciona como las demás, con premio mayor, segunda y tercera. "
+        "Ambos sorteos se publican aquí en cuanto la fuente los emite.",
+    ),
+    "Anguila": (
+        "Anguila es, con diferencia, la lotería con más sorteos al día de "
+        "las que se juegan en República Dominicana: sortea cada hora, desde "
+        "la mañana hasta la noche. Toma su nombre de la isla de Anguila, en "
+        "el Caribe oriental.",
+        "Por eso esta página muestra muchas más casillas que las demás: una "
+        "por cada tanda horaria, desde las 8:00 AM hasta las 10:00 PM. "
+        "Están ordenadas por hora, de la mañana a la noche, para que "
+        "encuentres rápido la que buscas. Todas son quinielas de tres "
+        "números. Si una tanda todavía no aparece, es que aún no se ha "
+        "sorteado o la fuente no la ha publicado.",
+    ),
+    "King Lottery": (
+        "King Lottery se sortea en San Martín y llega a República "
+        "Dominicana a través de las bancas, igual que las americanas. Tiene "
+        "dos tandas diarias, una de día y otra de noche.",
+        "En esta página verás King Lottery Día y King Lottery Noche, las "
+        "dos quinielas de tres números. Al tratarse de una lotería de "
+        "fuera, sus horarios de publicación pueden variar unos minutos "
+        "respecto a las dominicanas.",
+    ),
+    "Haiti Bolet": (
+        "Haiti Bolet recoge los sorteos de la lotería haitiana, muy "
+        "seguidos en la zona fronteriza y en las bancas dominicanas que "
+        "ofrecen ambos mercados.",
+        "Sortea varias veces al día, con tandas de mañana, mediodía y "
+        "noche. Cada casilla lleva la hora del sorteo en el nombre para que "
+        "no se confundan entre sí.",
+    ),
+}
+
+
+def html_texto_loteria(empresa):
+    """Parrafos propios de una loteria, si los tenemos escritos."""
+    parrafos = TEXTO_LOTERIA.get(empresa)
+    if not parrafos:
+        return ""
+    return ('<div class="intro-loteria">%s</div>'
+            % "".join("<p>%s</p>" % escapar(p) for p in parrafos))
+
+
+# --- Piezas compartidas con la portada ----------------------------------
+# Las paginas nuevas (dias y estadisticas) reutilizan el estilo, la barra
+# de arriba y el pie de index.html en vez de copiarlos. Asi un cambio de
+# diseno se propaga solo y no hay tres versiones del mismo CSS.
+def piezas_comunes(plantilla):
+    estilo = re.search(r"<style>[\s\S]*?</style>", plantilla).group(0)
+    barra = re.search(r'<nav class="navbar"[\s\S]*?</nav>', plantilla).group(0)
+    pie = re.search(r"<footer[\s\S]*?</footer>", plantilla).group(0)
+    enlaces = "".join('<a href="%s">%s</a>' % (a, escapar(n))
+                      for a, n in PAGINAS_LOTERIA.items())
+    barra = barra.replace("<!--NAVLINKS-->", enlaces)
+    return estilo, barra, pie
+
+
+GUION_MENU = """<script>
+(function () {
+  var boton = document.getElementById("menu-toggle");
+  var panel = document.getElementById("nav-links");
+  if (!boton || !panel) return;
+  boton.addEventListener("click", function (e) {
+    e.stopPropagation();
+    var abierto = panel.classList.toggle("abierto");
+    boton.setAttribute("aria-expanded", abierto ? "true" : "false");
+  });
+  document.addEventListener("click", function (e) {
+    if (!panel.contains(e.target) && e.target !== boton) {
+      panel.classList.remove("abierto");
+      boton.setAttribute("aria-expanded", "false");
+    }
+  });
+})();
+</script>"""
+
+
+def pagina(titulo, descripcion, ruta, cuerpo, piezas, extra_head=""):
+    """Arma una pagina completa con la misma cara que el resto del sitio."""
+    estilo, barra, pie = piezas
+    return """<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>%s</title>
+<meta name="description" content="%s">
+<meta name="robots" content="index, follow">
+<link rel="canonical" href="%s%s">
+<meta property="og:type" content="website">
+<meta property="og:title" content="%s">
+<meta property="og:description" content="%s">
+<meta property="og:url" content="%s%s">
+<link rel="icon" type="image/png" href="png/icono.png">
+%s
+%s
+</head>
+<body>
+%s
+<section class="resultados">
+  <div class="contenedor">
+%s
+  </div>
+</section>
+%s
+%s
+</body>
+</html>
+""" % (escapar(titulo), escapar(descripcion), DOMINIO, ruta,
+       escapar(titulo), escapar(descripcion), DOMINIO, ruta,
+       extra_head, estilo, barra, cuerpo, pie, GUION_MENU)
+
+# --- Paginas de un dia --------------------------------------------------
+def ruta_dia(iso):
+    return "resultados-%s.html" % iso
+
+
+def html_sorteos_del_dia(historial, clave):
+    """Los sorteos de una fecha, agrupados por loteria."""
+    partes = []
+    for empresa, juegos in por_empresa(historial["dias"].get(clave, [])):
+        filas = "".join(
+            '<li><span class="hj-juego">%s</span>'
+            '<span class="numeros numeros-mini">%s</span></li>'
+            % (escapar(j.get("juego", "")),
+               "".join('<span class="bola bola-mini">%s</span>' % escapar(n)
+                       for n in j.get("numeros", [])))
+            for j in juegos)
+        partes.append(
+            '<div class="hj-loteria"><h3>%s <span class="hj-cuenta">%d</span></h3>'
+            '<ul class="hj-lista">%s</ul></div>'
+            % (escapar(empresa), len(juegos), filas))
+    return "".join(partes) or "<p>No se guardaron sorteos de esta fecha.</p>"
+
+
+def por_empresa(sorteos):
+    """Agrupa los sorteos de un dia y los devuelve en el orden habitual."""
+    grupos = {}
+    for s in sorteos:
+        grupos.setdefault(nombre_empresa(s.get("empresa", "")), []).append(s)
+    def puesto(par):
+        try:
+            return (0, ORDEN_EMPRESAS.index(par[0]))
+        except ValueError:
+            return (1, 0)
+    for empresa in grupos:
+        grupos[empresa].sort(key=lambda s: hist.orden_juego(s.get("juego", "")))
+    return sorted(grupos.items(), key=puesto)
+
+
+def escribir_paginas_de_dia(historial, hoy_iso, piezas):
+    """
+    Una pagina por fecha guardada.
+
+    El historial vivia dentro de un desplegable de la portada: siete dias
+    de datos sin direccion propia, invisibles para un buscador. Con una
+    pagina por fecha, cada dia puede aparecer en resultados de busqueda
+    y el sitio suma una pagina nueva cada jornada sin tocar nada.
+    """
+    claves = sorted(historial.get("dias", {}).keys(), reverse=True)
+    hechas = []
+    for i, clave in enumerate(claves):
+        sorteos = historial["dias"][clave]
+        if not sorteos:
+            continue
+        bonita = hist.fecha_bonita(clave, date.fromisoformat(hoy_iso))
+        titulo_dia = bonita[0].upper() + bonita[1:]
+        if titulo_dia.startswith("Ayer, "):
+            titulo_dia = titulo_dia[6].upper() + titulo_dia[7:]
+        anio = clave[:4]
+
+        # Enlaces al dia anterior y al siguiente: encadenan las paginas
+        # entre si para que el robot llegue a todas desde cualquiera.
+        navegacion = []
+        if i + 1 < len(claves):
+            navegacion.append('<a class="salto" href="%s">&larr; Día anterior</a>'
+                              % ruta_dia(claves[i + 1]))
+        navegacion.append('<a class="salto" href="./">Resultados de hoy</a>')
+        if i > 0:
+            navegacion.append('<a class="salto" href="%s">Día siguiente &rarr;</a>'
+                              % ruta_dia(claves[i - 1]))
+
+        otras = "".join('<li><a href="%s">%s</a></li>'
+                        % (ruta_dia(c), escapar(hist.fecha_bonita(c)))
+                        for c in claves if c != clave)
+
+        cuerpo = """    <p class="miga"><a href="./">Inicio</a> &rsaquo; Resultados por fecha</p>
+    <h1>Resultados de las loterías del %s de %s</h1>
+    <p class="entradilla">Estos son los %d sorteos que se publicaron el %s:
+    quiniela, pega 3, loto pool y el resto de los juegos de las loterías
+    dominicanas, ordenados por lotería y por hora del sorteo.</p>
+    <div class="dia-cuerpo suelto">%s</div>
+    <p class="nota-dia">Los números de esta página quedan fijos: son los que
+    salieron ese día. Para los sorteos de hoy, mira la
+    <a href="./">portada</a>. Antes de reclamar un premio, compara siempre
+    con el resultado oficial de la banca.</p>
+    <nav class="saltos">%s</nav>
+    <h2>Otros días guardados</h2>
+    <ul class="lista-dias">%s</ul>
+""" % (escapar(titulo_dia), anio, len(sorteos), escapar(titulo_dia),
+       html_sorteos_del_dia(historial, clave), "".join(navegacion), otras)
+
+        titulo = "Resultados de las loterías del %s de %s" % (titulo_dia, anio)
+        descripcion = ("Todos los números que salieron el %s de %s en las "
+                       "loterías dominicanas: Nacional, Leidsa, Real, Loteka, "
+                       "La Primera, Anguila y más." % (titulo_dia, anio))
+        escribir(ruta_dia(clave),
+                 pagina(titulo, descripcion, ruta_dia(clave), cuerpo, piezas))
+        hechas.append(clave)
+    print("  %-34s %d paginas" % ("resultados-<fecha>.html", len(hechas)))
+    return hechas
+
+# --- Estadisticas -------------------------------------------------------
+RUTA_ESTADISTICAS = "estadisticas.html"
+
+
+def contar_numeros(historial, solo_empresa=None):
+    """Cuenta cuantas veces salio cada numero en el historial guardado."""
+    cuenta = {}
+    for sorteos in historial.get("dias", {}).values():
+        for s in sorteos:
+            if solo_empresa and nombre_empresa(s.get("empresa", "")) != solo_empresa:
+                continue
+            for n in s.get("numeros", []):
+                n = str(n).strip()
+                if n:
+                    cuenta[n] = cuenta.get(n, 0) + 1
+    return cuenta
+
+
+def tabla_frecuencias(cuenta, cuantos=12, mayor=True):
+    if not cuenta:
+        return "<p>Todavía no hay suficientes sorteos guardados.</p>"
+    orden = sorted(cuenta.items(), key=lambda p: (-p[1], p[0]) if mayor else (p[1], p[0]))
+    total = sum(cuenta.values())
+    filas = "".join(
+        '<li><span class="bola bola-mini">%s</span>'
+        '<span class="frec-veces">%d %s</span>'
+        '<span class="frec-pct">%.1f%%</span></li>'
+        % (escapar(n), v, "vez" if v == 1 else "veces", 100.0 * v / total)
+        for n, v in orden[:cuantos])
+    return '<ul class="frecuencias">%s</ul>' % filas
+
+
+def escribir_estadisticas(historial, piezas):
+    """
+    Numeros mas y menos repetidos del historial que llevamos guardado.
+
+    Se dice con todas las letras cuantos dias abarca y que no sirve para
+    predecir: cada sorteo es independiente. Prometer lo contrario seria
+    mentir y ademas es lo que hace que a estas paginas se las tome por
+    basura.
+    """
+    dias = sorted(historial.get("dias", {}).keys())
+    if not dias:
+        return None
+    total_sorteos = sum(len(v) for v in historial["dias"].values())
+    general = contar_numeros(historial)
+
+    bloques = []
+    for empresa in ORDEN_EMPRESAS:
+        cuenta = contar_numeros(historial, empresa)
+        if len(cuenta) < 5:
+            continue
+        bloques.append(
+            '<div class="hj-loteria"><h3>%s</h3>%s</div>'
+            % (escapar(empresa), tabla_frecuencias(cuenta, 6)))
+
+    cuerpo = """    <p class="miga"><a href="./">Inicio</a> &rsaquo; Estadísticas</p>
+    <h1>Números más salidos en las loterías dominicanas</h1>
+    <p class="entradilla">Recuento de los números que más y menos se han
+    repetido en los %d sorteos que llevamos guardados, entre el %s y el %s.
+    La cuenta se rehace sola cada vez que se publica un sorteo nuevo.</p>
+
+    <div class="aviso-honesto">
+      <p><strong>Antes de seguir:</strong> esto no sirve para predecir nada.
+      Cada sorteo es independiente del anterior y todos los números tienen
+      siempre la misma probabilidad de salir. Que un número se haya repetido
+      mucho no lo hace más ni menos probable mañana. Publicamos el recuento
+      porque es un dato curioso sobre lo ya ocurrido, no como método para
+      acertar.</p>
+    </div>
+
+    <h2>Los más repetidos</h2>
+    %s
+    <h2>Los menos repetidos</h2>
+    %s
+    <h2>Por lotería</h2>
+    <p>Mismo recuento, separado por cada lotería:</p>
+    <div class="dia-cuerpo suelto">%s</div>
+    <p class="nota-dia">La muestra es pequeña y crece cada día. Con pocos
+    sorteos las diferencias entre un número y otro son casualidad, no
+    tendencia. Puedes ver los sorteos completos, día por día, en la
+    <a href="./">portada</a>.</p>
+""" % (total_sorteos, escapar(hist.fecha_bonita(dias[0])),
+       escapar(hist.fecha_bonita(dias[-1])),
+       tabla_frecuencias(general, 12, True),
+       tabla_frecuencias(general, 12, False),
+       "".join(bloques))
+
+    titulo = "Números más salidos en las loterías dominicanas | Estadísticas"
+    descripcion = ("Qué números se repiten más y menos en la quiniela y demás "
+                   "sorteos dominicanos, con el recuento actualizado de los "
+                   "últimos días. Explicado sin promesas de acertar.")
+    escribir(RUTA_ESTADISTICAS,
+             pagina(titulo, descripcion, RUTA_ESTADISTICAS, cuerpo, piezas))
+    print("  %-34s %d sorteos" % (RUTA_ESTADISTICAS, total_sorteos))
+    return RUTA_ESTADISTICAS
 
 
 # --- Sitemap -----------------------------------------------------------
@@ -288,7 +698,7 @@ PAGINAS_FIJAS = [
 ]
 
 
-def escribir_sitemap(hoy_iso):
+def escribir_sitemap(hoy_iso, dias=(), extras=()):
     """
     Genera sitemap.xml con la fecha de hoy en las paginas de resultados.
 
@@ -313,6 +723,13 @@ def escribir_sitemap(hoy_iso):
     for archivo in PAGINAS_LOTERIA:
         url(archivo, hoy_iso, "hourly", "0.9")
 
+    for ruta in extras:
+        url(ruta, hoy_iso, "daily", "0.7")
+
+    # Cada dia ya paso: su contenido no vuelve a cambiar.
+    for clave in dias:
+        url(ruta_dia(clave), clave, "monthly", "0.5")
+
     for archivo, modificado, freq, prioridad in PAGINAS_FIJAS:
         if not os.path.exists(os.path.join(RAIZ, archivo)):
             continue
@@ -321,8 +738,7 @@ def escribir_sitemap(hoy_iso):
     partes.append("</urlset>")
     partes.append("")
     escribir("sitemap.xml", "\n".join(partes))
-    print("  %-34s %d URLs" % ("sitemap.xml",
-                               len(PAGINAS_LOTERIA) + len(PAGINAS_FIJAS) + 1))
+    print("  %-34s %d URLs" % ("sitemap.xml", (len(partes) - 3) // 6))
 
 
 def main():
@@ -352,6 +768,7 @@ def main():
     if os.path.exists(ruta_index):
         with open(ruta_index, encoding="utf-8") as f:
             plantilla = f.read()
+        plantilla_portada = plantilla
         secciones, enlaces = html_portada(resultados)
         escribir("index.html", plantilla
                  .replace("<!--RESULTADOS-->", secciones)
@@ -384,7 +801,11 @@ def main():
         shutil.copy(origen, os.path.join(SALIDA, nombre))
         print("  %-34s copiado" % nombre)
 
-    escribir_sitemap(hoy_iso)
+    # Las paginas nuevas heredan estilo, barra y pie de la portada.
+    piezas = piezas_comunes(plantilla_portada)
+    dias_hechos = escribir_paginas_de_dia(historial, hoy_iso, piezas)
+    extras = [r for r in [escribir_estadisticas(historial, piezas)] if r]
+    escribir_sitemap(hoy_iso, dias_hechos, extras)
 
     print("Listo. Todo en ./publicar/")
 
