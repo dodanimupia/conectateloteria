@@ -1,5 +1,5 @@
 {
-  "actualizado": "2026-08-10T00:03:16",
+  "actualizado": "2026-08-10T02:26:30",
   "en_vivo": true,
   "resultados": [
     {
@@ -145,23 +145,23 @@
     {
       "empresa": "Loteka",
       "juego": "Mega Chances",
-      "fecha": "09-08",
+      "fecha": "10-08",
       "numeros": [
-        "11",
-        "56",
-        "71",
-        "79",
-        "86"
+        "14",
+        "23",
+        "59",
+        "83",
+        "97"
       ]
     },
     {
       "empresa": "Loteka",
       "juego": "Quiniela Loteka",
-      "fecha": "09-08",
+      "fecha": "10-08",
       "numeros": [
-        "54",
-        "58",
-        "19"
+        "77",
+        "34",
+        "03"
       ]
     },
     {
@@ -197,11 +197,11 @@
     {
       "empresa": "Americanas (NY)",
       "juego": "Florida Noche",
-      "fecha": "09-08",
+      "fecha": "10-08",
       "numeros": [
-        "43",
-        "96",
-        "97"
+        "72",
+        "24",
+        "34"
       ]
     },
     {
@@ -324,11 +324,11 @@
     {
       "empresa": "Anguila",
       "juego": "Anguila 9:00 PM",
-      "fecha": "09-08",
+      "fecha": "10-08",
       "numeros": [
-        "74",
-        "92",
-        "80"
+        "43",
+        "52",
+        "02"
       ]
     },
     {
@@ -369,6 +369,16 @@
         "09",
         "20",
         "28"
+      ]
+    },
+    {
+      "empresa": "Anguila",
+      "juego": "Anguila 10:00 PM",
+      "fecha": null,
+      "numeros": [
+        "14",
+        "91",
+        "50"
       ]
     },
     {
@@ -430,46 +440,6 @@
       "fecha": null,
       "numeros": [
         "1181399"
-      ]
-    },
-    {
-      "empresa": "Anguila",
-      "juego": "Anguila 6:00 PM",
-      "fecha": null,
-      "numeros": [
-        "74",
-        "94",
-        "57"
-      ]
-    },
-    {
-      "empresa": "haiti-bolet",
-      "juego": "Haiti Bolet 5:30 PM",
-      "fecha": null,
-      "numeros": [
-        "01",
-        "44",
-        "47"
-      ]
-    },
-    {
-      "empresa": "Anguila",
-      "juego": "Anguila 5:00 PM",
-      "fecha": null,
-      "numeros": [
-        "96",
-        "20",
-        "15"
-      ]
-    },
-    {
-      "empresa": "Anguila",
-      "juego": "Anguila 4:00 PM",
-      "fecha": null,
-      "numeros": [
-        "87",
-        "07",
-        "10"
       ]
     }
   ]

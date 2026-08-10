@@ -1861,6 +1861,46 @@
      "28"
     ]
    }
+  ],
+  "2026-08-10": [
+   {
+    "empresa": "Loteka",
+    "juego": "Mega Chances",
+    "numeros": [
+     "14",
+     "23",
+     "59",
+     "83",
+     "97"
+    ]
+   },
+   {
+    "empresa": "Loteka",
+    "juego": "Quiniela Loteka",
+    "numeros": [
+     "77",
+     "34",
+     "03"
+    ]
+   },
+   {
+    "empresa": "Americanas (NY)",
+    "juego": "Florida Noche",
+    "numeros": [
+     "72",
+     "24",
+     "34"
+    ]
+   },
+   {
+    "empresa": "Anguila",
+    "juego": "Anguila 9:00 PM",
+    "numeros": [
+     "43",
+     "52",
+     "02"
+    ]
+   }
   ]
  }
 }
