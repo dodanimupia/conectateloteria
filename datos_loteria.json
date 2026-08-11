@@ -1,5 +1,5 @@
 {
-  "actualizado": "2026-08-11T00:39:55",
+  "actualizado": "2026-08-11T02:49:37",
   "en_vivo": true,
   "resultados": [
     {
@@ -27,70 +27,70 @@
     {
       "empresa": "Lotería Nacional",
       "juego": "Lotería Nacional",
-      "fecha": "09-08",
+      "fecha": "11-08",
       "numeros": [
-        "39",
-        "98",
-        "37"
+        "07",
+        "76",
+        "66"
       ]
     },
     {
       "empresa": "Leidsa",
       "juego": "Pega 3 Más",
-      "fecha": "09-08",
+      "fecha": "11-08",
       "numeros": [
-        "19",
-        "33",
-        "08"
+        "34",
+        "28",
+        "45"
       ]
     },
     {
       "empresa": "Leidsa",
       "juego": "Loto Pool",
-      "fecha": "09-08",
+      "fecha": "11-08",
       "numeros": [
-        "05",
-        "14",
-        "15",
-        "18",
-        "21"
+        "07",
+        "20",
+        "25",
+        "27",
+        "29"
       ]
     },
     {
       "empresa": "Leidsa",
       "juego": "Super Kino TV",
-      "fecha": "09-08",
+      "fecha": "11-08",
       "numeros": [
-        "03",
-        "06",
-        "08",
-        "14",
-        "19",
-        "21",
+        "01",
+        "13",
         "22",
-        "27",
-        "28",
-        "30",
+        "23",
+        "24",
+        "25",
         "31",
-        "34",
-        "41",
-        "44",
+        "32",
+        "37",
+        "39",
+        "48",
         "49",
-        "50",
+        "51",
+        "54",
         "55",
-        "57",
-        "59",
-        "67"
+        "65",
+        "66",
+        "67",
+        "70",
+        "78"
       ]
     },
     {
       "empresa": "Leidsa",
       "juego": "Quiniela Leidsa",
-      "fecha": "09-08",
+      "fecha": "11-08",
       "numeros": [
-        "11",
-        "84",
-        "20"
+        "83",
+        "46",
+        "98"
       ]
     },
     {
@@ -177,11 +177,11 @@
     {
       "empresa": "Americanas (NY)",
       "juego": "New York Noche",
-      "fecha": "10-08",
+      "fecha": "11-08",
       "numeros": [
-        "73",
-        "88",
-        "89"
+        "54",
+        "29",
+        "87"
       ]
     },
     {
@@ -197,11 +197,11 @@
     {
       "empresa": "Americanas (NY)",
       "juego": "Florida Noche",
-      "fecha": "10-08",
+      "fecha": "11-08",
       "numeros": [
-        "72",
-        "24",
-        "34"
+        "43",
+        "94",
+        "75"
       ]
     },
     {
@@ -324,11 +324,11 @@
     {
       "empresa": "Anguila",
       "juego": "Anguila 9:00 PM",
-      "fecha": "10-08",
+      "fecha": "11-08",
       "numeros": [
-        "43",
-        "52",
-        "02"
+        "27",
+        "27",
+        "83"
       ]
     },
     {
@@ -369,6 +369,16 @@
         "61",
         "46",
         "32"
+      ]
+    },
+    {
+      "empresa": "Anguila",
+      "juego": "Anguila 10:00 PM",
+      "fecha": null,
+      "numeros": [
+        "69",
+        "65",
+        "49"
       ]
     },
     {
@@ -417,66 +427,6 @@
         "08",
         "28",
         "34"
-      ]
-    },
-    {
-      "empresa": "Anguila",
-      "juego": "Anguila 7:00 PM",
-      "fecha": null,
-      "numeros": [
-        "22",
-        "48",
-        "24"
-      ]
-    },
-    {
-      "empresa": "haiti-bolet",
-      "juego": "Haiti Bolet 6:30 PM",
-      "fecha": null,
-      "numeros": [
-        "94",
-        "09",
-        "38"
-      ]
-    },
-    {
-      "empresa": "Anguila",
-      "juego": "Anguila 6:00 PM",
-      "fecha": null,
-      "numeros": [
-        "14",
-        "22",
-        "26"
-      ]
-    },
-    {
-      "empresa": "haiti-bolet",
-      "juego": "Haiti Bolet 5:30 PM",
-      "fecha": null,
-      "numeros": [
-        "24",
-        "83",
-        "98"
-      ]
-    },
-    {
-      "empresa": "Anguila",
-      "juego": "Anguila 5:00 PM",
-      "fecha": null,
-      "numeros": [
-        "84",
-        "35",
-        "42"
-      ]
-    },
-    {
-      "empresa": "Anguila",
-      "juego": "Anguila 4:00 PM",
-      "fecha": null,
-      "numeros": [
-        "81",
-        "13",
-        "31"
       ]
     }
   ]
