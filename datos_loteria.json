@@ -1,5 +1,5 @@
 {
-  "actualizado": "2026-08-11T16:42:36",
+  "actualizado": "2026-08-11T17:39:32",
   "en_vivo": true,
   "resultados": [
     {
@@ -111,22 +111,22 @@
     {
       "empresa": "Lotería Real",
       "juego": "Loto Pool",
-      "fecha": "10-08",
+      "fecha": "11-08",
       "numeros": [
-        "28",
-        "43",
-        "60",
-        "84"
+        "19",
+        "24",
+        "71",
+        "83"
       ]
     },
     {
       "empresa": "Lotería Real",
       "juego": "Quiniela Real",
-      "fecha": "10-08",
+      "fecha": "11-08",
       "numeros": [
-        "73",
-        "11",
-        "03"
+        "42",
+        "30",
+        "31"
       ]
     },
     {
@@ -187,11 +187,11 @@
     {
       "empresa": "Americanas (NY)",
       "juego": "Florida Día",
-      "fecha": "10-08",
+      "fecha": "11-08",
       "numeros": [
-        "64",
-        "50",
-        "97"
+        "75",
+        "75",
+        "05"
       ]
     },
     {
@@ -314,11 +314,11 @@
     {
       "empresa": "Anguila",
       "juego": "Anguila 1:00 PM",
-      "fecha": "10-08",
+      "fecha": "11-08",
       "numeros": [
-        "56",
-        "32",
-        "95"
+        "66",
+        "38",
+        "93"
       ]
     },
     {
@@ -369,6 +369,16 @@
         "61",
         "46",
         "32"
+      ]
+    },
+    {
+      "empresa": "Lotería Real",
+      "juego": "Nueva Yol Real",
+      "fecha": null,
+      "numeros": [
+        "93",
+        "39",
+        "84"
       ]
     },
     {

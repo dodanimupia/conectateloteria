@@ -2254,6 +2254,43 @@
      "18",
      "48"
     ]
+   },
+   {
+    "empresa": "Lotería Real",
+    "juego": "Loto Pool",
+    "numeros": [
+     "19",
+     "24",
+     "71",
+     "83"
+    ]
+   },
+   {
+    "empresa": "Lotería Real",
+    "juego": "Quiniela Real",
+    "numeros": [
+     "42",
+     "30",
+     "31"
+    ]
+   },
+   {
+    "empresa": "Americanas (NY)",
+    "juego": "Florida Día",
+    "numeros": [
+     "75",
+     "75",
+     "05"
+    ]
+   },
+   {
+    "empresa": "Anguila",
+    "juego": "Anguila 1:00 PM",
+    "numeros": [
+     "66",
+     "38",
+     "93"
+    ]
    }
   ]
  }
