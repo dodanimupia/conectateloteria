@@ -2320,6 +2320,36 @@
      "28",
      "03"
     ]
+   },
+   {
+    "empresa": "La Primera",
+    "juego": "Loto 5",
+    "numeros": [
+     "06",
+     "12",
+     "16",
+     "20",
+     "35",
+     "02"
+    ]
+   },
+   {
+    "empresa": "La Primera",
+    "juego": "Primera Noche",
+    "numeros": [
+     "72",
+     "77",
+     "33"
+    ]
+   },
+   {
+    "empresa": "La Suerte",
+    "juego": "La Suerte Tarde",
+    "numeros": [
+     "94",
+     "20",
+     "63"
+    ]
    }
   ]
  }
