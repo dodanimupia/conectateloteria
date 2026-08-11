@@ -1,5 +1,5 @@
 {
-  "actualizado": "2026-08-10T23:54:22",
+  "actualizado": "2026-08-11T00:39:55",
   "en_vivo": true,
   "resultados": [
     {
@@ -145,23 +145,23 @@
     {
       "empresa": "Loteka",
       "juego": "Mega Chances",
-      "fecha": "10-08",
+      "fecha": "11-08",
       "numeros": [
-        "14",
-        "23",
+        "09",
+        "48",
         "59",
-        "83",
-        "97"
+        "74",
+        "77"
       ]
     },
     {
       "empresa": "Loteka",
       "juego": "Quiniela Loteka",
-      "fecha": "10-08",
+      "fecha": "11-08",
       "numeros": [
-        "77",
-        "34",
-        "03"
+        "79",
+        "18",
+        "84"
       ]
     },
     {
@@ -372,6 +372,54 @@
       ]
     },
     {
+      "empresa": "Loteka",
+      "juego": "MegaLotto",
+      "fecha": null,
+      "numeros": [
+        "05",
+        "06",
+        "09",
+        "16",
+        "25",
+        "31",
+        "01",
+        "02"
+      ]
+    },
+    {
+      "empresa": "Anguila",
+      "juego": "Anguila 8:00 PM",
+      "fecha": null,
+      "numeros": [
+        "57",
+        "23",
+        "90"
+      ]
+    },
+    {
+      "empresa": "Lotería Real",
+      "juego": "Loto Pool Noche",
+      "fecha": null,
+      "numeros": [
+        "09",
+        "30",
+        "59",
+        "88"
+      ]
+    },
+    {
+      "empresa": "Lotería Real",
+      "juego": "Chance Real",
+      "fecha": null,
+      "numeros": [
+        "04",
+        "05",
+        "08",
+        "28",
+        "34"
+      ]
+    },
+    {
       "empresa": "Anguila",
       "juego": "Anguila 7:00 PM",
       "fecha": null,
@@ -429,26 +477,6 @@
         "81",
         "13",
         "31"
-      ]
-    },
-    {
-      "empresa": "Anguila",
-      "juego": "Anguila 3:00 PM",
-      "fecha": null,
-      "numeros": [
-        "84",
-        "81",
-        "75"
-      ]
-    },
-    {
-      "empresa": "Anguila",
-      "juego": "Anguila 2:00 PM",
-      "fecha": null,
-      "numeros": [
-        "04",
-        "47",
-        "04"
       ]
     }
   ]
