@@ -2300,6 +2300,26 @@
      "99",
      "90"
     ]
+   },
+   {
+    "empresa": "Lotería Nacional",
+    "juego": "Juega + Pega +",
+    "numeros": [
+     "03",
+     "19",
+     "18",
+     "10",
+     "15"
+    ]
+   },
+   {
+    "empresa": "Lotería Nacional",
+    "juego": "Gana Más",
+    "numeros": [
+     "88",
+     "28",
+     "03"
+    ]
    }
   ]
  }
