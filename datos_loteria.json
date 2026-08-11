@@ -1,5 +1,5 @@
 {
-  "actualizado": "2026-08-11T15:53:50",
+  "actualizado": "2026-08-11T16:42:36",
   "en_vivo": true,
   "resultados": [
     {
@@ -233,11 +233,11 @@
     {
       "empresa": "La Primera",
       "juego": "La Primera Día",
-      "fecha": "10-08",
+      "fecha": "11-08",
       "numeros": [
-        "61",
-        "39",
-        "61"
+        "92",
+        "82",
+        "20"
       ]
     },
     {
@@ -266,11 +266,11 @@
     {
       "empresa": "La Suerte",
       "juego": "La Suerte Día",
-      "fecha": "10-08",
+      "fecha": "11-08",
       "numeros": [
-        "77",
-        "20",
-        "66"
+        "22",
+        "05",
+        "25"
       ]
     },
     {
@@ -286,19 +286,19 @@
     {
       "empresa": "LoteDom",
       "juego": "LoteDom",
-      "fecha": "10-08",
+      "fecha": "11-08",
       "numeros": [
-        "17",
-        "65",
-        "71"
+        "35",
+        "74",
+        "08"
       ]
     },
     {
       "empresa": "LoteDom",
       "juego": "El Quemaito Mayor",
-      "fecha": "10-08",
+      "fecha": "11-08",
       "numeros": [
-        "77"
+        "99"
       ]
     },
     {
@@ -334,11 +334,11 @@
     {
       "empresa": "King Lottery",
       "juego": "King Lottery Día",
-      "fecha": "10-08",
+      "fecha": "11-08",
       "numeros": [
-        "77",
-        "26",
-        "51"
+        "53",
+        "18",
+        "48"
       ]
     },
     {
@@ -419,16 +419,6 @@
         "11",
         "22",
         "86"
-      ]
-    },
-    {
-      "empresa": "Anguila",
-      "juego": "Anguila 10:00 PM",
-      "fecha": null,
-      "numeros": [
-        "69",
-        "65",
-        "49"
       ]
     }
   ]
