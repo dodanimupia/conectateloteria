@@ -2393,6 +2393,106 @@
      "85",
      "95"
     ]
+   },
+   {
+    "empresa": "Lotería Nacional",
+    "juego": "Lotería Nacional",
+    "numeros": [
+     "38",
+     "41",
+     "99"
+    ]
+   },
+   {
+    "empresa": "Leidsa",
+    "juego": "Pega 3 Más",
+    "numeros": [
+     "06",
+     "01",
+     "08"
+    ]
+   },
+   {
+    "empresa": "Leidsa",
+    "juego": "Loto Pool",
+    "numeros": [
+     "05",
+     "06",
+     "14",
+     "27",
+     "31"
+    ]
+   },
+   {
+    "empresa": "Leidsa",
+    "juego": "Super Kino TV",
+    "numeros": [
+     "06",
+     "16",
+     "20",
+     "22",
+     "24",
+     "25",
+     "35",
+     "40",
+     "41",
+     "45",
+     "50",
+     "58",
+     "61",
+     "62",
+     "63",
+     "66",
+     "73",
+     "75",
+     "76",
+     "77"
+    ]
+   },
+   {
+    "empresa": "Leidsa",
+    "juego": "Quiniela Leidsa",
+    "numeros": [
+     "85",
+     "74",
+     "34"
+    ]
+   },
+   {
+    "empresa": "Loteka",
+    "juego": "Quiniela Loteka",
+    "numeros": [
+     "34",
+     "02",
+     "40"
+    ]
+   },
+   {
+    "empresa": "Americanas (NY)",
+    "juego": "New York Noche",
+    "numeros": [
+     "57",
+     "06",
+     "36"
+    ]
+   },
+   {
+    "empresa": "Americanas (NY)",
+    "juego": "Florida Noche",
+    "numeros": [
+     "39",
+     "55",
+     "91"
+    ]
+   },
+   {
+    "empresa": "Anguila",
+    "juego": "Anguila 9:00 PM",
+    "numeros": [
+     "46",
+     "90",
+     "92"
+    ]
    }
   ]
  }
