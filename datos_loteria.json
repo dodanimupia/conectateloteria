@@ -1,5 +1,5 @@
 {
-  "actualizado": "2026-08-12T16:29:51",
+  "actualizado": "2026-08-12T17:29:07",
   "en_vivo": true,
   "resultados": [
     {
@@ -111,22 +111,22 @@
     {
       "empresa": "Lotería Real",
       "juego": "Loto Pool",
-      "fecha": "11-08",
+      "fecha": "12-08",
       "numeros": [
-        "19",
-        "24",
-        "71",
-        "83"
+        "01",
+        "11",
+        "43",
+        "54"
       ]
     },
     {
       "empresa": "Lotería Real",
       "juego": "Quiniela Real",
-      "fecha": "11-08",
+      "fecha": "12-08",
       "numeros": [
-        "42",
-        "30",
-        "31"
+        "86",
+        "80",
+        "04"
       ]
     },
     {
@@ -266,11 +266,11 @@
     {
       "empresa": "La Suerte",
       "juego": "La Suerte Día",
-      "fecha": "11-08",
+      "fecha": "12-08",
       "numeros": [
-        "22",
-        "05",
-        "25"
+        "20",
+        "53",
+        "65"
       ]
     },
     {
@@ -314,11 +314,11 @@
     {
       "empresa": "Anguila",
       "juego": "Anguila 1:00 PM",
-      "fecha": "11-08",
+      "fecha": "12-08",
       "numeros": [
-        "66",
-        "38",
-        "93"
+        "01",
+        "86",
+        "64"
       ]
     },
     {
@@ -334,11 +334,11 @@
     {
       "empresa": "King Lottery",
       "juego": "King Lottery Día",
-      "fecha": "11-08",
+      "fecha": "12-08",
       "numeros": [
-        "53",
-        "18",
-        "48"
+        "93",
+        "83",
+        "21"
       ]
     },
     {
@@ -369,6 +369,16 @@
         "97",
         "49",
         "97"
+      ]
+    },
+    {
+      "empresa": "Lotería Real",
+      "juego": "Nueva Yol Real",
+      "fecha": null,
+      "numeros": [
+        "21",
+        "59",
+        "26"
       ]
     },
     {
@@ -419,16 +429,6 @@
         "22",
         "28",
         "28"
-      ]
-    },
-    {
-      "empresa": "Anguila",
-      "juego": "Anguila 10:00 PM",
-      "fecha": null,
-      "numeros": [
-        "27",
-        "18",
-        "22"
       ]
     }
   ]
