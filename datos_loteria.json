@@ -1,5 +1,5 @@
 {
-  "actualizado": "2026-08-12T02:35:47",
+  "actualizado": "2026-08-12T04:25:45",
   "en_vivo": true,
   "resultados": [
     {
@@ -207,14 +207,14 @@
     {
       "empresa": "Americanas (NY)",
       "juego": "Mega Millions",
-      "fecha": "08-08",
+      "fecha": "12-08",
       "numeros": [
-        "17",
+        "01",
         "20",
-        "32",
-        "54",
-        "57",
-        "23"
+        "30",
+        "46",
+        "68",
+        "17"
       ]
     },
     {
@@ -400,18 +400,6 @@
         "16",
         "22",
         "81"
-      ]
-    },
-    {
-      "empresa": "Lotería Real",
-      "juego": "Chance Real",
-      "fecha": null,
-      "numeros": [
-        "13",
-        "42",
-        "58",
-        "86",
-        "93"
       ]
     }
   ]

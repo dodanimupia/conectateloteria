@@ -1,230 +1,5 @@
 {
  "dias": {
-  "2026-08-04": [
-   {
-    "empresa": "Lotería Nacional",
-    "juego": "Juega + Pega +",
-    "numeros": [
-     "23",
-     "12",
-     "17",
-     "15",
-     "06"
-    ]
-   },
-   {
-    "empresa": "Lotería Nacional",
-    "juego": "Gana Más",
-    "numeros": [
-     "04",
-     "17",
-     "95"
-    ]
-   },
-   {
-    "empresa": "Lotería Real",
-    "juego": "Loto Pool",
-    "numeros": [
-     "27",
-     "70",
-     "71",
-     "89"
-    ]
-   },
-   {
-    "empresa": "Lotería Real",
-    "juego": "Quiniela Real",
-    "numeros": [
-     "55",
-     "02",
-     "62"
-    ]
-   },
-   {
-    "empresa": "Americanas (NY)",
-    "juego": "New York Tarde",
-    "numeros": [
-     "70",
-     "87",
-     "98"
-    ]
-   },
-   {
-    "empresa": "Americanas (NY)",
-    "juego": "Florida Día",
-    "numeros": [
-     "82",
-     "18",
-     "16"
-    ]
-   },
-   {
-    "empresa": "Americanas (NY)",
-    "juego": "PowerBall",
-    "numeros": [
-     "08",
-     "30",
-     "41",
-     "48",
-     "54",
-     "04"
-    ]
-   },
-   {
-    "empresa": "La Primera",
-    "juego": "La Primera Día",
-    "numeros": [
-     "39",
-     "13",
-     "26"
-    ]
-   },
-   {
-    "empresa": "La Primera",
-    "juego": "Loto 5",
-    "numeros": [
-     "11",
-     "19",
-     "25",
-     "31",
-     "36",
-     "06"
-    ]
-   },
-   {
-    "empresa": "La Primera",
-    "juego": "Primera Noche",
-    "numeros": [
-     "80",
-     "12",
-     "10"
-    ]
-   },
-   {
-    "empresa": "La Suerte",
-    "juego": "La Suerte Día",
-    "numeros": [
-     "14",
-     "27",
-     "58"
-    ]
-   },
-   {
-    "empresa": "La Suerte",
-    "juego": "La Suerte Tarde",
-    "numeros": [
-     "54",
-     "54",
-     "87"
-    ]
-   },
-   {
-    "empresa": "LoteDom",
-    "juego": "LoteDom",
-    "numeros": [
-     "18",
-     "80",
-     "93"
-    ]
-   },
-   {
-    "empresa": "LoteDom",
-    "juego": "El Quemaito Mayor",
-    "numeros": [
-     "44"
-    ]
-   },
-   {
-    "empresa": "Anguila",
-    "juego": "Anguila 12:00 PM",
-    "numeros": [
-     "33",
-     "74",
-     "79"
-    ]
-   },
-   {
-    "empresa": "Anguila",
-    "juego": "Anguila 2:00 PM",
-    "numeros": [
-     "86",
-     "26",
-     "08"
-    ]
-   },
-   {
-    "empresa": "Anguila",
-    "juego": "Anguila 3:00 PM",
-    "numeros": [
-     "97",
-     "89",
-     "23"
-    ]
-   },
-   {
-    "empresa": "Anguila",
-    "juego": "Anguila 4:00 PM",
-    "numeros": [
-     "68",
-     "58",
-     "75"
-    ]
-   },
-   {
-    "empresa": "Anguila",
-    "juego": "Anguila 5:00 PM",
-    "numeros": [
-     "75",
-     "01",
-     "40"
-    ]
-   },
-   {
-    "empresa": "Anguila",
-    "juego": "Anguila 6:00 PM",
-    "numeros": [
-     "64",
-     "73",
-     "33"
-    ]
-   },
-   {
-    "empresa": "Anguila",
-    "juego": "Anguila 7:00 PM",
-    "numeros": [
-     "33",
-     "55",
-     "99"
-    ]
-   },
-   {
-    "empresa": "King Lottery",
-    "juego": "King Lottery Día",
-    "numeros": [
-     "23",
-     "66",
-     "70"
-    ]
-   },
-   {
-    "empresa": "King Lottery",
-    "juego": "King Lottery Noche",
-    "numeros": [
-     "04",
-     "26",
-     "08"
-    ]
-   },
-   {
-    "empresa": "haiti-bolet",
-    "juego": "Haiti Bolet 7:30 PM",
-    "numeros": [
-     "44",
-     "23",
-     "96"
-    ]
-   }
-  ],
   "2026-08-05": [
    {
     "empresa": "Lotería Nacional",
@@ -2492,6 +2267,18 @@
      "46",
      "90",
      "92"
+    ]
+   },
+   {
+    "empresa": "Americanas (NY)",
+    "juego": "Mega Millions",
+    "numeros": [
+     "01",
+     "20",
+     "30",
+     "46",
+     "68",
+     "17"
     ]
    }
   ]
