@@ -1,27 +1,27 @@
 {
-  "actualizado": "2026-08-12T18:25:51",
+  "actualizado": "2026-08-12T19:33:47",
   "en_vivo": true,
   "resultados": [
     {
       "empresa": "Lotería Nacional",
       "juego": "Juega + Pega +",
-      "fecha": "11-08",
+      "fecha": "12-08",
       "numeros": [
-        "03",
-        "19",
-        "18",
-        "10",
+        "02",
+        "12",
+        "13",
+        "21",
         "15"
       ]
     },
     {
       "empresa": "Lotería Nacional",
       "juego": "Gana Más",
-      "fecha": "11-08",
+      "fecha": "12-08",
       "numeros": [
-        "88",
-        "28",
-        "03"
+        "99",
+        "08",
+        "58"
       ]
     },
     {
@@ -167,11 +167,11 @@
     {
       "empresa": "Americanas (NY)",
       "juego": "New York Tarde",
-      "fecha": "11-08",
+      "fecha": "12-08",
       "numeros": [
-        "17",
-        "99",
-        "90"
+        "14",
+        "36",
+        "89"
       ]
     },
     {
@@ -373,6 +373,16 @@
     },
     {
       "empresa": "Anguila",
+      "juego": "Anguila 3:00 PM",
+      "fecha": null,
+      "numeros": [
+        "63",
+        "41",
+        "08"
+      ]
+    },
+    {
+      "empresa": "Anguila",
       "juego": "Anguila 2:00 PM",
       "fecha": null,
       "numeros": [
@@ -409,26 +419,6 @@
         "43",
         "22",
         "11"
-      ]
-    },
-    {
-      "empresa": "haiti-bolet",
-      "juego": "Haiti Bolet 10:30 AM",
-      "fecha": null,
-      "numeros": [
-        "48",
-        "51",
-        "93"
-      ]
-    },
-    {
-      "empresa": "Anguila",
-      "juego": "Anguila 9:00 AM",
-      "fecha": null,
-      "numeros": [
-        "51",
-        "19",
-        "82"
       ]
     }
   ]
