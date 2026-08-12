@@ -2350,6 +2350,49 @@
      "20",
      "63"
     ]
+   },
+   {
+    "empresa": "Lotería Real",
+    "juego": "Loto Real",
+    "numeros": [
+     "03",
+     "04",
+     "09",
+     "12",
+     "31",
+     "34"
+    ]
+   },
+   {
+    "empresa": "King Lottery",
+    "juego": "King Lottery Noche",
+    "numeros": [
+     "49",
+     "01",
+     "53"
+    ]
+   },
+   {
+    "empresa": "haiti-bolet",
+    "juego": "Haiti Bolet 7:30 PM",
+    "numeros": [
+     "97",
+     "49",
+     "97"
+    ]
+   }
+  ],
+  "2026-08-12": [
+   {
+    "empresa": "Loteka",
+    "juego": "Mega Chances",
+    "numeros": [
+     "39",
+     "46",
+     "64",
+     "85",
+     "95"
+    ]
    }
   ]
  }

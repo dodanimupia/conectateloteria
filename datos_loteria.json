@@ -1,5 +1,5 @@
 {
-  "actualizado": "2026-08-11T23:22:53",
+  "actualizado": "2026-08-12T00:03:57",
   "en_vivo": true,
   "resultados": [
     {
@@ -132,26 +132,26 @@
     {
       "empresa": "Lotería Real",
       "juego": "Loto Real",
-      "fecha": "08-08",
+      "fecha": "11-08",
       "numeros": [
-        "02",
+        "03",
         "04",
-        "08",
+        "09",
         "12",
-        "24",
-        "27"
+        "31",
+        "34"
       ]
     },
     {
       "empresa": "Loteka",
       "juego": "Mega Chances",
-      "fecha": "11-08",
+      "fecha": "12-08",
       "numeros": [
-        "09",
-        "48",
-        "59",
-        "74",
-        "77"
+        "39",
+        "46",
+        "64",
+        "85",
+        "95"
       ]
     },
     {
@@ -344,11 +344,11 @@
     {
       "empresa": "King Lottery",
       "juego": "King Lottery Noche",
-      "fecha": "10-08",
+      "fecha": "11-08",
       "numeros": [
-        "30",
-        "31",
-        "82"
+        "49",
+        "01",
+        "53"
       ]
     },
     {
@@ -364,11 +364,44 @@
     {
       "empresa": "haiti-bolet",
       "juego": "Haiti Bolet 7:30 PM",
-      "fecha": "10-08",
+      "fecha": "11-08",
       "numeros": [
-        "61",
-        "46",
-        "32"
+        "97",
+        "49",
+        "97"
+      ]
+    },
+    {
+      "empresa": "Anguila",
+      "juego": "Anguila 8:00 PM",
+      "fecha": null,
+      "numeros": [
+        "19",
+        "39",
+        "22"
+      ]
+    },
+    {
+      "empresa": "Lotería Real",
+      "juego": "Loto Pool Noche",
+      "fecha": null,
+      "numeros": [
+        "10",
+        "16",
+        "22",
+        "81"
+      ]
+    },
+    {
+      "empresa": "Lotería Real",
+      "juego": "Chance Real",
+      "fecha": null,
+      "numeros": [
+        "13",
+        "42",
+        "58",
+        "86",
+        "93"
       ]
     },
     {
@@ -439,26 +472,6 @@
         "76",
         "46",
         "82"
-      ]
-    },
-    {
-      "empresa": "Anguila",
-      "juego": "Anguila 2:00 PM",
-      "fecha": null,
-      "numeros": [
-        "81",
-        "01",
-        "57"
-      ]
-    },
-    {
-      "empresa": "Lotería Real",
-      "juego": "Nueva Yol Real",
-      "fecha": null,
-      "numeros": [
-        "93",
-        "39",
-        "84"
       ]
     }
   ]
