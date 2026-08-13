@@ -1,5 +1,5 @@
 {
-  "actualizado": "2026-08-13T17:28:39",
+  "actualizado": "2026-08-13T18:26:05",
   "en_vivo": true,
   "resultados": [
     {
@@ -187,11 +187,11 @@
     {
       "empresa": "Americanas (NY)",
       "juego": "Florida Día",
-      "fecha": "12-08",
+      "fecha": "13-08",
       "numeros": [
         "64",
-        "85",
-        "58"
+        "03",
+        "84"
       ]
     },
     {
@@ -372,6 +372,16 @@
       ]
     },
     {
+      "empresa": "Anguila",
+      "juego": "Anguila 2:00 PM",
+      "fecha": null,
+      "numeros": [
+        "44",
+        "11",
+        "98"
+      ]
+    },
+    {
       "empresa": "Lotería Real",
       "juego": "Nueva Yol Real",
       "fecha": null,
@@ -419,16 +429,6 @@
         "12",
         "76",
         "47"
-      ]
-    },
-    {
-      "empresa": "Anguila",
-      "juego": "Anguila 8:00  AM",
-      "fecha": null,
-      "numeros": [
-        "34",
-        "25",
-        "24"
       ]
     }
   ]
