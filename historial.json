@@ -2337,6 +2337,27 @@
      "10",
      "21"
     ]
+   },
+   {
+    "empresa": "La Primera",
+    "juego": "Loto 5",
+    "numeros": [
+     "05",
+     "13",
+     "15",
+     "22",
+     "27",
+     "10"
+    ]
+   },
+   {
+    "empresa": "La Primera",
+    "juego": "Primera Noche",
+    "numeros": [
+     "95",
+     "31",
+     "16"
+    ]
    }
   ]
  }
