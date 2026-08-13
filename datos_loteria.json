@@ -1,5 +1,5 @@
 {
-  "actualizado": "2026-08-12T23:55:13",
+  "actualizado": "2026-08-13T00:51:21",
   "en_vivo": true,
   "resultados": [
     {
@@ -145,23 +145,23 @@
     {
       "empresa": "Loteka",
       "juego": "Mega Chances",
-      "fecha": "12-08",
+      "fecha": "13-08",
       "numeros": [
-        "39",
+        "20",
         "46",
-        "64",
-        "85",
-        "95"
+        "47",
+        "60",
+        "81"
       ]
     },
     {
       "empresa": "Loteka",
       "juego": "Quiniela Loteka",
-      "fecha": "12-08",
+      "fecha": "13-08",
       "numeros": [
-        "34",
-        "02",
-        "40"
+        "79",
+        "23",
+        "22"
       ]
     },
     {
@@ -373,6 +373,39 @@
     },
     {
       "empresa": "Anguila",
+      "juego": "Anguila 8:00 PM",
+      "fecha": null,
+      "numeros": [
+        "06",
+        "32",
+        "88"
+      ]
+    },
+    {
+      "empresa": "Lotería Real",
+      "juego": "Loto Pool Noche",
+      "fecha": null,
+      "numeros": [
+        "09",
+        "24",
+        "52",
+        "68"
+      ]
+    },
+    {
+      "empresa": "Lotería Real",
+      "juego": "Chance Real",
+      "fecha": null,
+      "numeros": [
+        "05",
+        "16",
+        "36",
+        "79",
+        "93"
+      ]
+    },
+    {
+      "empresa": "Anguila",
       "juego": "Anguila 7:00 PM",
       "fecha": null,
       "numeros": [
@@ -439,16 +472,6 @@
         "63",
         "41",
         "08"
-      ]
-    },
-    {
-      "empresa": "Anguila",
-      "juego": "Anguila 2:00 PM",
-      "fecha": null,
-      "numeros": [
-        "10",
-        "36",
-        "81"
       ]
     }
   ]
