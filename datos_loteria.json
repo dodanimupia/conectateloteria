@@ -1,5 +1,5 @@
 {
-  "actualizado": "2026-08-14T06:14:43",
+  "actualizado": "2026-08-14T07:50:23",
   "en_vivo": true,
   "resultados": [
     {
@@ -415,18 +415,6 @@
         "10",
         "64",
         "86"
-      ]
-    },
-    {
-      "empresa": "Lotería Real",
-      "juego": "Chance Real",
-      "fecha": null,
-      "numeros": [
-        "14",
-        "16",
-        "51",
-        "56",
-        "90"
       ]
     }
   ]
