@@ -1,5 +1,5 @@
 {
-  "actualizado": "2026-08-14T21:52:55",
+  "actualizado": "2026-08-14T22:08:17",
   "en_vivo": true,
   "resultados": [
     {
@@ -276,11 +276,11 @@
     {
       "empresa": "La Suerte",
       "juego": "La Suerte Tarde",
-      "fecha": "13-08",
+      "fecha": "14-08",
       "numeros": [
-        "50",
-        "10",
-        "21"
+        "69",
+        "08",
+        "77"
       ]
     },
     {
@@ -369,6 +369,16 @@
         "75",
         "01",
         "93"
+      ]
+    },
+    {
+      "empresa": "Anguila",
+      "juego": "Anguila 6:00 PM",
+      "fecha": null,
+      "numeros": [
+        "17",
+        "51",
+        "92"
       ]
     },
     {
