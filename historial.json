@@ -2273,6 +2273,35 @@
      "53",
      "93"
     ]
+   },
+   {
+    "empresa": "Lotería Nacional",
+    "juego": "Juega + Pega +",
+    "numeros": [
+     "14",
+     "25",
+     "05",
+     "06",
+     "21"
+    ]
+   },
+   {
+    "empresa": "Lotería Nacional",
+    "juego": "Gana Más",
+    "numeros": [
+     "42",
+     "51",
+     "82"
+    ]
+   },
+   {
+    "empresa": "Americanas (NY)",
+    "juego": "New York Tarde",
+    "numeros": [
+     "80",
+     "28",
+     "94"
+    ]
    }
   ]
  }

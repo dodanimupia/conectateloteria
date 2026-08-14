@@ -1,27 +1,27 @@
 {
-  "actualizado": "2026-08-14T18:00:58",
+  "actualizado": "2026-08-14T18:57:30",
   "en_vivo": true,
   "resultados": [
     {
       "empresa": "Lotería Nacional",
       "juego": "Juega + Pega +",
-      "fecha": "13-08",
+      "fecha": "14-08",
       "numeros": [
-        "07",
-        "24",
         "14",
-        "18",
-        "07"
+        "25",
+        "05",
+        "06",
+        "21"
       ]
     },
     {
       "empresa": "Lotería Nacional",
       "juego": "Gana Más",
-      "fecha": "13-08",
+      "fecha": "14-08",
       "numeros": [
-        "03",
-        "89",
-        "17"
+        "42",
+        "51",
+        "82"
       ]
     },
     {
@@ -167,11 +167,11 @@
     {
       "empresa": "Americanas (NY)",
       "juego": "New York Tarde",
-      "fecha": "13-08",
+      "fecha": "14-08",
       "numeros": [
+        "80",
         "28",
-        "34",
-        "66"
+        "94"
       ]
     },
     {
@@ -419,16 +419,6 @@
         "53",
         "24",
         "59"
-      ]
-    },
-    {
-      "empresa": "Anguila",
-      "juego": "Anguila 9:00 AM",
-      "fecha": null,
-      "numeros": [
-        "18",
-        "96",
-        "62"
       ]
     }
   ]
