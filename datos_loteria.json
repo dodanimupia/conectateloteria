@@ -1,5 +1,5 @@
 {
-  "actualizado": "2026-08-14T13:25:06",
+  "actualizado": "2026-08-14T14:29:11",
   "en_vivo": true,
   "resultados": [
     {
@@ -304,11 +304,11 @@
     {
       "empresa": "Anguila",
       "juego": "Anguila 10:00 AM",
-      "fecha": "13-08",
+      "fecha": "14-08",
       "numeros": [
-        "00",
-        "86",
-        "88"
+        "22",
+        "80",
+        "52"
       ]
     },
     {
@@ -354,11 +354,11 @@
     {
       "empresa": "haiti-bolet",
       "juego": "Haiti Bolet 9:30 AM",
-      "fecha": "13-08",
+      "fecha": "14-08",
       "numeros": [
-        "28",
-        "40",
-        "32"
+        "85",
+        "80",
+        "27"
       ]
     },
     {
@@ -399,21 +399,6 @@
         "15",
         "52",
         "84"
-      ]
-    },
-    {
-      "empresa": "Loteka",
-      "juego": "MegaLotto",
-      "fecha": null,
-      "numeros": [
-        "04",
-        "21",
-        "24",
-        "25",
-        "30",
-        "34",
-        "10",
-        "05"
       ]
     }
   ]
