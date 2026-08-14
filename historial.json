@@ -2218,6 +2218,52 @@
     "numeros": [
      "16"
     ]
+   },
+   {
+    "empresa": "Lotería Real",
+    "juego": "Loto Pool",
+    "numeros": [
+     "09",
+     "35",
+     "59",
+     "67"
+    ]
+   },
+   {
+    "empresa": "Lotería Real",
+    "juego": "Quiniela Real",
+    "numeros": [
+     "34",
+     "29",
+     "65"
+    ]
+   },
+   {
+    "empresa": "La Suerte",
+    "juego": "La Suerte Día",
+    "numeros": [
+     "04",
+     "58",
+     "12"
+    ]
+   },
+   {
+    "empresa": "Anguila",
+    "juego": "Anguila 1:00 PM",
+    "numeros": [
+     "55",
+     "83",
+     "03"
+    ]
+   },
+   {
+    "empresa": "King Lottery",
+    "juego": "King Lottery Día",
+    "numeros": [
+     "65",
+     "88",
+     "38"
+    ]
    }
   ]
  }
