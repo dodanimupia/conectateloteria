@@ -1,5 +1,5 @@
 {
-  "actualizado": "2026-08-15T01:54:18",
+  "actualizado": "2026-08-15T02:41:33",
   "en_vivo": true,
   "resultados": [
     {
@@ -177,11 +177,11 @@
     {
       "empresa": "Americanas (NY)",
       "juego": "New York Noche",
-      "fecha": "14-08",
+      "fecha": "15-08",
       "numeros": [
-        "93",
-        "05",
-        "79"
+        "21",
+        "41",
+        "61"
       ]
     },
     {
@@ -369,6 +369,16 @@
         "22",
         "25",
         "78"
+      ]
+    },
+    {
+      "empresa": "Anguila",
+      "juego": "Anguila 10:00 PM",
+      "fecha": null,
+      "numeros": [
+        "94",
+        "18",
+        "65"
       ]
     },
     {
