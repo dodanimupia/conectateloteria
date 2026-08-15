@@ -1,5 +1,5 @@
 {
-  "actualizado": "2026-08-15T23:01:33",
+  "actualizado": "2026-08-15T23:23:42",
   "en_vivo": true,
   "resultados": [
     {
@@ -243,24 +243,24 @@
     {
       "empresa": "La Primera",
       "juego": "Loto 5",
-      "fecha": "14-08",
+      "fecha": "15-08",
       "numeros": [
-        "01",
-        "08",
-        "15",
-        "32",
-        "33",
-        "07"
+        "04",
+        "18",
+        "27",
+        "35",
+        "38",
+        "03"
       ]
     },
     {
       "empresa": "La Primera",
       "juego": "Primera Noche",
-      "fecha": "14-08",
+      "fecha": "15-08",
       "numeros": [
-        "09",
-        "31",
-        "21"
+        "82",
+        "11",
+        "05"
       ]
     },
     {
@@ -377,7 +377,8 @@
       "fecha": null,
       "numeros": [
         "17",
-        "04"
+        "04",
+        "36"
       ]
     },
     {
@@ -448,16 +449,6 @@
         "53",
         "25",
         "50"
-      ]
-    },
-    {
-      "empresa": "Lotería Real",
-      "juego": "Nueva Yol Real",
-      "fecha": null,
-      "numeros": [
-        "57",
-        "59",
-        "48"
       ]
     }
   ]
