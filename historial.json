@@ -2351,6 +2351,40 @@
      "78"
     ]
    }
+  ],
+  "2026-08-15": [
+   {
+    "empresa": "Lotería Real",
+    "juego": "Loto Real",
+    "numeros": [
+     "05",
+     "07",
+     "18",
+     "25",
+     "31",
+     "35"
+    ]
+   },
+   {
+    "empresa": "Loteka",
+    "juego": "Mega Chances",
+    "numeros": [
+     "32",
+     "61",
+     "62",
+     "77",
+     "86"
+    ]
+   },
+   {
+    "empresa": "Loteka",
+    "juego": "Quiniela Loteka",
+    "numeros": [
+     "51",
+     "80",
+     "19"
+    ]
+   }
   ]
  }
 }

@@ -1,5 +1,5 @@
 {
-  "actualizado": "2026-08-14T23:52:11",
+  "actualizado": "2026-08-15T00:25:56",
   "en_vivo": true,
   "resultados": [
     {
@@ -132,36 +132,36 @@
     {
       "empresa": "Lotería Real",
       "juego": "Loto Real",
-      "fecha": "11-08",
+      "fecha": "15-08",
       "numeros": [
-        "03",
-        "04",
-        "09",
-        "12",
+        "05",
+        "07",
+        "18",
+        "25",
         "31",
-        "34"
+        "35"
       ]
     },
     {
       "empresa": "Loteka",
       "juego": "Mega Chances",
-      "fecha": "14-08",
+      "fecha": "15-08",
       "numeros": [
-        "35",
-        "39",
-        "43",
-        "44",
-        "75"
+        "32",
+        "61",
+        "62",
+        "77",
+        "86"
       ]
     },
     {
       "empresa": "Loteka",
       "juego": "Quiniela Loteka",
-      "fecha": "14-08",
+      "fecha": "15-08",
       "numeros": [
-        "75",
+        "51",
         "80",
-        "28"
+        "19"
       ]
     },
     {
@@ -373,6 +373,39 @@
     },
     {
       "empresa": "Anguila",
+      "juego": "Anguila 8:00 PM",
+      "fecha": null,
+      "numeros": [
+        "35",
+        "27",
+        "05"
+      ]
+    },
+    {
+      "empresa": "Lotería Real",
+      "juego": "Loto Pool Noche",
+      "fecha": null,
+      "numeros": [
+        "17",
+        "37",
+        "44",
+        "78"
+      ]
+    },
+    {
+      "empresa": "Lotería Real",
+      "juego": "Chance Real",
+      "fecha": null,
+      "numeros": [
+        "10",
+        "13",
+        "32",
+        "33",
+        "91"
+      ]
+    },
+    {
+      "empresa": "Anguila",
       "juego": "Anguila 7:00 PM",
       "fecha": null,
       "numeros": [
@@ -429,26 +462,6 @@
         "33",
         "38",
         "78"
-      ]
-    },
-    {
-      "empresa": "Anguila",
-      "juego": "Anguila 3:00 PM",
-      "fecha": null,
-      "numeros": [
-        "57",
-        "97",
-        "90"
-      ]
-    },
-    {
-      "empresa": "Anguila",
-      "juego": "Anguila 2:00 PM",
-      "fecha": null,
-      "numeros": [
-        "84",
-        "45",
-        "06"
       ]
     }
   ]
