@@ -1,5 +1,5 @@
 {
-  "actualizado": "2026-08-16T15:09:07",
+  "actualizado": "2026-08-16T15:33:08",
   "en_vivo": true,
   "resultados": [
     {
@@ -369,6 +369,16 @@
         "47",
         "59",
         "77"
+      ]
+    },
+    {
+      "empresa": "haiti-bolet",
+      "juego": "Haiti Bolet 11:30 AM",
+      "fecha": null,
+      "numeros": [
+        "25",
+        "86",
+        "59"
       ]
     },
     {
