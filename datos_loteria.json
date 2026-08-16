@@ -1,5 +1,5 @@
 {
-  "actualizado": "2026-08-16T23:49:36",
+  "actualizado": "2026-08-16T23:59:19",
   "en_vivo": true,
   "resultados": [
     {
@@ -372,6 +372,29 @@
       ]
     },
     {
+      "empresa": "Lotería Real",
+      "juego": "Loto Pool Noche",
+      "fecha": null,
+      "numeros": [
+        "21",
+        "26",
+        "59",
+        "89"
+      ]
+    },
+    {
+      "empresa": "Lotería Real",
+      "juego": "Chance Real",
+      "fecha": null,
+      "numeros": [
+        "04",
+        "21",
+        "31",
+        "83",
+        "93"
+      ]
+    },
+    {
       "empresa": "Anguila",
       "juego": "Anguila 7:00 PM",
       "fecha": null,
@@ -429,16 +452,6 @@
         "49",
         "06",
         "03"
-      ]
-    },
-    {
-      "empresa": "Anguila",
-      "juego": "Anguila 3:00 PM",
-      "fecha": null,
-      "numeros": [
-        "84",
-        "96",
-        "32"
       ]
     }
   ]
