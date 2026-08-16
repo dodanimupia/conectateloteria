@@ -1,5 +1,5 @@
 {
-  "actualizado": "2026-08-16T22:58:15",
+  "actualizado": "2026-08-16T23:15:16",
   "en_vivo": true,
   "resultados": [
     {
@@ -243,24 +243,24 @@
     {
       "empresa": "La Primera",
       "juego": "Loto 5",
-      "fecha": "15-08",
+      "fecha": "16-08",
       "numeros": [
-        "04",
-        "18",
-        "27",
-        "35",
-        "38",
-        "03"
+        "01",
+        "05",
+        "14",
+        "23",
+        "33",
+        "07"
       ]
     },
     {
       "empresa": "La Primera",
       "juego": "Primera Noche",
-      "fecha": "15-08",
+      "fecha": "16-08",
       "numeros": [
-        "82",
-        "11",
-        "05"
+        "30",
+        "33",
+        "74"
       ]
     },
     {
@@ -369,6 +369,16 @@
         "47",
         "59",
         "77"
+      ]
+    },
+    {
+      "empresa": "Anguila",
+      "juego": "Anguila 7:00 PM",
+      "fecha": null,
+      "numeros": [
+        "04",
+        "41",
+        "11"
       ]
     },
     {
