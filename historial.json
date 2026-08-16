@@ -2375,6 +2375,115 @@
      "77"
     ]
    }
+  ],
+  "2026-08-16": [
+   {
+    "empresa": "Lotería Nacional",
+    "juego": "Lotería Nacional",
+    "numeros": [
+     "95",
+     "28",
+     "36"
+    ]
+   },
+   {
+    "empresa": "Leidsa",
+    "juego": "Pega 3 Más",
+    "numeros": [
+     "13",
+     "05",
+     "17"
+    ]
+   },
+   {
+    "empresa": "Leidsa",
+    "juego": "Loto Pool",
+    "numeros": [
+     "05",
+     "14",
+     "19",
+     "20",
+     "26"
+    ]
+   },
+   {
+    "empresa": "Leidsa",
+    "juego": "Super Kino TV",
+    "numeros": [
+     "02",
+     "05",
+     "13",
+     "14",
+     "15",
+     "16",
+     "19",
+     "23",
+     "25",
+     "41",
+     "50",
+     "51",
+     "58",
+     "62",
+     "66",
+     "69",
+     "73",
+     "75",
+     "77",
+     "80"
+    ]
+   },
+   {
+    "empresa": "Leidsa",
+    "juego": "Quiniela Leidsa",
+    "numeros": [
+     "71",
+     "76",
+     "96"
+    ]
+   },
+   {
+    "empresa": "Leidsa",
+    "juego": "Loto - Loto Más",
+    "numeros": [
+     "04",
+     "06",
+     "10",
+     "15",
+     "23",
+     "24",
+     "09",
+     "15"
+    ]
+   },
+   {
+    "empresa": "Loteka",
+    "juego": "Mega Chances",
+    "numeros": [
+     "39",
+     "47",
+     "52",
+     "76",
+     "93"
+    ]
+   },
+   {
+    "empresa": "Loteka",
+    "juego": "Quiniela Loteka",
+    "numeros": [
+     "19",
+     "91",
+     "45"
+    ]
+   },
+   {
+    "empresa": "Anguila",
+    "juego": "Anguila 9:00 PM",
+    "numeros": [
+     "82",
+     "06",
+     "74"
+    ]
+   }
   ]
  }
 }
