@@ -1,5 +1,5 @@
 {
-  "actualizado": "2026-08-16T16:01:45",
+  "actualizado": "2026-08-16T16:30:33",
   "en_vivo": true,
   "resultados": [
     {
@@ -233,11 +233,11 @@
     {
       "empresa": "La Primera",
       "juego": "La Primera Día",
-      "fecha": "15-08",
+      "fecha": "16-08",
       "numeros": [
-        "30",
-        "84",
-        "46"
+        "67",
+        "28",
+        "05"
       ]
     },
     {
@@ -286,19 +286,19 @@
     {
       "empresa": "LoteDom",
       "juego": "LoteDom",
-      "fecha": "15-08",
+      "fecha": "16-08",
       "numeros": [
-        "57",
-        "90",
-        "99"
+        "16",
+        "37",
+        "45"
       ]
     },
     {
       "empresa": "LoteDom",
       "juego": "El Quemaito Mayor",
-      "fecha": "15-08",
+      "fecha": "16-08",
       "numeros": [
-        "01"
+        "29"
       ]
     },
     {
@@ -419,16 +419,6 @@
         "68",
         "76",
         "94"
-      ]
-    },
-    {
-      "empresa": "Anguila",
-      "juego": "Anguila 10:00 PM",
-      "fecha": null,
-      "numeros": [
-        "75",
-        "78",
-        "44"
       ]
     }
   ]
