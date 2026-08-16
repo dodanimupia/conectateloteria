@@ -1,5 +1,5 @@
 {
-  "actualizado": "2026-08-16T23:15:16",
+  "actualizado": "2026-08-16T23:34:28",
   "en_vivo": true,
   "resultados": [
     {
@@ -344,11 +344,11 @@
     {
       "empresa": "King Lottery",
       "juego": "King Lottery Noche",
-      "fecha": "15-08",
+      "fecha": "16-08",
       "numeros": [
-        "06",
-        "95",
-        "71"
+        "62",
+        "85",
+        "89"
       ]
     },
     {
@@ -364,11 +364,11 @@
     {
       "empresa": "haiti-bolet",
       "juego": "Haiti Bolet 7:30 PM",
-      "fecha": "15-08",
+      "fecha": "16-08",
       "numeros": [
-        "47",
-        "59",
-        "77"
+        "75",
+        "65",
+        "32"
       ]
     },
     {
@@ -439,16 +439,6 @@
         "84",
         "96",
         "32"
-      ]
-    },
-    {
-      "empresa": "Anguila",
-      "juego": "Anguila 2:00 PM",
-      "fecha": null,
-      "numeros": [
-        "56",
-        "91",
-        "94"
       ]
     }
   ]
