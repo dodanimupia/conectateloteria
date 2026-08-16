@@ -2483,6 +2483,24 @@
      "06",
      "74"
     ]
+   },
+   {
+    "empresa": "Americanas (NY)",
+    "juego": "New York Noche",
+    "numeros": [
+     "25",
+     "38",
+     "36"
+    ]
+   },
+   {
+    "empresa": "Americanas (NY)",
+    "juego": "Florida Noche",
+    "numeros": [
+     "09",
+     "59",
+     "21"
+    ]
    }
   ]
  }
