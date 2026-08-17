@@ -1,5 +1,5 @@
 {
-  "actualizado": "2026-08-16T23:59:19",
+  "actualizado": "2026-08-17T01:07:58",
   "en_vivo": true,
   "resultados": [
     {
@@ -145,23 +145,23 @@
     {
       "empresa": "Loteka",
       "juego": "Mega Chances",
-      "fecha": "16-08",
+      "fecha": "17-08",
       "numeros": [
-        "39",
-        "47",
-        "52",
+        "01",
+        "11",
         "76",
-        "93"
+        "92",
+        "98"
       ]
     },
     {
       "empresa": "Loteka",
       "juego": "Quiniela Loteka",
-      "fecha": "16-08",
+      "fecha": "17-08",
       "numeros": [
-        "19",
-        "91",
-        "45"
+        "25",
+        "39",
+        "78"
       ]
     },
     {
@@ -324,11 +324,11 @@
     {
       "empresa": "Anguila",
       "juego": "Anguila 9:00 PM",
-      "fecha": "16-08",
+      "fecha": "17-08",
       "numeros": [
-        "82",
-        "06",
-        "74"
+        "16",
+        "20",
+        "86"
       ]
     },
     {
@@ -369,6 +369,16 @@
         "75",
         "65",
         "32"
+      ]
+    },
+    {
+      "empresa": "Anguila",
+      "juego": "Anguila 8:00 PM",
+      "fecha": null,
+      "numeros": [
+        "05",
+        "66",
+        "84"
       ]
     },
     {

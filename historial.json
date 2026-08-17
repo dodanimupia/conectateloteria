@@ -2357,6 +2357,37 @@
      "32"
     ]
    }
+  ],
+  "2026-08-17": [
+   {
+    "empresa": "Loteka",
+    "juego": "Mega Chances",
+    "numeros": [
+     "01",
+     "11",
+     "76",
+     "92",
+     "98"
+    ]
+   },
+   {
+    "empresa": "Loteka",
+    "juego": "Quiniela Loteka",
+    "numeros": [
+     "25",
+     "39",
+     "78"
+    ]
+   },
+   {
+    "empresa": "Anguila",
+    "juego": "Anguila 9:00 PM",
+    "numeros": [
+     "16",
+     "20",
+     "86"
+    ]
+   }
   ]
  }
 }
