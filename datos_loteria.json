@@ -1,5 +1,5 @@
 {
-  "actualizado": "2026-08-17T02:24:33",
+  "actualizado": "2026-08-17T03:24:31",
   "en_vivo": true,
   "resultados": [
     {
@@ -177,11 +177,11 @@
     {
       "empresa": "Americanas (NY)",
       "juego": "New York Noche",
-      "fecha": "16-08",
+      "fecha": "17-08",
       "numeros": [
-        "25",
-        "38",
-        "36"
+        "29",
+        "80",
+        "34"
       ]
     },
     {
@@ -442,16 +442,6 @@
         "31",
         "28",
         "86"
-      ]
-    },
-    {
-      "empresa": "haiti-bolet",
-      "juego": "Haiti Bolet 5:30 PM",
-      "fecha": null,
-      "numeros": [
-        "09",
-        "38",
-        "56"
       ]
     }
   ]
