@@ -1,5 +1,5 @@
 {
-  "actualizado": "2026-08-17T14:59:56",
+  "actualizado": "2026-08-17T15:24:48",
   "en_vivo": true,
   "resultados": [
     {
@@ -372,6 +372,16 @@
       ]
     },
     {
+      "empresa": "Anguila",
+      "juego": "Anguila 11:00 AM",
+      "fecha": null,
+      "numeros": [
+        "26",
+        "73",
+        "64"
+      ]
+    },
+    {
       "empresa": "haiti-bolet",
       "juego": "Haiti Bolet 10:30 AM",
       "fecha": null,
@@ -430,18 +440,6 @@
         "26",
         "59",
         "89"
-      ]
-    },
-    {
-      "empresa": "Lotería Real",
-      "juego": "Chance Real",
-      "fecha": null,
-      "numeros": [
-        "04",
-        "21",
-        "31",
-        "83",
-        "93"
       ]
     }
   ]
