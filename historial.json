@@ -2152,6 +2152,34 @@
      "31",
      "80"
     ]
+   },
+   {
+    "empresa": "Lotería Real",
+    "juego": "Loto Pool",
+    "numeros": [
+     "17",
+     "45",
+     "66",
+     "97"
+    ]
+   },
+   {
+    "empresa": "Lotería Real",
+    "juego": "Quiniela Real",
+    "numeros": [
+     "99",
+     "83",
+     "27"
+    ]
+   },
+   {
+    "empresa": "Anguila",
+    "juego": "Anguila 1:00 PM",
+    "numeros": [
+     "07",
+     "22",
+     "05"
+    ]
    }
   ]
  }

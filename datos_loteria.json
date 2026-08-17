@@ -1,5 +1,5 @@
 {
-  "actualizado": "2026-08-17T16:55:46",
+  "actualizado": "2026-08-17T17:16:24",
   "en_vivo": true,
   "resultados": [
     {
@@ -111,22 +111,22 @@
     {
       "empresa": "Lotería Real",
       "juego": "Loto Pool",
-      "fecha": "16-08",
+      "fecha": "17-08",
       "numeros": [
-        "07",
-        "18",
-        "72",
-        "93"
+        "17",
+        "45",
+        "66",
+        "97"
       ]
     },
     {
       "empresa": "Lotería Real",
       "juego": "Quiniela Real",
-      "fecha": "16-08",
+      "fecha": "17-08",
       "numeros": [
-        "42",
-        "85",
-        "71"
+        "99",
+        "83",
+        "27"
       ]
     },
     {
@@ -314,11 +314,11 @@
     {
       "empresa": "Anguila",
       "juego": "Anguila 1:00 PM",
-      "fecha": "16-08",
+      "fecha": "17-08",
       "numeros": [
-        "58",
-        "30",
-        "35"
+        "07",
+        "22",
+        "05"
       ]
     },
     {
@@ -372,6 +372,16 @@
       ]
     },
     {
+      "empresa": "Lotería Real",
+      "juego": "Nueva Yol Real",
+      "fecha": null,
+      "numeros": [
+        "47",
+        "20",
+        "05"
+      ]
+    },
+    {
       "empresa": "haiti-bolet",
       "juego": "Haiti Bolet 11:30 AM",
       "fecha": null,
@@ -419,16 +429,6 @@
         "73",
         "01",
         "82"
-      ]
-    },
-    {
-      "empresa": "Anguila",
-      "juego": "Anguila 10:00 PM",
-      "fecha": null,
-      "numeros": [
-        "13",
-        "21",
-        "60"
       ]
     }
   ]
