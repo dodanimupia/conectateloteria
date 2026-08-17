@@ -1,5 +1,5 @@
 {
-  "actualizado": "2026-08-17T17:47:21",
+  "actualizado": "2026-08-17T18:13:25",
   "en_vivo": true,
   "resultados": [
     {
@@ -372,6 +372,16 @@
       ]
     },
     {
+      "empresa": "Anguila",
+      "juego": "Anguila 2:00 PM",
+      "fecha": null,
+      "numeros": [
+        "91",
+        "24",
+        "08"
+      ]
+    },
+    {
       "empresa": "Lotería Real",
       "juego": "Nueva Yol Real",
       "fecha": null,
@@ -419,16 +429,6 @@
         "95",
         "90",
         "91"
-      ]
-    },
-    {
-      "empresa": "Anguila",
-      "juego": "Anguila 8:00  AM",
-      "fecha": null,
-      "numeros": [
-        "73",
-        "01",
-        "82"
       ]
     }
   ]
