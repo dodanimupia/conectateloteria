@@ -1,5 +1,5 @@
 {
-  "actualizado": "2026-08-18T00:59:28",
+  "actualizado": "2026-08-18T03:05:06",
   "en_vivo": true,
   "resultados": [
     {
@@ -29,7 +29,9 @@
       "juego": "Lotería Nacional",
       "fecha": "18-08",
       "numeros": [
-        "93"
+        "93",
+        "71",
+        "54"
       ]
     },
     {
@@ -175,11 +177,11 @@
     {
       "empresa": "Americanas (NY)",
       "juego": "New York Noche",
-      "fecha": "17-08",
+      "fecha": "18-08",
       "numeros": [
-        "29",
-        "80",
-        "34"
+        "52",
+        "52",
+        "31"
       ]
     },
     {
@@ -195,11 +197,11 @@
     {
       "empresa": "Americanas (NY)",
       "juego": "Florida Noche",
-      "fecha": "17-08",
+      "fecha": "18-08",
       "numeros": [
-        "62",
-        "81",
-        "33"
+        "66",
+        "33",
+        "40"
       ]
     },
     {
@@ -218,14 +220,14 @@
     {
       "empresa": "Americanas (NY)",
       "juego": "PowerBall",
-      "fecha": "16-08",
+      "fecha": "18-08",
       "numeros": [
-        "05",
         "08",
-        "27",
-        "29",
-        "63",
-        "13"
+        "15",
+        "25",
+        "49",
+        "65",
+        "22"
       ]
     },
     {
@@ -322,11 +324,11 @@
     {
       "empresa": "Anguila",
       "juego": "Anguila 9:00 PM",
-      "fecha": "17-08",
+      "fecha": "18-08",
       "numeros": [
-        "16",
-        "20",
-        "86"
+        "09",
+        "06",
+        "73"
       ]
     },
     {
@@ -370,6 +372,16 @@
       ]
     },
     {
+      "empresa": "Anguila",
+      "juego": "Anguila 10:00 PM",
+      "fecha": null,
+      "numeros": [
+        "15",
+        "93",
+        "05"
+      ]
+    },
+    {
       "empresa": "Loteka",
       "juego": "MegaLotto",
       "fecha": null,
@@ -403,38 +415,6 @@
         "07",
         "49",
         "83"
-      ]
-    },
-    {
-      "empresa": "Lotería Real",
-      "juego": "Chance Real",
-      "fecha": null,
-      "numeros": [
-        "50",
-        "83",
-        "86",
-        "91",
-        "98"
-      ]
-    },
-    {
-      "empresa": "Anguila",
-      "juego": "Anguila 7:00 PM",
-      "fecha": null,
-      "numeros": [
-        "93",
-        "73",
-        "72"
-      ]
-    },
-    {
-      "empresa": "haiti-bolet",
-      "juego": "Haiti Bolet 6:30 PM",
-      "fecha": null,
-      "numeros": [
-        "54",
-        "49",
-        "42"
       ]
     }
   ]

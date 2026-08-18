@@ -2273,7 +2273,9 @@
     "empresa": "Lotería Nacional",
     "juego": "Lotería Nacional",
     "numeros": [
-     "93"
+     "93",
+     "71",
+     "54"
     ]
    },
    {
@@ -2349,6 +2351,45 @@
      "90",
      "40",
      "19"
+    ]
+   },
+   {
+    "empresa": "Americanas (NY)",
+    "juego": "New York Noche",
+    "numeros": [
+     "52",
+     "52",
+     "31"
+    ]
+   },
+   {
+    "empresa": "Americanas (NY)",
+    "juego": "Florida Noche",
+    "numeros": [
+     "66",
+     "33",
+     "40"
+    ]
+   },
+   {
+    "empresa": "Americanas (NY)",
+    "juego": "PowerBall",
+    "numeros": [
+     "08",
+     "15",
+     "25",
+     "49",
+     "65",
+     "22"
+    ]
+   },
+   {
+    "empresa": "Anguila",
+    "juego": "Anguila 9:00 PM",
+    "numeros": [
+     "09",
+     "06",
+     "73"
     ]
    }
   ]
