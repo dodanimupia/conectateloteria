@@ -1,5 +1,5 @@
 {
-  "actualizado": "2026-08-17T23:58:00",
+  "actualizado": "2026-08-18T00:59:28",
   "en_vivo": true,
   "resultados": [
     {
@@ -27,70 +27,68 @@
     {
       "empresa": "Lotería Nacional",
       "juego": "Lotería Nacional",
-      "fecha": "16-08",
+      "fecha": "18-08",
       "numeros": [
-        "95",
-        "28",
-        "36"
+        "93"
       ]
     },
     {
       "empresa": "Leidsa",
       "juego": "Pega 3 Más",
-      "fecha": "16-08",
+      "fecha": "18-08",
       "numeros": [
-        "34",
-        "26",
-        "15"
+        "20",
+        "00",
+        "36"
       ]
     },
     {
       "empresa": "Leidsa",
       "juego": "Loto Pool",
-      "fecha": "16-08",
+      "fecha": "18-08",
       "numeros": [
         "06",
-        "12",
-        "20",
-        "26",
-        "27"
+        "13",
+        "14",
+        "22",
+        "26"
       ]
     },
     {
       "empresa": "Leidsa",
       "juego": "Super Kino TV",
-      "fecha": "16-08",
+      "fecha": "18-08",
       "numeros": [
-        "08",
+        "05",
+        "18",
+        "19",
         "21",
-        "24",
+        "22",
+        "23",
         "30",
         "32",
-        "33",
+        "37",
+        "39",
         "40",
         "42",
-        "47",
         "50",
-        "56",
-        "62",
-        "63",
-        "64",
+        "53",
+        "55",
         "68",
         "71",
-        "72",
-        "77",
-        "79",
-        "80"
+        "73",
+        "74",
+        "79"
       ]
     },
     {
       "empresa": "Leidsa",
       "juego": "Quiniela Leidsa",
-      "fecha": "16-08",
+      "fecha": "18-08",
       "numeros": [
-        "83",
-        "53",
-        "51"
+        "70",
+        "77",
+        "18"
       ]
     },
     {
@@ -145,23 +143,23 @@
     {
       "empresa": "Loteka",
       "juego": "Mega Chances",
-      "fecha": "17-08",
+      "fecha": "18-08",
       "numeros": [
-        "01",
-        "11",
-        "76",
-        "92",
-        "98"
+        "63",
+        "66",
+        "75",
+        "75",
+        "76"
       ]
     },
     {
       "empresa": "Loteka",
       "juego": "Quiniela Loteka",
-      "fecha": "17-08",
+      "fecha": "18-08",
       "numeros": [
-        "25",
-        "39",
-        "78"
+        "90",
+        "40",
+        "19"
       ]
     },
     {
@@ -372,6 +370,42 @@
       ]
     },
     {
+      "empresa": "Loteka",
+      "juego": "MegaLotto",
+      "fecha": null,
+      "numeros": [
+        "03",
+        "09",
+        "17",
+        "21",
+        "30",
+        "37",
+        "02",
+        "06"
+      ]
+    },
+    {
+      "empresa": "Anguila",
+      "juego": "Anguila 8:00 PM",
+      "fecha": null,
+      "numeros": [
+        "62",
+        "45",
+        "46"
+      ]
+    },
+    {
+      "empresa": "Lotería Real",
+      "juego": "Loto Pool Noche",
+      "fecha": null,
+      "numeros": [
+        "02",
+        "07",
+        "49",
+        "83"
+      ]
+    },
+    {
       "empresa": "Lotería Real",
       "juego": "Chance Real",
       "fecha": null,
@@ -401,66 +435,6 @@
         "54",
         "49",
         "42"
-      ]
-    },
-    {
-      "empresa": "Anguila",
-      "juego": "Anguila 6:00 PM",
-      "fecha": null,
-      "numeros": [
-        "99",
-        "67",
-        "89"
-      ]
-    },
-    {
-      "empresa": "haiti-bolet",
-      "juego": "Haiti Bolet 5:30 PM",
-      "fecha": null,
-      "numeros": [
-        "14",
-        "99",
-        "05"
-      ]
-    },
-    {
-      "empresa": "Anguila",
-      "juego": "Anguila 5:00 PM",
-      "fecha": null,
-      "numeros": [
-        "61",
-        "22",
-        "72"
-      ]
-    },
-    {
-      "empresa": "Anguila",
-      "juego": "Anguila 4:00 PM",
-      "fecha": null,
-      "numeros": [
-        "83",
-        "07",
-        "87"
-      ]
-    },
-    {
-      "empresa": "Anguila",
-      "juego": "Anguila 3:00 PM",
-      "fecha": null,
-      "numeros": [
-        "55",
-        "69",
-        "70"
-      ]
-    },
-    {
-      "empresa": "Anguila",
-      "juego": "Anguila 2:00 PM",
-      "fecha": null,
-      "numeros": [
-        "91",
-        "24",
-        "08"
       ]
     }
   ]
