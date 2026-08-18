@@ -1,5 +1,5 @@
 {
-  "actualizado": "2026-08-18T20:53:25",
+  "actualizado": "2026-08-18T21:11:56",
   "en_vivo": true,
   "resultados": [
     {
@@ -373,6 +373,16 @@
     },
     {
       "empresa": "Anguila",
+      "juego": "Anguila 5:00 PM",
+      "fecha": null,
+      "numeros": [
+        "51",
+        "33",
+        "07"
+      ]
+    },
+    {
+      "empresa": "Anguila",
       "juego": "Anguila 4:00 PM",
       "fecha": null,
       "numeros": [
@@ -409,16 +419,6 @@
         "05",
         "05",
         "68"
-      ]
-    },
-    {
-      "empresa": "haiti-bolet",
-      "juego": "Haiti Bolet 11:30 AM",
-      "fecha": null,
-      "numeros": [
-        "72",
-        "15",
-        "90"
       ]
     }
   ]
