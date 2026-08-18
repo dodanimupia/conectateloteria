@@ -1,5 +1,5 @@
 {
-  "actualizado": "2026-08-18T16:17:30",
+  "actualizado": "2026-08-18T16:49:57",
   "en_vivo": true,
   "resultados": [
     {
@@ -266,11 +266,11 @@
     {
       "empresa": "La Suerte",
       "juego": "La Suerte Día",
-      "fecha": "17-08",
+      "fecha": "18-08",
       "numeros": [
-        "37",
-        "92",
-        "74"
+        "72",
+        "09",
+        "23"
       ]
     },
     {
@@ -334,11 +334,11 @@
     {
       "empresa": "King Lottery",
       "juego": "King Lottery Día",
-      "fecha": "17-08",
+      "fecha": "18-08",
       "numeros": [
-        "93",
-        "31",
-        "80"
+        "27",
+        "94",
+        "36"
       ]
     },
     {
@@ -419,16 +419,6 @@
         "91",
         "24",
         "68"
-      ]
-    },
-    {
-      "empresa": "Anguila",
-      "juego": "Anguila 10:00 PM",
-      "fecha": null,
-      "numeros": [
-        "15",
-        "93",
-        "05"
       ]
     }
   ]
