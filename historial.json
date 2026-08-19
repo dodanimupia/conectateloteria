@@ -2235,7 +2235,8 @@
     "juego": "Anguila 1:00 PM",
     "numeros": [
      "88",
-     "87"
+     "87",
+     "28"
     ]
    },
    {
@@ -2245,6 +2246,15 @@
      "63",
      "42",
      "71"
+    ]
+   },
+   {
+    "empresa": "Lotería Real",
+    "juego": "Quiniela Real",
+    "numeros": [
+     "70",
+     "37",
+     "25"
     ]
    }
   ]

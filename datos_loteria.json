@@ -1,5 +1,5 @@
 {
-  "actualizado": "2026-08-19T17:00:36",
+  "actualizado": "2026-08-19T17:35:01",
   "en_vivo": true,
   "resultados": [
     {
@@ -122,11 +122,11 @@
     {
       "empresa": "Lotería Real",
       "juego": "Quiniela Real",
-      "fecha": "18-08",
+      "fecha": "19-08",
       "numeros": [
-        "11",
-        "74",
-        "99"
+        "70",
+        "37",
+        "25"
       ]
     },
     {
@@ -317,7 +317,8 @@
       "fecha": "19-08",
       "numeros": [
         "88",
-        "87"
+        "87",
+        "28"
       ]
     },
     {
@@ -368,6 +369,16 @@
         "34",
         "16",
         "79"
+      ]
+    },
+    {
+      "empresa": "Lotería Real",
+      "juego": "Nueva Yol Real",
+      "fecha": null,
+      "numeros": [
+        "44",
+        "56",
+        "15"
       ]
     },
     {
