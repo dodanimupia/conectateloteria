@@ -2185,6 +2185,67 @@
      "41",
      "11"
     ]
+   },
+   {
+    "empresa": "Lotería Real",
+    "juego": "Loto Pool",
+    "numeros": [
+     "23",
+     "64",
+     "70",
+     "90"
+    ]
+   },
+   {
+    "empresa": "La Primera",
+    "juego": "La Primera Día",
+    "numeros": [
+     "85",
+     "56",
+     "59"
+    ]
+   },
+   {
+    "empresa": "La Suerte",
+    "juego": "La Suerte Día",
+    "numeros": [
+     "20",
+     "43",
+     "20"
+    ]
+   },
+   {
+    "empresa": "LoteDom",
+    "juego": "LoteDom",
+    "numeros": [
+     "28",
+     "93",
+     "43"
+    ]
+   },
+   {
+    "empresa": "LoteDom",
+    "juego": "El Quemaito Mayor",
+    "numeros": [
+     "35"
+    ]
+   },
+   {
+    "empresa": "Anguila",
+    "juego": "Anguila 1:00 PM",
+    "numeros": [
+     "88",
+     "87"
+    ]
+   },
+   {
+    "empresa": "King Lottery",
+    "juego": "King Lottery Día",
+    "numeros": [
+     "63",
+     "42",
+     "71"
+    ]
    }
   ]
  }

@@ -1,5 +1,5 @@
 {
-  "actualizado": "2026-08-19T15:52:18",
+  "actualizado": "2026-08-19T17:00:36",
   "en_vivo": true,
   "resultados": [
     {
@@ -111,12 +111,12 @@
     {
       "empresa": "Lotería Real",
       "juego": "Loto Pool",
-      "fecha": "18-08",
+      "fecha": "19-08",
       "numeros": [
-        "42",
-        "45",
-        "58",
-        "81"
+        "23",
+        "64",
+        "70",
+        "90"
       ]
     },
     {
@@ -233,11 +233,11 @@
     {
       "empresa": "La Primera",
       "juego": "La Primera Día",
-      "fecha": "18-08",
+      "fecha": "19-08",
       "numeros": [
-        "40",
-        "08",
-        "39"
+        "85",
+        "56",
+        "59"
       ]
     },
     {
@@ -266,11 +266,11 @@
     {
       "empresa": "La Suerte",
       "juego": "La Suerte Día",
-      "fecha": "18-08",
+      "fecha": "19-08",
       "numeros": [
-        "72",
-        "09",
-        "23"
+        "20",
+        "43",
+        "20"
       ]
     },
     {
@@ -286,19 +286,19 @@
     {
       "empresa": "LoteDom",
       "juego": "LoteDom",
-      "fecha": "18-08",
+      "fecha": "19-08",
       "numeros": [
-        "07",
-        "50",
-        "98"
+        "28",
+        "93",
+        "43"
       ]
     },
     {
       "empresa": "LoteDom",
       "juego": "El Quemaito Mayor",
-      "fecha": "18-08",
+      "fecha": "19-08",
       "numeros": [
-        "90"
+        "35"
       ]
     },
     {
@@ -314,11 +314,10 @@
     {
       "empresa": "Anguila",
       "juego": "Anguila 1:00 PM",
-      "fecha": "18-08",
+      "fecha": "19-08",
       "numeros": [
-        "00",
-        "79",
-        "40"
+        "88",
+        "87"
       ]
     },
     {
@@ -334,11 +333,11 @@
     {
       "empresa": "King Lottery",
       "juego": "King Lottery Día",
-      "fecha": "18-08",
+      "fecha": "19-08",
       "numeros": [
-        "27",
-        "94",
-        "36"
+        "63",
+        "42",
+        "71"
       ]
     },
     {
@@ -419,16 +418,6 @@
         "11",
         "84",
         "56"
-      ]
-    },
-    {
-      "empresa": "Anguila",
-      "juego": "Anguila 10:00 PM",
-      "fecha": null,
-      "numeros": [
-        "53",
-        "25",
-        "93"
       ]
     }
   ]
