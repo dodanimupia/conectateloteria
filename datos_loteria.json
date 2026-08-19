@@ -1,5 +1,5 @@
 {
-  "actualizado": "2026-08-19T06:04:45",
+  "actualizado": "2026-08-19T06:59:48",
   "en_vivo": true,
   "resultados": [
     {
@@ -389,17 +389,6 @@
         "18",
         "75",
         "69"
-      ]
-    },
-    {
-      "empresa": "Lotería Real",
-      "juego": "Loto Pool Noche",
-      "fecha": null,
-      "numeros": [
-        "17",
-        "18",
-        "56",
-        "70"
       ]
     }
   ]
