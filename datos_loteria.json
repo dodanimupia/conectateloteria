@@ -1,5 +1,5 @@
 {
-  "actualizado": "2026-08-19T11:53:27",
+  "actualizado": "2026-08-19T12:16:07",
   "en_vivo": true,
   "resultados": [
     {
@@ -369,6 +369,16 @@
         "34",
         "16",
         "79"
+      ]
+    },
+    {
+      "empresa": "Anguila",
+      "juego": "Anguila 8:00  AM",
+      "fecha": null,
+      "numeros": [
+        "11",
+        "84",
+        "56"
       ]
     },
     {
