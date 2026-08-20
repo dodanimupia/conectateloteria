@@ -1,27 +1,27 @@
 {
-  "actualizado": "2026-08-20T18:02:24",
+  "actualizado": "2026-08-20T18:50:06",
   "en_vivo": true,
   "resultados": [
     {
       "empresa": "Lotería Nacional",
       "juego": "Juega + Pega +",
-      "fecha": "19-08",
+      "fecha": "20-08",
       "numeros": [
-        "23",
-        "09",
-        "03",
-        "18",
-        "24"
+        "15",
+        "13",
+        "19",
+        "11",
+        "25"
       ]
     },
     {
       "empresa": "Lotería Nacional",
       "juego": "Gana Más",
-      "fecha": "19-08",
+      "fecha": "20-08",
       "numeros": [
-        "40",
-        "72",
-        "18"
+        "28",
+        "79",
+        "28"
       ]
     },
     {
@@ -167,11 +167,11 @@
     {
       "empresa": "Americanas (NY)",
       "juego": "New York Tarde",
-      "fecha": "19-08",
+      "fecha": "20-08",
       "numeros": [
-        "03",
-        "58",
-        "34"
+        "25",
+        "17",
+        "18"
       ]
     },
     {
@@ -399,36 +399,6 @@
         "87",
         "03",
         "84"
-      ]
-    },
-    {
-      "empresa": "Anguila",
-      "juego": "Anguila 11:00 AM",
-      "fecha": null,
-      "numeros": [
-        "92",
-        "95",
-        "85"
-      ]
-    },
-    {
-      "empresa": "haiti-bolet",
-      "juego": "Haiti Bolet 10:30 AM",
-      "fecha": null,
-      "numeros": [
-        "40",
-        "45",
-        "36"
-      ]
-    },
-    {
-      "empresa": "Anguila",
-      "juego": "Anguila 9:00 AM",
-      "fecha": null,
-      "numeros": [
-        "27",
-        "64",
-        "53"
       ]
     }
   ]
