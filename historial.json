@@ -2199,6 +2199,31 @@
      "80",
      "36"
     ]
+   },
+   {
+    "empresa": "La Primera",
+    "juego": "La Primera Día",
+    "numeros": [
+     "06",
+     "88",
+     "29"
+    ]
+   },
+   {
+    "empresa": "LoteDom",
+    "juego": "LoteDom",
+    "numeros": [
+     "16",
+     "18",
+     "34"
+    ]
+   },
+   {
+    "empresa": "LoteDom",
+    "juego": "El Quemaito Mayor",
+    "numeros": [
+     "01"
+    ]
    }
   ]
  }
