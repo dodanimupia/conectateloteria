@@ -1,5 +1,5 @@
 {
-  "actualizado": "2026-08-20T21:57:20",
+  "actualizado": "2026-08-20T22:19:17",
   "en_vivo": true,
   "resultados": [
     {
@@ -276,11 +276,11 @@
     {
       "empresa": "La Suerte",
       "juego": "La Suerte Tarde",
-      "fecha": "19-08",
+      "fecha": "20-08",
       "numeros": [
-        "28",
-        "25",
-        "67"
+        "66",
+        "14",
+        "69"
       ]
     },
     {
@@ -372,6 +372,16 @@
       ]
     },
     {
+      "empresa": "Anguila",
+      "juego": "Anguila 6:00 PM",
+      "fecha": null,
+      "numeros": [
+        "87",
+        "66",
+        "58"
+      ]
+    },
+    {
       "empresa": "haiti-bolet",
       "juego": "Haiti Bolet 5:30 PM",
       "fecha": null,
@@ -419,16 +429,6 @@
         "42",
         "42",
         "77"
-      ]
-    },
-    {
-      "empresa": "Lotería Real",
-      "juego": "Nueva Yol Real",
-      "fecha": null,
-      "numeros": [
-        "72",
-        "00",
-        "17"
       ]
     }
   ]
