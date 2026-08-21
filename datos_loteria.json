@@ -1,5 +1,5 @@
 {
-  "actualizado": "2026-08-21T16:03:44",
+  "actualizado": "2026-08-21T16:44:09",
   "en_vivo": true,
   "resultados": [
     {
@@ -266,11 +266,11 @@
     {
       "empresa": "La Suerte",
       "juego": "La Suerte Día",
-      "fecha": "20-08",
+      "fecha": "21-08",
       "numeros": [
-        "40",
-        "29",
-        "98"
+        "54",
+        "46",
+        "25"
       ]
     },
     {
@@ -334,11 +334,11 @@
     {
       "empresa": "King Lottery",
       "juego": "King Lottery Día",
-      "fecha": "20-08",
+      "fecha": "21-08",
       "numeros": [
-        "14",
-        "54",
-        "49"
+        "03",
+        "93",
+        "22"
       ]
     },
     {
@@ -382,6 +382,18 @@
       ]
     },
     {
+      "empresa": "Americanas (NY)",
+      "juego": "New York TardeNúmeros Calientes21 Aug 03:30 PM",
+      "fecha": null,
+      "numeros": [
+        "84",
+        "58",
+        "40",
+        "17",
+        "76"
+      ]
+    },
+    {
       "empresa": "Anguila",
       "juego": "Anguila 11:00 AM",
       "fecha": null,
@@ -422,13 +434,27 @@
       ]
     },
     {
-      "empresa": "Anguila",
-      "juego": "Anguila 10:00 PM",
+      "empresa": "Americanas (NY)",
+      "juego": "Mega MillionsNúmeros Calientes21 Aug 11:30 AM",
       "fecha": null,
       "numeros": [
-        "49",
-        "71",
-        "39"
+        "34",
+        "02",
+        "05",
+        "48",
+        "56"
+      ]
+    },
+    {
+      "empresa": "La Suerte",
+      "juego": "La Suerte DíaNúmeros Calientes21 Aug 11:30 AM",
+      "fecha": null,
+      "numeros": [
+        "00",
+        "20",
+        "37",
+        "72",
+        "27"
       ]
     }
   ]
