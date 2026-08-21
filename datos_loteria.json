@@ -1,5 +1,5 @@
 {
-  "actualizado": "2026-08-21T12:18:24",
+  "actualizado": "2026-08-21T13:13:53",
   "en_vivo": true,
   "resultados": [
     {
@@ -373,6 +373,16 @@
     },
     {
       "empresa": "Anguila",
+      "juego": "Anguila 9:00 AM",
+      "fecha": null,
+      "numeros": [
+        "38",
+        "98",
+        "88"
+      ]
+    },
+    {
+      "empresa": "Anguila",
       "juego": "Anguila 8:00  AM",
       "fecha": null,
       "numeros": [
@@ -389,21 +399,6 @@
         "49",
         "71",
         "39"
-      ]
-    },
-    {
-      "empresa": "Loteka",
-      "juego": "MegaLotto",
-      "fecha": null,
-      "numeros": [
-        "02",
-        "04",
-        "21",
-        "29",
-        "31",
-        "38",
-        "05",
-        "03"
       ]
     }
   ]
