@@ -1,5 +1,5 @@
 {
-  "actualizado": "2026-08-21T22:10:09",
+  "actualizado": "2026-08-21T22:38:19",
   "en_vivo": true,
   "resultados": [
     {
@@ -372,6 +372,16 @@
       ]
     },
     {
+      "empresa": "haiti-bolet",
+      "juego": "Haiti Bolet 6:30 PM",
+      "fecha": null,
+      "numeros": [
+        "66",
+        "99",
+        "90"
+      ]
+    },
+    {
       "empresa": "Anguila",
       "juego": "Anguila 6:00 PM",
       "fecha": null,
@@ -419,7 +429,7 @@
         "21",
         "14",
         "25",
-        "03",
+        "09",
         "20"
       ]
     },
@@ -452,17 +462,7 @@
         "20",
         "32",
         "16",
-        "40"
-      ]
-    },
-    {
-      "empresa": "Lotería Real",
-      "juego": "Nueva Yol Real",
-      "fecha": null,
-      "numeros": [
-        "73",
-        "08",
-        "77"
+        "13"
       ]
     }
   ]
