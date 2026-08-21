@@ -1,5 +1,5 @@
 {
-  "actualizado": "2026-08-21T22:56:24",
+  "actualizado": "2026-08-21T23:14:49",
   "en_vivo": true,
   "resultados": [
     {
@@ -243,24 +243,24 @@
     {
       "empresa": "La Primera",
       "juego": "Loto 5",
-      "fecha": "20-08",
+      "fecha": "21-08",
       "numeros": [
-        "04",
-        "06",
-        "18",
-        "21",
+        "14",
+        "25",
         "27",
-        "08"
+        "30",
+        "32",
+        "07"
       ]
     },
     {
       "empresa": "La Primera",
       "juego": "Primera Noche",
-      "fecha": "20-08",
+      "fecha": "21-08",
       "numeros": [
-        "97",
-        "63",
-        "29"
+        "14",
+        "60",
+        "90"
       ]
     },
     {
@@ -372,6 +372,16 @@
       ]
     },
     {
+      "empresa": "Anguila",
+      "juego": "Anguila 7:00 PM",
+      "fecha": null,
+      "numeros": [
+        "27",
+        "34",
+        "58"
+      ]
+    },
+    {
       "empresa": "haiti-bolet",
       "juego": "Haiti Bolet 6:30 PM",
       "fecha": null,
@@ -429,7 +439,7 @@
         "21",
         "14",
         "25",
-        "03",
+        "20",
         "09"
       ]
     },
@@ -451,18 +461,6 @@
         "36",
         "22",
         "77"
-      ]
-    },
-    {
-      "empresa": "Leidsa",
-      "juego": "Pega 3 MásNúmeros Calientes21 Aug 05:30 PM",
-      "fecha": null,
-      "numeros": [
-        "34",
-        "20",
-        "32",
-        "16",
-        "40"
       ]
     }
   ]
