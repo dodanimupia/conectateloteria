@@ -1,5 +1,5 @@
 {
-  "actualizado": "2026-08-20T23:54:19",
+  "actualizado": "2026-08-21T00:27:30",
   "en_vivo": true,
   "resultados": [
     {
@@ -145,23 +145,23 @@
     {
       "empresa": "Loteka",
       "juego": "Mega Chances",
-      "fecha": "20-08",
+      "fecha": "21-08",
       "numeros": [
-        "15",
-        "39",
-        "59",
-        "71",
-        "77"
+        "40",
+        "70",
+        "72",
+        "74",
+        "90"
       ]
     },
     {
       "empresa": "Loteka",
       "juego": "Quiniela Loteka",
-      "fecha": "20-08",
+      "fecha": "21-08",
       "numeros": [
-        "67",
-        "64",
-        "96"
+        "54",
+        "82",
+        "19"
       ]
     },
     {
@@ -372,6 +372,54 @@
       ]
     },
     {
+      "empresa": "Loteka",
+      "juego": "MegaLotto",
+      "fecha": null,
+      "numeros": [
+        "02",
+        "04",
+        "21",
+        "29",
+        "31",
+        "38",
+        "05",
+        "03"
+      ]
+    },
+    {
+      "empresa": "Anguila",
+      "juego": "Anguila 8:00 PM",
+      "fecha": null,
+      "numeros": [
+        "86",
+        "93",
+        "63"
+      ]
+    },
+    {
+      "empresa": "Lotería Real",
+      "juego": "Loto Pool Noche",
+      "fecha": null,
+      "numeros": [
+        "05",
+        "13",
+        "19",
+        "31"
+      ]
+    },
+    {
+      "empresa": "Lotería Real",
+      "juego": "Chance Real",
+      "fecha": null,
+      "numeros": [
+        "12",
+        "42",
+        "54",
+        "70",
+        "93"
+      ]
+    },
+    {
       "empresa": "Anguila",
       "juego": "Anguila 7:00 PM",
       "fecha": null,
@@ -419,26 +467,6 @@
         "11",
         "24",
         "35"
-      ]
-    },
-    {
-      "empresa": "Anguila",
-      "juego": "Anguila 4:00 PM",
-      "fecha": null,
-      "numeros": [
-        "63",
-        "72",
-        "24"
-      ]
-    },
-    {
-      "empresa": "Anguila",
-      "juego": "Anguila 3:00 PM",
-      "fecha": null,
-      "numeros": [
-        "09",
-        "10",
-        "09"
       ]
     }
   ]
