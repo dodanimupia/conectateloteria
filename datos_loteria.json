@@ -1,5 +1,5 @@
 {
-  "actualizado": "2026-08-21T19:50:53",
+  "actualizado": "2026-08-21T20:01:59",
   "en_vivo": true,
   "resultados": [
     {
@@ -372,6 +372,16 @@
       ]
     },
     {
+      "empresa": "Anguila",
+      "juego": "Anguila 4:00 PM",
+      "fecha": null,
+      "numeros": [
+        "98",
+        "81",
+        "13"
+      ]
+    },
+    {
       "empresa": "Lotería Real",
       "juego": "Loto RealNúmeros Calientes21 Aug 07:30 PM",
       "fecha": null,
@@ -379,7 +389,7 @@
         "21",
         "14",
         "25",
-        "20",
+        "03",
         "09"
       ]
     },
@@ -412,7 +422,7 @@
         "20",
         "32",
         "16",
-        "13"
+        "40"
       ]
     },
     {
