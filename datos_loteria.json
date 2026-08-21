@@ -1,5 +1,5 @@
 {
-  "actualizado": "2026-08-21T18:39:05",
+  "actualizado": "2026-08-21T19:09:59",
   "en_vivo": true,
   "resultados": [
     {
@@ -9,17 +9,19 @@
       "numeros": [
         "09",
         "25",
-        "11"
+        "11",
+        "01",
+        "13"
       ]
     },
     {
       "empresa": "Lotería Nacional",
       "juego": "Gana Más",
-      "fecha": "20-08",
+      "fecha": "21-08",
       "numeros": [
-        "28",
-        "79",
-        "28"
+        "82",
+        "54",
+        "16"
       ]
     },
     {
@@ -371,6 +373,16 @@
     },
     {
       "empresa": "Anguila",
+      "juego": "Anguila 3:00 PM",
+      "fecha": null,
+      "numeros": [
+        "17",
+        "12",
+        "47"
+      ]
+    },
+    {
+      "empresa": "Anguila",
       "juego": "Anguila 2:00 PM",
       "fecha": null,
       "numeros": [
@@ -388,7 +400,7 @@
         "20",
         "32",
         "16",
-        "13"
+        "40"
       ]
     },
     {
@@ -409,28 +421,6 @@
         "22",
         "68",
         "84"
-      ]
-    },
-    {
-      "empresa": "Americanas (NY)",
-      "juego": "New York TardeNúmeros Calientes21 Aug 03:30 PM",
-      "fecha": null,
-      "numeros": [
-        "84",
-        "40",
-        "58",
-        "17",
-        "76"
-      ]
-    },
-    {
-      "empresa": "Anguila",
-      "juego": "Anguila 11:00 AM",
-      "fecha": null,
-      "numeros": [
-        "58",
-        "81",
-        "13"
       ]
     }
   ]
