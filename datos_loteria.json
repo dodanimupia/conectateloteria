@@ -1,5 +1,5 @@
 {
-  "actualizado": "2026-08-21T19:09:59",
+  "actualizado": "2026-08-21T19:34:36",
   "en_vivo": true,
   "resultados": [
     {
@@ -372,6 +372,18 @@
       ]
     },
     {
+      "empresa": "Lotería Real",
+      "juego": "Loto RealNúmeros Calientes21 Aug 07:30 PM",
+      "fecha": null,
+      "numeros": [
+        "21",
+        "14",
+        "25",
+        "20",
+        "03"
+      ]
+    },
+    {
       "empresa": "Anguila",
       "juego": "Anguila 3:00 PM",
       "fecha": null,
@@ -400,7 +412,7 @@
         "20",
         "32",
         "16",
-        "40"
+        "13"
       ]
     },
     {
@@ -411,16 +423,6 @@
         "73",
         "08",
         "77"
-      ]
-    },
-    {
-      "empresa": "haiti-bolet",
-      "juego": "Haiti Bolet 11:30 AM",
-      "fecha": null,
-      "numeros": [
-        "22",
-        "68",
-        "84"
       ]
     }
   ]
