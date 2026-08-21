@@ -1,17 +1,15 @@
 {
-  "actualizado": "2026-08-21T18:01:00",
+  "actualizado": "2026-08-21T18:39:05",
   "en_vivo": true,
   "resultados": [
     {
       "empresa": "Lotería Nacional",
       "juego": "Juega + Pega +",
-      "fecha": "20-08",
+      "fecha": "21-08",
       "numeros": [
-        "15",
-        "13",
-        "19",
-        "11",
-        "25"
+        "09",
+        "25",
+        "11"
       ]
     },
     {
@@ -167,11 +165,11 @@
     {
       "empresa": "Americanas (NY)",
       "juego": "New York Tarde",
-      "fecha": "20-08",
+      "fecha": "21-08",
       "numeros": [
-        "25",
-        "17",
-        "18"
+        "75",
+        "99",
+        "53"
       ]
     },
     {
@@ -390,7 +388,7 @@
         "20",
         "32",
         "16",
-        "40"
+        "13"
       ]
     },
     {
@@ -433,16 +431,6 @@
         "58",
         "81",
         "13"
-      ]
-    },
-    {
-      "empresa": "haiti-bolet",
-      "juego": "Haiti Bolet 10:30 AM",
-      "fecha": null,
-      "numeros": [
-        "59",
-        "17",
-        "84"
       ]
     }
   ]
