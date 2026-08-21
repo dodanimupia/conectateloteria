@@ -1,5 +1,5 @@
 {
-  "actualizado": "2026-08-21T16:44:09",
+  "actualizado": "2026-08-21T17:06:24",
   "en_vivo": true,
   "resultados": [
     {
@@ -111,22 +111,22 @@
     {
       "empresa": "Lotería Real",
       "juego": "Loto Pool",
-      "fecha": "20-08",
+      "fecha": "21-08",
       "numeros": [
-        "20",
-        "38",
-        "42",
-        "84"
+        "06",
+        "46",
+        "56",
+        "82"
       ]
     },
     {
       "empresa": "Lotería Real",
       "juego": "Quiniela Real",
-      "fecha": "20-08",
+      "fecha": "21-08",
       "numeros": [
-        "39",
-        "89",
-        "29"
+        "42",
+        "84",
+        "59"
       ]
     },
     {
@@ -314,11 +314,11 @@
     {
       "empresa": "Anguila",
       "juego": "Anguila 1:00 PM",
-      "fecha": "20-08",
+      "fecha": "21-08",
       "numeros": [
-        "86",
-        "75",
-        "17"
+        "54",
+        "25",
+        "62"
       ]
     },
     {
@@ -372,6 +372,16 @@
       ]
     },
     {
+      "empresa": "Lotería Real",
+      "juego": "Nueva Yol Real",
+      "fecha": null,
+      "numeros": [
+        "73",
+        "08",
+        "77"
+      ]
+    },
+    {
       "empresa": "haiti-bolet",
       "juego": "Haiti Bolet 11:30 AM",
       "fecha": null,
@@ -387,8 +397,8 @@
       "fecha": null,
       "numeros": [
         "84",
-        "58",
         "40",
+        "58",
         "17",
         "76"
       ]
@@ -431,30 +441,6 @@
         "84",
         "72",
         "86"
-      ]
-    },
-    {
-      "empresa": "Americanas (NY)",
-      "juego": "Mega MillionsNúmeros Calientes21 Aug 11:30 AM",
-      "fecha": null,
-      "numeros": [
-        "34",
-        "02",
-        "05",
-        "48",
-        "56"
-      ]
-    },
-    {
-      "empresa": "La Suerte",
-      "juego": "La Suerte DíaNúmeros Calientes21 Aug 11:30 AM",
-      "fecha": null,
-      "numeros": [
-        "00",
-        "20",
-        "37",
-        "72",
-        "27"
       ]
     }
   ]
