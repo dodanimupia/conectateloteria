@@ -1,5 +1,5 @@
 {
-  "actualizado": "2026-08-21T17:38:54",
+  "actualizado": "2026-08-21T18:01:00",
   "en_vivo": true,
   "resultados": [
     {
@@ -372,6 +372,16 @@
       ]
     },
     {
+      "empresa": "Anguila",
+      "juego": "Anguila 2:00 PM",
+      "fecha": null,
+      "numeros": [
+        "36",
+        "22",
+        "77"
+      ]
+    },
+    {
       "empresa": "Leidsa",
       "juego": "Pega 3 MásNúmeros Calientes21 Aug 05:30 PM",
       "fecha": null,
@@ -380,7 +390,7 @@
         "20",
         "32",
         "16",
-        "13"
+        "40"
       ]
     },
     {
@@ -409,8 +419,8 @@
       "fecha": null,
       "numeros": [
         "84",
-        "58",
         "40",
+        "58",
         "17",
         "76"
       ]
