@@ -1,5 +1,5 @@
 {
-  "actualizado": "2026-08-21T17:06:24",
+  "actualizado": "2026-08-21T17:38:54",
   "en_vivo": true,
   "resultados": [
     {
@@ -187,11 +187,11 @@
     {
       "empresa": "Americanas (NY)",
       "juego": "Florida Día",
-      "fecha": "20-08",
+      "fecha": "21-08",
       "numeros": [
-        "52",
-        "76",
-        "54"
+        "50",
+        "92",
+        "68"
       ]
     },
     {
@@ -372,6 +372,18 @@
       ]
     },
     {
+      "empresa": "Leidsa",
+      "juego": "Pega 3 MásNúmeros Calientes21 Aug 05:30 PM",
+      "fecha": null,
+      "numeros": [
+        "34",
+        "20",
+        "32",
+        "16",
+        "13"
+      ]
+    },
+    {
       "empresa": "Lotería Real",
       "juego": "Nueva Yol Real",
       "fecha": null,
@@ -397,8 +409,8 @@
       "fecha": null,
       "numeros": [
         "84",
-        "40",
         "58",
+        "40",
         "17",
         "76"
       ]
@@ -421,26 +433,6 @@
         "59",
         "17",
         "84"
-      ]
-    },
-    {
-      "empresa": "Anguila",
-      "juego": "Anguila 9:00 AM",
-      "fecha": null,
-      "numeros": [
-        "38",
-        "98",
-        "88"
-      ]
-    },
-    {
-      "empresa": "Anguila",
-      "juego": "Anguila 8:00  AM",
-      "fecha": null,
-      "numeros": [
-        "84",
-        "72",
-        "86"
       ]
     }
   ]
