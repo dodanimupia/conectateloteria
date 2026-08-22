@@ -1,5 +1,5 @@
 {
-  "actualizado": "2026-08-21T23:55:55",
+  "actualizado": "2026-08-22T00:32:55",
   "en_vivo": true,
   "resultados": [
     {
@@ -132,36 +132,36 @@
     {
       "empresa": "Lotería Real",
       "juego": "Loto Real",
-      "fecha": "18-08",
+      "fecha": "21-08",
       "numeros": [
-        "02",
-        "08",
+        "03",
+        "05",
+        "09",
         "12",
-        "17",
-        "25",
-        "36"
+        "13",
+        "38"
       ]
     },
     {
       "empresa": "Loteka",
       "juego": "Mega Chances",
-      "fecha": "21-08",
+      "fecha": "22-08",
       "numeros": [
-        "40",
-        "70",
-        "72",
-        "74",
-        "90"
+        "04",
+        "20",
+        "30",
+        "43",
+        "94"
       ]
     },
     {
       "empresa": "Loteka",
       "juego": "Quiniela Loteka",
-      "fecha": "21-08",
+      "fecha": "22-08",
       "numeros": [
-        "54",
-        "82",
-        "19"
+        "24",
+        "95",
+        "55"
       ]
     },
     {
@@ -372,6 +372,39 @@
       ]
     },
     {
+      "empresa": "Anguila",
+      "juego": "Anguila 8:00 PM",
+      "fecha": null,
+      "numeros": [
+        "04",
+        "66",
+        "13"
+      ]
+    },
+    {
+      "empresa": "Lotería Real",
+      "juego": "Loto Pool Noche",
+      "fecha": null,
+      "numeros": [
+        "04",
+        "24",
+        "47",
+        "87"
+      ]
+    },
+    {
+      "empresa": "Lotería Real",
+      "juego": "Chance Real",
+      "fecha": null,
+      "numeros": [
+        "21",
+        "45",
+        "48",
+        "90",
+        "96"
+      ]
+    },
+    {
       "empresa": "Americanas (NY)",
       "juego": "New York NocheNúmeros Calientes21 Aug 11:30 PM",
       "fecha": null,
@@ -379,8 +412,8 @@
         "73",
         "61",
         "57",
-        "80",
-        "15"
+        "38",
+        "80"
       ]
     },
     {
@@ -431,38 +464,6 @@
         "96",
         "26",
         "31"
-      ]
-    },
-    {
-      "empresa": "Anguila",
-      "juego": "Anguila 4:00 PM",
-      "fecha": null,
-      "numeros": [
-        "98",
-        "81",
-        "13"
-      ]
-    },
-    {
-      "empresa": "Lotería Real",
-      "juego": "Loto RealNúmeros Calientes21 Aug 07:30 PM",
-      "fecha": null,
-      "numeros": [
-        "21",
-        "14",
-        "25",
-        "20",
-        "09"
-      ]
-    },
-    {
-      "empresa": "Anguila",
-      "juego": "Anguila 3:00 PM",
-      "fecha": null,
-      "numeros": [
-        "17",
-        "12",
-        "47"
       ]
     }
   ]
