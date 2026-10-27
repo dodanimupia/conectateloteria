@@ -882,13 +882,13 @@
       const grid = juegos.map(item => {
         const bolas = item.numeros.map(n => `<div class="bola">${n}</div>`).join("");
         return `
-          <div class="card">
+          <a class="card card-enlace" href="sorteo-${slug(item.empresa).slice(4)}-${slug(item.juego).slice(4)}.html">
             <div class="card-header">
               <span class="juego">${item.juego}</span>
               ${item.fecha ? `<span class="fecha">${item.fecha}</span>` : ""}
             </div>
             <div class="numeros">${bolas}</div>
-          </div>
+          </a>
         `;
       }).join("");
 
