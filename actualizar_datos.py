@@ -1,109 +1,140 @@
-"""
-Lógica de scraping: obtiene los resultados de lotería y los guarda en
-datos_loteria.json. Este script lo ejecuta GitHub Actions cada 5 minutos
-(ver .github/workflows/actualizar.yml), pero también puedes correrlo a
-mano en tu computadora.
+"""Obtiene resultados en vivo; un fallo nunca publica la copia de agosto."""
 
-Requiere: pip install playwright beautifulsoup4  /  playwright install chromium
-"""
-
+import datetime as dt
 import json
-import datetime
+import os
+from pathlib import Path
+import re
+from urllib.parse import urlparse
+from zoneinfo import ZoneInfo
+
 from bs4 import BeautifulSoup
 
-URL = "https://loterias.conectate.com.do/"
-SNAPSHOT_LOCAL = "leidsa_snapshot.html"
-ARCHIVO_DATOS = "datos_loteria.json"
-
-# Primer segmento de la URL de cada juego -> nombre de la empresa/lotería
+URL = "https://www.conectate.com.do/loterias/"
+ARCHIVO_DATOS = str(Path(__file__).with_name("datos_loteria.json"))
+ZONA = ZoneInfo("America/Santo_Domingo")
 EMPRESAS = {
-    "nacional": "Lotería Nacional",
-    "leidsa": "Leidsa",
-    "loto-real": "Lotería Real",
-    "loteka": "Loteka",
-    "americanas": "Americanas (NY)",
-    "la-primera": "La Primera",
-    "la-suerte-dominicana": "La Suerte",
-    "lotedom": "LoteDom",
-    "anguilla": "Anguila",
-    "king-lottery": "King Lottery",
+    "nacional": "Lotería Nacional", "leidsa": "Leidsa",
+    "loto-real": "Lotería Real", "loteka": "Loteka",
+    "americanas": "Americanas (NY)", "la-primera": "La Primera",
+    "la-suerte-dominicana": "La Suerte", "lotedom": "LoteDom",
+    "anguilla": "Anguila", "king-lottery": "King Lottery",
+    "haiti-bolet": "Haiti Bolet",
 }
 
 
-def obtener_html_renderizado():
-    try:
-        from playwright.sync_api import sync_playwright
-
-        with sync_playwright() as p:
-            navegador = p.chromium.launch()
-            pagina = navegador.new_page()
-            pagina.goto(URL, timeout=20000)
-            pagina.wait_for_selector("span.text-gray-800", timeout=20000)
-            html = pagina.content()
-            navegador.close()
-            return html, True
-    except Exception as e:
-        print(f"[aviso] No se pudo obtener {URL} en vivo ({e}). Usando snapshot local.")
-        with open(SNAPSHOT_LOCAL, "r", encoding="utf-8") as f:
-            return f.read(), False
-
-
 def extraer_resultados(html):
-    """
-    Recorre TODOS los bloques de resultado de la portada (no solo los de
-    una lotería). Cada juego vive en un <a href="/<empresa>/<juego>/">,
-    así que usamos ese href como clave única -- dos loterías distintas
-    pueden tener un juego con el mismo nombre (ej. "Loto Pool" existe
-    en Leidsa y en Lotería Real), y con el href no se pierden.
-    """
     soup = BeautifulSoup(html, "html.parser")
-    resultados = []
-    vistos = set()
-
+    resultados, vistos = [], set()
     for bloque in soup.find_all("a", href=True):
-        bolas = bloque.find_all("span", class_="text-gray-800")
-        if not bolas:
+        ruta = urlparse(bloque["href"]).path.strip("/")
+        partes = ruta.split("/")
+        if partes and partes[0] == "loterias":
+            partes = partes[1:]
+        if len(partes) != 2 or partes[0] not in EMPRESAS:
             continue
-
-        href = bloque["href"]
-        if href in vistos:
+        clave = "/".join(partes)
+        if clave in vistos:
             continue
-        vistos.add(href)
-
-        juego_tag = bloque.select_one(".text-xl.font-bold")
-        if not juego_tag:
+        nombre = bloque.select_one(".text-xl.font-bold")
+        fecha = bloque.select_one(".bg-slate-500")
+        bolas = bloque.select("span.text-gray-800")
+        numeros = [b.get_text(strip=True) for b in bolas]
+        if not nombre or not fecha or not numeros:
             continue
-
-        fecha_tag = bloque.find(class_="bg-slate-500")
-        segmento = href.strip("/").split("/")[0] if href.strip("/") else ""
-
+        # Las tarjetas vacías son esqueletos de carga, no resultados.
+        if not all(re.fullmatch(r"\d{2}", n) for n in numeros):
+            continue
+        fecha_texto = fecha.get_text(strip=True)
+        if not re.fullmatch(r"\d{2}-\d{2}", fecha_texto):
+            continue
+        vistos.add(clave)
         resultados.append({
-            "empresa": EMPRESAS.get(segmento, segmento or "Otras"),
-            "juego": juego_tag.get_text(strip=True),
-            "fecha": fecha_tag.get_text(strip=True) if fecha_tag else None,
-            "numeros": [b.get_text(strip=True) for b in bolas],
+            "empresa": EMPRESAS[partes[0]],
+            "juego": " ".join(nombre.get_text(" ", strip=True).split()),
+            "fecha": fecha_texto, "numeros": numeros,
         })
-
     return resultados
+
+
+def validar_resultados(resultados, ahora=None):
+    hoy = (ahora or dt.datetime.now(ZONA)).astimezone(ZONA).date()
+    if len(resultados) < 30:
+        raise ValueError(f"Fuente incompleta: solo {len(resultados)} sorteos válidos")
+    presentes = {r["empresa"] for r in resultados}
+    faltantes = set(EMPRESAS.values()) - presentes
+    if faltantes:
+        raise ValueError("Faltan loterías: " + ", ".join(sorted(faltantes)))
+    fechas = []
+    for item in resultados:
+        dia, mes = map(int, item["fecha"].split("-"))
+        fecha = dt.date(hoy.year, mes, dia)
+        if fecha > hoy:
+            fecha = dt.date(hoy.year - 1, mes, dia)
+        if (hoy - fecha).days > 31:
+            raise ValueError(f"Sorteo antiguo: {item['juego']} ({item['fecha']})")
+        fechas.append(fecha)
+    if (hoy - max(fechas)).days > 1:
+        raise ValueError("La fuente no contiene resultados de hoy ni de ayer")
+    return resultados
+
+
+def obtener_html_renderizado():
+    from playwright.sync_api import sync_playwright
+
+    errores = []
+    with sync_playwright() as p:
+        navegador = p.chromium.launch()
+        try:
+            for intento in range(1, 4):
+                pagina = navegador.new_page(locale="es-DO", timezone_id="America/Santo_Domingo")
+                try:
+                    respuesta = pagina.goto(URL, wait_until="domcontentloaded", timeout=60000)
+                    if respuesta is None or not respuesta.ok:
+                        raise RuntimeError(f"HTTP {respuesta.status if respuesta else 'sin respuesta'}")
+                    # Espera números reales y fechas, no solo etiquetas vacías.
+                    pagina.wait_for_function("""() => [...document.querySelectorAll('a')]
+                      .filter(a => a.querySelector('.text-xl.font-bold')
+                        && /^\\d{2}-\\d{2}$/.test(a.querySelector('.bg-slate-500')?.textContent.trim() || '')
+                        && a.querySelectorAll('span.text-gray-800').length > 0
+                        && [...a.querySelectorAll('span.text-gray-800')]
+                          .every(s => /^\\d{2}$/.test(s.textContent.trim()))).length >= 30""",
+                      timeout=60000)
+                    html = pagina.content()
+                    validar_resultados(extraer_resultados(html))
+                    return html, True
+                except Exception as error:
+                    errores.append(str(error))
+                    print(f"::warning::Intento {intento}/3 sin datos válidos: {error}")
+                finally:
+                    pagina.close()
+        finally:
+            navegador.close()
+    raise RuntimeError("No se publicará nada: fallaron los tres intentos de lectura en vivo. " + errores[-1])
 
 
 def actualizar_archivo_datos():
     html, en_vivo = obtener_html_renderizado()
-    resultados = extraer_resultados(html)
-
+    if not en_vivo:
+        raise ValueError("No se permite publicar un snapshot local")
+    ahora = dt.datetime.now(ZONA)
+    resultados = validar_resultados(extraer_resultados(html), ahora)
     paquete = {
-        "actualizado": datetime.datetime.now().isoformat(timespec="seconds"),
-        "en_vivo": en_vivo,
-        "resultados": resultados,
+        "actualizado": ahora.isoformat(timespec="seconds"),
+        "zona_horaria": "America/Santo_Domingo", "fuente": URL,
+        "en_vivo": True, "resultados": resultados,
     }
-
-    with open(ARCHIVO_DATOS, "w", encoding="utf-8") as f:
-        json.dump(paquete, f, ensure_ascii=False, indent=2)
-
+    # Reemplazo atómico: el último JSON válido se conserva ante cualquier fallo.
+    destino = Path(ARCHIVO_DATOS)
+    temporal = destino.with_suffix(".json.tmp")
+    temporal.write_text(json.dumps(paquete, ensure_ascii=False, indent=2) + "\n", encoding="utf-8")
+    os.replace(temporal, destino)
     return paquete
 
 
 if __name__ == "__main__":
-    paquete = actualizar_archivo_datos()
-    print(f"Guardado {ARCHIVO_DATOS} con {len(paquete['resultados'])} resultados "
-          f"(en_vivo={paquete['en_vivo']}) a las {paquete['actualizado']}")
+    try:
+        paquete = actualizar_archivo_datos()
+    except Exception as error:
+        raise SystemExit(f"::error::{error}") from error
+    print(f"Guardado {ARCHIVO_DATOS}: {len(paquete['resultados'])} sorteos en vivo, {paquete['actualizado']}")
