@@ -673,7 +673,7 @@
       Lotería <span class="flecha" aria-hidden="true">&#9660;</span>
     </button>
     <div class="links" id="nav-links">
-      <a class="link-historial" href="#historial">Últimos 7 días</a>
+      <a class="link-historial" href="#historial">Últimos 14 días</a>
       <a href="#resultados">Resultados de hoy</a><!--NAVLINKS-->
     </div>
   </div>
@@ -703,7 +703,7 @@
     <div id="contenedor-resultados"><!--RESULTADOS--></div>
 
     <div class="historial-portada" id="historial">
-      <h2>Resultados de los últimos 7 días</h2>
+      <h2>Resultados de los últimos 14 días</h2>
       <p class="historial-intro">
         Toca un día para ver todos los sorteos de esa fecha, lotería por lotería.
       </p>
@@ -849,7 +849,7 @@
     contenedor.innerHTML = "";
     // Ojo: estos dos enlaces fijos deben coincidir con los del HTML,
     // porque esta línea reemplaza todo el contenido del menú.
-    navLinks.innerHTML = `<a class="link-historial" href="#historial">Últimos 7 días</a>`
+    navLinks.innerHTML = `<a class="link-historial" href="#historial">Últimos 14 días</a>`
                        + `<a href="#resultados">Resultados de hoy</a>`;
 
     if (!lista.length) {
