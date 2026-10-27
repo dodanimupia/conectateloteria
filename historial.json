@@ -531,6 +531,24 @@
      "77",
      "30"
     ]
+   },
+   {
+    "empresa": "Anguila",
+    "juego": "Anguila 6:00 PM",
+    "numeros": [
+     "14",
+     "01",
+     "98"
+    ]
+   },
+   {
+    "empresa": "La Suerte",
+    "juego": "La Suerte Tarde",
+    "numeros": [
+     "68",
+     "12",
+     "00"
+    ]
    }
   ]
  }
