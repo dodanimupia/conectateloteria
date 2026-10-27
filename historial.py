@@ -28,7 +28,7 @@ import os
 import re
 from datetime import date, timedelta
 
-DIAS_A_GUARDAR = 8          # 7 días de historial + el día en curso
+DIAS_A_GUARDAR = 14         # Dos semanas, incluido el día en curso
 DIAS_SEMANA = ["lunes", "martes", "miércoles", "jueves",
                "viernes", "sábado", "domingo"]
 MESES = ["enero", "febrero", "marzo", "abril", "mayo", "junio", "julio",
@@ -97,7 +97,8 @@ def actualizar(historial, resultados, hoy):
     dias = historial.setdefault("dias", {})
 
     for item in resultados:
-        f = fecha_completa(item.get("fecha"), hoy)
+        f = (date.fromisoformat(item["fecha_iso"]) if item.get("fecha_iso")
+             else fecha_completa(item.get("fecha"), hoy))
         if f is None:
             continue  # sorteos sin fecha no entran al historial
         clave = f.isoformat()
@@ -120,7 +121,7 @@ def actualizar(historial, resultados, hoy):
     limite = hoy - timedelta(days=DIAS_A_GUARDAR - 1)
     for clave in list(dias.keys()):
         try:
-            if date.fromisoformat(clave) < limite:
+            if not limite <= date.fromisoformat(clave) <= hoy:
                 del dias[clave]
         except ValueError:
             del dias[clave]
