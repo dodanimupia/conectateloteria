@@ -1,4 +1,4 @@
-.cinta-resultados{display:flex;align-items:center;gap:12px;position:relative;z-index:90;min-height:56px;width:100%;background:#101c3e;color:#eef2ff;font-family:"Segoe UI",Arial,sans-serif;border-bottom:1px solid #263454}
+.cinta-resultados{display:flex;align-items:center;gap:12px;position:relative;z-index:90;min-height:56px;width:100%;background:#000000;color:#eef2ff;font-family:"Segoe UI",Arial,sans-serif;border-bottom:1px solid #263454}
 .cinta-controles{display:flex;align-items:center;gap:10px;flex:none;padding:8px 0 8px 20px}
 .cinta-titulo{font-size:11px;font-weight:800;letter-spacing:.09em;color:#c6d2ef}
 .cinta-pausa{display:grid;place-items:center;width:32px;height:32px;flex:none;border:1px solid #465576;border-radius:7px;background:#1c2a4c;color:#fff;cursor:pointer;font:700 16px/1 Arial,sans-serif}
