@@ -81,7 +81,7 @@
   ]
 }
 </script>
-<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-6133777619698250"
+<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-2331380798985258"
      crossorigin="anonymous"></script>
 <style>
   :root {
@@ -652,7 +652,7 @@
 <div class="ad-lateral ad-izquierda">
   <ins class="adsbygoogle"
        style="display:block"
-       data-ad-client="ca-pub-6133777619698250"
+       data-ad-client="ca-pub-2331380798985258"
        data-ad-format="auto"
        data-full-width-responsive="true"></ins>
   <script>(adsbygoogle = window.adsbygoogle || []).push({});</script>
@@ -660,7 +660,7 @@
 <div class="ad-lateral ad-derecha">
   <ins class="adsbygoogle"
        style="display:block"
-       data-ad-client="ca-pub-6133777619698250"
+       data-ad-client="ca-pub-2331380798985258"
        data-ad-format="auto"
        data-full-width-responsive="true"></ins>
   <script>(adsbygoogle = window.adsbygoogle || []).push({});</script>
@@ -938,12 +938,23 @@
   async function cargarDatos() {
     try {
       const res = await fetch("datos_loteria.json?_=" + Date.now()); // evita caché
+      if (!res.ok) throw new Error("HTTP " + res.status);
       const paquete = await res.json();
+      const actualizacion = new Date(paquete.actualizado);
+      if (paquete.en_vivo !== true || !paquete.resultados?.length || !Number.isFinite(actualizacion.getTime())) {
+        throw new Error("No hay una actualización verificada");
+      }
+      const etiqueta = document.getElementById("ultima-actualizacion");
+      if (etiqueta) {
+        etiqueta.textContent = "Última actualización: " + new Intl.DateTimeFormat("es-DO", {
+          timeZone: "America/Santo_Domingo", day: "2-digit", month: "2-digit", year: "numeric",
+          hour: "2-digit", minute: "2-digit", second: "2-digit", hour12: false
+        }).format(actualizacion) + " (hora dominicana)";
+      }
       todosLosResultados = paquete.resultados || [];
       aplicarFiltro(); // respeta lo que el usuario tenga escrito al recargarse
     } catch (err) {
-      document.getElementById("contenedor-resultados").innerHTML =
-        `<p class="sin-resultados">No pudimos cargar los resultados en este momento. Intenta de nuevo en unos minutos.</p>`;
+      console.warn("No se pudo comprobar la actualización; se conservan los últimos resultados publicados.", err);
     }
   }
 
