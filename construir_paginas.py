@@ -308,7 +308,7 @@ def html_cinta(resultados):
 def escribir(nombre, contenido):
     if nombre.endswith(".html"):
         if CINTA_RESULTADOS:
-            recursos = ('<link rel="stylesheet" href="cinta-resultados.css">'
+            recursos = ('<link rel="stylesheet" href="cinta-resultados.css?v=2">'
                         '<script src="cinta-resultados.js" defer></script>')
             contenido = contenido.replace("</head>", recursos + "</head>", 1)
             contenido = contenido.replace("</nav>", "</nav>" + CINTA_RESULTADOS, 1)
