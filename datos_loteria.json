@@ -1,10 +1,365 @@
 {
-  "actualizado": "2026-10-27T11:48:41-04:00",
+  "actualizado": "2026-10-27T17:42:50-04:00",
   "zona_horaria": "America/Santo_Domingo",
-  "fuente": "https://www.conectate.com.do/loterias/",
-  "modo_consulta": "navegador",
+  "fuente": "https://turifamax.com/api/v1/resultados",
   "en_vivo": true,
   "resultados": [
+    {
+      "empresa": "Anguila",
+      "juego": "Anguila 10:00 AM",
+      "fecha": "27-10",
+      "fecha_iso": "2026-10-27",
+      "numeros": [
+        "04",
+        "93",
+        "20"
+      ],
+      "fuente": "https://turifamax.com/api/v1/resultados"
+    },
+    {
+      "empresa": "Anguila",
+      "juego": "Anguila 1:00 PM",
+      "fecha": "27-10",
+      "fecha_iso": "2026-10-27",
+      "numeros": [
+        "64",
+        "50",
+        "04"
+      ],
+      "fuente": "https://turifamax.com/api/v1/resultados"
+    },
+    {
+      "empresa": "Anguila",
+      "juego": "Anguila 9:00 PM",
+      "fecha": "26-10",
+      "fecha_iso": "2026-10-26",
+      "numeros": [
+        "34",
+        "82",
+        "52"
+      ],
+      "fuente": "https://turifamax.com/api/v1/resultados"
+    },
+    {
+      "empresa": "Anguila",
+      "juego": "Anguila 6:00 PM",
+      "fecha": "26-10",
+      "fecha_iso": "2026-10-26",
+      "numeros": [
+        "49",
+        "96",
+        "75"
+      ],
+      "fuente": "https://turifamax.com/api/v1/resultados"
+    },
+    {
+      "empresa": "Americanas (NY)",
+      "juego": "Florida Día",
+      "fecha": "27-10",
+      "fecha_iso": "2026-10-27",
+      "numeros": [
+        "18",
+        "36",
+        "75"
+      ],
+      "fuente": "https://turifamax.com/api/v1/resultados"
+    },
+    {
+      "empresa": "Americanas (NY)",
+      "juego": "Florida Noche",
+      "fecha": "26-10",
+      "fecha_iso": "2026-10-26",
+      "numeros": [
+        "79",
+        "98",
+        "45"
+      ],
+      "fuente": "https://turifamax.com/api/v1/resultados"
+    },
+    {
+      "empresa": "Lotería Nacional",
+      "juego": "Gana Más",
+      "fecha": "27-10",
+      "fecha_iso": "2026-10-27",
+      "numeros": [
+        "02",
+        "12",
+        "66"
+      ],
+      "fuente": "https://turifamax.com/api/v1/resultados"
+    },
+    {
+      "empresa": "King Lottery",
+      "juego": "King Lottery Noche",
+      "fecha": "26-10",
+      "fecha_iso": "2026-10-26",
+      "numeros": [
+        "09",
+        "77",
+        "53"
+      ],
+      "fuente": "https://turifamax.com/api/v1/resultados"
+    },
+    {
+      "empresa": "King Lottery",
+      "juego": "King Lottery Día",
+      "fecha": "27-10",
+      "fecha_iso": "2026-10-27",
+      "numeros": [
+        "01",
+        "37",
+        "73"
+      ],
+      "fuente": "https://turifamax.com/api/v1/resultados"
+    },
+    {
+      "empresa": "Leidsa",
+      "juego": "Quiniela Leidsa",
+      "fecha": "26-10",
+      "fecha_iso": "2026-10-26",
+      "numeros": [
+        "16",
+        "59",
+        "61"
+      ],
+      "fuente": "https://turifamax.com/api/v1/resultados"
+    },
+    {
+      "empresa": "LoteDom",
+      "juego": "LoteDom Día",
+      "fecha": "27-10",
+      "fecha_iso": "2026-10-27",
+      "numeros": [
+        "83",
+        "74",
+        "18"
+      ],
+      "fuente": "https://turifamax.com/api/v1/resultados"
+    },
+    {
+      "empresa": "Loteka",
+      "juego": "Quiniela Loteka Noche",
+      "fecha": "26-10",
+      "fecha_iso": "2026-10-26",
+      "numeros": [
+        "04",
+        "34",
+        "11"
+      ],
+      "fuente": "https://turifamax.com/api/v1/resultados"
+    },
+    {
+      "empresa": "Leidsa",
+      "juego": "Loto Pool",
+      "fecha": "26-10",
+      "fecha_iso": "2026-10-26",
+      "numeros": [
+        "22",
+        "23",
+        "28",
+        "26",
+        "21"
+      ],
+      "fuente": "https://turifamax.com/api/v1/resultados"
+    },
+    {
+      "empresa": "Lotería Real",
+      "juego": "Loto Real",
+      "fecha": "23-10",
+      "fecha_iso": "2026-10-23",
+      "numeros": [
+        "07",
+        "27",
+        "13",
+        "02",
+        "29",
+        "38"
+      ],
+      "fuente": "https://turifamax.com/api/v1/resultados"
+    },
+    {
+      "empresa": "Loteka",
+      "juego": "Mega Chances",
+      "fecha": "26-10",
+      "fecha_iso": "2026-10-26",
+      "numeros": [
+        "55",
+        "46",
+        "94",
+        "28",
+        "14"
+      ],
+      "fuente": "https://turifamax.com/api/v1/resultados"
+    },
+    {
+      "empresa": "Lotería Nacional",
+      "juego": "Lotería Nacional",
+      "fecha": "26-10",
+      "fecha_iso": "2026-10-26",
+      "numeros": [
+        "64",
+        "01",
+        "70"
+      ],
+      "fuente": "https://turifamax.com/api/v1/resultados"
+    },
+    {
+      "empresa": "Americanas (NY)",
+      "juego": "New York Noche",
+      "fecha": "26-10",
+      "fecha_iso": "2026-10-26",
+      "numeros": [
+        "86",
+        "50",
+        "50"
+      ],
+      "fuente": "https://turifamax.com/api/v1/resultados"
+    },
+    {
+      "empresa": "Americanas (NY)",
+      "juego": "New York Tarde",
+      "fecha": "27-10",
+      "fecha_iso": "2026-10-27",
+      "numeros": [
+        "60",
+        "54",
+        "15"
+      ],
+      "fuente": "https://turifamax.com/api/v1/resultados"
+    },
+    {
+      "empresa": "Leidsa",
+      "juego": "Pega 3 Más",
+      "fecha": "26-10",
+      "fecha_iso": "2026-10-26",
+      "numeros": [
+        "05",
+        "28",
+        "17"
+      ],
+      "fuente": "https://turifamax.com/api/v1/resultados"
+    },
+    {
+      "empresa": "La Primera",
+      "juego": "La Primera Día",
+      "fecha": "27-10",
+      "fecha_iso": "2026-10-27",
+      "numeros": [
+        "18",
+        "84",
+        "49"
+      ],
+      "fuente": "https://turifamax.com/api/v1/resultados"
+    },
+    {
+      "empresa": "La Primera",
+      "juego": "Primera Noche",
+      "fecha": "26-10",
+      "fecha_iso": "2026-10-26",
+      "numeros": [
+        "42",
+        "43",
+        "31"
+      ],
+      "fuente": "https://turifamax.com/api/v1/resultados"
+    },
+    {
+      "empresa": "Lotería Real",
+      "juego": "Quiniela Real",
+      "fecha": "27-10",
+      "fecha_iso": "2026-10-27",
+      "numeros": [
+        "26",
+        "24",
+        "13"
+      ],
+      "fuente": "https://turifamax.com/api/v1/resultados"
+    },
+    {
+      "empresa": "La Suerte",
+      "juego": "La Suerte Tarde",
+      "fecha": "26-10",
+      "fecha_iso": "2026-10-26",
+      "numeros": [
+        "66",
+        "22",
+        "50"
+      ],
+      "fuente": "https://turifamax.com/api/v1/resultados"
+    },
+    {
+      "empresa": "La Suerte",
+      "juego": "La Suerte Día",
+      "fecha": "27-10",
+      "fecha_iso": "2026-10-27",
+      "numeros": [
+        "60",
+        "77",
+        "30"
+      ],
+      "fuente": "https://turifamax.com/api/v1/resultados"
+    },
+    {
+      "empresa": "Leidsa",
+      "juego": "Super Kino TV",
+      "fecha": "26-10",
+      "fecha_iso": "2026-10-26",
+      "numeros": [
+        "19",
+        "69",
+        "33",
+        "28",
+        "42",
+        "71",
+        "24",
+        "10",
+        "02",
+        "46",
+        "18",
+        "58",
+        "54",
+        "34",
+        "66",
+        "31",
+        "01",
+        "56",
+        "44",
+        "23"
+      ],
+      "fuente": "https://turifamax.com/api/v1/resultados"
+    },
+    {
+      "empresa": "Leidsa",
+      "juego": "Loto - Loto Más",
+      "fecha": "24-10",
+      "fecha_iso": "2026-10-24",
+      "numeros": [
+        "35",
+        "29",
+        "39",
+        "18",
+        "10",
+        "27",
+        "10",
+        "15"
+      ],
+      "fuente": "https://turifamax.com/api/v1/resultados"
+    },
+    {
+      "empresa": "Americanas (NY)",
+      "juego": "PowerBall",
+      "fecha": "26-10",
+      "fecha_iso": "2026-10-26",
+      "numeros": [
+        "18",
+        "49",
+        "50",
+        "26",
+        "54",
+        "01"
+      ],
+      "fuente": "https://turifamax.com/api/v1/resultados"
+    },
     {
       "empresa": "Lotería Nacional",
       "juego": "Juega + Pega +",
@@ -15,101 +370,8 @@
         "03",
         "21",
         "23"
-      ]
-    },
-    {
-      "empresa": "Lotería Nacional",
-      "juego": "Gana Más",
-      "fecha": "26-10",
-      "numeros": [
-        "67",
-        "31",
-        "26"
-      ]
-    },
-    {
-      "empresa": "Lotería Nacional",
-      "juego": "Lotería Nacional",
-      "fecha": "26-10",
-      "numeros": [
-        "64",
-        "01",
-        "70"
-      ]
-    },
-    {
-      "empresa": "Leidsa",
-      "juego": "Pega 3 Más",
-      "fecha": "26-10",
-      "numeros": [
-        "05",
-        "28",
-        "17"
-      ]
-    },
-    {
-      "empresa": "Leidsa",
-      "juego": "Loto Pool",
-      "fecha": "26-10",
-      "numeros": [
-        "21",
-        "22",
-        "23",
-        "26",
-        "28"
-      ]
-    },
-    {
-      "empresa": "Leidsa",
-      "juego": "Super Kino TV",
-      "fecha": "26-10",
-      "numeros": [
-        "01",
-        "02",
-        "10",
-        "18",
-        "19",
-        "23",
-        "24",
-        "28",
-        "31",
-        "33",
-        "34",
-        "42",
-        "44",
-        "46",
-        "54",
-        "56",
-        "58",
-        "66",
-        "69",
-        "71"
-      ]
-    },
-    {
-      "empresa": "Leidsa",
-      "juego": "Quiniela Leidsa",
-      "fecha": "26-10",
-      "numeros": [
-        "16",
-        "59",
-        "61"
-      ]
-    },
-    {
-      "empresa": "Leidsa",
-      "juego": "Loto - Loto Más",
-      "fecha": "24-10",
-      "numeros": [
-        "10",
-        "18",
-        "27",
-        "29",
-        "35",
-        "39",
-        "10",
-        "15"
-      ]
+      ],
+      "fuente": "https://www.conectate.com.do/loterias/"
     },
     {
       "empresa": "Lotería Real",
@@ -120,17 +382,8 @@
         "32",
         "53",
         "62"
-      ]
-    },
-    {
-      "empresa": "Lotería Real",
-      "juego": "Quiniela Real",
-      "fecha": "26-10",
-      "numeros": [
-        "90",
-        "32",
-        "65"
-      ]
+      ],
+      "fuente": "https://www.conectate.com.do/loterias/"
     },
     {
       "empresa": "Lotería Real",
@@ -140,20 +393,8 @@
         "56",
         "50",
         "26"
-      ]
-    },
-    {
-      "empresa": "Lotería Real",
-      "juego": "Loto Real",
-      "fecha": "23-10",
-      "numeros": [
-        "02",
-        "07",
-        "13",
-        "27",
-        "29",
-        "38"
-      ]
+      ],
+      "fuente": "https://www.conectate.com.do/loterias/"
     },
     {
       "empresa": "Loteka",
@@ -163,69 +404,8 @@
         "82",
         "14",
         "61"
-      ]
-    },
-    {
-      "empresa": "Loteka",
-      "juego": "Mega Chances",
-      "fecha": "26-10",
-      "numeros": [
-        "14",
-        "28",
-        "46",
-        "55",
-        "94"
-      ]
-    },
-    {
-      "empresa": "Loteka",
-      "juego": "Quiniela Loteka Noche",
-      "fecha": "26-10",
-      "numeros": [
-        "04",
-        "34",
-        "11"
-      ]
-    },
-    {
-      "empresa": "Americanas (NY)",
-      "juego": "New York Tarde",
-      "fecha": "26-10",
-      "numeros": [
-        "13",
-        "36",
-        "71"
-      ]
-    },
-    {
-      "empresa": "Americanas (NY)",
-      "juego": "New York Noche",
-      "fecha": "26-10",
-      "numeros": [
-        "86",
-        "50",
-        "50"
-      ]
-    },
-    {
-      "empresa": "Americanas (NY)",
-      "juego": "Florida Día",
-      "fecha": "26-10",
-      "numeros": [
-        "19",
-        "71",
-        "77"
-      ]
-    },
-    {
-      "empresa": "Americanas (NY)",
-      "juego": "Florida Noche",
-      "fecha": "26-10",
-      "numeros": [
-        "79",
-        "98",
-        "45"
-      ]
+      ],
+      "fuente": "https://www.conectate.com.do/loterias/"
     },
     {
       "empresa": "Americanas (NY)",
@@ -235,7 +415,8 @@
         "36",
         "99",
         "74"
-      ]
+      ],
+      "fuente": "https://www.conectate.com.do/loterias/"
     },
     {
       "empresa": "Americanas (NY)",
@@ -245,7 +426,8 @@
         "17",
         "03",
         "81"
-      ]
+      ],
+      "fuente": "https://www.conectate.com.do/loterias/"
     },
     {
       "empresa": "Americanas (NY)",
@@ -255,7 +437,8 @@
         "48",
         "02",
         "42"
-      ]
+      ],
+      "fuente": "https://www.conectate.com.do/loterias/"
     },
     {
       "empresa": "Americanas (NY)",
@@ -265,7 +448,8 @@
         "10",
         "00",
         "40"
-      ]
+      ],
+      "fuente": "https://www.conectate.com.do/loterias/"
     },
     {
       "empresa": "Americanas (NY)",
@@ -275,7 +459,8 @@
         "37",
         "54",
         "35"
-      ]
+      ],
+      "fuente": "https://www.conectate.com.do/loterias/"
     },
     {
       "empresa": "Americanas (NY)",
@@ -288,30 +473,8 @@
         "49",
         "51",
         "05"
-      ]
-    },
-    {
-      "empresa": "Americanas (NY)",
-      "juego": "PowerBall",
-      "fecha": "26-10",
-      "numeros": [
-        "18",
-        "26",
-        "49",
-        "50",
-        "54",
-        "01"
-      ]
-    },
-    {
-      "empresa": "La Primera",
-      "juego": "La Primera Día",
-      "fecha": "26-10",
-      "numeros": [
-        "08",
-        "80",
-        "20"
-      ]
+      ],
+      "fuente": "https://www.conectate.com.do/loterias/"
     },
     {
       "empresa": "La Primera",
@@ -324,47 +487,8 @@
         "27",
         "32",
         "09"
-      ]
-    },
-    {
-      "empresa": "La Primera",
-      "juego": "Primera Noche",
-      "fecha": "26-10",
-      "numeros": [
-        "42",
-        "43",
-        "31"
-      ]
-    },
-    {
-      "empresa": "La Suerte",
-      "juego": "La Suerte Día",
-      "fecha": "26-10",
-      "numeros": [
-        "51",
-        "75",
-        "10"
-      ]
-    },
-    {
-      "empresa": "La Suerte",
-      "juego": "La Suerte Tarde",
-      "fecha": "26-10",
-      "numeros": [
-        "66",
-        "22",
-        "50"
-      ]
-    },
-    {
-      "empresa": "LoteDom",
-      "juego": "LoteDom Día",
-      "fecha": "26-10",
-      "numeros": [
-        "53",
-        "53",
-        "05"
-      ]
+      ],
+      "fuente": "https://www.conectate.com.do/loterias/"
     },
     {
       "empresa": "LoteDom",
@@ -372,7 +496,8 @@
       "fecha": "26-10",
       "numeros": [
         "88"
-      ]
+      ],
+      "fuente": "https://www.conectate.com.do/loterias/"
     },
     {
       "empresa": "LoteDom",
@@ -382,7 +507,8 @@
         "18",
         "83",
         "48"
-      ]
+      ],
+      "fuente": "https://www.conectate.com.do/loterias/"
     },
     {
       "empresa": "LoteDom",
@@ -390,7 +516,8 @@
       "fecha": "26-10",
       "numeros": [
         "50"
-      ]
+      ],
+      "fuente": "https://www.conectate.com.do/loterias/"
     },
     {
       "empresa": "LoteDom",
@@ -399,57 +526,8 @@
       "numeros": [
         "18",
         "50"
-      ]
-    },
-    {
-      "empresa": "Anguila",
-      "juego": "Anguila 10:00 AM",
-      "fecha": "27-10",
-      "numeros": [
-        "04",
-        "93",
-        "20"
-      ]
-    },
-    {
-      "empresa": "Anguila",
-      "juego": "Anguila 1:00 PM",
-      "fecha": "26-10",
-      "numeros": [
-        "54",
-        "65",
-        "92"
-      ]
-    },
-    {
-      "empresa": "Anguila",
-      "juego": "Anguila 9:00 PM",
-      "fecha": "26-10",
-      "numeros": [
-        "34",
-        "82",
-        "52"
-      ]
-    },
-    {
-      "empresa": "King Lottery",
-      "juego": "King Lottery Día",
-      "fecha": "26-10",
-      "numeros": [
-        "62",
-        "61",
-        "03"
-      ]
-    },
-    {
-      "empresa": "King Lottery",
-      "juego": "King Lottery Noche",
-      "fecha": "26-10",
-      "numeros": [
-        "09",
-        "77",
-        "53"
-      ]
+      ],
+      "fuente": "https://www.conectate.com.do/loterias/"
     },
     {
       "empresa": "Haiti Bolet",
@@ -459,7 +537,8 @@
         "99",
         "97",
         "22"
-      ]
+      ],
+      "fuente": "https://www.conectate.com.do/loterias/"
     },
     {
       "empresa": "Haiti Bolet",
@@ -469,7 +548,8 @@
         "36",
         "79",
         "59"
-      ]
+      ],
+      "fuente": "https://www.conectate.com.do/loterias/"
     }
   ]
 }
