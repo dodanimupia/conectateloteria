@@ -1,18 +1,18 @@
-.cinta-resultados{display:flex;align-items:center;gap:12px;position:relative;z-index:90;min-height:56px;width:100%;background:#000000;color:#eef2ff;font-family:"Segoe UI",Arial,sans-serif;border-bottom:1px solid #263454}
+.cinta-resultados{display:flex;align-items:center;gap:12px;position:relative;z-index:90;min-height:56px;width:100%;background:#000000;color:#f5f5f5;font-family:"Segoe UI",Arial,sans-serif;border-bottom:1px solid #252525}
 .cinta-controles{display:flex;align-items:center;gap:10px;flex:none;padding:8px 0 8px 20px}
-.cinta-titulo{font-size:11px;font-weight:800;letter-spacing:.09em;color:#c6d2ef}
-.cinta-pausa{display:grid;place-items:center;width:32px;height:32px;flex:none;border:1px solid #465576;border-radius:7px;background:#1c2a4c;color:#fff;cursor:pointer;font:700 16px/1 Arial,sans-serif}
-.cinta-pausa:hover{background:#304165}
+.cinta-titulo{font-size:11px;font-weight:800;letter-spacing:.09em;color:#cccccc}
+.cinta-pausa{display:grid;place-items:center;width:32px;height:32px;flex:none;border:1px solid #4a4a4a;border-radius:7px;background:#242424;color:#fff;cursor:pointer;font:700 16px/1 Arial,sans-serif}
+.cinta-pausa:hover{background:#383838}
 .cinta-pausa:focus-visible{outline:2px solid #f4c84f;outline-offset:3px}
 .cinta-ventana{flex:1;min-width:0;overflow:hidden;padding:8px 0}
 .cinta-pista{display:flex;width:max-content;animation:cinta-deslizar var(--cinta-duracion,160s) linear infinite;will-change:transform}
 .cinta-grupo{display:flex;align-items:center;gap:30px;flex:none;padding-right:30px}
 .cinta-item{display:flex;align-items:center;gap:10px;flex:none;white-space:nowrap}
-.cinta-item::after{content:"•";color:#8291b4;padding-left:12px;font-size:18px}
+.cinta-item::after{content:"•";color:#888888;padding-left:12px;font-size:18px}
 .cinta-nombre{font-size:17px;font-weight:700;line-height:1.3}
 .cinta-numeros{display:flex;gap:5px}
-.cinta-bola{display:grid;place-items:center;min-width:31px;height:31px;padding:0 5px;border-radius:5px;background:#2c3650;color:#f4c84f;font-size:17px;line-height:1;font-weight:800;font-variant-numeric:tabular-nums}
-.cinta-fecha{font-size:11px;font-weight:800;letter-spacing:.04em;color:#a9b8da}
+.cinta-bola{display:grid;place-items:center;min-width:31px;height:31px;padding:0 5px;border-radius:5px;background:#303030;color:#f4c84f;font-size:17px;line-height:1;font-weight:800;font-variant-numeric:tabular-nums}
+.cinta-fecha{font-size:11px;font-weight:800;letter-spacing:.04em;color:#b3b3b3}
 .cinta-fecha-hoy{color:#4ade80}
 .cinta-resultados[data-pausada="true"] .cinta-pista,.cinta-resultados:hover .cinta-pista,.cinta-resultados:focus-within .cinta-pista{animation-play-state:paused}
 @keyframes cinta-deslizar{from{transform:translateX(0)}to{transform:translateX(-50%)}}
