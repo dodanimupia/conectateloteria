@@ -313,6 +313,7 @@ def html_cinta(resultados):
 
 def escribir(nombre, contenido):
     if nombre.endswith(".html"):
+        contenido = contenido.replace("Últimos 7 días", "Últimos 14 días").replace("últimos 7 días", "últimos 14 días")
         # Las plantillas de operador también vuelven a dibujar las tarjetas al consultar el JSON.
         contenido = contenido.replace('function pintar(lista){', 'function rutaDetalle(texto){return texto.toLowerCase().normalize("NFD").replace(/[\\u0300-\\u036f]/g, "").replace(/[^a-z0-9]+/g,"-").replace(/(^-|-$)/g, "");} function pintar(lista){')
         contenido = contenido.replace("h += '<div class=\"card\"><div class=\"card-header\">", "h += '<a class=\"card card-enlace\" href=\"sorteo-'+rutaDetalle(item.empresa)+'-'+rutaDetalle(item.juego)+'.html\"><div class=\"card-header\">")
