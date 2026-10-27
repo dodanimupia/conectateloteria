@@ -13,13 +13,13 @@ permissions:
 
 jobs:
   actualizar:
-    runs-on: ubuntu-latest
+    runs-on: ubuntu-24.04
     steps:
       - name: Descargar el repositorio
-        uses: actions/checkout@v4
+        uses: actions/checkout@v7.0.1
 
       - name: Preparar Python
-        uses: actions/setup-python@v5
+        uses: actions/setup-python@v7.1.0
         with:
           python-version: "3.11"
 
@@ -67,7 +67,7 @@ jobs:
       # Solo se suben los archivos de "publicar", así que las páginas que no
       # cambian (legales, guías, estilos, logos) quedan intactas en el servidor.
       - name: Subir resultados y páginas a SiteGround por FTP
-        uses: SamKirkland/FTP-Deploy-Action@v4.3.4
+        uses: SamKirkland/FTP-Deploy-Action@v4.4.0
         with:
           server: ftp.conectateloteria.com
           port: 21
