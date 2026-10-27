@@ -154,49 +154,26 @@ def validar_resultados(resultados, ahora=None):
 
 
 def obtener_html_renderizado():
-    from playwright.sync_api import sync_playwright
+    """La fuente pública entrega HTML completo; no hace falta Chromium."""
+    from urllib.error import HTTPError
 
-    errores = []
-    with sync_playwright() as p:
-        navegador = p.chromium.launch()
+    ultimo_error = None
+    for intento in range(1, 4):
         try:
-            for intento in range(1, 4):
-                pagina = navegador.new_page(locale="es-DO", timezone_id="America/Santo_Domingo")
-                try:
-                    respuesta = pagina.goto(URL, wait_until="domcontentloaded", timeout=60000)
-                    if respuesta is None or not respuesta.ok:
-                        raise PermissionError(f"HTTP {respuesta.status if respuesta else 'sin respuesta'}")
-                    # Espera números reales y fechas, no solo etiquetas vacías.
-                    pagina.wait_for_function("""() => [...document.querySelectorAll('a')]
-                      .filter(a => a.querySelector('.text-xl.font-bold')
-                        && /^\\d{2}-\\d{2}$/.test(a.querySelector('.bg-slate-500')?.textContent.trim() || '')
-                        && a.querySelectorAll('span.text-gray-800').length > 0
-                        && [...a.querySelectorAll('span.text-gray-800')]
-                          .every(s => /^\\d{2}$/.test(s.textContent.trim()))).length >= 30""",
-                      timeout=60000)
-                    html = pagina.content()
-                    validar_resultados(extraer_resultados(html))
-                    return html, True
-                except PermissionError as error:
-                    errores.append(str(error))
-                    print(f"::warning::La fuente principal denegó la consulta: {error}")
-                    break
-                except Exception as error:
-                    errores.append(str(error))
-                    print(f"::warning::Intento {intento}/3 sin datos válidos: {error}")
-                finally:
-                    pagina.close()
-        finally:
-            navegador.close()
-    # Fuente pública independiente: HTTPS normal, sin proxies ni evasión.
-    print("Consultando fuente pública alternativa: " + URL_ALTERNATIVA)
-    try:
-        with urlopen(URL_ALTERNATIVA, timeout=45) as respuesta:
-            html = respuesta.read().decode("utf-8")
-        validar_resultados(extraer_resultados(html))
-        return html, True
-    except Exception as error:
-        raise RuntimeError("No se publicará nada: ninguna fuente devolvió datos válidos. " + str(error)) from error
+            with urlopen(URL_ALTERNATIVA, timeout=45) as respuesta:
+                html = respuesta.read().decode("utf-8")
+            validar_resultados(extraer_resultados(html))
+            return html, True
+        except HTTPError as error:
+            ultimo_error = error
+            # Respeta denegaciones y límites de acceso; nunca los evade.
+            if error.code in (401, 403, 429):
+                break
+        except (OSError, ValueError) as error:
+            ultimo_error = error
+        print(f"::warning::Intento {intento}/3 sin resultados válidos: {ultimo_error}")
+    raise RuntimeError("No se publicará nada: la fuente pública no devolvió resultados válidos. "
+                       + str(ultimo_error))
 
 
 def actualizar_archivo_datos():
