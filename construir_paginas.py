@@ -27,6 +27,7 @@ import unicodedata
 from datetime import date, datetime, timezone, timedelta
 
 import historial as hist
+from actualizar_datos import validar_resultados, ZONA
 
 RAIZ = os.path.dirname(os.path.abspath(__file__))
 SALIDA = os.path.join(RAIZ, "publicar")
@@ -272,6 +273,8 @@ def html_historial_portada(historial, hoy_iso):
 
 
 def escribir(nombre, contenido):
+    if nombre.endswith(".html"):
+        contenido = contenido.replace("ca-pub-6133777619698250", "ca-pub-2331380798985258")
     destino = os.path.join(SALIDA, nombre)
     with open(destino, "w", encoding="utf-8") as f:
         f.write(contenido)
@@ -749,6 +752,16 @@ def main():
     with open(JSON_DATOS, encoding="utf-8") as f:
         paquete = json.load(f)
     resultados = paquete.get("resultados", [])
+    if paquete.get("en_vivo") is not True:
+        raise SystemExit("No se publican copias locales ni resultados sin verificar")
+    validar_resultados(resultados)
+    actualizacion = datetime.fromisoformat(paquete["actualizado"])
+    if actualizacion.tzinfo is None:
+        raise SystemExit("La actualización debe incluir su zona horaria")
+    actualizacion = actualizacion.astimezone(ZONA)
+    edad = datetime.now(ZONA) - actualizacion
+    if not timedelta(minutes=-2) <= edad <= timedelta(minutes=30):
+        raise SystemExit("La consulta en vivo ha caducado: vuelve a ejecutar el scraper")
 
     os.makedirs(SALIDA, exist_ok=True)
     shutil.copy(JSON_DATOS, os.path.join(SALIDA, "datos_loteria.json"))
@@ -761,6 +774,11 @@ def main():
     print("Historial: %d dias guardados" % len(historial.get("dias", {})))
 
     fecha = "Resultados de hoy, %s" % fecha_en_texto()
+    etiqueta_actualizacion = (
+        escapar(fecha) + '<br><small id="ultima-actualizacion">Última actualización: '
+        + actualizacion.strftime("%d/%m/%Y, %H:%M:%S")
+        + ' (hora dominicana)</small>'
+    )
     print("Construyendo paginas con %d resultados (%s)" % (len(resultados), fecha))
 
     # --- Portada ---
@@ -774,7 +792,7 @@ def main():
                  .replace("<!--RESULTADOS-->", secciones)
                  .replace("<!--NAVLINKS-->", enlaces)
                  .replace("<!--HISTORIAL-->", html_historial_portada(historial, hoy_iso))
-                 .replace("<!--FECHA-->", escapar(fecha)))
+                 .replace("<!--FECHA-->", etiqueta_actualizacion))
     else:
         print("  aviso: no existe index.html, me lo salto")
 
@@ -789,7 +807,7 @@ def main():
         escribir(archivo, plantilla
                  .replace("<!--RESULTADOS-->", html_una_loteria(resultados, empresa))
                  .replace("<!--HISTORIAL-->", html_historial(historial, empresa, hoy_iso))
-                 .replace("<!--FECHA-->", escapar(fecha)))
+                 .replace("<!--FECHA-->", etiqueta_actualizacion))
 
     # --- Archivos que se copian sin modificar ---
     print("Copiando archivos estaticos:")
@@ -798,7 +816,11 @@ def main():
         if not os.path.exists(origen):
             print("  aviso: falta %s, me lo salto" % nombre)
             continue
-        shutil.copy(origen, os.path.join(SALIDA, nombre))
+        if nombre.endswith(".html"):
+            with open(origen, encoding="utf-8") as f:
+                escribir(nombre, f.read())
+        else:
+            shutil.copy(origen, os.path.join(SALIDA, nombre))
         print("  %-34s copiado" % nombre)
 
     # Las paginas nuevas heredan estilo, barra y pie de la portada.
