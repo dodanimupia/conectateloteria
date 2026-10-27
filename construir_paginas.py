@@ -574,11 +574,10 @@ def escribir_paginas_sorteo(historial, hoy, piezas, actualizacion):
 <section class="detalle-destacado" id="resultado-destacado" aria-labelledby="detalle-etiqueta" tabindex="-1">
 <div class="detalle-destacado-cabecera"><span class="detalle-insignia" id="detalle-etiqueta">Último resultado disponible</span><time id="detalle-fecha" datetime="%s">%s</time></div>
 <div class="detalle-numeros detalle-numeros-grandes" id="detalle-numeros">%s</div>
-<p class="detalle-consulta">Última consulta: %s · Hora dominicana</p>
 </section>
 <section class="detalle-historial" aria-labelledby="titulo-historial"><div class="detalle-historial-cabecera"><h2 id="titulo-historial">Resultados por fecha</h2><span>Últimos 14 días</span></div><p class="detalle-ayuda">Toca una fecha para ver sus números en grande.</p><div class="detalle-lista">%s</div><p class="detalle-nota">Las fechas sin información se muestran como «Sin dato disponible». No todos los sorteos se celebran cada día.</p></section>
 <script type="application/json" id="detalle-datos">%s</script><script src="detalle-sorteo.js?v=1" defer></script>
-</main>''' % (operador, escapar(empresa), escapar(juego), ultima, escapar(fecha_larga(ultima)), bolas(fechas[ultima]), actualizacion.strftime("%d/%m/%Y, %H:%M:%S"), "".join(filas), json_seguro)
+</main>''' % (operador, escapar(empresa), escapar(juego), ultima, escapar(fecha_larga(ultima)), bolas(fechas[ultima]), "".join(filas), json_seguro)
         escribir(ruta, pagina(juego + " – Resultados e historial | Conéctate Lotería", "Resultados de " + juego + " con fecha e historial de las últimas dos semanas.", ruta, cuerpo, piezas))
         rutas.append(ruta)
     return rutas
@@ -873,11 +872,7 @@ def main():
     print("Historial: %d dias guardados" % len(historial.get("dias", {})))
 
     fecha = "Resultados de hoy, %s" % fecha_en_texto()
-    etiqueta_actualizacion = (
-        escapar(fecha) + '<br><small id="ultima-actualizacion">Última actualización: '
-        + actualizacion.strftime("%d/%m/%Y, %H:%M:%S")
-        + ' (hora dominicana)</small>'
-    )
+    etiqueta_actualizacion = escapar(fecha)
     print("Construyendo paginas con %d resultados (%s)" % (len(resultados), fecha))
 
     # --- Portada ---
