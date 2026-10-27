@@ -58,6 +58,8 @@ PAGINAS_LOTERIA = {
 ARCHIVOS_ESTATICOS = [
     ".htaccess",      # reglas de cache: sin esto el navegador sirve paginas viejas
     "estilos.css",
+    "detalle-sorteo.css",
+    "detalle-sorteo.js",
     "cinta-resultados.css",
     "cinta-resultados.js",
     "robots.txt",
@@ -117,6 +119,10 @@ def fecha_en_texto():
         DIAS[ahora.weekday()], ahora.day, MESES[ahora.month - 1], ahora.year)
 
 
+def ruta_sorteo(empresa, juego):
+    return "sorteo-" + slug(empresa)[4:] + "-" + slug(juego)[4:] + ".html"
+
+
 def tarjeta(item):
     """Una tarjeta de juego con sus bolas de números."""
     bolas = "".join('<div class="bola">%s</div>' % escapar(n)
@@ -126,14 +132,14 @@ def tarjeta(item):
     fecha = item.get("fecha") or ""
     pastilla = ('<span class="fecha">%s</span>' % escapar(fecha)) if fecha else ""
     return (
-        '<div class="card">'
+        '<a class="card card-enlace" href="%s">'
         '<div class="card-header">'
         '<span class="juego">%s</span>'
         '%s'
         '</div>'
         '<div class="numeros">%s</div>'
-        '</div>'
-    ) % (escapar(item.get("juego", "")), pastilla, bolas)
+        '</a>'
+    ) % (ruta_sorteo(item.get("empresa", ""), item.get("juego", "")), escapar(item.get("juego", "")), pastilla, bolas)
 
 
 def nombre_empresa(bruto):
@@ -307,9 +313,14 @@ def html_cinta(resultados):
 
 def escribir(nombre, contenido):
     if nombre.endswith(".html"):
+        # Las plantillas de operador también vuelven a dibujar las tarjetas al consultar el JSON.
+        contenido = contenido.replace('function pintar(lista){', 'function rutaDetalle(texto){return texto.toLowerCase().normalize("NFD").replace(/[\\u0300-\\u036f]/g, "").replace(/[^a-z0-9]+/g,"-").replace(/(^-|-$)/g, "");} function pintar(lista){')
+        contenido = contenido.replace("h += '<div class=\"card\"><div class=\"card-header\">", "h += '<a class=\"card card-enlace\" href=\"sorteo-'+rutaDetalle(item.empresa)+'-'+rutaDetalle(item.juego)+'.html\"><div class=\"card-header\">")
+        contenido = contenido.replace("'<div class=\"numeros\">'+bolas+'</div></div>'", "'<div class=\"numeros\">'+bolas+'</div></a>'")
         if CINTA_RESULTADOS:
             recursos = ('<link rel="stylesheet" href="cinta-resultados.css?v=3">'
-                        '<script src="cinta-resultados.js" defer></script>')
+                        '<script src="cinta-resultados.js?v=2" defer></script>'
+                        '<link rel="stylesheet" href="detalle-sorteo.css?v=1">')
             contenido = contenido.replace("</head>", recursos + "</head>", 1)
             contenido = contenido.replace("</nav>", "</nav>" + CINTA_RESULTADOS, 1)
         credito = ('<p style="text-align:center"><a href="https://turifamax.com">'
@@ -528,6 +539,50 @@ def pagina(titulo, descripcion, ruta, cuerpo, piezas, extra_head=""):
        extra_head, estilo, barra, cuerpo, pie, GUION_MENU)
 
 # --- Paginas de un dia --------------------------------------------------
+def escribir_paginas_sorteo(historial, hoy, piezas, actualizacion):
+    juegos = {}
+    for clave, sorteos in historial.get("dias", {}).items():
+        for item in sorteos:
+            juegos.setdefault((item["empresa"], item["juego"]), {})[clave] = item["numeros"]
+    rutas = []
+    for (empresa, juego), fechas in sorted(juegos.items()):
+        ruta = ruta_sorteo(empresa, juego)
+        ultima = max(fechas)
+        def fecha_larga(clave):
+            f = date.fromisoformat(clave)
+            prefijo = "Hoy · " if f == hoy else "Ayer · " if f == hoy - timedelta(days=1) else ""
+            return prefijo + "%d de %s de %d" % (f.day, MESES[f.month - 1], f.year)
+        def bolas(numeros):
+            return "".join('<span class="detalle-bola">%s</span>' % escapar(n) for n in numeros)
+        filas = []
+        datos = {}
+        for dias in range(14):
+            clave = (hoy - timedelta(days=dias)).isoformat()
+            etiqueta = fecha_larga(clave)
+            numeros = fechas.get(clave)
+            if numeros:
+                datos[clave] = {"fecha": etiqueta, "numeros": numeros}
+                filas.append('<a class="detalle-fila" href="?fecha=%s#resultado-destacado" data-fecha="%s"%s><time datetime="%s">%s</time><span class="detalle-numeros">%s</span></a>' % (clave, clave, ' aria-current="date"' if clave == ultima else '', clave, escapar(etiqueta), bolas(numeros)))
+            else:
+                filas.append('<div class="detalle-fila detalle-sin-dato"><time datetime="%s">%s</time><span>Sin dato disponible</span></div>' % (clave, escapar(etiqueta)))
+        operador = next((archivo for archivo, nombre in PAGINAS_LOTERIA.items() if nombre == empresa), "index.html#" + slug(nombre_empresa(empresa)))
+        json_seguro = json.dumps(datos, ensure_ascii=False).replace("<", "\\u003c")
+        cuerpo = '''<main class="detalle-sorteo">
+<nav class="detalle-migas" aria-label="Ubicación"><a href="index.html">Resultados</a><span>/</span><a href="%s">%s</a></nav>
+<header class="detalle-titulo"><p class="detalle-ceja">HISTORIAL DE RESULTADOS</p><h1>%s</h1><p>Consulta los resultados de las últimas dos semanas.</p></header>
+<section class="detalle-destacado" id="resultado-destacado" aria-labelledby="detalle-etiqueta" tabindex="-1">
+<div class="detalle-destacado-cabecera"><span class="detalle-insignia" id="detalle-etiqueta">Último resultado disponible</span><time id="detalle-fecha" datetime="%s">%s</time></div>
+<div class="detalle-numeros detalle-numeros-grandes" id="detalle-numeros">%s</div>
+<p class="detalle-consulta">Última consulta: %s · Hora dominicana</p>
+</section>
+<section class="detalle-historial" aria-labelledby="titulo-historial"><div class="detalle-historial-cabecera"><h2 id="titulo-historial">Resultados por fecha</h2><span>Últimos 14 días</span></div><p class="detalle-ayuda">Toca una fecha para ver sus números en grande.</p><div class="detalle-lista">%s</div><p class="detalle-nota">Las fechas sin información se muestran como «Sin dato disponible». No todos los sorteos se celebran cada día.</p></section>
+<script type="application/json" id="detalle-datos">%s</script><script src="detalle-sorteo.js?v=1" defer></script>
+</main>''' % (operador, escapar(empresa), escapar(juego), ultima, escapar(fecha_larga(ultima)), bolas(fechas[ultima]), actualizacion.strftime("%d/%m/%Y, %H:%M:%S"), "".join(filas), json_seguro)
+        escribir(ruta, pagina(juego + " – Resultados e historial | Conéctate Lotería", "Resultados de " + juego + " con fecha e historial de las últimas dos semanas.", ruta, cuerpo, piezas))
+        rutas.append(ruta)
+    return rutas
+
+
 def ruta_dia(iso):
     return "resultados-%s.html" % iso
 
@@ -812,7 +867,7 @@ def main():
     # El historial se acumula: guarda lo de hoy y conserva los días previos.
     hoy = datetime.now(timezone(timedelta(hours=-4))).date()
     hoy_iso = hoy.isoformat()
-    historial = hist.actualizar(hist.cargar(JSON_HISTORIAL), resultados, hoy)
+    historial = hist.actualizar(hist.cargar(JSON_HISTORIAL), paquete.get("historial_reciente", []) + resultados, hoy)
     hist.guardar(historial, JSON_HISTORIAL)
     print("Historial: %d dias guardados" % len(historial.get("dias", {})))
 
@@ -870,6 +925,7 @@ def main():
     piezas = piezas_comunes(plantilla_portada)
     dias_hechos = escribir_paginas_de_dia(historial, hoy_iso, piezas)
     extras = [r for r in [escribir_estadisticas(historial, piezas)] if r]
+    extras.extend(escribir_paginas_sorteo(historial, hoy, piezas, actualizacion))
     escribir_sitemap(hoy_iso, dias_hechos, extras)
 
     print("Listo. Todo en ./publicar/")
