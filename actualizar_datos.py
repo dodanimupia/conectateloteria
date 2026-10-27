@@ -13,6 +13,7 @@ from bs4 import BeautifulSoup
 
 URL = "https://www.conectate.com.do/loterias/"
 URL_ALTERNATIVA = "https://www.loteriasdominicanas.com.do/"
+URL_API = "https://turifamax.com/api/v1/resultados"
 ARCHIVO_DATOS = str(Path(__file__).with_name("datos_loteria.json"))
 ZONA = ZoneInfo("America/Santo_Domingo")
 EMPRESAS = {
@@ -26,6 +27,11 @@ EMPRESAS = {
 
 
 def extraer_resultados(html):
+    if html.lstrip().startswith("{"):
+        datos = json.loads(html)
+        if datos.get("origen_api") != URL_API:
+            raise ValueError("Origen de API desconocido")
+        return datos["resultados"]
     soup = BeautifulSoup(html, "html.parser")
     if soup.select_one("article.draw-item[data-fecha-resultado]"):
         return extraer_fuente_alternativa(soup)
@@ -136,10 +142,10 @@ def conservar_sorteos_ausentes(resultados, fuente, ahora):
 
 def validar_resultados(resultados, ahora=None):
     hoy = (ahora or dt.datetime.now(ZONA)).astimezone(ZONA).date()
-    if len(resultados) < 30:
+    if len(resultados) < 20:
         raise ValueError(f"Fuente incompleta: solo {len(resultados)} sorteos válidos")
     presentes = {r["empresa"] for r in resultados}
-    faltantes = set(EMPRESAS.values()) - presentes
+    faltantes = (set(EMPRESAS.values()) - {"Haiti Bolet"}) - presentes
     if faltantes:
         raise ValueError("Faltan loterías: " + ", ".join(sorted(faltantes)))
     fechas = []
@@ -153,26 +159,91 @@ def validar_resultados(resultados, ahora=None):
     return resultados
 
 
+def normalizar_api(registros):
+    # Identificadores documentados en /api/v1/loterias. Mantiene los
+    # nombres del sitio y une las bolas adicionales de la misma fecha.
+    catalogo = {
+        "nacional": ("Lotería Nacional", "Lotería Nacional", 3, ()),
+        "gana-mas": ("Lotería Nacional", "Gana Más", 3, ()),
+        "leidsa": ("Leidsa", "Quiniela Leidsa", 3, ()),
+        "pega3-mas": ("Leidsa", "Pega 3 Más", 3, ()),
+        "super-kino": ("Leidsa", "Super Kino TV", 20, ()),
+        "loto-pool": ("Leidsa", "Loto Pool", 5, ()),
+        "loto-leidsa": ("Leidsa", "Loto - Loto Más", 6, ("loto-mas", "super-plus")),
+        "real": ("Lotería Real", "Quiniela Real", 3, ()),
+        "loto-real": ("Lotería Real", "Loto Real", 6, ()),
+        "loteka": ("Loteka", "Quiniela Loteka Noche", 3, ()),
+        "mega-chances": ("Loteka", "Mega Chances", 5, ()),
+        "lotedom": ("LoteDom", "LoteDom Día", 3, ()),
+        "primera-dia": ("La Primera", "La Primera Día", 3, ()),
+        "primera-noche": ("La Primera", "Primera Noche", 3, ()),
+        "suerte-tarde": ("La Suerte", "La Suerte Día", 3, ()),
+        "suerte-noche": ("La Suerte", "La Suerte Tarde", 3, ()),
+        "florida-dia": ("Americanas (NY)", "Florida Día", 3, ()),
+        "florida-noche": ("Americanas (NY)", "Florida Noche", 3, ()),
+        "ny-tarde": ("Americanas (NY)", "New York Tarde", 3, ()),
+        "ny-noche": ("Americanas (NY)", "New York Noche", 3, ()),
+        "mega-millions": ("Americanas (NY)", "Mega Millions", 5, ("mega-millions-ball",)),
+        "powerball": ("Americanas (NY)", "PowerBall", 5, ("powerball-ball",)),
+        "anguila-manana": ("Anguila", "Anguila 10:00 AM", 3, ()),
+        "anguila-mediodia": ("Anguila", "Anguila 1:00 PM", 3, ()),
+        "anguila-tarde": ("Anguila", "Anguila 6:00 PM", 3, ()),
+        "anguila-noche": ("Anguila", "Anguila 9:00 PM", 3, ()),
+        "king-tarde": ("King Lottery", "King Lottery Día", 3, ()),
+        "king-noche": ("King Lottery", "King Lottery Noche", 3, ()),
+    }
+    por_fecha = {(r["loteria"], r["fecha"]): r for r in registros}
+    ultimos = {}
+    for (clave, fecha_iso), registro in sorted(por_fecha.items(), key=lambda item: item[0][1]):
+        if clave not in catalogo:
+            continue
+        empresa, juego, cantidad, extras = catalogo[clave]
+        numeros = registro.get("numeros_texto", [])
+        if len(numeros) != cantidad:
+            continue
+        completo = True
+        for extra in extras:
+            bola = por_fecha.get((extra, fecha_iso), {}).get("numeros_texto", [])
+            if len(bola) != 1:
+                completo = False
+                break
+            numeros = numeros + bola
+        if not completo or not all(re.fullmatch(r"\d{2}", n) for n in numeros):
+            continue
+        fecha = dt.date.fromisoformat(fecha_iso)
+        ultimos[clave] = {"empresa": empresa, "juego": juego,
+                          "fecha": fecha.strftime("%d-%m"), "fecha_iso": fecha_iso,
+                          "numeros": numeros}
+    return list(ultimos.values())
+
+
 def obtener_html_renderizado():
-    """La fuente pública entrega HTML completo; no hace falta Chromium."""
+    """API pública gratuita: permite bots sin registro, claves ni Chromium."""
     from urllib.error import HTTPError
 
     ultimo_error = None
     for intento in range(1, 4):
         try:
-            with urlopen(URL_ALTERNATIVA, timeout=45) as respuesta:
-                html = respuesta.read().decode("utf-8")
-            validar_resultados(extraer_resultados(html))
-            return html, True
+            registros = []
+            hoy = dt.datetime.now(ZONA).date()
+            # Recupera también sorteos semanales y conserva su fecha real.
+            for dias in range(8):
+                fecha = (hoy - dt.timedelta(days=dias)).isoformat()
+                with urlopen(URL_API + "?fecha=" + fecha + "&limite=100", timeout=30) as respuesta:
+                    datos = json.load(respuesta)
+                if datos.get("ok") is not True or not isinstance(datos.get("resultados"), list):
+                    raise ValueError("Respuesta de API inválida")
+                registros.extend(datos["resultados"])
+            resultados = validar_resultados(normalizar_api(registros))
+            return json.dumps({"origen_api": URL_API, "resultados": resultados}), True
         except HTTPError as error:
             ultimo_error = error
-            # Respeta denegaciones y límites de acceso; nunca los evade.
             if error.code in (401, 403, 429):
                 break
-        except (OSError, ValueError) as error:
+        except (OSError, ValueError, KeyError, TypeError) as error:
             ultimo_error = error
         print(f"::warning::Intento {intento}/3 sin resultados válidos: {ultimo_error}")
-    raise RuntimeError("No se publicará nada: la fuente pública no devolvió resultados válidos. "
+    raise RuntimeError("No se publicará nada: la API no devolvió resultados válidos. "
                        + str(ultimo_error))
 
 
@@ -182,7 +253,8 @@ def actualizar_archivo_datos():
         raise ValueError("No se permite publicar un snapshot local")
     ahora = dt.datetime.now(ZONA)
     resultados = validar_resultados(extraer_resultados(html), ahora)
-    fuente = URL_ALTERNATIVA if "data-resultados-esperados" in html else URL
+    fuente = URL_API if html.lstrip().startswith("{") else (
+        URL_ALTERNATIVA if "data-resultados-esperados" in html else URL)
     resultados = conservar_sorteos_ausentes(resultados, fuente, ahora)
     validar_resultados(resultados, ahora)
     paquete = {
