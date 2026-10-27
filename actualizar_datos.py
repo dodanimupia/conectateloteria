@@ -159,7 +159,7 @@ def validar_resultados(resultados, ahora=None):
     return resultados
 
 
-def normalizar_api(registros):
+def normalizar_api(registros, todos=False):
     # Identificadores documentados en /api/v1/loterias. Mantiene los
     # nombres del sitio y une las bolas adicionales de la misma fecha.
     catalogo = {
@@ -195,6 +195,7 @@ def normalizar_api(registros):
     }
     por_fecha = {(r["loteria"], r["fecha"]): r for r in registros}
     ultimos = {}
+    historicos = []
     for (clave, fecha_iso), registro in sorted(por_fecha.items(), key=lambda item: item[0][1]):
         if clave not in catalogo:
             continue
@@ -215,7 +216,8 @@ def normalizar_api(registros):
         ultimos[clave] = {"empresa": empresa, "juego": juego,
                           "fecha": fecha.strftime("%d-%m"), "fecha_iso": fecha_iso,
                           "numeros": numeros}
-    return list(ultimos.values())
+        historicos.append(ultimos[clave])
+    return historicos if todos else list(ultimos.values())
 
 
 def obtener_html_renderizado():
@@ -228,7 +230,7 @@ def obtener_html_renderizado():
             registros = []
             hoy = dt.datetime.now(ZONA).date()
             # Recupera también sorteos semanales y conserva su fecha real.
-            for dias in range(8):
+            for dias in range(14):
                 fecha = (hoy - dt.timedelta(days=dias)).isoformat()
                 with urlopen(URL_API + "?fecha=" + fecha + "&limite=100", timeout=30) as respuesta:
                     datos = json.load(respuesta)
@@ -236,7 +238,8 @@ def obtener_html_renderizado():
                     raise ValueError("Respuesta de API inválida")
                 registros.extend(datos["resultados"])
             resultados = validar_resultados(normalizar_api(registros))
-            return json.dumps({"origen_api": URL_API, "resultados": resultados}), True
+            return json.dumps({"origen_api": URL_API, "resultados": resultados,
+                               "historial_reciente": normalizar_api(registros, todos=True)}), True
         except HTTPError as error:
             ultimo_error = error
             if error.code in (401, 403, 429):
@@ -262,6 +265,7 @@ def actualizar_archivo_datos():
         "actualizado": ahora.isoformat(timespec="seconds"),
         "zona_horaria": "America/Santo_Domingo", "fuente": fuente,
         "en_vivo": True, "resultados": resultados,
+        "historial_reciente": json.loads(html).get("historial_reciente", []) if fuente == URL_API else [],
     }
     # Reemplazo atómico: el último JSON válido se conserva ante cualquier fallo.
     destino = Path(ARCHIVO_DATOS)
