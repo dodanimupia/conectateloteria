@@ -274,6 +274,9 @@ def html_historial_portada(historial, hoy_iso):
 
 def escribir(nombre, contenido):
     if nombre.endswith(".html"):
+        credito = ('<p style="text-align:center"><a href="https://turifamax.com">'
+                   'Resultados por TuRifaMax</a></p>')
+        contenido = contenido.replace("</footer>", credito + "</footer>")
         contenido = contenido.replace("ca-pub-6133777619698250", "ca-pub-2331380798985258")
     destino = os.path.join(SALIDA, nombre)
     with open(destino, "w", encoding="utf-8") as f:
