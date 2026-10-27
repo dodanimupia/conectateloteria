@@ -24,6 +24,7 @@ import os
 import re
 import shutil
 import unicodedata
+from collections import Counter
 from datetime import date, datetime, timezone, timedelta
 
 import historial as hist
@@ -34,6 +35,7 @@ SALIDA = os.path.join(RAIZ, "publicar")
 JSON_DATOS = os.path.join(RAIZ, "datos_loteria.json")
 JSON_HISTORIAL = os.path.join(RAIZ, "historial.json")
 DOMINIO = "https://conectateloteria.com/"
+CINTA_RESULTADOS = ""
 
 # Qué archivo corresponde a cada lotería (tal como aparece en el JSON).
 PAGINAS_LOTERIA = {
@@ -56,6 +58,8 @@ PAGINAS_LOTERIA = {
 ARCHIVOS_ESTATICOS = [
     ".htaccess",      # reglas de cache: sin esto el navegador sirve paginas viejas
     "estilos.css",
+    "cinta-resultados.css",
+    "cinta-resultados.js",
     "robots.txt",
     "ads.txt",       # AdSense lo exige en la raiz del dominio
     # Guías
@@ -272,8 +276,42 @@ def html_historial_portada(historial, hoy_iso):
     return "".join(bloques)
 
 
+def html_cinta(resultados):
+    hoy = datetime.now(ZONA).strftime("%d-%m")
+    entradas = []
+    nombres = Counter(item.get("juego", "") for item in resultados)
+    for item in resultados:
+        nombre = item.get("juego", "")
+        if nombres[nombre] > 1:
+            nombre += " · " + item.get("empresa", "")
+        bolas = "".join('<span class="cinta-bola">%s</span>' % escapar(n)
+                        for n in item.get("numeros", []))
+        fecha = item.get("fecha") or "Sin fecha"
+        clase = " cinta-fecha-hoy" if fecha == hoy else ""
+        etiqueta = "HOY" if fecha == hoy else fecha.replace("-", "/")
+        entradas.append(
+            '<div class="cinta-item" role="listitem"><span class="cinta-nombre">%s</span>'
+            '<span class="cinta-numeros">%s</span><span class="cinta-fecha%s">%s</span></div>'
+            % (escapar(nombre), bolas, clase, escapar(etiqueta)))
+    contenido = "".join(entradas)
+    return (
+        '<section class="cinta-resultados" id="cinta-resultados" aria-label="Resultados recientes de loterías">'
+        '<div class="cinta-controles"><span class="cinta-titulo">RESULTADOS</span>'
+        '<button class="cinta-pausa" type="button" aria-label="Pausar resultados en movimiento" '
+        'aria-pressed="false" title="Pausar">Ⅱ</button></div>'
+        '<div class="cinta-ventana"><div class="cinta-pista">'
+        '<div class="cinta-grupo" role="list">%s</div>'
+        '<div class="cinta-grupo" role="list" aria-hidden="true">%s</div>'
+        '</div></div></section>' % (contenido, contenido))
+
+
 def escribir(nombre, contenido):
     if nombre.endswith(".html"):
+        if CINTA_RESULTADOS:
+            recursos = ('<link rel="stylesheet" href="cinta-resultados.css">'
+                        '<script src="cinta-resultados.js" defer></script>')
+            contenido = contenido.replace("</head>", recursos + "</head>", 1)
+            contenido = contenido.replace("</nav>", "</nav>" + CINTA_RESULTADOS, 1)
         credito = ('<p style="text-align:center"><a href="https://turifamax.com">'
                    'Resultados por TuRifaMax</a></p>')
         contenido = contenido.replace("</footer>", credito + "</footer>")
@@ -748,6 +786,7 @@ def escribir_sitemap(hoy_iso, dias=(), extras=()):
 
 
 def main():
+    global CINTA_RESULTADOS
     if not os.path.exists(JSON_DATOS):
         raise SystemExit("No encuentro datos_loteria.json. "
                          "¿Corrió antes actualizar_datos.py?")
@@ -766,6 +805,7 @@ def main():
     if not timedelta(minutes=-2) <= edad <= timedelta(minutes=30):
         raise SystemExit("La consulta en vivo ha caducado: vuelve a ejecutar el scraper")
 
+    CINTA_RESULTADOS = html_cinta(resultados)
     os.makedirs(SALIDA, exist_ok=True)
     shutil.copy(JSON_DATOS, os.path.join(SALIDA, "datos_loteria.json"))
 
