@@ -30,8 +30,7 @@ jobs:
 
       - name: Instalar dependencias
         run: |
-          pip install playwright beautifulsoup4
-          playwright install --with-deps chromium
+          pip install beautifulsoup4
 
       - name: Ejecutar el scraper
         run: python actualizar_datos.py
