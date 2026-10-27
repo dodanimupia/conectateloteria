@@ -1,5 +1,5 @@
 {
-  "actualizado": "2026-10-27T17:42:50-04:00",
+  "actualizado": "2026-10-27T17:49:12-04:00",
   "zona_horaria": "America/Santo_Domingo",
   "fuente": "https://turifamax.com/api/v1/resultados",
   "en_vivo": true,
@@ -192,6 +192,21 @@
       "fuente": "https://turifamax.com/api/v1/resultados"
     },
     {
+      "empresa": "Americanas (NY)",
+      "juego": "Mega Millions",
+      "fecha": "23-10",
+      "fecha_iso": "2026-10-23",
+      "numeros": [
+        "46",
+        "03",
+        "49",
+        "07",
+        "51",
+        "05"
+      ],
+      "fuente": "https://turifamax.com/api/v1/resultados"
+    },
+    {
       "empresa": "Lotería Nacional",
       "juego": "Lotería Nacional",
       "fecha": "26-10",
@@ -361,6 +376,21 @@
       "fuente": "https://turifamax.com/api/v1/resultados"
     },
     {
+      "empresa": "Loteka",
+      "juego": "MegaLotto",
+      "fecha": "26-10",
+      "fecha_iso": "2026-10-26",
+      "numeros": [
+        "08",
+        "18",
+        "33",
+        "10",
+        "03",
+        "23"
+      ],
+      "fuente": "https://turifamax.com/api/v1/resultados"
+    },
+    {
       "empresa": "Lotería Nacional",
       "juego": "Juega + Pega +",
       "fecha": "26-10",
@@ -459,20 +489,6 @@
         "37",
         "54",
         "35"
-      ],
-      "fuente": "https://www.conectate.com.do/loterias/"
-    },
-    {
-      "empresa": "Americanas (NY)",
-      "juego": "Mega Millions",
-      "fecha": "23-10",
-      "numeros": [
-        "03",
-        "07",
-        "46",
-        "49",
-        "51",
-        "05"
       ],
       "fuente": "https://www.conectate.com.do/loterias/"
     },
