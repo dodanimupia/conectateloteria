@@ -1,5 +1,5 @@
 {
-  "actualizado": "2026-10-27T18:24:12-04:00",
+  "actualizado": "2026-10-27T19:51:15-04:00",
   "zona_horaria": "America/Santo_Domingo",
   "fuente": "https://turifamax.com/api/v1/resultados",
   "en_vivo": true,
@@ -91,12 +91,12 @@
     {
       "empresa": "King Lottery",
       "juego": "King Lottery Noche",
-      "fecha": "26-10",
-      "fecha_iso": "2026-10-26",
+      "fecha": "27-10",
+      "fecha_iso": "2026-10-27",
       "numeros": [
-        "09",
-        "77",
-        "53"
+        "94",
+        "92",
+        "31"
       ],
       "fuente": "https://turifamax.com/api/v1/resultados"
     },
@@ -271,12 +271,12 @@
     {
       "empresa": "La Primera",
       "juego": "Primera Noche",
-      "fecha": "26-10",
-      "fecha_iso": "2026-10-26",
+      "fecha": "27-10",
+      "fecha_iso": "2026-10-27",
       "numeros": [
-        "42",
-        "43",
-        "31"
+        "51",
+        "47",
+        "20"
       ],
       "fuente": "https://turifamax.com/api/v1/resultados"
     },
@@ -4619,6 +4619,17 @@
     },
     {
       "empresa": "King Lottery",
+      "juego": "King Lottery Noche",
+      "fecha": "27-10",
+      "fecha_iso": "2026-10-27",
+      "numeros": [
+        "94",
+        "92",
+        "31"
+      ]
+    },
+    {
+      "empresa": "King Lottery",
       "juego": "King Lottery Día",
       "fecha": "27-10",
       "fecha_iso": "2026-10-27",
@@ -4659,6 +4670,17 @@
         "18",
         "84",
         "49"
+      ]
+    },
+    {
+      "empresa": "La Primera",
+      "juego": "Primera Noche",
+      "fecha": "27-10",
+      "fecha_iso": "2026-10-27",
+      "numeros": [
+        "51",
+        "47",
+        "20"
       ]
     },
     {
