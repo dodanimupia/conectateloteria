@@ -1199,271 +1199,6 @@
     ]
    }
   ],
-  "2026-10-14": [
-   {
-    "empresa": "Anguila",
-    "juego": "Anguila 10:00 AM",
-    "numeros": [
-     "37",
-     "91",
-     "00"
-    ]
-   },
-   {
-    "empresa": "Anguila",
-    "juego": "Anguila 1:00 PM",
-    "numeros": [
-     "98",
-     "52",
-     "23"
-    ]
-   },
-   {
-    "empresa": "Anguila",
-    "juego": "Anguila 9:00 PM",
-    "numeros": [
-     "54",
-     "92",
-     "94"
-    ]
-   },
-   {
-    "empresa": "Anguila",
-    "juego": "Anguila 6:00 PM",
-    "numeros": [
-     "02",
-     "33",
-     "29"
-    ]
-   },
-   {
-    "empresa": "Americanas (NY)",
-    "juego": "Florida Día",
-    "numeros": [
-     "00",
-     "96",
-     "74"
-    ]
-   },
-   {
-    "empresa": "Americanas (NY)",
-    "juego": "Florida Noche",
-    "numeros": [
-     "51",
-     "07",
-     "31"
-    ]
-   },
-   {
-    "empresa": "Lotería Nacional",
-    "juego": "Gana Más",
-    "numeros": [
-     "26",
-     "47",
-     "09"
-    ]
-   },
-   {
-    "empresa": "King Lottery",
-    "juego": "King Lottery Noche",
-    "numeros": [
-     "34",
-     "56",
-     "06"
-    ]
-   },
-   {
-    "empresa": "King Lottery",
-    "juego": "King Lottery Día",
-    "numeros": [
-     "65",
-     "94",
-     "93"
-    ]
-   },
-   {
-    "empresa": "Leidsa",
-    "juego": "Quiniela Leidsa",
-    "numeros": [
-     "00",
-     "08",
-     "43"
-    ]
-   },
-   {
-    "empresa": "LoteDom",
-    "juego": "LoteDom Día",
-    "numeros": [
-     "38",
-     "17",
-     "66"
-    ]
-   },
-   {
-    "empresa": "Loteka",
-    "juego": "Quiniela Loteka Noche",
-    "numeros": [
-     "36",
-     "56",
-     "20"
-    ]
-   },
-   {
-    "empresa": "Leidsa",
-    "juego": "Loto - Loto Más",
-    "numeros": [
-     "36",
-     "40",
-     "11",
-     "25",
-     "35",
-     "29",
-     "09",
-     "10"
-    ]
-   },
-   {
-    "empresa": "Leidsa",
-    "juego": "Loto Pool",
-    "numeros": [
-     "16",
-     "20",
-     "24",
-     "27",
-     "01"
-    ]
-   },
-   {
-    "empresa": "Loteka",
-    "juego": "Mega Chances",
-    "numeros": [
-     "35",
-     "31",
-     "51",
-     "99",
-     "32"
-    ]
-   },
-   {
-    "empresa": "Lotería Nacional",
-    "juego": "Lotería Nacional",
-    "numeros": [
-     "04",
-     "19",
-     "74"
-    ]
-   },
-   {
-    "empresa": "Americanas (NY)",
-    "juego": "New York Noche",
-    "numeros": [
-     "20",
-     "86",
-     "64"
-    ]
-   },
-   {
-    "empresa": "Americanas (NY)",
-    "juego": "New York Tarde",
-    "numeros": [
-     "89",
-     "89",
-     "16"
-    ]
-   },
-   {
-    "empresa": "Leidsa",
-    "juego": "Pega 3 Más",
-    "numeros": [
-     "14",
-     "10",
-     "44"
-    ]
-   },
-   {
-    "empresa": "Americanas (NY)",
-    "juego": "PowerBall",
-    "numeros": [
-     "37",
-     "46",
-     "03",
-     "42",
-     "34",
-     "20"
-    ]
-   },
-   {
-    "empresa": "La Primera",
-    "juego": "La Primera Día",
-    "numeros": [
-     "52",
-     "29",
-     "47"
-    ]
-   },
-   {
-    "empresa": "La Primera",
-    "juego": "Primera Noche",
-    "numeros": [
-     "28",
-     "02",
-     "97"
-    ]
-   },
-   {
-    "empresa": "Lotería Real",
-    "juego": "Quiniela Real",
-    "numeros": [
-     "20",
-     "43",
-     "39"
-    ]
-   },
-   {
-    "empresa": "La Suerte",
-    "juego": "La Suerte Tarde",
-    "numeros": [
-     "36",
-     "88",
-     "35"
-    ]
-   },
-   {
-    "empresa": "La Suerte",
-    "juego": "La Suerte Día",
-    "numeros": [
-     "91",
-     "06",
-     "95"
-    ]
-   },
-   {
-    "empresa": "Leidsa",
-    "juego": "Super Kino TV",
-    "numeros": [
-     "14",
-     "46",
-     "07",
-     "06",
-     "72",
-     "51",
-     "21",
-     "78",
-     "63",
-     "52",
-     "28",
-     "70",
-     "42",
-     "76",
-     "68",
-     "36",
-     "13",
-     "31",
-     "81",
-     "80"
-    ]
-   }
-  ],
   "2026-10-15": [
    {
     "empresa": "Anguila",
@@ -3760,6 +3495,53 @@
      "19",
      "65",
      "48"
+    ]
+   }
+  ],
+  "2026-10-28": [
+   {
+    "empresa": "Anguila",
+    "juego": "Anguila 10:00 AM",
+    "numeros": [
+     "18",
+     "52",
+     "37"
+    ]
+   },
+   {
+    "empresa": "King Lottery",
+    "juego": "King Lottery Día",
+    "numeros": [
+     "43",
+     "97",
+     "89"
+    ]
+   },
+   {
+    "empresa": "LoteDom",
+    "juego": "LoteDom Día",
+    "numeros": [
+     "00",
+     "58",
+     "04"
+    ]
+   },
+   {
+    "empresa": "La Primera",
+    "juego": "La Primera Día",
+    "numeros": [
+     "31",
+     "22",
+     "17"
+    ]
+   },
+   {
+    "empresa": "La Suerte",
+    "juego": "La Suerte Día",
+    "numeros": [
+     "03",
+     "03",
+     "94"
     ]
    }
   ]
