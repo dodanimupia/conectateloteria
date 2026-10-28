@@ -6,7 +6,8 @@ import os
 from pathlib import Path
 import re
 from urllib.parse import urlparse
-from urllib.request import urlopen
+from urllib.request import Request, urlopen
+from urllib.robotparser import RobotFileParser
 from zoneinfo import ZoneInfo
 
 from bs4 import BeautifulSoup
@@ -16,6 +17,7 @@ URL_ALTERNATIVA = "https://www.loteriasdominicanas.com.do/"
 URL_API = "https://turifamax.com/api/v1/resultados"
 ARCHIVO_DATOS = str(Path(__file__).with_name("datos_loteria.json"))
 ZONA = ZoneInfo("America/Santo_Domingo")
+AGENTE = "ConectateLoteriaBot/1.0 (+https://github.com/dodanimupia/conectateloteria)"
 EMPRESAS = {
     "nacional": "Lotería Nacional", "leidsa": "Leidsa",
     "loto-real": "Lotería Real", "loteka": "Loteka",
@@ -149,8 +151,20 @@ def validar_resultados(resultados, ahora=None):
     if faltantes:
         raise ValueError("Faltan loterías: " + ", ".join(sorted(faltantes)))
     fechas = []
+    vistos = set()
     for item in resultados:
+        clave = (item["empresa"], item["juego"])
+        if clave in vistos or not isinstance(item["juego"], str) or not item["juego"].strip():
+            raise ValueError("Juego duplicado o inválido")
+        vistos.add(clave)
+        numeros = item.get("numeros")
+        if not isinstance(numeros, list) or not numeros or not all(
+            isinstance(numero, str) and re.fullmatch(r"[0-9]{2}", numero) for numero in numeros
+        ):
+            raise ValueError(f"Números inválidos: {item['juego']}")
         fecha = fecha_sorteo(item, hoy)
+        if item.get("fecha_iso") and item["fecha"] != fecha.strftime("%d-%m"):
+            raise ValueError("Fechas inconsistentes")
         if not 0 <= (hoy - fecha).days <= 31:
             raise ValueError(f"Sorteo antiguo: {item['juego']} ({item['fecha']})")
         fechas.append(fecha)
@@ -220,8 +234,8 @@ def normalizar_api(registros, todos=False):
     return historicos if todos else list(ultimos.values())
 
 
-def obtener_html_renderizado():
-    """API pública gratuita: permite bots sin registro, claves ni Chromium."""
+def obtener_api():
+    """Consulta la API sin reintentar denegaciones de acceso ni límites."""
     from urllib.error import HTTPError
 
     ultimo_error = None
@@ -251,6 +265,64 @@ def obtener_html_renderizado():
                        + str(ultimo_error))
 
 
+def obtener_html_publico(url):
+    origen = urlparse(url)
+    robots_url = f"{origen.scheme}://{origen.netloc}/robots.txt"
+    with urlopen(Request(robots_url, headers={"User-Agent": AGENTE}), timeout=30) as respuesta:
+        reglas = respuesta.read().decode("utf-8")
+    robots = RobotFileParser(robots_url)
+    robots.parse(reglas.splitlines())
+    if not robots.can_fetch(AGENTE, url):
+        raise ValueError(f"robots.txt no permite consultar {url}")
+    with urlopen(Request(url, headers={"User-Agent": AGENTE}), timeout=30) as respuesta:
+        return respuesta.read().decode(respuesta.headers.get_content_charset() or "utf-8")
+
+
+def obtener_html_renderizado():
+    """Selecciona una fuente accesible y completa antes de publicar."""
+    errores = []
+    try:
+        return obtener_api()
+    except (RuntimeError, OSError, ValueError, KeyError, TypeError) as error:
+        errores.append(f"{URL_API}: {error}")
+        print(f"::warning::API no disponible: {error}")
+    for url in (URL_ALTERNATIVA, URL):
+        try:
+            html = obtener_html_publico(url)
+            validar_resultados(extraer_resultados(html))
+            print(f"Fuente pública validada: {url}")
+            return html, True
+        except (OSError, ValueError, KeyError, TypeError) as error:
+            errores.append(f"{url}: {error}")
+            print(f"::warning::Fuente no disponible: {url}: {error}")
+    raise RuntimeError("Ninguna fuente válida; se conservan los archivos existentes. "
+                       + " | ".join(errores))
+
+
+def conservar_historial_reciente(recientes, resultados, ahora):
+    try:
+        anterior = json.loads(Path(ARCHIVO_DATOS).read_text(encoding="utf-8"))
+    except (OSError, ValueError):
+        anterior = {}
+    historicos = {}
+    guardados = anterior.get("historial_reciente", []) if anterior.get("en_vivo") is True else []
+    for item in guardados + recientes + resultados:
+        try:
+            fecha = fecha_sorteo(item, ahora.date())
+            if not 0 <= (ahora.date() - fecha).days < 14:
+                continue
+            numeros = item["numeros"]
+            if not isinstance(numeros, list) or not numeros or not all(
+                isinstance(numero, str) and re.fullmatch(r"[0-9]{2}", numero) for numero in numeros
+            ):
+                continue
+            clave = (fecha.isoformat(), item["empresa"], item["juego"])
+            historicos[clave] = dict(item, fecha_iso=fecha.isoformat())
+        except (KeyError, TypeError, ValueError):
+            continue
+    return list(historicos.values())
+
+
 def actualizar_archivo_datos():
     html, en_vivo = obtener_html_renderizado()
     if not en_vivo:
@@ -265,7 +337,9 @@ def actualizar_archivo_datos():
         "actualizado": ahora.isoformat(timespec="seconds"),
         "zona_horaria": "America/Santo_Domingo", "fuente": fuente,
         "en_vivo": True, "resultados": resultados,
-        "historial_reciente": json.loads(html).get("historial_reciente", []) if fuente == URL_API else [],
+        "historial_reciente": conservar_historial_reciente(
+            json.loads(html).get("historial_reciente", []) if fuente == URL_API else [],
+            resultados, ahora),
     }
     # Reemplazo atómico: el último JSON válido se conserva ante cualquier fallo.
     destino = Path(ARCHIVO_DATOS)

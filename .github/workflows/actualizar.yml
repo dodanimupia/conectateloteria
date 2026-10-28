@@ -3,20 +3,41 @@ name: Actualizar resultados de lotería
 # Se ejecuta sola cada 5 minutos, y también se puede lanzar a mano
 # desde la pestaña "Actions" del repositorio en GitHub (botón "Run workflow").
 on:
+  pull_request:
+    paths:
+      - "*.py"
+      - "tests/**"
+      - "requirements.txt"
+      - ".github/workflows/actualizar.yml"
   schedule:
     - cron: "2-59/5 * * * *"
   workflow_dispatch: {}
 
-# Necesario para que la Action pueda hacer commit y push del JSON actualizado
 permissions:
-  contents: write
+  contents: read
 
 concurrency:
-  group: actualizar-loterias
+  group: actualizar-loterias-${{ github.ref }}
   cancel-in-progress: false
 
 jobs:
+  pruebas:
+    runs-on: ubuntu-24.04
+    permissions:
+      contents: read
+    steps:
+      - uses: actions/checkout@v7.0.1
+      - uses: actions/setup-python@v7.1.0
+        with:
+          python-version: "3.11"
+      - run: pip install -r requirements.txt
+      - run: python -m unittest discover -s tests -v
+
   actualizar:
+    needs: pruebas
+    if: github.event_name != 'pull_request' && github.ref == 'refs/heads/main'
+    permissions:
+      contents: write
     runs-on: ubuntu-24.04
     timeout-minutes: 20
     steps:
@@ -30,7 +51,7 @@ jobs:
 
       - name: Instalar dependencias
         run: |
-          pip install beautifulsoup4
+          pip install -r requirements.txt
 
       - name: Ejecutar el scraper
         run: python actualizar_datos.py

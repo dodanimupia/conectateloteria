@@ -6,12 +6,16 @@ que tengas que mantener corriendo.
 
 ## Cómo funciona
 
-- `actualizar_datos.py`: scraper (Playwright + BeautifulSoup) que visita
-  `loterias.conectate.com.do`, renderiza el JavaScript de la página,
-  extrae juego/fecha/números y guarda todo en `datos_loteria.json`.
+- `actualizar_datos.py`: consulta Turifamax y, si falla, prueba las portadas
+  públicas de `www.loteriasdominicanas.com.do` y `www.conectate.com.do/loterias/`.
+  Las fuentes HTML se consultan solo si se puede leer su `robots.txt` y permite
+  acceder a la URL. El recopilador se identifica como `ConectateLoteriaBot/1.0`,
+  con el enlace de este repositorio. No requiere navegador ni credenciales
+  para esas portadas.
 - `.github/workflows/actualizar.yml`: le dice a GitHub que ejecute ese
-  script automáticamente cada 5 minutos (`cron: "*/5 * * * *"`) y que
-  suba (`git commit` + `push`) el `datos_loteria.json` si cambió.
+  script automáticamente cada 5 minutos (`cron: "2-59/5 * * * *"`) y que
+  guarde los datos y el historial si cambiaron. En los PR ejecuta pruebas;
+  la actualización y el envío por FTPS se ejecutan solo desde `main`.
 - `index.html`: la landing page / portada del proyecto (explica qué es,
   cómo funciona, y tiene el botón para ir a los resultados).
 - `resultados.html`: la página con los datos en vivo. Con `fetch()` lee
@@ -19,8 +23,23 @@ que tengas que mantener corriendo.
   las tarjetas. Revisa si hay datos nuevos cada 1 minuto.
 - `vista-previa.png`: captura usada en la portada para mostrar cómo se
   ve la página de resultados.
-- `leidsa_snapshot.html`: respaldo local por si un intento de scraping
-  falla (para que `datos_loteria.json` nunca quede vacío).
+- `leidsa_snapshot.html`: referencia antigua; nunca se publica como respaldo.
+
+### Fallos de las fuentes y conservación de datos
+
+Un HTTP 403 significa que el servidor denegó la solicitud; no demuestra por sí
+solo si la causa es una restricción de IP, autenticación o protección del sitio.
+Los errores 401, 403 y 429 de Turifamax activan la siguiente fuente sin repetir
+la petición denegada. No se usan proxies ni técnicas para eludir esos accesos.
+
+Cada fuente debe superar la validación: al menos 20 juegos, cobertura de las
+loterías requeridas, números de dos cifras, fechas reales de hasta 31 días y
+algún resultado de hoy o ayer. Se rechazan duplicados y fechas inconsistentes.
+Se conservan los sorteos recientes ausentes o más nuevos del archivo anterior
+y el historial reciente de 14 días al cambiar de fuente. `historial.json` sigue
+acumulándose en la construcción de páginas, con su retención de 14 días.
+Si todas las fuentes fallan, el proceso termina con error antes de modificar
+el JSON, construir páginas o enviar archivos. El reemplazo del JSON es atómico.
 
 ## Publicarlo en un dominio real (GitHub Pages, gratis)
 
@@ -52,8 +71,8 @@ lo único que pagarías es el dominio en sí si quieres uno personalizado.
 ## Ya está publicado en conectateloteria.com (SiteGround) — falta conectar la automatización
 
 El sitio ya está subido a mano en SiteGround, pero SiteGround es hosting
-compartido y no puede correr el scraper (necesita un navegador headless
-que ese tipo de hosting no permite instalar). La solución: dejar que
+compartido. La automatización se ejecuta en GitHub Actions con Python y
+BeautifulSoup, sin instalar un navegador. La solución: dejar que
 GitHub Actions siga corriendo el scraper cada 5 minutos (gratis) y que,
 justo después, empuje el `datos_loteria.json` nuevo a SiteGround por FTP.
 
@@ -92,9 +111,10 @@ escolar es más que suficiente.
 ## Correrlo en tu computadora (opcional, para probar antes de subirlo)
 
 ```bash
-pip install playwright beautifulsoup4
-playwright install chromium
+pip install -r requirements.txt
+python3 -m unittest discover -s tests -v
 python3 actualizar_datos.py      # genera/actualiza datos_loteria.json
+python3 construir_paginas.py     # genera publicar/ y acumula historial.json
 python3 -m http.server 8000      # sirve la carpeta localmente
 ```
 
