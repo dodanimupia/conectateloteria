@@ -6,7 +6,7 @@ import os
 from pathlib import Path
 import re
 from urllib.parse import urlparse
-from urllib.request import urlopen
+from urllib.request import Request, urlopen
 from urllib.robotparser import RobotFileParser
 from zoneinfo import ZoneInfo
 
@@ -17,6 +17,7 @@ URL_ALTERNATIVA = "https://www.loteriasdominicanas.com.do/"
 URL_API = "https://turifamax.com/api/v1/resultados"
 ARCHIVO_DATOS = str(Path(__file__).with_name("datos_loteria.json"))
 ZONA = ZoneInfo("America/Santo_Domingo")
+AGENTE = "ConectateLoteriaBot/1.0 (+https://github.com/dodanimupia/conectateloteria)"
 EMPRESAS = {
     "nacional": "Lotería Nacional", "leidsa": "Leidsa",
     "loto-real": "Lotería Real", "loteka": "Loteka",
@@ -267,13 +268,13 @@ def obtener_api():
 def obtener_html_publico(url):
     origen = urlparse(url)
     robots_url = f"{origen.scheme}://{origen.netloc}/robots.txt"
-    with urlopen(robots_url, timeout=30) as respuesta:
+    with urlopen(Request(robots_url, headers={"User-Agent": AGENTE}), timeout=30) as respuesta:
         reglas = respuesta.read().decode("utf-8")
     robots = RobotFileParser(robots_url)
     robots.parse(reglas.splitlines())
-    if not robots.can_fetch("Python-urllib", url):
+    if not robots.can_fetch(AGENTE, url):
         raise ValueError(f"robots.txt no permite consultar {url}")
-    with urlopen(url, timeout=30) as respuesta:
+    with urlopen(Request(url, headers={"User-Agent": AGENTE}), timeout=30) as respuesta:
         return respuesta.read().decode(respuesta.headers.get_content_charset() or "utf-8")
 
 

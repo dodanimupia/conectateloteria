@@ -9,7 +9,9 @@ que tengas que mantener corriendo.
 - `actualizar_datos.py`: consulta Turifamax y, si falla, prueba las portadas
   públicas de `www.loteriasdominicanas.com.do` y `www.conectate.com.do/loterias/`.
   Las fuentes HTML se consultan solo si se puede leer su `robots.txt` y permite
-  acceder a la URL. No requiere navegador ni credenciales para esas portadas.
+  acceder a la URL. El recopilador se identifica como `ConectateLoteriaBot/1.0`,
+  con el enlace de este repositorio. No requiere navegador ni credenciales
+  para esas portadas.
 - `.github/workflows/actualizar.yml`: le dice a GitHub que ejecute ese
   script automáticamente cada 5 minutos (`cron: "2-59/5 * * * *"`) y que
   guarde los datos y el historial si cambiaron. En los PR ejecuta pruebas;

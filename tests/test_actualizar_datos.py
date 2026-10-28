@@ -57,12 +57,13 @@ class ActualizacionTests(unittest.TestCase):
                 return False
 
             def read(self):
-                return b"User-agent: *\nDisallow: /\n"
+                return b"User-agent: ConectateLoteriaBot\nDisallow: /\n"
 
         with patch.object(datos, "urlopen", return_value=Respuesta()) as abrir:
             with self.assertRaises(ValueError):
                 datos.obtener_html_publico(datos.URL_ALTERNATIVA)
         self.assertEqual(abrir.call_count, 1)
+        self.assertEqual(abrir.call_args.args[0].get_header("User-agent"), datos.AGENTE)
 
     def test_rechaza_numeros_fechas_y_duplicados(self):
         for cambio in ({"numeros": ["1", "02", "03"]},
