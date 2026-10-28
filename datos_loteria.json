@@ -1,5 +1,5 @@
 {
-  "actualizado": "2026-10-28T12:47:26-04:00",
+  "actualizado": "2026-10-28T17:20:02-04:00",
   "zona_horaria": "America/Santo_Domingo",
   "fuente": "https://turifamax.com/api/v1/resultados",
   "en_vivo": true,
@@ -19,12 +19,12 @@
     {
       "empresa": "Anguila",
       "juego": "Anguila 1:00 PM",
-      "fecha": "27-10",
-      "fecha_iso": "2026-10-27",
+      "fecha": "28-10",
+      "fecha_iso": "2026-10-28",
       "numeros": [
         "64",
-        "50",
-        "04"
+        "83",
+        "03"
       ],
       "fuente": "https://turifamax.com/api/v1/resultados"
     },
@@ -55,12 +55,12 @@
     {
       "empresa": "Americanas (NY)",
       "juego": "Florida Día",
-      "fecha": "27-10",
-      "fecha_iso": "2026-10-27",
+      "fecha": "28-10",
+      "fecha_iso": "2026-10-28",
       "numeros": [
-        "18",
         "36",
-        "75"
+        "74",
+        "28"
       ],
       "fuente": "https://turifamax.com/api/v1/resultados"
     },
@@ -79,12 +79,12 @@
     {
       "empresa": "Lotería Nacional",
       "juego": "Gana Más",
-      "fecha": "27-10",
-      "fecha_iso": "2026-10-27",
+      "fecha": "28-10",
+      "fecha_iso": "2026-10-28",
       "numeros": [
-        "02",
-        "12",
-        "66"
+        "54",
+        "18",
+        "05"
       ],
       "fuente": "https://turifamax.com/api/v1/resultados"
     },
@@ -218,12 +218,12 @@
     {
       "empresa": "Americanas (NY)",
       "juego": "New York Tarde",
-      "fecha": "27-10",
-      "fecha_iso": "2026-10-27",
+      "fecha": "28-10",
+      "fecha_iso": "2026-10-28",
       "numeros": [
-        "60",
+        "44",
         "54",
-        "15"
+        "46"
       ],
       "fuente": "https://turifamax.com/api/v1/resultados"
     },
@@ -266,12 +266,12 @@
     {
       "empresa": "Lotería Real",
       "juego": "Quiniela Real",
-      "fecha": "27-10",
-      "fecha_iso": "2026-10-27",
+      "fecha": "28-10",
+      "fecha_iso": "2026-10-28",
       "numeros": [
-        "26",
-        "24",
-        "13"
+        "82",
+        "16",
+        "43"
       ],
       "fuente": "https://turifamax.com/api/v1/resultados"
     },
@@ -4270,8 +4270,7 @@
         "64",
         "50",
         "04"
-      ],
-      "fuente": "https://turifamax.com/api/v1/resultados"
+      ]
     },
     {
       "empresa": "Anguila",
@@ -4306,8 +4305,7 @@
         "18",
         "36",
         "75"
-      ],
-      "fuente": "https://turifamax.com/api/v1/resultados"
+      ]
     },
     {
       "empresa": "Americanas (NY)",
@@ -4330,8 +4328,7 @@
         "02",
         "12",
         "66"
-      ],
-      "fuente": "https://turifamax.com/api/v1/resultados"
+      ]
     },
     {
       "empresa": "King Lottery",
@@ -4482,8 +4479,7 @@
         "60",
         "54",
         "15"
-      ],
-      "fuente": "https://turifamax.com/api/v1/resultados"
+      ]
     },
     {
       "empresa": "Leidsa",
@@ -4529,8 +4525,7 @@
         "26",
         "24",
         "13"
-      ],
-      "fuente": "https://turifamax.com/api/v1/resultados"
+      ]
     },
     {
       "empresa": "La Suerte",
@@ -4836,6 +4831,66 @@
       ],
       "fuente": "https://www.conectate.com.do/loterias/",
       "fecha_iso": "2026-10-26"
+    },
+    {
+      "empresa": "Anguila",
+      "juego": "Anguila 1:00 PM",
+      "fecha": "28-10",
+      "fecha_iso": "2026-10-28",
+      "numeros": [
+        "64",
+        "83",
+        "03"
+      ],
+      "fuente": "https://turifamax.com/api/v1/resultados"
+    },
+    {
+      "empresa": "Americanas (NY)",
+      "juego": "Florida Día",
+      "fecha": "28-10",
+      "fecha_iso": "2026-10-28",
+      "numeros": [
+        "36",
+        "74",
+        "28"
+      ],
+      "fuente": "https://turifamax.com/api/v1/resultados"
+    },
+    {
+      "empresa": "Lotería Nacional",
+      "juego": "Gana Más",
+      "fecha": "28-10",
+      "fecha_iso": "2026-10-28",
+      "numeros": [
+        "54",
+        "18",
+        "05"
+      ],
+      "fuente": "https://turifamax.com/api/v1/resultados"
+    },
+    {
+      "empresa": "Americanas (NY)",
+      "juego": "New York Tarde",
+      "fecha": "28-10",
+      "fecha_iso": "2026-10-28",
+      "numeros": [
+        "44",
+        "54",
+        "46"
+      ],
+      "fuente": "https://turifamax.com/api/v1/resultados"
+    },
+    {
+      "empresa": "Lotería Real",
+      "juego": "Quiniela Real",
+      "fecha": "28-10",
+      "fecha_iso": "2026-10-28",
+      "numeros": [
+        "82",
+        "16",
+        "43"
+      ],
+      "fuente": "https://turifamax.com/api/v1/resultados"
     }
   ]
 }
