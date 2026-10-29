@@ -1199,257 +1199,6 @@
     ]
    }
   ],
-  "2026-10-15": [
-   {
-    "empresa": "Anguila",
-    "juego": "Anguila 10:00 AM",
-    "numeros": [
-     "43",
-     "80",
-     "80"
-    ]
-   },
-   {
-    "empresa": "Anguila",
-    "juego": "Anguila 1:00 PM",
-    "numeros": [
-     "36",
-     "01",
-     "85"
-    ]
-   },
-   {
-    "empresa": "Anguila",
-    "juego": "Anguila 9:00 PM",
-    "numeros": [
-     "71",
-     "48",
-     "54"
-    ]
-   },
-   {
-    "empresa": "Anguila",
-    "juego": "Anguila 6:00 PM",
-    "numeros": [
-     "51",
-     "08",
-     "71"
-    ]
-   },
-   {
-    "empresa": "Americanas (NY)",
-    "juego": "Florida Día",
-    "numeros": [
-     "35",
-     "88",
-     "64"
-    ]
-   },
-   {
-    "empresa": "Americanas (NY)",
-    "juego": "Florida Noche",
-    "numeros": [
-     "28",
-     "95",
-     "03"
-    ]
-   },
-   {
-    "empresa": "Lotería Nacional",
-    "juego": "Gana Más",
-    "numeros": [
-     "92",
-     "42",
-     "07"
-    ]
-   },
-   {
-    "empresa": "King Lottery",
-    "juego": "King Lottery Noche",
-    "numeros": [
-     "26",
-     "31",
-     "50"
-    ]
-   },
-   {
-    "empresa": "King Lottery",
-    "juego": "King Lottery Día",
-    "numeros": [
-     "50",
-     "72",
-     "05"
-    ]
-   },
-   {
-    "empresa": "Leidsa",
-    "juego": "Quiniela Leidsa",
-    "numeros": [
-     "83",
-     "77",
-     "50"
-    ]
-   },
-   {
-    "empresa": "LoteDom",
-    "juego": "LoteDom Día",
-    "numeros": [
-     "60",
-     "08",
-     "80"
-    ]
-   },
-   {
-    "empresa": "Loteka",
-    "juego": "Quiniela Loteka Noche",
-    "numeros": [
-     "52",
-     "51",
-     "11"
-    ]
-   },
-   {
-    "empresa": "Leidsa",
-    "juego": "Loto Pool",
-    "numeros": [
-     "06",
-     "05",
-     "09",
-     "24",
-     "16"
-    ]
-   },
-   {
-    "empresa": "Loteka",
-    "juego": "Mega Chances",
-    "numeros": [
-     "11",
-     "19",
-     "49",
-     "55",
-     "04"
-    ]
-   },
-   {
-    "empresa": "Loteka",
-    "juego": "MegaLotto",
-    "numeros": [
-     "11",
-     "19",
-     "34",
-     "30",
-     "26",
-     "01"
-    ]
-   },
-   {
-    "empresa": "Lotería Nacional",
-    "juego": "Lotería Nacional",
-    "numeros": [
-     "95",
-     "20",
-     "41"
-    ]
-   },
-   {
-    "empresa": "Americanas (NY)",
-    "juego": "New York Noche",
-    "numeros": [
-     "23",
-     "05",
-     "23"
-    ]
-   },
-   {
-    "empresa": "Americanas (NY)",
-    "juego": "New York Tarde",
-    "numeros": [
-     "28",
-     "62",
-     "03"
-    ]
-   },
-   {
-    "empresa": "Leidsa",
-    "juego": "Pega 3 Más",
-    "numeros": [
-     "05",
-     "17",
-     "27"
-    ]
-   },
-   {
-    "empresa": "La Primera",
-    "juego": "La Primera Día",
-    "numeros": [
-     "87",
-     "42",
-     "24"
-    ]
-   },
-   {
-    "empresa": "La Primera",
-    "juego": "Primera Noche",
-    "numeros": [
-     "54",
-     "18",
-     "85"
-    ]
-   },
-   {
-    "empresa": "Lotería Real",
-    "juego": "Quiniela Real",
-    "numeros": [
-     "98",
-     "33",
-     "05"
-    ]
-   },
-   {
-    "empresa": "La Suerte",
-    "juego": "La Suerte Tarde",
-    "numeros": [
-     "93",
-     "30",
-     "51"
-    ]
-   },
-   {
-    "empresa": "La Suerte",
-    "juego": "La Suerte Día",
-    "numeros": [
-     "96",
-     "12",
-     "30"
-    ]
-   },
-   {
-    "empresa": "Leidsa",
-    "juego": "Super Kino TV",
-    "numeros": [
-     "11",
-     "02",
-     "75",
-     "46",
-     "71",
-     "84",
-     "69",
-     "40",
-     "60",
-     "35",
-     "51",
-     "32",
-     "16",
-     "65",
-     "45",
-     "44",
-     "33",
-     "07",
-     "42",
-     "24"
-    ]
-   }
-  ],
   "2026-10-16": [
    {
     "empresa": "Anguila",
@@ -3730,6 +3479,227 @@
      "45",
      "78",
      "63"
+    ]
+   },
+   {
+    "empresa": "Lotería Nacional",
+    "juego": "Juega + Pega +",
+    "numeros": [
+     "18",
+     "16",
+     "10",
+     "04",
+     "22"
+    ]
+   },
+   {
+    "empresa": "Lotería Real",
+    "juego": "Lotería Real Noche",
+    "numeros": [
+     "38",
+     "93",
+     "54"
+    ]
+   },
+   {
+    "empresa": "Lotería Real",
+    "juego": "Loto Pool",
+    "numeros": [
+     "34",
+     "30",
+     "41",
+     "07"
+    ]
+   },
+   {
+    "empresa": "Lotería Real",
+    "juego": "Tu Fecha",
+    "numeros": [
+     "03"
+    ]
+   },
+   {
+    "empresa": "Loteka",
+    "juego": "Toca 3",
+    "numeros": [
+     "06",
+     "00",
+     "09"
+    ]
+   },
+   {
+    "empresa": "Loteka",
+    "juego": "La Repartidera",
+    "numeros": [
+     "17"
+    ]
+   },
+   {
+    "empresa": "Americanas (NY)",
+    "juego": "Georgia Día",
+    "numeros": [
+     "04",
+     "98",
+     "88"
+    ]
+   },
+   {
+    "empresa": "Americanas (NY)",
+    "juego": "New Jersey Día",
+    "numeros": [
+     "93",
+     "35",
+     "70"
+    ]
+   },
+   {
+    "empresa": "Americanas (NY)",
+    "juego": "Georgia Tarde",
+    "numeros": [
+     "46",
+     "09",
+     "97"
+    ]
+   },
+   {
+    "empresa": "Americanas (NY)",
+    "juego": "Florida Noche",
+    "numeros": [
+     "35",
+     "57",
+     "43"
+    ]
+   },
+   {
+    "empresa": "Americanas (NY)",
+    "juego": "New York Noche",
+    "numeros": [
+     "58",
+     "22",
+     "36"
+    ]
+   },
+   {
+    "empresa": "Americanas (NY)",
+    "juego": "New Jersey Noche",
+    "numeros": [
+     "96",
+     "74",
+     "36"
+    ]
+   },
+   {
+    "empresa": "Americanas (NY)",
+    "juego": "Georgia Noche",
+    "numeros": [
+     "76",
+     "59",
+     "44"
+    ]
+   },
+   {
+    "empresa": "La Primera",
+    "juego": "Quinielón Día",
+    "numeros": [
+     "86"
+    ]
+   },
+   {
+    "empresa": "La Primera",
+    "juego": "Quinielón Noche",
+    "numeros": [
+     "73"
+    ]
+   },
+   {
+    "empresa": "La Primera",
+    "juego": "Loto 5",
+    "numeros": [
+     "26",
+     "04",
+     "09",
+     "33",
+     "20",
+     "08"
+    ]
+   },
+   {
+    "empresa": "LoteDom",
+    "juego": "El Quemaito Mayor",
+    "numeros": [
+     "47"
+    ]
+   },
+   {
+    "empresa": "LoteDom",
+    "juego": "Super Palé Día",
+    "numeros": [
+     "00",
+     "47"
+    ]
+   },
+   {
+    "empresa": "LoteDom",
+    "juego": "Agarra 4",
+    "numeros": [
+     "00",
+     "58",
+     "04",
+     "47"
+    ]
+   },
+   {
+    "empresa": "Haiti Bolet",
+    "juego": "Haiti Bolet 9:30 AM",
+    "numeros": [
+     "41",
+     "18",
+     "65"
+    ]
+   },
+   {
+    "empresa": "Haiti Bolet",
+    "juego": "Haiti Bolet 10:30 AM",
+    "numeros": [
+     "61",
+     "71",
+     "09"
+    ]
+   },
+   {
+    "empresa": "Haiti Bolet",
+    "juego": "Haiti Bolet 11:30 AM",
+    "numeros": [
+     "88",
+     "09",
+     "74"
+    ]
+   },
+   {
+    "empresa": "Haiti Bolet",
+    "juego": "Haiti Bolet 5:30 PM",
+    "numeros": [
+     "79",
+     "75",
+     "58"
+    ]
+   },
+   {
+    "empresa": "Haiti Bolet",
+    "juego": "Haiti Bolet 6:30 PM",
+    "numeros": [
+     "66",
+     "66",
+     "36"
+    ]
+   },
+   {
+    "empresa": "Haiti Bolet",
+    "juego": "Haiti Bolet 7:30 PM",
+    "numeros": [
+     "36",
+     "64",
+     "19"
     ]
    }
   ]
