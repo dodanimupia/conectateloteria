@@ -15,6 +15,22 @@ from test_actualizar_datos import AHORA, resultados_validos
 
 
 class ConstruccionTests(unittest.TestCase):
+    def test_fechas_distinguen_resultados_anteriores(self):
+        item = {"empresa": "Leidsa", "juego": "Quiniela", "numeros": ["01"],
+                "fecha_iso": "2020-01-02"}
+        self.assertIn("Anterior · 02/01/2020", paginas.tarjeta(item))
+        item["fecha_iso"] = AHORA.date().isoformat()
+        self.assertIn("Hoy ·", paginas.tarjeta(item))
+        item["fecha_iso"] = ""
+        self.assertIn("Fecha sin confirmar", paginas.tarjeta(item))
+
+    def test_acceso_ayer_solo_si_hay_datos(self):
+        from datetime import timedelta
+        ayer = (AHORA.date() - timedelta(days=1)).isoformat()
+        self.assertNotIn("Resultados de ayer", paginas.accesos_fechas({"dias": {}}, AHORA.date()))
+        enlaces = paginas.accesos_fechas({"dias": {ayer: [{}]}}, AHORA.date())
+        self.assertIn(paginas.ruta_dia(ayer), enlaces)
+
     def test_construccion_completa_preserva_datos_y_urls(self):
         with tempfile.TemporaryDirectory() as carpeta:
             raiz = Path(carpeta)
@@ -36,6 +52,8 @@ class ConstruccionTests(unittest.TestCase):
             for archivo in salida.glob("*.html"):
                 soup = BeautifulSoup(archivo.read_text(), "html.parser")
                 self.assertEqual(soup.html["lang"], "es-DO")
+                self.assertIsNotNone(soup.select_one('script[src="fecha-resultado.js?v=1"]'))
+                self.assertNotIn("<!--ACCESOS", str(soup))
                 canonical = soup.select('link[rel="canonical"]')
                 self.assertEqual(len(canonical), 1)
                 ruta = "" if archivo.name == "index.html" else archivo.name

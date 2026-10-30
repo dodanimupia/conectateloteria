@@ -3,7 +3,7 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Resultados de Loterías Dominicanas de Hoy | Conéctate Lotería</title>
+<title>Conéctate Lotería | Resultados de loterías dominicanas de hoy</title>
 <meta name="description" content="Resultados de las loterías dominicanas de hoy: Lotería Nacional, Leidsa, Lotería Real, Loteka, La Primera, La Suerte, LoteDom, Anguila, King Lottery y americanas. Números ganadores actualizados en vivo.">
 <meta name="keywords" content="resultados loterias dominicanas, loteria nacional, leidsa, loteria real, loteka, la primera, la suerte, lotedom, anguila, king lottery, quiniela, numeros ganadores, loteria de hoy, republica dominicana">
 <meta name="robots" content="index, follow">
@@ -221,7 +221,7 @@
   /* --- Hero --- */
   .hero {
     text-align: center;
-    padding: 64px 20px 60px;
+    padding: 28px 20px 20px;
     background: radial-gradient(circle at top, #fff7ed 0%, var(--bg) 65%);
   }
   .hero .etiqueta {
@@ -236,7 +236,7 @@
     margin-bottom: 26px;
   }
   .hero h1 {
-    font-size: clamp(2.6rem, 6.5vw, 4.4rem);
+    font-size: clamp(1.7rem, 4vw, 3rem);
     margin: 0 0 22px;
     line-height: 1.12;
     font-weight: 800;
@@ -681,7 +681,8 @@
 
 <section class="hero">
   <div class="contenedor">
-    <h1>Resultados de <span>Loterías</span>, República Dominicana y <span>más</span>.</h1>
+    <h1>Conéctate Lotería: <span>resultados de hoy</span></h1>
+    <nav class="accesos-loterias" aria-label="Consultar una lotería"><!--ACCESOS--></nav>
     <div class="buscador">
       <label class="buscador-caja" for="buscar">
         <svg class="buscador-icono" viewBox="0 0 24 24" fill="none" stroke="currentColor"
@@ -700,6 +701,8 @@
 <section class="resultados" id="resultados">
   <div class="contenedor">
     <p class="fecha-hoy" id="fecha-hoy"><!--FECHA--></p>
+    <p class="nota-resultados">Comprueba la fecha de cada sorteo: si aparece un resultado anterior, todavía no tenemos uno de hoy.</p>
+    <nav class="accesos-loterias" aria-label="Consultar otra fecha"><!--ACCESOS_FECHAS--></nav>
     <div id="contenedor-resultados"><!--RESULTADOS--></div>
 
     <div class="historial-portada" id="historial">
@@ -885,7 +888,7 @@
           <a class="card card-enlace" href="sorteo-${slug(item.empresa).slice(4)}-${slug(item.juego).slice(4)}.html">
             <div class="card-header">
               <span class="juego">${item.juego}</span>
-              ${item.fecha ? `<span class="fecha">${item.fecha}</span>` : ""}
+              <span class="fecha">${fechaResultado(item)}</span>
             </div>
             <div class="numeros">${bolas}</div>
           </a>
