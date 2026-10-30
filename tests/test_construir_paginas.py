@@ -15,6 +15,34 @@ from test_actualizar_datos import AHORA, resultados_validos
 
 
 class ConstruccionTests(unittest.TestCase):
+    def test_nacional_primero_aunque_fuente_envie_anguila(self):
+        resultados = [{"empresa": empresa, "juego": "Quiniela", "numeros": ["01"]}
+                      for empresa in ("Anguila", "Leidsa", "Lotería Nacional")]
+        contenido, enlaces = paginas.html_portada(resultados)
+        soup = BeautifulSoup(contenido, "html.parser")
+        self.assertEqual(soup.h2.text, "Lotería Nacional")
+        self.assertTrue(enlaces.startswith('<a href="#cat-loteria-nacional"'))
+
+    def test_retencion_anual_y_limites_de_estadisticas(self):
+        from datetime import timedelta
+        import historial
+        hoy = AHORA.date()
+        item = {"empresa": "Leidsa", "juego": "Quiniela", "numeros": ["07"]}
+        dias = {(hoy - timedelta(days=edad)).isoformat(): [dict(item)]
+                for edad in (0, 29, 30, 89, 90, 364, 365)}
+        guardado = historial.actualizar({"dias": dias}, [], hoy)
+        self.assertEqual(len(guardado["dias"]), 6)
+        self.assertIn((hoy - timedelta(days=364)).isoformat(), guardado["dias"])
+        contenido = paginas.estadisticas_loteria(guardado, "Leidsa", hoy)
+        soup = BeautifulSoup(contenido, "html.parser")
+        periodos = soup.select("details")
+        for bloque, total in zip(periodos, (2, 4, 6)):
+            self.assertIn('%d días con datos y %d sorteos' % (total, total), bloque.text)
+        vacio = paginas.estadisticas_loteria(guardado, "Anguila", hoy)
+        self.assertNotIn("07", vacio)
+        self.assertIn("Aún no hay datos", vacio)
+        self.assertNotIn("07", paginas.html_historial(guardado, "Leidsa", hoy.isoformat()))
+
     def test_fechas_distinguen_resultados_anteriores(self):
         item = {"empresa": "Leidsa", "juego": "Quiniela", "numeros": ["01"],
                 "fecha_iso": "2020-01-02"}

@@ -869,7 +869,9 @@
       grupos[empresa].push(item);
     });
 
-    Object.entries(grupos).forEach(([empresa, juegos]) => {
+    const ordenEmpresas = ["Lotería Nacional", "Loteria Nacional", "Leidsa", "Lotería Real", "Loteka", "La Primera", "La Suerte", "LoteDom", "Anguila", "King Lottery", "Haiti Bolet", "Americanas (NY)"];
+    const posicionEmpresa = empresa => ordenEmpresas.includes(empresa) ? ordenEmpresas.indexOf(empresa) : ordenEmpresas.length;
+    Object.entries(grupos).sort(([primera], [segunda]) => posicionEmpresa(primera) - posicionEmpresa(segunda) || primera.localeCompare(segunda)).forEach(([empresa, juegos]) => {
       const id = slug(empresa);
 
       // Link en el nav de arriba que salta directo a esta lotería

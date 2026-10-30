@@ -28,7 +28,7 @@ import os
 import re
 from datetime import date, timedelta
 
-DIAS_A_GUARDAR = 14         # Dos semanas, incluido el día en curso
+DIAS_A_GUARDAR = 365
 DIAS_SEMANA = ["lunes", "martes", "miércoles", "jueves",
                "viernes", "sábado", "domingo"]
 MESES = ["enero", "febrero", "marzo", "abril", "mayo", "junio", "julio",
