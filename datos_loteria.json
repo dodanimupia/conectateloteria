@@ -1,197 +1,20 @@
 {
-  "actualizado": "2026-10-30T12:33:45-04:00",
+  "actualizado": "2026-10-30T17:03:44-04:00",
   "zona_horaria": "America/Santo_Domingo",
-  "fuente": "https://turifamax.com/api/v1/resultados",
+  "fuente": "https://www.loteriasdominicanas.com.do/",
   "en_vivo": true,
   "resultados": [
     {
-      "empresa": "Anguila",
-      "juego": "Anguila 10:00 AM",
-      "fecha": "30-10",
-      "fecha_iso": "2026-10-30",
-      "numeros": [
-        "20",
-        "13",
-        "15"
-      ],
-      "fuente": "https://turifamax.com/api/v1/resultados"
-    },
-    {
-      "empresa": "Anguila",
-      "juego": "Anguila 1:00 PM",
-      "fecha": "29-10",
-      "fecha_iso": "2026-10-29",
-      "numeros": [
-        "42",
-        "74",
-        "69"
-      ],
-      "fuente": "https://turifamax.com/api/v1/resultados"
-    },
-    {
-      "empresa": "Anguila",
-      "juego": "Anguila 9:00 PM",
-      "fecha": "29-10",
-      "fecha_iso": "2026-10-29",
-      "numeros": [
-        "67",
-        "84",
-        "82"
-      ],
-      "fuente": "https://turifamax.com/api/v1/resultados"
-    },
-    {
-      "empresa": "Anguila",
-      "juego": "Anguila 6:00 PM",
-      "fecha": "29-10",
-      "fecha_iso": "2026-10-29",
-      "numeros": [
-        "46",
-        "13",
-        "45"
-      ],
-      "fuente": "https://turifamax.com/api/v1/resultados"
-    },
-    {
-      "empresa": "Americanas (NY)",
-      "juego": "Florida Día",
-      "fecha": "29-10",
-      "fecha_iso": "2026-10-29",
-      "numeros": [
-        "68",
-        "63",
-        "75"
-      ],
-      "fuente": "https://turifamax.com/api/v1/resultados"
-    },
-    {
-      "empresa": "Americanas (NY)",
-      "juego": "Florida Noche",
-      "fecha": "29-10",
-      "fecha_iso": "2026-10-29",
-      "numeros": [
-        "19",
-        "66",
-        "02"
-      ],
-      "fuente": "https://turifamax.com/api/v1/resultados"
-    },
-    {
       "empresa": "Lotería Nacional",
       "juego": "Gana Más",
-      "fecha": "29-10",
-      "fecha_iso": "2026-10-29",
-      "numeros": [
-        "80",
-        "98",
-        "30"
-      ],
-      "fuente": "https://turifamax.com/api/v1/resultados"
-    },
-    {
-      "empresa": "King Lottery",
-      "juego": "King Lottery Noche",
-      "fecha": "29-10",
-      "fecha_iso": "2026-10-29",
-      "numeros": [
-        "26",
-        "62",
-        "21"
-      ],
-      "fuente": "https://turifamax.com/api/v1/resultados"
-    },
-    {
-      "empresa": "King Lottery",
-      "juego": "King Lottery Día",
-      "fecha": "29-10",
-      "fecha_iso": "2026-10-29",
-      "numeros": [
-        "37",
-        "90",
-        "03"
-      ],
-      "fuente": "https://turifamax.com/api/v1/resultados"
-    },
-    {
-      "empresa": "Leidsa",
-      "juego": "Quiniela Leidsa",
-      "fecha": "29-10",
-      "fecha_iso": "2026-10-29",
-      "numeros": [
-        "44",
-        "52",
-        "56"
-      ],
-      "fuente": "https://turifamax.com/api/v1/resultados"
-    },
-    {
-      "empresa": "LoteDom",
-      "juego": "LoteDom Día",
       "fecha": "30-10",
       "fecha_iso": "2026-10-30",
       "numeros": [
-        "61",
-        "13",
-        "03"
+        "41",
+        "92",
+        "79"
       ],
-      "fuente": "https://turifamax.com/api/v1/resultados"
-    },
-    {
-      "empresa": "Loteka",
-      "juego": "Quiniela Loteka Noche",
-      "fecha": "29-10",
-      "fecha_iso": "2026-10-29",
-      "numeros": [
-        "12",
-        "81",
-        "56"
-      ],
-      "fuente": "https://turifamax.com/api/v1/resultados"
-    },
-    {
-      "empresa": "Leidsa",
-      "juego": "Loto - Loto Más",
-      "fecha": "28-10",
-      "fecha_iso": "2026-10-28",
-      "numeros": [
-        "20",
-        "28",
-        "13",
-        "17",
-        "37",
-        "18",
-        "11",
-        "13"
-      ],
-      "fuente": "https://turifamax.com/api/v1/resultados"
-    },
-    {
-      "empresa": "Leidsa",
-      "juego": "Loto Pool",
-      "fecha": "29-10",
-      "fecha_iso": "2026-10-29",
-      "numeros": [
-        "29",
-        "26",
-        "11",
-        "04",
-        "02"
-      ],
-      "fuente": "https://turifamax.com/api/v1/resultados"
-    },
-    {
-      "empresa": "Loteka",
-      "juego": "Mega Chances",
-      "fecha": "29-10",
-      "fecha_iso": "2026-10-29",
-      "numeros": [
-        "81",
-        "27",
-        "22",
-        "69",
-        "89"
-      ],
-      "fuente": "https://turifamax.com/api/v1/resultados"
+      "fuente": "https://www.loteriasdominicanas.com.do/"
     },
     {
       "empresa": "Lotería Nacional",
@@ -203,31 +26,21 @@
         "48",
         "37"
       ],
-      "fuente": "https://turifamax.com/api/v1/resultados"
+      "fuente": "https://www.loteriasdominicanas.com.do/"
     },
     {
-      "empresa": "Americanas (NY)",
-      "juego": "New York Noche",
-      "fecha": "29-10",
-      "fecha_iso": "2026-10-29",
+      "empresa": "Lotería Nacional",
+      "juego": "Juega + Pega +",
+      "fecha": "30-10",
+      "fecha_iso": "2026-10-30",
       "numeros": [
-        "96",
-        "73",
-        "49"
+        "10",
+        "18",
+        "20",
+        "07",
+        "14"
       ],
-      "fuente": "https://turifamax.com/api/v1/resultados"
-    },
-    {
-      "empresa": "Americanas (NY)",
-      "juego": "New York Tarde",
-      "fecha": "29-10",
-      "fecha_iso": "2026-10-29",
-      "numeros": [
-        "38",
-        "08",
-        "27"
-      ],
-      "fuente": "https://turifamax.com/api/v1/resultados"
+      "fuente": "https://www.loteriasdominicanas.com.do/"
     },
     {
       "empresa": "Leidsa",
@@ -239,82 +52,7 @@
         "04",
         "34"
       ],
-      "fuente": "https://turifamax.com/api/v1/resultados"
-    },
-    {
-      "empresa": "Americanas (NY)",
-      "juego": "PowerBall",
-      "fecha": "28-10",
-      "fecha_iso": "2026-10-28",
-      "numeros": [
-        "60",
-        "47",
-        "16",
-        "13",
-        "11",
-        "13"
-      ],
-      "fuente": "https://turifamax.com/api/v1/resultados"
-    },
-    {
-      "empresa": "La Primera",
-      "juego": "La Primera Día",
-      "fecha": "30-10",
-      "fecha_iso": "2026-10-30",
-      "numeros": [
-        "13",
-        "35",
-        "14"
-      ],
-      "fuente": "https://turifamax.com/api/v1/resultados"
-    },
-    {
-      "empresa": "La Primera",
-      "juego": "Primera Noche",
-      "fecha": "29-10",
-      "fecha_iso": "2026-10-29",
-      "numeros": [
-        "62",
-        "02",
-        "85"
-      ],
-      "fuente": "https://turifamax.com/api/v1/resultados"
-    },
-    {
-      "empresa": "Lotería Real",
-      "juego": "Quiniela Real",
-      "fecha": "29-10",
-      "fecha_iso": "2026-10-29",
-      "numeros": [
-        "87",
-        "27",
-        "57"
-      ],
-      "fuente": "https://turifamax.com/api/v1/resultados"
-    },
-    {
-      "empresa": "La Suerte",
-      "juego": "La Suerte Tarde",
-      "fecha": "29-10",
-      "fecha_iso": "2026-10-29",
-      "numeros": [
-        "41",
-        "98",
-        "22"
-      ],
-      "fuente": "https://turifamax.com/api/v1/resultados"
-    },
-    {
-      "empresa": "La Suerte",
-      "juego": "La Suerte Día",
-      "fecha": "29-10",
-      "fecha_iso": "2026-10-29",
-      "numeros": [
-        "27",
-        "19",
-        "63"
-      ],
-      "fuente": "https://turifamax.com/api/v1/resultados"
+      "fuente": "https://www.loteriasdominicanas.com.do/"
     },
     {
       "empresa": "Leidsa",
@@ -342,6 +80,540 @@
         "59",
         "04",
         "27"
+      ],
+      "fuente": "https://www.loteriasdominicanas.com.do/"
+    },
+    {
+      "empresa": "Leidsa",
+      "juego": "Quiniela Leidsa",
+      "fecha": "29-10",
+      "fecha_iso": "2026-10-29",
+      "numeros": [
+        "44",
+        "52",
+        "56"
+      ],
+      "fuente": "https://www.loteriasdominicanas.com.do/"
+    },
+    {
+      "empresa": "Leidsa",
+      "juego": "Loto Pool",
+      "fecha": "29-10",
+      "fecha_iso": "2026-10-29",
+      "numeros": [
+        "29",
+        "26",
+        "11",
+        "04",
+        "02"
+      ],
+      "fuente": "https://www.loteriasdominicanas.com.do/"
+    },
+    {
+      "empresa": "Leidsa",
+      "juego": "Loto - Loto Más",
+      "fecha": "28-10",
+      "fecha_iso": "2026-10-28",
+      "numeros": [
+        "20",
+        "28",
+        "13",
+        "17",
+        "37",
+        "18",
+        "11",
+        "13"
+      ],
+      "fuente": "https://www.loteriasdominicanas.com.do/"
+    },
+    {
+      "empresa": "Lotería Real",
+      "juego": "Quiniela Real",
+      "fecha": "30-10",
+      "fecha_iso": "2026-10-30",
+      "numeros": [
+        "74",
+        "44",
+        "76"
+      ],
+      "fuente": "https://www.loteriasdominicanas.com.do/"
+    },
+    {
+      "empresa": "Lotería Real",
+      "juego": "Lotería Real Noche",
+      "fecha": "29-10",
+      "fecha_iso": "2026-10-29",
+      "numeros": [
+        "07",
+        "58",
+        "64"
+      ],
+      "fuente": "https://www.loteriasdominicanas.com.do/"
+    },
+    {
+      "empresa": "Lotería Real",
+      "juego": "Loto Pool",
+      "fecha": "30-10",
+      "fecha_iso": "2026-10-30",
+      "numeros": [
+        "94",
+        "47",
+        "56",
+        "22"
+      ],
+      "fuente": "https://www.loteriasdominicanas.com.do/"
+    },
+    {
+      "empresa": "Lotería Real",
+      "juego": "Tu Fecha",
+      "fecha": "30-10",
+      "fecha_iso": "2026-10-30",
+      "numeros": [
+        "15"
+      ],
+      "fuente": "https://www.loteriasdominicanas.com.do/"
+    },
+    {
+      "empresa": "Loteka",
+      "juego": "Quiniela Loteka Noche",
+      "fecha": "29-10",
+      "fecha_iso": "2026-10-29",
+      "numeros": [
+        "12",
+        "81",
+        "56"
+      ],
+      "fuente": "https://www.loteriasdominicanas.com.do/"
+    },
+    {
+      "empresa": "Loteka",
+      "juego": "Mega Chances",
+      "fecha": "29-10",
+      "fecha_iso": "2026-10-29",
+      "numeros": [
+        "81",
+        "27",
+        "22",
+        "69",
+        "89"
+      ],
+      "fuente": "https://www.loteriasdominicanas.com.do/"
+    },
+    {
+      "empresa": "Loteka",
+      "juego": "Toca 3",
+      "fecha": "29-10",
+      "fecha_iso": "2026-10-29",
+      "numeros": [
+        "00",
+        "06",
+        "08"
+      ],
+      "fuente": "https://www.loteriasdominicanas.com.do/"
+    },
+    {
+      "empresa": "Loteka",
+      "juego": "La Repartidera",
+      "fecha": "29-10",
+      "fecha_iso": "2026-10-29",
+      "numeros": [
+        "32"
+      ],
+      "fuente": "https://www.loteriasdominicanas.com.do/"
+    },
+    {
+      "empresa": "Americanas (NY)",
+      "juego": "Georgia Día",
+      "fecha": "30-10",
+      "fecha_iso": "2026-10-30",
+      "numeros": [
+        "98",
+        "58",
+        "27"
+      ],
+      "fuente": "https://www.loteriasdominicanas.com.do/"
+    },
+    {
+      "empresa": "Americanas (NY)",
+      "juego": "New Jersey Día",
+      "fecha": "30-10",
+      "fecha_iso": "2026-10-30",
+      "numeros": [
+        "81",
+        "73",
+        "55"
+      ],
+      "fuente": "https://www.loteriasdominicanas.com.do/"
+    },
+    {
+      "empresa": "Americanas (NY)",
+      "juego": "Florida Día",
+      "fecha": "30-10",
+      "fecha_iso": "2026-10-30",
+      "numeros": [
+        "81",
+        "58",
+        "10"
+      ],
+      "fuente": "https://www.loteriasdominicanas.com.do/"
+    },
+    {
+      "empresa": "Americanas (NY)",
+      "juego": "New York Tarde",
+      "fecha": "30-10",
+      "fecha_iso": "2026-10-30",
+      "numeros": [
+        "09",
+        "31",
+        "14"
+      ],
+      "fuente": "https://www.loteriasdominicanas.com.do/"
+    },
+    {
+      "empresa": "Americanas (NY)",
+      "juego": "Georgia Tarde",
+      "fecha": "29-10",
+      "fecha_iso": "2026-10-29",
+      "numeros": [
+        "52",
+        "04",
+        "41"
+      ],
+      "fuente": "https://www.loteriasdominicanas.com.do/"
+    },
+    {
+      "empresa": "Americanas (NY)",
+      "juego": "Florida Noche",
+      "fecha": "29-10",
+      "fecha_iso": "2026-10-29",
+      "numeros": [
+        "19",
+        "66",
+        "02"
+      ],
+      "fuente": "https://www.loteriasdominicanas.com.do/"
+    },
+    {
+      "empresa": "Americanas (NY)",
+      "juego": "New York Noche",
+      "fecha": "29-10",
+      "fecha_iso": "2026-10-29",
+      "numeros": [
+        "96",
+        "73",
+        "49"
+      ],
+      "fuente": "https://www.loteriasdominicanas.com.do/"
+    },
+    {
+      "empresa": "Americanas (NY)",
+      "juego": "New Jersey Noche",
+      "fecha": "29-10",
+      "fecha_iso": "2026-10-29",
+      "numeros": [
+        "32",
+        "97",
+        "77"
+      ],
+      "fuente": "https://www.loteriasdominicanas.com.do/"
+    },
+    {
+      "empresa": "Americanas (NY)",
+      "juego": "Georgia Noche",
+      "fecha": "29-10",
+      "fecha_iso": "2026-10-29",
+      "numeros": [
+        "07",
+        "17",
+        "15"
+      ],
+      "fuente": "https://www.loteriasdominicanas.com.do/"
+    },
+    {
+      "empresa": "La Primera",
+      "juego": "La Primera Día",
+      "fecha": "30-10",
+      "fecha_iso": "2026-10-30",
+      "numeros": [
+        "13",
+        "35",
+        "14"
+      ],
+      "fuente": "https://www.loteriasdominicanas.com.do/"
+    },
+    {
+      "empresa": "La Primera",
+      "juego": "Quinielón Día",
+      "fecha": "30-10",
+      "fecha_iso": "2026-10-30",
+      "numeros": [
+        "22"
+      ],
+      "fuente": "https://www.loteriasdominicanas.com.do/"
+    },
+    {
+      "empresa": "La Primera",
+      "juego": "Primera Noche",
+      "fecha": "29-10",
+      "fecha_iso": "2026-10-29",
+      "numeros": [
+        "62",
+        "02",
+        "85"
+      ],
+      "fuente": "https://www.loteriasdominicanas.com.do/"
+    },
+    {
+      "empresa": "La Primera",
+      "juego": "Quinielón Noche",
+      "fecha": "29-10",
+      "fecha_iso": "2026-10-29",
+      "numeros": [
+        "88"
+      ],
+      "fuente": "https://www.loteriasdominicanas.com.do/"
+    },
+    {
+      "empresa": "La Primera",
+      "juego": "Loto 5",
+      "fecha": "29-10",
+      "fecha_iso": "2026-10-29",
+      "numeros": [
+        "27",
+        "07",
+        "33",
+        "15",
+        "10",
+        "02"
+      ],
+      "fuente": "https://www.loteriasdominicanas.com.do/"
+    },
+    {
+      "empresa": "La Suerte",
+      "juego": "La Suerte Día",
+      "fecha": "30-10",
+      "fecha_iso": "2026-10-30",
+      "numeros": [
+        "92",
+        "79",
+        "53"
+      ],
+      "fuente": "https://www.loteriasdominicanas.com.do/"
+    },
+    {
+      "empresa": "La Suerte",
+      "juego": "La Suerte Tarde",
+      "fecha": "29-10",
+      "fecha_iso": "2026-10-29",
+      "numeros": [
+        "41",
+        "98",
+        "22"
+      ],
+      "fuente": "https://www.loteriasdominicanas.com.do/"
+    },
+    {
+      "empresa": "LoteDom",
+      "juego": "LoteDom Día",
+      "fecha": "30-10",
+      "fecha_iso": "2026-10-30",
+      "numeros": [
+        "61",
+        "13",
+        "03"
+      ],
+      "fuente": "https://www.loteriasdominicanas.com.do/"
+    },
+    {
+      "empresa": "LoteDom",
+      "juego": "El Quemaito Mayor",
+      "fecha": "30-10",
+      "fecha_iso": "2026-10-30",
+      "numeros": [
+        "61"
+      ],
+      "fuente": "https://www.loteriasdominicanas.com.do/"
+    },
+    {
+      "empresa": "LoteDom",
+      "juego": "Super Palé Día",
+      "fecha": "30-10",
+      "fecha_iso": "2026-10-30",
+      "numeros": [
+        "61",
+        "61"
+      ],
+      "fuente": "https://www.loteriasdominicanas.com.do/"
+    },
+    {
+      "empresa": "LoteDom",
+      "juego": "Agarra 4",
+      "fecha": "30-10",
+      "fecha_iso": "2026-10-30",
+      "numeros": [
+        "61",
+        "13",
+        "03",
+        "61"
+      ],
+      "fuente": "https://www.loteriasdominicanas.com.do/"
+    },
+    {
+      "empresa": "Anguila",
+      "juego": "Anguila 1:00 PM",
+      "fecha": "30-10",
+      "fecha_iso": "2026-10-30",
+      "numeros": [
+        "54",
+        "01",
+        "00"
+      ],
+      "fuente": "https://www.loteriasdominicanas.com.do/"
+    },
+    {
+      "empresa": "Anguila",
+      "juego": "Anguila 6:00 PM",
+      "fecha": "29-10",
+      "fecha_iso": "2026-10-29",
+      "numeros": [
+        "46",
+        "13",
+        "45"
+      ],
+      "fuente": "https://www.loteriasdominicanas.com.do/"
+    },
+    {
+      "empresa": "Anguila",
+      "juego": "Anguila 9:00 PM",
+      "fecha": "29-10",
+      "fecha_iso": "2026-10-29",
+      "numeros": [
+        "67",
+        "84",
+        "82"
+      ],
+      "fuente": "https://www.loteriasdominicanas.com.do/"
+    },
+    {
+      "empresa": "King Lottery",
+      "juego": "King Lottery Día",
+      "fecha": "30-10",
+      "fecha_iso": "2026-10-30",
+      "numeros": [
+        "08",
+        "28",
+        "48"
+      ],
+      "fuente": "https://www.loteriasdominicanas.com.do/"
+    },
+    {
+      "empresa": "King Lottery",
+      "juego": "King Lottery Noche",
+      "fecha": "29-10",
+      "fecha_iso": "2026-10-29",
+      "numeros": [
+        "26",
+        "62",
+        "21"
+      ],
+      "fuente": "https://www.loteriasdominicanas.com.do/"
+    },
+    {
+      "empresa": "Haiti Bolet",
+      "juego": "Haiti Bolet 9:30 AM",
+      "fecha": "30-10",
+      "fecha_iso": "2026-10-30",
+      "numeros": [
+        "35",
+        "62",
+        "97"
+      ],
+      "fuente": "https://www.loteriasdominicanas.com.do/"
+    },
+    {
+      "empresa": "Haiti Bolet",
+      "juego": "Haiti Bolet 10:30 AM",
+      "fecha": "30-10",
+      "fecha_iso": "2026-10-30",
+      "numeros": [
+        "21",
+        "61",
+        "54"
+      ],
+      "fuente": "https://www.loteriasdominicanas.com.do/"
+    },
+    {
+      "empresa": "Haiti Bolet",
+      "juego": "Haiti Bolet 11:30 AM",
+      "fecha": "30-10",
+      "fecha_iso": "2026-10-30",
+      "numeros": [
+        "80",
+        "20",
+        "47"
+      ],
+      "fuente": "https://www.loteriasdominicanas.com.do/"
+    },
+    {
+      "empresa": "Haiti Bolet",
+      "juego": "Haiti Bolet 5:30 PM",
+      "fecha": "29-10",
+      "fecha_iso": "2026-10-29",
+      "numeros": [
+        "06",
+        "63",
+        "41"
+      ],
+      "fuente": "https://www.loteriasdominicanas.com.do/"
+    },
+    {
+      "empresa": "Haiti Bolet",
+      "juego": "Haiti Bolet 6:30 PM",
+      "fecha": "29-10",
+      "fecha_iso": "2026-10-29",
+      "numeros": [
+        "26",
+        "22",
+        "39"
+      ],
+      "fuente": "https://www.loteriasdominicanas.com.do/"
+    },
+    {
+      "empresa": "Haiti Bolet",
+      "juego": "Haiti Bolet 7:30 PM",
+      "fecha": "29-10",
+      "fecha_iso": "2026-10-29",
+      "numeros": [
+        "76",
+        "31",
+        "52"
+      ],
+      "fuente": "https://www.loteriasdominicanas.com.do/"
+    },
+    {
+      "empresa": "Anguila",
+      "juego": "Anguila 10:00 AM",
+      "fecha": "30-10",
+      "fecha_iso": "2026-10-30",
+      "numeros": [
+        "20",
+        "13",
+        "15"
+      ],
+      "fuente": "https://turifamax.com/api/v1/resultados"
+    },
+    {
+      "empresa": "Americanas (NY)",
+      "juego": "PowerBall",
+      "fecha": "28-10",
+      "fecha_iso": "2026-10-28",
+      "numeros": [
+        "60",
+        "47",
+        "16",
+        "13",
+        "11",
+        "13"
       ],
       "fuente": "https://turifamax.com/api/v1/resultados"
     },
@@ -389,278 +661,6 @@
         "03"
       ],
       "fuente": "https://turifamax.com/api/v1/resultados"
-    },
-    {
-      "empresa": "Lotería Nacional",
-      "juego": "Juega + Pega +",
-      "fecha": "28-10",
-      "fecha_iso": "2026-10-28",
-      "numeros": [
-        "18",
-        "16",
-        "10",
-        "04",
-        "22"
-      ],
-      "fuente": "https://www.loteriasdominicanas.com.do/"
-    },
-    {
-      "empresa": "Lotería Real",
-      "juego": "Lotería Real Noche",
-      "fecha": "28-10",
-      "fecha_iso": "2026-10-28",
-      "numeros": [
-        "38",
-        "93",
-        "54"
-      ],
-      "fuente": "https://www.loteriasdominicanas.com.do/"
-    },
-    {
-      "empresa": "Lotería Real",
-      "juego": "Loto Pool",
-      "fecha": "28-10",
-      "fecha_iso": "2026-10-28",
-      "numeros": [
-        "34",
-        "30",
-        "41",
-        "07"
-      ],
-      "fuente": "https://www.loteriasdominicanas.com.do/"
-    },
-    {
-      "empresa": "Lotería Real",
-      "juego": "Tu Fecha",
-      "fecha": "28-10",
-      "fecha_iso": "2026-10-28",
-      "numeros": [
-        "03"
-      ],
-      "fuente": "https://www.loteriasdominicanas.com.do/"
-    },
-    {
-      "empresa": "Loteka",
-      "juego": "Toca 3",
-      "fecha": "28-10",
-      "fecha_iso": "2026-10-28",
-      "numeros": [
-        "06",
-        "00",
-        "09"
-      ],
-      "fuente": "https://www.loteriasdominicanas.com.do/"
-    },
-    {
-      "empresa": "Loteka",
-      "juego": "La Repartidera",
-      "fecha": "28-10",
-      "fecha_iso": "2026-10-28",
-      "numeros": [
-        "17"
-      ],
-      "fuente": "https://www.loteriasdominicanas.com.do/"
-    },
-    {
-      "empresa": "Americanas (NY)",
-      "juego": "Georgia Día",
-      "fecha": "28-10",
-      "fecha_iso": "2026-10-28",
-      "numeros": [
-        "04",
-        "98",
-        "88"
-      ],
-      "fuente": "https://www.loteriasdominicanas.com.do/"
-    },
-    {
-      "empresa": "Americanas (NY)",
-      "juego": "New Jersey Día",
-      "fecha": "28-10",
-      "fecha_iso": "2026-10-28",
-      "numeros": [
-        "93",
-        "35",
-        "70"
-      ],
-      "fuente": "https://www.loteriasdominicanas.com.do/"
-    },
-    {
-      "empresa": "Americanas (NY)",
-      "juego": "Georgia Tarde",
-      "fecha": "28-10",
-      "fecha_iso": "2026-10-28",
-      "numeros": [
-        "46",
-        "09",
-        "97"
-      ],
-      "fuente": "https://www.loteriasdominicanas.com.do/"
-    },
-    {
-      "empresa": "Americanas (NY)",
-      "juego": "New Jersey Noche",
-      "fecha": "28-10",
-      "fecha_iso": "2026-10-28",
-      "numeros": [
-        "96",
-        "74",
-        "36"
-      ],
-      "fuente": "https://www.loteriasdominicanas.com.do/"
-    },
-    {
-      "empresa": "Americanas (NY)",
-      "juego": "Georgia Noche",
-      "fecha": "28-10",
-      "fecha_iso": "2026-10-28",
-      "numeros": [
-        "76",
-        "59",
-        "44"
-      ],
-      "fuente": "https://www.loteriasdominicanas.com.do/"
-    },
-    {
-      "empresa": "La Primera",
-      "juego": "Quinielón Día",
-      "fecha": "28-10",
-      "fecha_iso": "2026-10-28",
-      "numeros": [
-        "86"
-      ],
-      "fuente": "https://www.loteriasdominicanas.com.do/"
-    },
-    {
-      "empresa": "La Primera",
-      "juego": "Quinielón Noche",
-      "fecha": "28-10",
-      "fecha_iso": "2026-10-28",
-      "numeros": [
-        "73"
-      ],
-      "fuente": "https://www.loteriasdominicanas.com.do/"
-    },
-    {
-      "empresa": "La Primera",
-      "juego": "Loto 5",
-      "fecha": "28-10",
-      "fecha_iso": "2026-10-28",
-      "numeros": [
-        "26",
-        "04",
-        "09",
-        "33",
-        "20",
-        "08"
-      ],
-      "fuente": "https://www.loteriasdominicanas.com.do/"
-    },
-    {
-      "empresa": "LoteDom",
-      "juego": "El Quemaito Mayor",
-      "fecha": "28-10",
-      "fecha_iso": "2026-10-28",
-      "numeros": [
-        "47"
-      ],
-      "fuente": "https://www.loteriasdominicanas.com.do/"
-    },
-    {
-      "empresa": "LoteDom",
-      "juego": "Super Palé Día",
-      "fecha": "28-10",
-      "fecha_iso": "2026-10-28",
-      "numeros": [
-        "00",
-        "47"
-      ],
-      "fuente": "https://www.loteriasdominicanas.com.do/"
-    },
-    {
-      "empresa": "LoteDom",
-      "juego": "Agarra 4",
-      "fecha": "28-10",
-      "fecha_iso": "2026-10-28",
-      "numeros": [
-        "00",
-        "58",
-        "04",
-        "47"
-      ],
-      "fuente": "https://www.loteriasdominicanas.com.do/"
-    },
-    {
-      "empresa": "Haiti Bolet",
-      "juego": "Haiti Bolet 9:30 AM",
-      "fecha": "28-10",
-      "fecha_iso": "2026-10-28",
-      "numeros": [
-        "41",
-        "18",
-        "65"
-      ],
-      "fuente": "https://www.loteriasdominicanas.com.do/"
-    },
-    {
-      "empresa": "Haiti Bolet",
-      "juego": "Haiti Bolet 10:30 AM",
-      "fecha": "28-10",
-      "fecha_iso": "2026-10-28",
-      "numeros": [
-        "61",
-        "71",
-        "09"
-      ],
-      "fuente": "https://www.loteriasdominicanas.com.do/"
-    },
-    {
-      "empresa": "Haiti Bolet",
-      "juego": "Haiti Bolet 11:30 AM",
-      "fecha": "28-10",
-      "fecha_iso": "2026-10-28",
-      "numeros": [
-        "88",
-        "09",
-        "74"
-      ],
-      "fuente": "https://www.loteriasdominicanas.com.do/"
-    },
-    {
-      "empresa": "Haiti Bolet",
-      "juego": "Haiti Bolet 5:30 PM",
-      "fecha": "28-10",
-      "fecha_iso": "2026-10-28",
-      "numeros": [
-        "79",
-        "75",
-        "58"
-      ],
-      "fuente": "https://www.loteriasdominicanas.com.do/"
-    },
-    {
-      "empresa": "Haiti Bolet",
-      "juego": "Haiti Bolet 6:30 PM",
-      "fecha": "28-10",
-      "fecha_iso": "2026-10-28",
-      "numeros": [
-        "66",
-        "66",
-        "36"
-      ],
-      "fuente": "https://www.loteriasdominicanas.com.do/"
-    },
-    {
-      "empresa": "Haiti Bolet",
-      "juego": "Haiti Bolet 7:30 PM",
-      "fecha": "28-10",
-      "fecha_iso": "2026-10-28",
-      "numeros": [
-        "36",
-        "64",
-        "19"
-      ],
-      "fuente": "https://www.loteriasdominicanas.com.do/"
     },
     {
       "empresa": "Loteka",
@@ -4459,7 +4459,7 @@
         "11",
         "13"
       ],
-      "fuente": "https://turifamax.com/api/v1/resultados"
+      "fuente": "https://www.loteriasdominicanas.com.do/"
     },
     {
       "empresa": "Leidsa",
@@ -4995,7 +4995,7 @@
         "13",
         "45"
       ],
-      "fuente": "https://turifamax.com/api/v1/resultados"
+      "fuente": "https://www.loteriasdominicanas.com.do/"
     },
     {
       "empresa": "King Lottery",
@@ -5007,7 +5007,7 @@
         "62",
         "21"
       ],
-      "fuente": "https://turifamax.com/api/v1/resultados"
+      "fuente": "https://www.loteriasdominicanas.com.do/"
     },
     {
       "empresa": "La Primera",
@@ -5019,7 +5019,7 @@
         "02",
         "85"
       ],
-      "fuente": "https://turifamax.com/api/v1/resultados"
+      "fuente": "https://www.loteriasdominicanas.com.do/"
     },
     {
       "empresa": "La Suerte",
@@ -5031,7 +5031,7 @@
         "98",
         "22"
       ],
-      "fuente": "https://turifamax.com/api/v1/resultados"
+      "fuente": "https://www.loteriasdominicanas.com.do/"
     },
     {
       "empresa": "Anguila",
@@ -5043,7 +5043,7 @@
         "84",
         "82"
       ],
-      "fuente": "https://turifamax.com/api/v1/resultados"
+      "fuente": "https://www.loteriasdominicanas.com.do/"
     },
     {
       "empresa": "Leidsa",
@@ -5055,7 +5055,7 @@
         "52",
         "56"
       ],
-      "fuente": "https://turifamax.com/api/v1/resultados"
+      "fuente": "https://www.loteriasdominicanas.com.do/"
     },
     {
       "empresa": "Loteka",
@@ -5067,7 +5067,7 @@
         "81",
         "56"
       ],
-      "fuente": "https://turifamax.com/api/v1/resultados"
+      "fuente": "https://www.loteriasdominicanas.com.do/"
     },
     {
       "empresa": "Leidsa",
@@ -5081,7 +5081,7 @@
         "04",
         "02"
       ],
-      "fuente": "https://turifamax.com/api/v1/resultados"
+      "fuente": "https://www.loteriasdominicanas.com.do/"
     },
     {
       "empresa": "Loteka",
@@ -5095,7 +5095,7 @@
         "69",
         "89"
       ],
-      "fuente": "https://turifamax.com/api/v1/resultados"
+      "fuente": "https://www.loteriasdominicanas.com.do/"
     },
     {
       "empresa": "Loteka",
@@ -5122,7 +5122,7 @@
         "48",
         "37"
       ],
-      "fuente": "https://turifamax.com/api/v1/resultados"
+      "fuente": "https://www.loteriasdominicanas.com.do/"
     },
     {
       "empresa": "Leidsa",
@@ -5134,7 +5134,7 @@
         "04",
         "34"
       ],
-      "fuente": "https://turifamax.com/api/v1/resultados"
+      "fuente": "https://www.loteriasdominicanas.com.do/"
     },
     {
       "empresa": "Leidsa",
@@ -5163,7 +5163,7 @@
         "04",
         "27"
       ],
-      "fuente": "https://turifamax.com/api/v1/resultados"
+      "fuente": "https://www.loteriasdominicanas.com.do/"
     },
     {
       "empresa": "Americanas (NY)",
@@ -5175,7 +5175,7 @@
         "66",
         "02"
       ],
-      "fuente": "https://turifamax.com/api/v1/resultados"
+      "fuente": "https://www.loteriasdominicanas.com.do/"
     },
     {
       "empresa": "Americanas (NY)",
@@ -5187,7 +5187,7 @@
         "73",
         "49"
       ],
-      "fuente": "https://turifamax.com/api/v1/resultados"
+      "fuente": "https://www.loteriasdominicanas.com.do/"
     },
     {
       "empresa": "Anguila",
@@ -5211,7 +5211,7 @@
         "13",
         "03"
       ],
-      "fuente": "https://turifamax.com/api/v1/resultados"
+      "fuente": "https://www.loteriasdominicanas.com.do/"
     },
     {
       "empresa": "La Primera",
@@ -5223,7 +5223,363 @@
         "35",
         "14"
       ],
-      "fuente": "https://turifamax.com/api/v1/resultados"
+      "fuente": "https://www.loteriasdominicanas.com.do/"
+    },
+    {
+      "empresa": "Lotería Nacional",
+      "juego": "Gana Más",
+      "fecha": "30-10",
+      "fecha_iso": "2026-10-30",
+      "numeros": [
+        "41",
+        "92",
+        "79"
+      ],
+      "fuente": "https://www.loteriasdominicanas.com.do/"
+    },
+    {
+      "empresa": "Lotería Nacional",
+      "juego": "Juega + Pega +",
+      "fecha": "30-10",
+      "fecha_iso": "2026-10-30",
+      "numeros": [
+        "10",
+        "18",
+        "20",
+        "07",
+        "14"
+      ],
+      "fuente": "https://www.loteriasdominicanas.com.do/"
+    },
+    {
+      "empresa": "Lotería Real",
+      "juego": "Quiniela Real",
+      "fecha": "30-10",
+      "fecha_iso": "2026-10-30",
+      "numeros": [
+        "74",
+        "44",
+        "76"
+      ],
+      "fuente": "https://www.loteriasdominicanas.com.do/"
+    },
+    {
+      "empresa": "Lotería Real",
+      "juego": "Lotería Real Noche",
+      "fecha": "29-10",
+      "fecha_iso": "2026-10-29",
+      "numeros": [
+        "07",
+        "58",
+        "64"
+      ],
+      "fuente": "https://www.loteriasdominicanas.com.do/"
+    },
+    {
+      "empresa": "Lotería Real",
+      "juego": "Loto Pool",
+      "fecha": "30-10",
+      "fecha_iso": "2026-10-30",
+      "numeros": [
+        "94",
+        "47",
+        "56",
+        "22"
+      ],
+      "fuente": "https://www.loteriasdominicanas.com.do/"
+    },
+    {
+      "empresa": "Lotería Real",
+      "juego": "Tu Fecha",
+      "fecha": "30-10",
+      "fecha_iso": "2026-10-30",
+      "numeros": [
+        "15"
+      ],
+      "fuente": "https://www.loteriasdominicanas.com.do/"
+    },
+    {
+      "empresa": "Loteka",
+      "juego": "Toca 3",
+      "fecha": "29-10",
+      "fecha_iso": "2026-10-29",
+      "numeros": [
+        "00",
+        "06",
+        "08"
+      ],
+      "fuente": "https://www.loteriasdominicanas.com.do/"
+    },
+    {
+      "empresa": "Loteka",
+      "juego": "La Repartidera",
+      "fecha": "29-10",
+      "fecha_iso": "2026-10-29",
+      "numeros": [
+        "32"
+      ],
+      "fuente": "https://www.loteriasdominicanas.com.do/"
+    },
+    {
+      "empresa": "Americanas (NY)",
+      "juego": "Georgia Día",
+      "fecha": "30-10",
+      "fecha_iso": "2026-10-30",
+      "numeros": [
+        "98",
+        "58",
+        "27"
+      ],
+      "fuente": "https://www.loteriasdominicanas.com.do/"
+    },
+    {
+      "empresa": "Americanas (NY)",
+      "juego": "New Jersey Día",
+      "fecha": "30-10",
+      "fecha_iso": "2026-10-30",
+      "numeros": [
+        "81",
+        "73",
+        "55"
+      ],
+      "fuente": "https://www.loteriasdominicanas.com.do/"
+    },
+    {
+      "empresa": "Americanas (NY)",
+      "juego": "Florida Día",
+      "fecha": "30-10",
+      "fecha_iso": "2026-10-30",
+      "numeros": [
+        "81",
+        "58",
+        "10"
+      ],
+      "fuente": "https://www.loteriasdominicanas.com.do/"
+    },
+    {
+      "empresa": "Americanas (NY)",
+      "juego": "New York Tarde",
+      "fecha": "30-10",
+      "fecha_iso": "2026-10-30",
+      "numeros": [
+        "09",
+        "31",
+        "14"
+      ],
+      "fuente": "https://www.loteriasdominicanas.com.do/"
+    },
+    {
+      "empresa": "Americanas (NY)",
+      "juego": "Georgia Tarde",
+      "fecha": "29-10",
+      "fecha_iso": "2026-10-29",
+      "numeros": [
+        "52",
+        "04",
+        "41"
+      ],
+      "fuente": "https://www.loteriasdominicanas.com.do/"
+    },
+    {
+      "empresa": "Americanas (NY)",
+      "juego": "New Jersey Noche",
+      "fecha": "29-10",
+      "fecha_iso": "2026-10-29",
+      "numeros": [
+        "32",
+        "97",
+        "77"
+      ],
+      "fuente": "https://www.loteriasdominicanas.com.do/"
+    },
+    {
+      "empresa": "Americanas (NY)",
+      "juego": "Georgia Noche",
+      "fecha": "29-10",
+      "fecha_iso": "2026-10-29",
+      "numeros": [
+        "07",
+        "17",
+        "15"
+      ],
+      "fuente": "https://www.loteriasdominicanas.com.do/"
+    },
+    {
+      "empresa": "La Primera",
+      "juego": "Quinielón Día",
+      "fecha": "30-10",
+      "fecha_iso": "2026-10-30",
+      "numeros": [
+        "22"
+      ],
+      "fuente": "https://www.loteriasdominicanas.com.do/"
+    },
+    {
+      "empresa": "La Primera",
+      "juego": "Quinielón Noche",
+      "fecha": "29-10",
+      "fecha_iso": "2026-10-29",
+      "numeros": [
+        "88"
+      ],
+      "fuente": "https://www.loteriasdominicanas.com.do/"
+    },
+    {
+      "empresa": "La Primera",
+      "juego": "Loto 5",
+      "fecha": "29-10",
+      "fecha_iso": "2026-10-29",
+      "numeros": [
+        "27",
+        "07",
+        "33",
+        "15",
+        "10",
+        "02"
+      ],
+      "fuente": "https://www.loteriasdominicanas.com.do/"
+    },
+    {
+      "empresa": "La Suerte",
+      "juego": "La Suerte Día",
+      "fecha": "30-10",
+      "fecha_iso": "2026-10-30",
+      "numeros": [
+        "92",
+        "79",
+        "53"
+      ],
+      "fuente": "https://www.loteriasdominicanas.com.do/"
+    },
+    {
+      "empresa": "LoteDom",
+      "juego": "El Quemaito Mayor",
+      "fecha": "30-10",
+      "fecha_iso": "2026-10-30",
+      "numeros": [
+        "61"
+      ],
+      "fuente": "https://www.loteriasdominicanas.com.do/"
+    },
+    {
+      "empresa": "LoteDom",
+      "juego": "Super Palé Día",
+      "fecha": "30-10",
+      "fecha_iso": "2026-10-30",
+      "numeros": [
+        "61",
+        "61"
+      ],
+      "fuente": "https://www.loteriasdominicanas.com.do/"
+    },
+    {
+      "empresa": "LoteDom",
+      "juego": "Agarra 4",
+      "fecha": "30-10",
+      "fecha_iso": "2026-10-30",
+      "numeros": [
+        "61",
+        "13",
+        "03",
+        "61"
+      ],
+      "fuente": "https://www.loteriasdominicanas.com.do/"
+    },
+    {
+      "empresa": "Anguila",
+      "juego": "Anguila 1:00 PM",
+      "fecha": "30-10",
+      "fecha_iso": "2026-10-30",
+      "numeros": [
+        "54",
+        "01",
+        "00"
+      ],
+      "fuente": "https://www.loteriasdominicanas.com.do/"
+    },
+    {
+      "empresa": "King Lottery",
+      "juego": "King Lottery Día",
+      "fecha": "30-10",
+      "fecha_iso": "2026-10-30",
+      "numeros": [
+        "08",
+        "28",
+        "48"
+      ],
+      "fuente": "https://www.loteriasdominicanas.com.do/"
+    },
+    {
+      "empresa": "Haiti Bolet",
+      "juego": "Haiti Bolet 9:30 AM",
+      "fecha": "30-10",
+      "fecha_iso": "2026-10-30",
+      "numeros": [
+        "35",
+        "62",
+        "97"
+      ],
+      "fuente": "https://www.loteriasdominicanas.com.do/"
+    },
+    {
+      "empresa": "Haiti Bolet",
+      "juego": "Haiti Bolet 10:30 AM",
+      "fecha": "30-10",
+      "fecha_iso": "2026-10-30",
+      "numeros": [
+        "21",
+        "61",
+        "54"
+      ],
+      "fuente": "https://www.loteriasdominicanas.com.do/"
+    },
+    {
+      "empresa": "Haiti Bolet",
+      "juego": "Haiti Bolet 11:30 AM",
+      "fecha": "30-10",
+      "fecha_iso": "2026-10-30",
+      "numeros": [
+        "80",
+        "20",
+        "47"
+      ],
+      "fuente": "https://www.loteriasdominicanas.com.do/"
+    },
+    {
+      "empresa": "Haiti Bolet",
+      "juego": "Haiti Bolet 5:30 PM",
+      "fecha": "29-10",
+      "fecha_iso": "2026-10-29",
+      "numeros": [
+        "06",
+        "63",
+        "41"
+      ],
+      "fuente": "https://www.loteriasdominicanas.com.do/"
+    },
+    {
+      "empresa": "Haiti Bolet",
+      "juego": "Haiti Bolet 6:30 PM",
+      "fecha": "29-10",
+      "fecha_iso": "2026-10-29",
+      "numeros": [
+        "26",
+        "22",
+        "39"
+      ],
+      "fuente": "https://www.loteriasdominicanas.com.do/"
+    },
+    {
+      "empresa": "Haiti Bolet",
+      "juego": "Haiti Bolet 7:30 PM",
+      "fecha": "29-10",
+      "fecha_iso": "2026-10-29",
+      "numeros": [
+        "76",
+        "31",
+        "52"
+      ],
+      "fuente": "https://www.loteriasdominicanas.com.do/"
     }
   ]
 }
