@@ -24,6 +24,7 @@ import os
 import re
 import shutil
 import unicodedata
+from html import unescape
 from collections import Counter
 from datetime import date, datetime, timezone, timedelta
 
@@ -313,6 +314,7 @@ def html_cinta(resultados):
 
 def escribir(nombre, contenido):
     if nombre.endswith(".html"):
+        contenido = completar_seo(nombre, contenido)
         contenido = contenido.replace("Últimos 7 días", "Últimos 14 días").replace("últimos 7 días", "últimos 14 días")
         # Las plantillas de operador también vuelven a dibujar las tarjetas al consultar el JSON.
         contenido = contenido.replace('function pintar(lista){', 'function rutaDetalle(texto){return texto.toLowerCase().normalize("NFD").replace(/[\\u0300-\\u036f]/g, "").replace(/[^a-z0-9]+/g,"-").replace(/(^-|-$)/g, "");} function pintar(lista){')
@@ -332,6 +334,42 @@ def escribir(nombre, contenido):
     with open(destino, "w", encoding="utf-8") as f:
         f.write(contenido)
     print("  %-34s %6d bytes" % (nombre, len(contenido)))
+
+
+def completar_seo(nombre, contenido):
+    contenido = re.sub(r'<html lang="[^"]*"', '<html lang="es-DO"', contenido, count=1)
+    titulo = unescape(re.search(r'<title>(.*?)</title>', contenido, re.S).group(1))
+    descripcion = unescape(re.search(r'<meta name="description" content="([^"]*)"', contenido).group(1))
+    url = DOMINIO + ("" if nombre == "index.html" else nombre)
+    contenido = re.sub(r'<link rel="canonical"[^>]*>', '', contenido)
+    etiquetas = '<link rel="canonical" href="%s">' % escapar(url)
+    metadatos = {
+        "og:title": titulo, "og:description": descripcion, "og:url": url,
+        "og:type": "website", "og:locale": "es_DO", "og:site_name": "Conéctate Lotería",
+        "og:image": DOMINIO + "png/logo1.png",
+        "twitter:card": "summary", "twitter:title": titulo,
+        "twitter:description": descripcion, "twitter:image": DOMINIO + "png/logo1.png",
+    }
+    for clave, valor in metadatos.items():
+        contenido = re.sub(r'<meta (?:name|property)="%s"[^>]*>' % re.escape(clave), '', contenido)
+        etiquetas += '<meta %s="%s" content="%s">' % (
+            "property" if clave.startswith("og:") else "name", clave, escapar(valor))
+    pagina_schema = {
+        "@context": "https://schema.org", "@type": "WebPage", "@id": url + "#webpage",
+        "url": url, "name": titulo, "description": descripcion, "inLanguage": "es-DO",
+        "isPartOf": {"@type": "WebSite", "url": DOMINIO, "name": "Conéctate Lotería"},
+    }
+    etiquetas += '<script type="application/ld+json">%s</script>' % json.dumps(
+        pagina_schema, ensure_ascii=False).replace("<", "\\u003c")
+    if nombre != "index.html":
+        migas = {"@context": "https://schema.org", "@type": "BreadcrumbList", "itemListElement": [
+            {"@type": "ListItem", "position": 1, "name": "Inicio", "item": DOMINIO},
+            {"@type": "ListItem", "position": 2, "name": titulo, "item": url},
+        ]}
+        etiquetas += '<script type="application/ld+json">%s</script>' % json.dumps(
+            migas, ensure_ascii=False).replace("<", "\\u003c")
+        contenido = contenido.replace('<body>', '<body><nav aria-label="Ruta de navegación"><a href="./">Inicio</a> &rsaquo; %s</nav>' % escapar(titulo), 1)
+    return contenido.replace('</head>', etiquetas + '</head>', 1)
 
 
 # --- Texto propio de cada loteria ---------------------------------------
@@ -578,7 +616,7 @@ def escribir_paginas_sorteo(historial, hoy, piezas, actualizacion):
 <section class="detalle-historial" aria-labelledby="titulo-historial"><div class="detalle-historial-cabecera"><h2 id="titulo-historial">Resultados por fecha</h2><span>Últimos 14 días</span></div><p class="detalle-ayuda">Toca una fecha para ver sus números en grande.</p><div class="detalle-lista">%s</div><p class="detalle-nota">Las fechas sin información se muestran como «Sin dato disponible». No todos los sorteos se celebran cada día.</p></section>
 <script type="application/json" id="detalle-datos">%s</script><script src="detalle-sorteo.js?v=1" defer></script>
 </main>''' % (operador, escapar(empresa), escapar(juego), ultima, escapar(fecha_larga(ultima)), bolas(fechas[ultima]), "".join(filas), json_seguro)
-        escribir(ruta, pagina(juego + " – Resultados e historial | Conéctate Lotería", "Resultados de " + juego + " con fecha e historial de las últimas dos semanas.", ruta, cuerpo, piezas))
+        escribir(ruta, pagina(juego + " · " + empresa + " – Resultados e historial", "Resultados de " + juego + " de " + empresa + " con fecha e historial de las últimas dos semanas.", ruta, cuerpo, piezas))
         rutas.append(ruta)
     return rutas
 
@@ -629,7 +667,7 @@ def escribir_paginas_de_dia(historial, hoy_iso, piezas):
     pagina por fecha, cada dia puede aparecer en resultados de busqueda
     y el sitio suma una pagina nueva cada jornada sin tocar nada.
     """
-    claves = sorted(historial.get("dias", {}).keys(), reverse=True)
+    claves = sorted((clave for clave, sorteos in historial.get("dias", {}).items() if sorteos), reverse=True)
     hechas = []
     for i, clave in enumerate(claves):
         sorteos = historial["dias"][clave]
@@ -799,13 +837,10 @@ PAGINAS_FIJAS = [
 
 def escribir_sitemap(hoy_iso, dias=(), extras=()):
     """
-    Genera sitemap.xml con la fecha de hoy en las paginas de resultados.
+    Genera sitemap.xml solo con paginas disponibles.
 
-    Antes el sitemap era un archivo fijo con una fecha escrita a mano. Al
-    quedarse congelada mientras el contenido si cambiaba, Google acaba
-    ignorando el <lastmod>. Ahora la portada y las paginas de loteria
-    llevan la fecha real de esta construccion; las guias y legales
-    conservan la suya, que es la verdad.
+    Omite lastmod hasta disponer de fechas verificables de modificacion
+    del contenido completo, incluidos los elementos compartidos.
     """
     partes = ['<?xml version="1.0" encoding="UTF-8"?>',
               '<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">']
@@ -813,31 +848,33 @@ def escribir_sitemap(hoy_iso, dias=(), extras=()):
     def url(loc, lastmod, freq, prioridad):
         partes.append("  <url>")
         partes.append("    <loc>%s%s</loc>" % (DOMINIO, loc))
-        partes.append("    <lastmod>%s</lastmod>" % lastmod)
+        if lastmod:
+            partes.append("    <lastmod>%s</lastmod>" % lastmod)
         partes.append("    <changefreq>%s</changefreq>" % freq)
         partes.append("    <priority>%s</priority>" % prioridad)
         partes.append("  </url>")
 
-    url("", hoy_iso, "hourly", "1.0")
+    url("", None, "hourly", "1.0")
     for archivo in PAGINAS_LOTERIA:
-        url(archivo, hoy_iso, "hourly", "0.9")
+        if os.path.exists(os.path.join(SALIDA, archivo)):
+            url(archivo, None, "hourly", "0.9")
 
     for ruta in extras:
-        url(ruta, hoy_iso, "daily", "0.7")
+        url(ruta, None, "daily", "0.7")
 
     # Cada dia ya paso: su contenido no vuelve a cambiar.
     for clave in dias:
-        url(ruta_dia(clave), clave, "monthly", "0.5")
+        url(ruta_dia(clave), None, "monthly", "0.5")
 
     for archivo, modificado, freq, prioridad in PAGINAS_FIJAS:
         if not os.path.exists(os.path.join(RAIZ, archivo)):
             continue
-        url(archivo, modificado, freq, prioridad)
+        url(archivo, None, freq, prioridad)
 
     partes.append("</urlset>")
     partes.append("")
     escribir("sitemap.xml", "\n".join(partes))
-    print("  %-34s %d URLs" % ("sitemap.xml", (len(partes) - 3) // 6))
+    print("  %-34s %d URLs" % ("sitemap.xml", partes.count("  <url>")))
 
 
 def main():
