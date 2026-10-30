@@ -46,11 +46,13 @@ class ConstruccionTests(unittest.TestCase):
     def test_fechas_distinguen_resultados_anteriores(self):
         item = {"empresa": "Leidsa", "juego": "Quiniela", "numeros": ["01"],
                 "fecha_iso": "2020-01-02"}
-        self.assertIn("Anterior · 02/01/2020", paginas.tarjeta(item))
+        self.assertIn('<span class="fecha">02/01</span>', paginas.tarjeta(item))
         item["fecha_iso"] = AHORA.date().isoformat()
-        self.assertIn("Hoy ·", paginas.tarjeta(item))
+        self.assertIn('<span class="fecha">%s</span>' % AHORA.strftime("%d/%m"), paginas.tarjeta(item))
         item["fecha_iso"] = ""
-        self.assertIn("Fecha sin confirmar", paginas.tarjeta(item))
+        self.assertIn('<span class="fecha"></span>', paginas.tarjeta(item))
+        item["fecha"] = "29-10"
+        self.assertIn('<span class="fecha">29/10</span>', paginas.tarjeta(item))
 
     def test_acceso_ayer_solo_si_hay_datos(self):
         from datetime import timedelta
@@ -80,7 +82,7 @@ class ConstruccionTests(unittest.TestCase):
             for archivo in salida.glob("*.html"):
                 soup = BeautifulSoup(archivo.read_text(), "html.parser")
                 self.assertEqual(soup.html["lang"], "es-DO")
-                self.assertIsNotNone(soup.select_one('script[src="fecha-resultado.js?v=1"]'))
+                self.assertIsNotNone(soup.select_one('script[src="fecha-resultado.js?v=2"]'))
                 self.assertNotIn("<!--ACCESOS", str(soup))
                 canonical = soup.select('link[rel="canonical"]')
                 self.assertEqual(len(canonical), 1)
