@@ -135,10 +135,10 @@ def tarjeta(item):
     fecha = item.get("fecha_iso") or ""
     try:
         dia = date.fromisoformat(fecha)
-        estado = "Hoy" if dia == datetime.now(ZONA).date() else "Anterior"
-        etiqueta = estado + " · " + dia.strftime("%d/%m/%Y")
+        etiqueta = dia.strftime("%d/%m")
     except ValueError:
-        etiqueta = "Fecha sin confirmar"
+        fecha_corta = item.get("fecha") or ""
+        etiqueta = fecha_corta.replace("-", "/") if re.fullmatch(r"\d{2}-\d{2}", fecha_corta) else ""
     pastilla = '<span class="fecha">%s</span>' % escapar(etiqueta)
     return (
         '<a class="card card-enlace" href="%s">'
@@ -326,7 +326,7 @@ def html_cinta(resultados):
 def escribir(nombre, contenido):
     if nombre.endswith(".html"):
         contenido = completar_seo(nombre, contenido)
-        contenido = contenido.replace('</head>', '<link rel="stylesheet" href="mejoras-resultados.css?v=1"><script src="fecha-resultado.js?v=1"></script></head>', 1)
+        contenido = contenido.replace('</head>', '<link rel="stylesheet" href="mejoras-resultados.css?v=1"><script src="fecha-resultado.js?v=2"></script></head>', 1)
         contenido = contenido.replace('(item.fecha || "")', 'fechaResultado(item)')
         contenido = contenido.replace("Últimos 7 días", "Últimos 14 días").replace("últimos 7 días", "últimos 14 días")
         contenido = contenido.replace("&uacute;ltimos 7 d&iacute;as", "&uacute;ltimos 14 d&iacute;as")
