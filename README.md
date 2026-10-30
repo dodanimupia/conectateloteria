@@ -37,7 +37,11 @@ loterías requeridas, números de dos cifras, fechas reales de hasta 31 días y
 algún resultado de hoy o ayer. Se rechazan duplicados y fechas inconsistentes.
 Se conservan los sorteos recientes ausentes o más nuevos del archivo anterior
 y el historial reciente de 14 días al cambiar de fuente. `historial.json` sigue
-acumulándose en la construcción de páginas, con su retención de 14 días.
+acumulándose en la construcción de páginas, con su retención de 365 días.
+Cada página de lotería muestra estadísticas de 30, 90 y 365 días, con la
+cobertura real y el desglose por juego. Los períodos se amplían desde los datos
+ya disponibles: no se reconstruyen sorteos eliminados previamente. Las listas
+recientes de la portada y operadores siguen mostrando solo los últimos 14 días.
 Si todas las fuentes fallan, el proceso termina con error antes de modificar
 el JSON, construir páginas o enviar archivos. El reemplazo del JSON es atómico.
 

@@ -6,4 +6,8 @@
 .card-header{gap:10px;flex-wrap:wrap}
 .fecha{white-space:normal;font-size:.85rem}
 .grupo{scroll-margin-top:90px}
+.estadisticas-loteria{margin-top:28px;border-top:1px solid #e2e8f0;padding-top:20px}
+.estadisticas-loteria p{line-height:1.6}
+.estadisticas-loteria details{border:1px solid #e2e8f0;border-radius:10px;padding:14px;margin:12px 0}
+.estadisticas-loteria summary{cursor:pointer;font-weight:700;min-height:32px}
 @media(max-width:600px){.hero{padding:18px 0 6px}.hero h1{margin-bottom:12px}.resultados{padding:12px 0 40px}.contenedor{padding-left:14px;padding-right:14px}.accesos-loterias{justify-content:flex-start;gap:6px}.accesos-loterias a{font-size:.85rem}.hero .accesos-loterias{flex-wrap:nowrap;overflow-x:auto;padding-bottom:8px}.hero .accesos-loterias a{flex:none}.card{padding:16px}.fecha-hoy{margin-bottom:8px}.buscador{margin-top:12px}}

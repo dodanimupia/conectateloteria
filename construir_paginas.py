@@ -186,7 +186,7 @@ def agrupar(resultados, ordenar=False):
 def html_portada(resultados):
     """Secciones por lotería + enlaces del menú, para la página principal."""
     secciones, enlaces = [], []
-    for empresa, juegos in agrupar(resultados).items():
+    for empresa, juegos in agrupar(resultados, ordenar=True).items():
         ident = slug(empresa)
         enlaces.append('<a href="#%s">%s</a>' % (ident, escapar(empresa)))
         secciones.append(
@@ -214,7 +214,9 @@ def html_historial(historial, empresa, hoy_iso):
     Es la sección que ningún competidor ofrece: si alguien busca qué salió
     ayer o el lunes pasado, aquí lo encuentra sin tener que rebuscar.
     """
-    juegos = hist.por_juego(historial, empresa, hoy_iso)
+    limite = (date.fromisoformat(hoy_iso) - timedelta(days=13)).isoformat()
+    reciente = {"dias": {clave: sorteos for clave, sorteos in historial.get("dias", {}).items() if clave >= limite}}
+    juegos = hist.por_juego(reciente, empresa, hoy_iso)
     if not juegos:
         return ('<p class="cargando">El historial se est&aacute; construyendo. '
                 'Vuelve ma&ntilde;ana para ver los resultados de d&iacute;as '
@@ -248,7 +250,8 @@ def html_historial_portada(historial, hoy_iso):
     lo que Google necesita) pero el visitante solo ve la lista de días y
     abre el que le interesa. Y no hace falta JavaScript.
     """
-    dias = hist.dias_ordenados(historial, excluir=hoy_iso)
+    limite = (date.fromisoformat(hoy_iso) - timedelta(days=13)).isoformat()
+    dias = [clave for clave in hist.dias_ordenados(historial, excluir=hoy_iso) if clave >= limite]
     if not dias:
         return ('<p class="cargando">El historial se est&aacute; construyendo. '
                 'Ma&ntilde;ana aparecer&aacute;n aqu&iacute; los resultados de hoy.</p>')
@@ -326,6 +329,7 @@ def escribir(nombre, contenido):
         contenido = contenido.replace('</head>', '<link rel="stylesheet" href="mejoras-resultados.css?v=1"><script src="fecha-resultado.js?v=1"></script></head>', 1)
         contenido = contenido.replace('(item.fecha || "")', 'fechaResultado(item)')
         contenido = contenido.replace("Últimos 7 días", "Últimos 14 días").replace("últimos 7 días", "últimos 14 días")
+        contenido = contenido.replace("&uacute;ltimos 7 d&iacute;as", "&uacute;ltimos 14 d&iacute;as")
         # Las plantillas de operador también vuelven a dibujar las tarjetas al consultar el JSON.
         contenido = contenido.replace('function pintar(lista){', 'function rutaDetalle(texto){return texto.toLowerCase().normalize("NFD").replace(/[\\u0300-\\u036f]/g, "").replace(/[^a-z0-9]+/g,"-").replace(/(^-|-$)/g, "");} function pintar(lista){')
         contenido = contenido.replace("h += '<div class=\"card\"><div class=\"card-header\">", "h += '<a class=\"card card-enlace\" href=\"sorteo-'+rutaDetalle(item.empresa)+'-'+rutaDetalle(item.juego)+'.html\"><div class=\"card-header\">")
@@ -757,6 +761,35 @@ def contar_numeros(historial, solo_empresa=None):
     return cuenta
 
 
+def estadisticas_loteria(historial, empresa, hoy):
+    bloques = []
+    for periodo in (30, 90, 365):
+        limite = (hoy - timedelta(days=periodo - 1)).isoformat()
+        dias = {clave: [item for item in sorteos if nombre_empresa(item.get("empresa")) == empresa]
+                for clave, sorteos in historial.get("dias", {}).items()
+                if limite <= clave <= hoy.isoformat()}
+        dias = {clave: sorteos for clave, sorteos in dias.items() if sorteos}
+        if not dias:
+            bloques.append('<details><summary>Últimos %d días</summary><p>Aún no hay datos guardados para este período.</p></details>' % periodo)
+            continue
+        claves = sorted(dias)
+        total = sum(len(sorteos) for sorteos in dias.values())
+        cuenta = contar_numeros({"dias": dias})
+        juegos = sorted({item["juego"] for sorteos in dias.values() for item in sorteos})
+        por_juego = []
+        for juego in juegos:
+            muestra = {"dias": {clave: [item for item in sorteos if item["juego"] == juego]
+                                for clave, sorteos in dias.items()}}
+            por_juego.append('<h4>%s</h4>%s' % (escapar(juego), tabla_frecuencias(contar_numeros(muestra), 10)))
+        bloques.append(
+            '<details%s><summary>Últimos %d días</summary><p>Muestra disponible: %d días con datos y %d sorteos, del %s al %s. Los días sin datos no se cuentan como cero.</p><h3>Números más registrados</h3>%s<h3>Por juego</h3>%s</details>'
+            % (' open' if periodo == 30 else '', periodo, len(dias), total,
+               escapar(claves[0]), escapar(claves[-1]), tabla_frecuencias(cuenta, 12), ''.join(por_juego)))
+    return ('<section class="estadisticas-loteria" id="estadisticas"><h2>Estadísticas de %s</h2>'
+            '<p>Consulta períodos de 30, 90 y 365 días. El archivo se amplía con cada actualización hasta conservar un año. Si todavía hay menos días disponibles, los períodos pueden mostrar el mismo recuento.</p>'
+            '<p>Las frecuencias describen resultados pasados y no predicen futuros premios. El porcentaje es la proporción de apariciones entre los números registrados; los juegos con más números pesan más en el total. Consulta el desglose por juego para compararlos.</p>%s</section>') % (escapar(empresa), ''.join(bloques))
+
+
 def tabla_frecuencias(cuenta, cuantos=12, mayor=True):
     if not cuenta:
         return "<p>Todavía no hay suficientes sorteos guardados.</p>"
@@ -956,9 +989,9 @@ def main():
             continue
         with open(ruta, encoding="utf-8") as f:
             plantilla = f.read()
-        escribir(archivo, plantilla
+        escribir(archivo, plantilla.replace('<div id="resultados">', '<nav class="accesos-loterias" aria-label="Consultar historial y estadísticas"><a href="#historial">Resultados anteriores</a><a href="#estadisticas">Estadísticas de 30, 90 y 365 días</a></nav><div id="resultados">', 1)
                  .replace("<!--RESULTADOS-->", html_una_loteria(resultados, empresa))
-                 .replace("<!--HISTORIAL-->", html_historial(historial, empresa, hoy_iso))
+                 .replace("<!--HISTORIAL-->", html_historial(historial, empresa, hoy_iso) + estadisticas_loteria(historial, empresa, hoy))
                  .replace("<!--FECHA-->", etiqueta_actualizacion))
 
     # --- Archivos que se copian sin modificar ---
