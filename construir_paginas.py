@@ -57,6 +57,8 @@ PAGINAS_LOTERIA = {
 # así que un cambio en el pie de página o en los textos legales no llegaba
 # al sitio. Ahora todo viaja en la misma subida.
 ARCHIVOS_ESTATICOS = [
+    "fecha-resultado.js",
+    "mejoras-resultados.css",
     ".htaccess",      # reglas de cache: sin esto el navegador sirve paginas viejas
     "estilos.css",
     "detalle-sorteo.css",
@@ -130,8 +132,14 @@ def tarjeta(item):
                     for n in item.get("numeros", []))
     # Algunos sorteos llegan sin fecha desde la fuente. En ese caso no se
     # pinta la pastilla: una pastilla vacia se ve como un error.
-    fecha = item.get("fecha") or ""
-    pastilla = ('<span class="fecha">%s</span>' % escapar(fecha)) if fecha else ""
+    fecha = item.get("fecha_iso") or ""
+    try:
+        dia = date.fromisoformat(fecha)
+        estado = "Hoy" if dia == datetime.now(ZONA).date() else "Anterior"
+        etiqueta = estado + " · " + dia.strftime("%d/%m/%Y")
+    except ValueError:
+        etiqueta = "Fecha sin confirmar"
+    pastilla = '<span class="fecha">%s</span>' % escapar(etiqueta)
     return (
         '<a class="card card-enlace" href="%s">'
         '<div class="card-header">'
@@ -315,6 +323,8 @@ def html_cinta(resultados):
 def escribir(nombre, contenido):
     if nombre.endswith(".html"):
         contenido = completar_seo(nombre, contenido)
+        contenido = contenido.replace('</head>', '<link rel="stylesheet" href="mejoras-resultados.css?v=1"><script src="fecha-resultado.js?v=1"></script></head>', 1)
+        contenido = contenido.replace('(item.fecha || "")', 'fechaResultado(item)')
         contenido = contenido.replace("Últimos 7 días", "Últimos 14 días").replace("últimos 7 días", "últimos 14 días")
         # Las plantillas de operador también vuelven a dibujar las tarjetas al consultar el JSON.
         contenido = contenido.replace('function pintar(lista){', 'function rutaDetalle(texto){return texto.toLowerCase().normalize("NFD").replace(/[\\u0300-\\u036f]/g, "").replace(/[^a-z0-9]+/g,"-").replace(/(^-|-$)/g, "");} function pintar(lista){')
@@ -608,7 +618,7 @@ def escribir_paginas_sorteo(historial, hoy, piezas, actualizacion):
         json_seguro = json.dumps(datos, ensure_ascii=False).replace("<", "\\u003c")
         cuerpo = '''<main class="detalle-sorteo">
 <nav class="detalle-migas" aria-label="Ubicación"><a href="index.html">Resultados</a><span>/</span><a href="%s">%s</a></nav>
-<header class="detalle-titulo"><p class="detalle-ceja">HISTORIAL DE RESULTADOS</p><h1>%s</h1><p>Consulta los resultados de las últimas dos semanas.</p></header>
+<header class="detalle-titulo"><p class="detalle-ceja">HISTORIAL DE RESULTADOS</p><h1>%s</h1><p>Consulta los resultados de las últimas dos semanas.</p><p>Comprueba el operador indicado arriba y la fecha del resultado destacado antes de comparar tus números. Selecciona una fecha del historial para consultar ese sorteo; «Sin dato disponible» significa que no tenemos información guardada para ese día.</p><p>Los resultados son informativos. Confirma los números y las condiciones del premio con el operador oficial antes de reclamar.</p></header>
 <section class="detalle-destacado" id="resultado-destacado" aria-labelledby="detalle-etiqueta" tabindex="-1">
 <div class="detalle-destacado-cabecera"><span class="detalle-insignia" id="detalle-etiqueta">Último resultado disponible</span><time id="detalle-fecha" datetime="%s">%s</time></div>
 <div class="detalle-numeros detalle-numeros-grandes" id="detalle-numeros">%s</div>
@@ -623,6 +633,15 @@ def escribir_paginas_sorteo(historial, hoy, piezas, actualizacion):
 
 def ruta_dia(iso):
     return "resultados-%s.html" % iso
+
+
+def accesos_fechas(historial, hoy):
+    enlaces = []
+    ayer = (hoy - timedelta(days=1)).isoformat()
+    if historial.get("dias", {}).get(ayer):
+        enlaces.append('<a href="%s">Resultados de ayer</a>' % ruta_dia(ayer))
+    enlaces.append('<a href="#historial">Elegir otra fecha · Últimos 14 días</a>')
+    return "".join(enlaces)
 
 
 def html_sorteos_del_dia(historial, clave):
@@ -920,6 +939,8 @@ def main():
         plantilla_portada = plantilla
         secciones, enlaces = html_portada(resultados)
         escribir("index.html", plantilla
+                 .replace("<!--ACCESOS-->", "".join('<a href="%s">%s</a>' % (ruta, escapar(empresa)) for ruta, empresa in PAGINAS_LOTERIA.items()))
+                 .replace("<!--ACCESOS_FECHAS-->", accesos_fechas(historial, hoy))
                  .replace("<!--RESULTADOS-->", secciones)
                  .replace("<!--NAVLINKS-->", enlaces)
                  .replace("<!--HISTORIAL-->", html_historial_portada(historial, hoy_iso))
