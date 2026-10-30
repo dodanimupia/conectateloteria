@@ -1,5 +1,5 @@
 {
-  "actualizado": "2026-10-29T21:25:04-04:00",
+  "actualizado": "2026-10-29T22:14:49-04:00",
   "zona_horaria": "America/Santo_Domingo",
   "fuente": "https://turifamax.com/api/v1/resultados",
   "en_vivo": true,
@@ -67,12 +67,12 @@
     {
       "empresa": "Americanas (NY)",
       "juego": "Florida Noche",
-      "fecha": "28-10",
-      "fecha_iso": "2026-10-28",
+      "fecha": "29-10",
+      "fecha_iso": "2026-10-29",
       "numeros": [
-        "35",
-        "57",
-        "43"
+        "19",
+        "66",
+        "02"
       ],
       "fuente": "https://turifamax.com/api/v1/resultados"
     },
@@ -4988,8 +4988,7 @@
         "35",
         "57",
         "43"
-      ],
-      "fuente": "https://turifamax.com/api/v1/resultados"
+      ]
     },
     {
       "empresa": "Americanas (NY)",
@@ -5480,6 +5479,18 @@
         "59",
         "04",
         "27"
+      ],
+      "fuente": "https://turifamax.com/api/v1/resultados"
+    },
+    {
+      "empresa": "Americanas (NY)",
+      "juego": "Florida Noche",
+      "fecha": "29-10",
+      "fecha_iso": "2026-10-29",
+      "numeros": [
+        "19",
+        "66",
+        "02"
       ],
       "fuente": "https://turifamax.com/api/v1/resultados"
     }
