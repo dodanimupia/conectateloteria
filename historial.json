@@ -4522,6 +4522,42 @@
      "21",
      "76"
     ]
+   },
+   {
+    "empresa": "Anguila",
+    "juego": "Anguila 6:00 PM",
+    "numeros": [
+     "46",
+     "84",
+     "43"
+    ]
+   },
+   {
+    "empresa": "King Lottery",
+    "juego": "King Lottery Noche",
+    "numeros": [
+     "28",
+     "71",
+     "99"
+    ]
+   },
+   {
+    "empresa": "La Primera",
+    "juego": "Primera Noche",
+    "numeros": [
+     "23",
+     "09",
+     "65"
+    ]
+   },
+   {
+    "empresa": "La Suerte",
+    "juego": "La Suerte Tarde",
+    "numeros": [
+     "65",
+     "22",
+     "42"
+    ]
    }
   ]
  }

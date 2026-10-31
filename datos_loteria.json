@@ -1,5 +1,5 @@
 {
-  "actualizado": "2026-10-31T16:40:16-04:00",
+  "actualizado": "2026-10-31T19:47:45-04:00",
   "zona_horaria": "America/Santo_Domingo",
   "fuente": "https://turifamax.com/api/v1/resultados",
   "en_vivo": true,
@@ -43,12 +43,12 @@
     {
       "empresa": "Anguila",
       "juego": "Anguila 6:00 PM",
-      "fecha": "30-10",
-      "fecha_iso": "2026-10-30",
+      "fecha": "31-10",
+      "fecha_iso": "2026-10-31",
       "numeros": [
-        "98",
-        "92",
-        "03"
+        "46",
+        "84",
+        "43"
       ],
       "fuente": "https://turifamax.com/api/v1/resultados"
     },
@@ -91,12 +91,12 @@
     {
       "empresa": "King Lottery",
       "juego": "King Lottery Noche",
-      "fecha": "30-10",
-      "fecha_iso": "2026-10-30",
+      "fecha": "31-10",
+      "fecha_iso": "2026-10-31",
       "numeros": [
-        "03",
         "28",
-        "48"
+        "71",
+        "99"
       ],
       "fuente": "https://turifamax.com/api/v1/resultados"
     },
@@ -239,12 +239,12 @@
     {
       "empresa": "La Primera",
       "juego": "Primera Noche",
-      "fecha": "30-10",
-      "fecha_iso": "2026-10-30",
+      "fecha": "31-10",
+      "fecha_iso": "2026-10-31",
       "numeros": [
-        "98",
-        "65",
-        "78"
+        "23",
+        "09",
+        "65"
       ],
       "fuente": "https://turifamax.com/api/v1/resultados"
     },
@@ -263,12 +263,12 @@
     {
       "empresa": "La Suerte",
       "juego": "La Suerte Tarde",
-      "fecha": "30-10",
-      "fecha_iso": "2026-10-30",
+      "fecha": "31-10",
+      "fecha_iso": "2026-10-31",
       "numeros": [
-        "23",
-        "81",
-        "05"
+        "65",
+        "22",
+        "42"
       ],
       "fuente": "https://turifamax.com/api/v1/resultados"
     },
@@ -5242,8 +5242,7 @@
         "98",
         "92",
         "03"
-      ],
-      "fuente": "https://turifamax.com/api/v1/resultados"
+      ]
     },
     {
       "empresa": "King Lottery",
@@ -5254,8 +5253,7 @@
         "03",
         "28",
         "48"
-      ],
-      "fuente": "https://turifamax.com/api/v1/resultados"
+      ]
     },
     {
       "empresa": "Loteka",
@@ -5307,8 +5305,7 @@
         "98",
         "65",
         "78"
-      ],
-      "fuente": "https://turifamax.com/api/v1/resultados"
+      ]
     },
     {
       "empresa": "La Suerte",
@@ -5319,8 +5316,7 @@
         "23",
         "81",
         "05"
-      ],
-      "fuente": "https://turifamax.com/api/v1/resultados"
+      ]
     },
     {
       "empresa": "Anguila",
@@ -5569,6 +5565,54 @@
         "42",
         "21",
         "76"
+      ],
+      "fuente": "https://turifamax.com/api/v1/resultados"
+    },
+    {
+      "empresa": "Anguila",
+      "juego": "Anguila 6:00 PM",
+      "fecha": "31-10",
+      "fecha_iso": "2026-10-31",
+      "numeros": [
+        "46",
+        "84",
+        "43"
+      ],
+      "fuente": "https://turifamax.com/api/v1/resultados"
+    },
+    {
+      "empresa": "King Lottery",
+      "juego": "King Lottery Noche",
+      "fecha": "31-10",
+      "fecha_iso": "2026-10-31",
+      "numeros": [
+        "28",
+        "71",
+        "99"
+      ],
+      "fuente": "https://turifamax.com/api/v1/resultados"
+    },
+    {
+      "empresa": "La Primera",
+      "juego": "Primera Noche",
+      "fecha": "31-10",
+      "fecha_iso": "2026-10-31",
+      "numeros": [
+        "23",
+        "09",
+        "65"
+      ],
+      "fuente": "https://turifamax.com/api/v1/resultados"
+    },
+    {
+      "empresa": "La Suerte",
+      "juego": "La Suerte Tarde",
+      "fecha": "31-10",
+      "fecha_iso": "2026-10-31",
+      "numeros": [
+        "65",
+        "22",
+        "42"
       ],
       "fuente": "https://turifamax.com/api/v1/resultados"
     }
