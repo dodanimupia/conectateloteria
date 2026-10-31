@@ -1,5 +1,5 @@
 {
-  "actualizado": "2026-10-31T13:34:16-04:00",
+  "actualizado": "2026-10-31T16:40:16-04:00",
   "zona_horaria": "America/Santo_Domingo",
   "fuente": "https://turifamax.com/api/v1/resultados",
   "en_vivo": true,
@@ -55,12 +55,12 @@
     {
       "empresa": "Americanas (NY)",
       "juego": "Florida Día",
-      "fecha": "30-10",
-      "fecha_iso": "2026-10-30",
+      "fecha": "31-10",
+      "fecha_iso": "2026-10-31",
       "numeros": [
-        "81",
-        "58",
-        "10"
+        "66",
+        "78",
+        "90"
       ],
       "fuente": "https://turifamax.com/api/v1/resultados"
     },
@@ -79,12 +79,12 @@
     {
       "empresa": "Lotería Nacional",
       "juego": "Gana Más",
-      "fecha": "30-10",
-      "fecha_iso": "2026-10-30",
+      "fecha": "31-10",
+      "fecha_iso": "2026-10-31",
       "numeros": [
-        "41",
-        "92",
-        "79"
+        "60",
+        "03",
+        "02"
       ],
       "fuente": "https://turifamax.com/api/v1/resultados"
     },
@@ -203,12 +203,12 @@
     {
       "empresa": "Americanas (NY)",
       "juego": "New York Tarde",
-      "fecha": "30-10",
-      "fecha_iso": "2026-10-30",
+      "fecha": "31-10",
+      "fecha_iso": "2026-10-31",
       "numeros": [
-        "09",
-        "31",
-        "14"
+        "42",
+        "21",
+        "76"
       ],
       "fuente": "https://turifamax.com/api/v1/resultados"
     },
@@ -4893,8 +4893,7 @@
         "41",
         "92",
         "79"
-      ],
-      "fuente": "https://turifamax.com/api/v1/resultados"
+      ]
     },
     {
       "empresa": "Lotería Nacional",
@@ -5011,8 +5010,7 @@
         "81",
         "58",
         "10"
-      ],
-      "fuente": "https://turifamax.com/api/v1/resultados"
+      ]
     },
     {
       "empresa": "Americanas (NY)",
@@ -5023,8 +5021,7 @@
         "09",
         "31",
         "14"
-      ],
-      "fuente": "https://turifamax.com/api/v1/resultados"
+      ]
     },
     {
       "empresa": "Americanas (NY)",
@@ -5536,6 +5533,42 @@
         "47",
         "88",
         "40"
+      ],
+      "fuente": "https://turifamax.com/api/v1/resultados"
+    },
+    {
+      "empresa": "Americanas (NY)",
+      "juego": "Florida Día",
+      "fecha": "31-10",
+      "fecha_iso": "2026-10-31",
+      "numeros": [
+        "66",
+        "78",
+        "90"
+      ],
+      "fuente": "https://turifamax.com/api/v1/resultados"
+    },
+    {
+      "empresa": "Lotería Nacional",
+      "juego": "Gana Más",
+      "fecha": "31-10",
+      "fecha_iso": "2026-10-31",
+      "numeros": [
+        "60",
+        "03",
+        "02"
+      ],
+      "fuente": "https://turifamax.com/api/v1/resultados"
+    },
+    {
+      "empresa": "Americanas (NY)",
+      "juego": "New York Tarde",
+      "fecha": "31-10",
+      "fecha_iso": "2026-10-31",
+      "numeros": [
+        "42",
+        "21",
+        "76"
       ],
       "fuente": "https://turifamax.com/api/v1/resultados"
     }
