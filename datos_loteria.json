@@ -1,5 +1,5 @@
 {
-  "actualizado": "2026-10-31T08:55:10-04:00",
+  "actualizado": "2026-10-31T13:34:16-04:00",
   "zona_horaria": "America/Santo_Domingo",
   "fuente": "https://turifamax.com/api/v1/resultados",
   "en_vivo": true,
@@ -7,24 +7,24 @@
     {
       "empresa": "Anguila",
       "juego": "Anguila 10:00 AM",
-      "fecha": "30-10",
-      "fecha_iso": "2026-10-30",
+      "fecha": "31-10",
+      "fecha_iso": "2026-10-31",
       "numeros": [
-        "20",
-        "13",
-        "15"
+        "09",
+        "06",
+        "80"
       ],
       "fuente": "https://turifamax.com/api/v1/resultados"
     },
     {
       "empresa": "Anguila",
       "juego": "Anguila 1:00 PM",
-      "fecha": "30-10",
-      "fecha_iso": "2026-10-30",
+      "fecha": "31-10",
+      "fecha_iso": "2026-10-31",
       "numeros": [
-        "54",
-        "01",
-        "00"
+        "60",
+        "96",
+        "33"
       ],
       "fuente": "https://turifamax.com/api/v1/resultados"
     },
@@ -103,12 +103,12 @@
     {
       "empresa": "King Lottery",
       "juego": "King Lottery Día",
-      "fecha": "30-10",
-      "fecha_iso": "2026-10-30",
+      "fecha": "31-10",
+      "fecha_iso": "2026-10-31",
       "numeros": [
-        "08",
-        "28",
-        "48"
+        "16",
+        "12",
+        "71"
       ],
       "fuente": "https://turifamax.com/api/v1/resultados"
     },
@@ -127,12 +127,12 @@
     {
       "empresa": "LoteDom",
       "juego": "LoteDom Día",
-      "fecha": "30-10",
-      "fecha_iso": "2026-10-30",
+      "fecha": "31-10",
+      "fecha_iso": "2026-10-31",
       "numeros": [
-        "61",
-        "13",
-        "03"
+        "57",
+        "42",
+        "86"
       ],
       "fuente": "https://turifamax.com/api/v1/resultados"
     },
@@ -227,12 +227,12 @@
     {
       "empresa": "La Primera",
       "juego": "La Primera Día",
-      "fecha": "30-10",
-      "fecha_iso": "2026-10-30",
+      "fecha": "31-10",
+      "fecha_iso": "2026-10-31",
       "numeros": [
-        "13",
-        "35",
-        "14"
+        "92",
+        "60",
+        "75"
       ],
       "fuente": "https://turifamax.com/api/v1/resultados"
     },
@@ -251,12 +251,12 @@
     {
       "empresa": "Lotería Real",
       "juego": "Quiniela Real",
-      "fecha": "30-10",
-      "fecha_iso": "2026-10-30",
+      "fecha": "31-10",
+      "fecha_iso": "2026-10-31",
       "numeros": [
-        "74",
-        "44",
-        "76"
+        "67",
+        "62",
+        "97"
       ],
       "fuente": "https://turifamax.com/api/v1/resultados"
     },
@@ -275,12 +275,12 @@
     {
       "empresa": "La Suerte",
       "juego": "La Suerte Día",
-      "fecha": "30-10",
-      "fecha_iso": "2026-10-30",
+      "fecha": "31-10",
+      "fecha_iso": "2026-10-31",
       "numeros": [
-        "92",
-        "79",
-        "53"
+        "47",
+        "88",
+        "40"
       ],
       "fuente": "https://turifamax.com/api/v1/resultados"
     },
@@ -4860,8 +4860,7 @@
         "20",
         "13",
         "15"
-      ],
-      "fuente": "https://turifamax.com/api/v1/resultados"
+      ]
     },
     {
       "empresa": "LoteDom",
@@ -4872,8 +4871,7 @@
         "61",
         "13",
         "03"
-      ],
-      "fuente": "https://turifamax.com/api/v1/resultados"
+      ]
     },
     {
       "empresa": "La Primera",
@@ -4884,8 +4882,7 @@
         "13",
         "35",
         "14"
-      ],
-      "fuente": "https://turifamax.com/api/v1/resultados"
+      ]
     },
     {
       "empresa": "Lotería Nacional",
@@ -4922,8 +4919,7 @@
         "74",
         "44",
         "76"
-      ],
-      "fuente": "https://turifamax.com/api/v1/resultados"
+      ]
     },
     {
       "empresa": "Lotería Real",
@@ -5110,8 +5106,7 @@
         "92",
         "79",
         "53"
-      ],
-      "fuente": "https://turifamax.com/api/v1/resultados"
+      ]
     },
     {
       "empresa": "LoteDom",
@@ -5156,8 +5151,7 @@
         "54",
         "01",
         "00"
-      ],
-      "fuente": "https://turifamax.com/api/v1/resultados"
+      ]
     },
     {
       "empresa": "King Lottery",
@@ -5168,8 +5162,7 @@
         "08",
         "28",
         "48"
-      ],
-      "fuente": "https://turifamax.com/api/v1/resultados"
+      ]
     },
     {
       "empresa": "Haiti Bolet",
@@ -5459,6 +5452,90 @@
         "26",
         "23",
         "77"
+      ],
+      "fuente": "https://turifamax.com/api/v1/resultados"
+    },
+    {
+      "empresa": "Anguila",
+      "juego": "Anguila 10:00 AM",
+      "fecha": "31-10",
+      "fecha_iso": "2026-10-31",
+      "numeros": [
+        "09",
+        "06",
+        "80"
+      ],
+      "fuente": "https://turifamax.com/api/v1/resultados"
+    },
+    {
+      "empresa": "Anguila",
+      "juego": "Anguila 1:00 PM",
+      "fecha": "31-10",
+      "fecha_iso": "2026-10-31",
+      "numeros": [
+        "60",
+        "96",
+        "33"
+      ],
+      "fuente": "https://turifamax.com/api/v1/resultados"
+    },
+    {
+      "empresa": "King Lottery",
+      "juego": "King Lottery Día",
+      "fecha": "31-10",
+      "fecha_iso": "2026-10-31",
+      "numeros": [
+        "16",
+        "12",
+        "71"
+      ],
+      "fuente": "https://turifamax.com/api/v1/resultados"
+    },
+    {
+      "empresa": "LoteDom",
+      "juego": "LoteDom Día",
+      "fecha": "31-10",
+      "fecha_iso": "2026-10-31",
+      "numeros": [
+        "57",
+        "42",
+        "86"
+      ],
+      "fuente": "https://turifamax.com/api/v1/resultados"
+    },
+    {
+      "empresa": "La Primera",
+      "juego": "La Primera Día",
+      "fecha": "31-10",
+      "fecha_iso": "2026-10-31",
+      "numeros": [
+        "92",
+        "60",
+        "75"
+      ],
+      "fuente": "https://turifamax.com/api/v1/resultados"
+    },
+    {
+      "empresa": "Lotería Real",
+      "juego": "Quiniela Real",
+      "fecha": "31-10",
+      "fecha_iso": "2026-10-31",
+      "numeros": [
+        "67",
+        "62",
+        "97"
+      ],
+      "fuente": "https://turifamax.com/api/v1/resultados"
+    },
+    {
+      "empresa": "La Suerte",
+      "juego": "La Suerte Día",
+      "fecha": "31-10",
+      "fecha_iso": "2026-10-31",
+      "numeros": [
+        "47",
+        "88",
+        "40"
       ],
       "fuente": "https://turifamax.com/api/v1/resultados"
     }
