@@ -5212,6 +5212,18 @@
      "42",
      "32"
     ]
+   },
+   {
+    "empresa": "Americanas (NY)",
+    "juego": "PowerBall",
+    "numeros": [
+     "07",
+     "29",
+     "64",
+     "23",
+     "66",
+     "23"
+    ]
    }
   ],
   "2026-11-03": [
@@ -5703,6 +5715,69 @@
      "38",
      "01",
      "83"
+    ]
+   },
+   {
+    "empresa": "Anguila",
+    "juego": "Anguila 10:00 AM",
+    "numeros": [
+     "46",
+     "82",
+     "92"
+    ]
+   },
+   {
+    "empresa": "Anguila",
+    "juego": "Anguila 6:00 PM",
+    "numeros": [
+     "26",
+     "34",
+     "74"
+    ]
+   },
+   {
+    "empresa": "Lotería Nacional",
+    "juego": "Gana Más",
+    "numeros": [
+     "91",
+     "57",
+     "67"
+    ]
+   },
+   {
+    "empresa": "King Lottery",
+    "juego": "King Lottery Noche",
+    "numeros": [
+     "66",
+     "93",
+     "03"
+    ]
+   },
+   {
+    "empresa": "Americanas (NY)",
+    "juego": "New York Tarde",
+    "numeros": [
+     "38",
+     "36",
+     "07"
+    ]
+   },
+   {
+    "empresa": "La Primera",
+    "juego": "Primera Noche",
+    "numeros": [
+     "20",
+     "37",
+     "02"
+    ]
+   },
+   {
+    "empresa": "La Suerte",
+    "juego": "La Suerte Tarde",
+    "numeros": [
+     "37",
+     "90",
+     "03"
     ]
    }
   ]
