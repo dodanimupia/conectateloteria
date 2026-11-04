@@ -4695,6 +4695,33 @@
      "56",
      "20"
     ]
+   },
+   {
+    "empresa": "Loteka",
+    "juego": "Toca 3",
+    "numeros": [
+     "00",
+     "05",
+     "01"
+    ]
+   },
+   {
+    "empresa": "Americanas (NY)",
+    "juego": "New Jersey Noche",
+    "numeros": [
+     "04",
+     "62",
+     "68"
+    ]
+   },
+   {
+    "empresa": "Americanas (NY)",
+    "juego": "Georgia Noche",
+    "numeros": [
+     "59",
+     "89",
+     "10"
+    ]
    }
   ],
   "2026-11-01": [
@@ -5426,6 +5453,256 @@
      "17",
      "61",
      "33"
+    ]
+   },
+   {
+    "empresa": "Lotería Real",
+    "juego": "Lotería Real Noche",
+    "numeros": [
+     "79",
+     "51",
+     "95"
+    ]
+   },
+   {
+    "empresa": "Loteka",
+    "juego": "La Repartidera",
+    "numeros": [
+     "11"
+    ]
+   },
+   {
+    "empresa": "Americanas (NY)",
+    "juego": "Georgia Tarde",
+    "numeros": [
+     "53",
+     "99",
+     "43"
+    ]
+   },
+   {
+    "empresa": "Americanas (NY)",
+    "juego": "New York Noche",
+    "numeros": [
+     "33",
+     "15",
+     "13"
+    ]
+   },
+   {
+    "empresa": "La Primera",
+    "juego": "Quinielón Noche",
+    "numeros": [
+     "58"
+    ]
+   },
+   {
+    "empresa": "La Primera",
+    "juego": "Loto 5",
+    "numeros": [
+     "06",
+     "13",
+     "19",
+     "33",
+     "20",
+     "04"
+    ]
+   },
+   {
+    "empresa": "Haiti Bolet",
+    "juego": "Haiti Bolet 5:30 PM",
+    "numeros": [
+     "25",
+     "28",
+     "37"
+    ]
+   },
+   {
+    "empresa": "Haiti Bolet",
+    "juego": "Haiti Bolet 6:30 PM",
+    "numeros": [
+     "47",
+     "48",
+     "11"
+    ]
+   },
+   {
+    "empresa": "Haiti Bolet",
+    "juego": "Haiti Bolet 7:30 PM",
+    "numeros": [
+     "08",
+     "07",
+     "02"
+    ]
+   }
+  ],
+  "2026-11-04": [
+   {
+    "empresa": "Lotería Nacional",
+    "juego": "Juega + Pega +",
+    "numeros": [
+     "06",
+     "23",
+     "18",
+     "12",
+     "18"
+    ]
+   },
+   {
+    "empresa": "Lotería Real",
+    "juego": "Quiniela Real",
+    "numeros": [
+     "42",
+     "98",
+     "81"
+    ]
+   },
+   {
+    "empresa": "Lotería Real",
+    "juego": "Loto Pool",
+    "numeros": [
+     "58",
+     "25",
+     "89",
+     "91"
+    ]
+   },
+   {
+    "empresa": "Lotería Real",
+    "juego": "Tu Fecha",
+    "numeros": [
+     "10"
+    ]
+   },
+   {
+    "empresa": "Americanas (NY)",
+    "juego": "Georgia Día",
+    "numeros": [
+     "20",
+     "62",
+     "76"
+    ]
+   },
+   {
+    "empresa": "Americanas (NY)",
+    "juego": "New Jersey Día",
+    "numeros": [
+     "91",
+     "70",
+     "94"
+    ]
+   },
+   {
+    "empresa": "Americanas (NY)",
+    "juego": "Florida Día",
+    "numeros": [
+     "25",
+     "06",
+     "37"
+    ]
+   },
+   {
+    "empresa": "La Primera",
+    "juego": "La Primera Día",
+    "numeros": [
+     "27",
+     "13",
+     "73"
+    ]
+   },
+   {
+    "empresa": "La Primera",
+    "juego": "Quinielón Día",
+    "numeros": [
+     "63"
+    ]
+   },
+   {
+    "empresa": "La Suerte",
+    "juego": "La Suerte Día",
+    "numeros": [
+     "88",
+     "86",
+     "91"
+    ]
+   },
+   {
+    "empresa": "LoteDom",
+    "juego": "LoteDom Día",
+    "numeros": [
+     "19",
+     "76",
+     "09"
+    ]
+   },
+   {
+    "empresa": "LoteDom",
+    "juego": "El Quemaito Mayor",
+    "numeros": [
+     "59"
+    ]
+   },
+   {
+    "empresa": "LoteDom",
+    "juego": "Super Palé Día",
+    "numeros": [
+     "19",
+     "59"
+    ]
+   },
+   {
+    "empresa": "LoteDom",
+    "juego": "Agarra 4",
+    "numeros": [
+     "19",
+     "76",
+     "09",
+     "59"
+    ]
+   },
+   {
+    "empresa": "Anguila",
+    "juego": "Anguila 1:00 PM",
+    "numeros": [
+     "62",
+     "14",
+     "18"
+    ]
+   },
+   {
+    "empresa": "King Lottery",
+    "juego": "King Lottery Día",
+    "numeros": [
+     "95",
+     "78",
+     "64"
+    ]
+   },
+   {
+    "empresa": "Haiti Bolet",
+    "juego": "Haiti Bolet 9:30 AM",
+    "numeros": [
+     "43",
+     "07",
+     "44"
+    ]
+   },
+   {
+    "empresa": "Haiti Bolet",
+    "juego": "Haiti Bolet 10:30 AM",
+    "numeros": [
+     "30",
+     "44",
+     "97"
+    ]
+   },
+   {
+    "empresa": "Haiti Bolet",
+    "juego": "Haiti Bolet 11:30 AM",
+    "numeros": [
+     "38",
+     "01",
+     "83"
     ]
    }
   ]
