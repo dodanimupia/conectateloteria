@@ -6008,6 +6008,147 @@
      "21",
      "06"
     ]
+   },
+   {
+    "empresa": "Anguila",
+    "juego": "Anguila 9:00 PM",
+    "numeros": [
+     "21",
+     "28",
+     "30"
+    ]
+   },
+   {
+    "empresa": "Anguila",
+    "juego": "Anguila 6:00 PM",
+    "numeros": [
+     "72",
+     "82",
+     "79"
+    ]
+   },
+   {
+    "empresa": "King Lottery",
+    "juego": "King Lottery Noche",
+    "numeros": [
+     "21",
+     "74",
+     "50"
+    ]
+   },
+   {
+    "empresa": "Leidsa",
+    "juego": "Quiniela Leidsa",
+    "numeros": [
+     "55",
+     "77",
+     "78"
+    ]
+   },
+   {
+    "empresa": "Loteka",
+    "juego": "Quiniela Loteka Noche",
+    "numeros": [
+     "98",
+     "40",
+     "77"
+    ]
+   },
+   {
+    "empresa": "Leidsa",
+    "juego": "Loto Pool",
+    "numeros": [
+     "03",
+     "11",
+     "26",
+     "04",
+     "29"
+    ]
+   },
+   {
+    "empresa": "Loteka",
+    "juego": "Mega Chances",
+    "numeros": [
+     "14",
+     "35",
+     "12",
+     "31",
+     "30"
+    ]
+   },
+   {
+    "empresa": "Loteka",
+    "juego": "MegaLotto",
+    "numeros": [
+     "16",
+     "24",
+     "28",
+     "31",
+     "06",
+     "36"
+    ]
+   },
+   {
+    "empresa": "Lotería Nacional",
+    "juego": "Lotería Nacional",
+    "numeros": [
+     "75",
+     "73",
+     "81"
+    ]
+   },
+   {
+    "empresa": "Leidsa",
+    "juego": "Pega 3 Más",
+    "numeros": [
+     "39",
+     "05",
+     "34"
+    ]
+   },
+   {
+    "empresa": "La Primera",
+    "juego": "Primera Noche",
+    "numeros": [
+     "67",
+     "64",
+     "21"
+    ]
+   },
+   {
+    "empresa": "La Suerte",
+    "juego": "La Suerte Tarde",
+    "numeros": [
+     "80",
+     "12",
+     "21"
+    ]
+   },
+   {
+    "empresa": "Leidsa",
+    "juego": "Super Kino TV",
+    "numeros": [
+     "20",
+     "08",
+     "50",
+     "66",
+     "18",
+     "63",
+     "16",
+     "32",
+     "69",
+     "29",
+     "36",
+     "07",
+     "79",
+     "71",
+     "44",
+     "49",
+     "46",
+     "65",
+     "02",
+     "58"
+    ]
    }
   ]
  }
