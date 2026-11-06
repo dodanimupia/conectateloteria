@@ -1,5 +1,5 @@
 {
-  "actualizado": "2026-11-06T04:32:36-04:00",
+  "actualizado": "2026-11-06T12:14:51-04:00",
   "zona_horaria": "America/Santo_Domingo",
   "fuente": "https://turifamax.com/api/v1/resultados",
   "en_vivo": true,
@@ -7,12 +7,12 @@
     {
       "empresa": "Anguila",
       "juego": "Anguila 10:00 AM",
-      "fecha": "05-11",
-      "fecha_iso": "2026-11-05",
+      "fecha": "06-11",
+      "fecha_iso": "2026-11-06",
       "numeros": [
-        "45",
-        "45",
-        "09"
+        "98",
+        "97",
+        "69"
       ],
       "fuente": "https://turifamax.com/api/v1/resultados"
     },
@@ -127,12 +127,12 @@
     {
       "empresa": "LoteDom",
       "juego": "LoteDom Día",
-      "fecha": "05-11",
-      "fecha_iso": "2026-11-05",
+      "fecha": "06-11",
+      "fecha_iso": "2026-11-06",
       "numeros": [
-        "38",
-        "23",
-        "73"
+        "24",
+        "12",
+        "57"
       ],
       "fuente": "https://turifamax.com/api/v1/resultados"
     },
@@ -259,12 +259,12 @@
     {
       "empresa": "La Primera",
       "juego": "La Primera Día",
-      "fecha": "05-11",
-      "fecha_iso": "2026-11-05",
+      "fecha": "06-11",
+      "fecha_iso": "2026-11-06",
       "numeros": [
-        "06",
-        "16",
-        "49"
+        "28",
+        "36",
+        "34"
       ],
       "fuente": "https://turifamax.com/api/v1/resultados"
     },
@@ -5365,8 +5365,7 @@
         "45",
         "45",
         "09"
-      ],
-      "fuente": "https://turifamax.com/api/v1/resultados"
+      ]
     },
     {
       "empresa": "Anguila",
@@ -5425,8 +5424,7 @@
         "38",
         "23",
         "73"
-      ],
-      "fuente": "https://turifamax.com/api/v1/resultados"
+      ]
     },
     {
       "empresa": "Americanas (NY)",
@@ -5449,8 +5447,7 @@
         "06",
         "16",
         "49"
-      ],
-      "fuente": "https://turifamax.com/api/v1/resultados"
+      ]
     },
     {
       "empresa": "Lotería Real",
@@ -5692,6 +5689,42 @@
         "15",
         "86",
         "58"
+      ],
+      "fuente": "https://turifamax.com/api/v1/resultados"
+    },
+    {
+      "empresa": "Anguila",
+      "juego": "Anguila 10:00 AM",
+      "fecha": "06-11",
+      "fecha_iso": "2026-11-06",
+      "numeros": [
+        "98",
+        "97",
+        "69"
+      ],
+      "fuente": "https://turifamax.com/api/v1/resultados"
+    },
+    {
+      "empresa": "LoteDom",
+      "juego": "LoteDom Día",
+      "fecha": "06-11",
+      "fecha_iso": "2026-11-06",
+      "numeros": [
+        "24",
+        "12",
+        "57"
+      ],
+      "fuente": "https://turifamax.com/api/v1/resultados"
+    },
+    {
+      "empresa": "La Primera",
+      "juego": "La Primera Día",
+      "fecha": "06-11",
+      "fecha_iso": "2026-11-06",
+      "numeros": [
+        "28",
+        "36",
+        "34"
       ],
       "fuente": "https://turifamax.com/api/v1/resultados"
     }

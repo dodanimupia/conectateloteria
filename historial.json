@@ -6180,6 +6180,35 @@
      "58"
     ]
    }
+  ],
+  "2026-11-06": [
+   {
+    "empresa": "Anguila",
+    "juego": "Anguila 10:00 AM",
+    "numeros": [
+     "98",
+     "97",
+     "69"
+    ]
+   },
+   {
+    "empresa": "LoteDom",
+    "juego": "LoteDom Día",
+    "numeros": [
+     "24",
+     "12",
+     "57"
+    ]
+   },
+   {
+    "empresa": "La Primera",
+    "juego": "La Primera Día",
+    "numeros": [
+     "28",
+     "36",
+     "34"
+    ]
+   }
   ]
  }
 }
