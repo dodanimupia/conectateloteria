@@ -6513,6 +6513,33 @@
      "04",
      "46"
     ]
+   },
+   {
+    "empresa": "Anguila",
+    "juego": "Anguila 6:00 PM",
+    "numeros": [
+     "30",
+     "00",
+     "49"
+    ]
+   },
+   {
+    "empresa": "Americanas (NY)",
+    "juego": "New York Tarde",
+    "numeros": [
+     "39",
+     "45",
+     "85"
+    ]
+   },
+   {
+    "empresa": "La Suerte",
+    "juego": "La Suerte Tarde",
+    "numeros": [
+     "61",
+     "16",
+     "57"
+    ]
    }
   ]
  }
