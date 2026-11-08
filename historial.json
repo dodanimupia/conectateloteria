@@ -6430,6 +6430,18 @@
      "16",
      "17"
     ]
+   },
+   {
+    "empresa": "Americanas (NY)",
+    "juego": "Mega Millions",
+    "numeros": [
+     "53",
+     "44",
+     "34",
+     "27",
+     "64",
+     "01"
+    ]
    }
   ],
   "2026-11-07": [
@@ -6664,6 +6676,24 @@
      "42",
      "28",
      "33"
+    ]
+   },
+   {
+    "empresa": "Americanas (NY)",
+    "juego": "Florida Noche",
+    "numeros": [
+     "94",
+     "40",
+     "38"
+    ]
+   },
+   {
+    "empresa": "Americanas (NY)",
+    "juego": "New York Noche",
+    "numeros": [
+     "84",
+     "51",
+     "81"
     ]
    }
   ]
