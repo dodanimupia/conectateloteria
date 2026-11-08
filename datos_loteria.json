@@ -1,5 +1,5 @@
 {
-  "actualizado": "2026-11-08T11:07:27-04:00",
+  "actualizado": "2026-11-08T15:40:52-04:00",
   "zona_horaria": "America/Santo_Domingo",
   "fuente": "https://turifamax.com/api/v1/resultados",
   "en_vivo": true,
@@ -19,12 +19,12 @@
     {
       "empresa": "Anguila",
       "juego": "Anguila 1:00 PM",
-      "fecha": "07-11",
-      "fecha_iso": "2026-11-07",
+      "fecha": "08-11",
+      "fecha_iso": "2026-11-08",
       "numeros": [
-        "60",
-        "09",
-        "20"
+        "98",
+        "20",
+        "63"
       ],
       "fuente": "https://turifamax.com/api/v1/resultados"
     },
@@ -55,12 +55,12 @@
     {
       "empresa": "Americanas (NY)",
       "juego": "Florida Día",
-      "fecha": "07-11",
-      "fecha_iso": "2026-11-07",
+      "fecha": "08-11",
+      "fecha_iso": "2026-11-08",
       "numeros": [
-        "55",
-        "02",
-        "39"
+        "99",
+        "27",
+        "89"
       ],
       "fuente": "https://turifamax.com/api/v1/resultados"
     },
@@ -79,12 +79,12 @@
     {
       "empresa": "Lotería Nacional",
       "juego": "Gana Más",
-      "fecha": "07-11",
-      "fecha_iso": "2026-11-07",
+      "fecha": "08-11",
+      "fecha_iso": "2026-11-08",
       "numeros": [
         "59",
-        "25",
-        "54"
+        "14",
+        "00"
       ],
       "fuente": "https://turifamax.com/api/v1/resultados"
     },
@@ -103,12 +103,12 @@
     {
       "empresa": "King Lottery",
       "juego": "King Lottery Día",
-      "fecha": "07-11",
-      "fecha_iso": "2026-11-07",
+      "fecha": "08-11",
+      "fecha_iso": "2026-11-08",
       "numeros": [
-        "60",
-        "97",
-        "71"
+        "43",
+        "12",
+        "76"
       ],
       "fuente": "https://turifamax.com/api/v1/resultados"
     },
@@ -127,12 +127,12 @@
     {
       "empresa": "LoteDom",
       "juego": "LoteDom Día",
-      "fecha": "07-11",
-      "fecha_iso": "2026-11-07",
+      "fecha": "08-11",
+      "fecha_iso": "2026-11-08",
       "numeros": [
-        "72",
-        "89",
-        "88"
+        "66",
+        "55",
+        "12"
       ],
       "fuente": "https://turifamax.com/api/v1/resultados"
     },
@@ -218,12 +218,12 @@
     {
       "empresa": "Americanas (NY)",
       "juego": "New York Tarde",
-      "fecha": "07-11",
-      "fecha_iso": "2026-11-07",
+      "fecha": "08-11",
+      "fecha_iso": "2026-11-08",
       "numeros": [
-        "39",
-        "45",
-        "85"
+        "31",
+        "14",
+        "23"
       ],
       "fuente": "https://turifamax.com/api/v1/resultados"
     },
@@ -257,12 +257,12 @@
     {
       "empresa": "La Primera",
       "juego": "La Primera Día",
-      "fecha": "07-11",
-      "fecha_iso": "2026-11-07",
+      "fecha": "08-11",
+      "fecha_iso": "2026-11-08",
       "numeros": [
-        "29",
-        "29",
-        "86"
+        "60",
+        "30",
+        "75"
       ],
       "fuente": "https://turifamax.com/api/v1/resultados"
     },
@@ -281,12 +281,12 @@
     {
       "empresa": "Lotería Real",
       "juego": "Quiniela Real",
-      "fecha": "07-11",
-      "fecha_iso": "2026-11-07",
+      "fecha": "08-11",
+      "fecha_iso": "2026-11-08",
       "numeros": [
-        "25",
-        "74",
-        "27"
+        "59",
+        "08",
+        "17"
       ],
       "fuente": "https://turifamax.com/api/v1/resultados"
     },
@@ -305,12 +305,12 @@
     {
       "empresa": "La Suerte",
       "juego": "La Suerte Día",
-      "fecha": "07-11",
-      "fecha_iso": "2026-11-07",
+      "fecha": "08-11",
+      "fecha_iso": "2026-11-08",
       "numeros": [
-        "50",
-        "04",
-        "46"
+        "47",
+        "64",
+        "69"
       ],
       "fuente": "https://turifamax.com/api/v1/resultados"
     },
@@ -5352,8 +5352,7 @@
         "60",
         "09",
         "20"
-      ],
-      "fuente": "https://turifamax.com/api/v1/resultados"
+      ]
     },
     {
       "empresa": "Americanas (NY)",
@@ -5364,8 +5363,7 @@
         "55",
         "02",
         "39"
-      ],
-      "fuente": "https://turifamax.com/api/v1/resultados"
+      ]
     },
     {
       "empresa": "Lotería Nacional",
@@ -5376,8 +5374,7 @@
         "59",
         "25",
         "54"
-      ],
-      "fuente": "https://turifamax.com/api/v1/resultados"
+      ]
     },
     {
       "empresa": "King Lottery",
@@ -5388,8 +5385,7 @@
         "60",
         "97",
         "71"
-      ],
-      "fuente": "https://turifamax.com/api/v1/resultados"
+      ]
     },
     {
       "empresa": "LoteDom",
@@ -5400,8 +5396,7 @@
         "72",
         "89",
         "88"
-      ],
-      "fuente": "https://turifamax.com/api/v1/resultados"
+      ]
     },
     {
       "empresa": "La Primera",
@@ -5412,8 +5407,7 @@
         "29",
         "29",
         "86"
-      ],
-      "fuente": "https://turifamax.com/api/v1/resultados"
+      ]
     },
     {
       "empresa": "Lotería Real",
@@ -5424,8 +5418,7 @@
         "25",
         "74",
         "27"
-      ],
-      "fuente": "https://turifamax.com/api/v1/resultados"
+      ]
     },
     {
       "empresa": "La Suerte",
@@ -5436,8 +5429,7 @@
         "50",
         "04",
         "46"
-      ],
-      "fuente": "https://turifamax.com/api/v1/resultados"
+      ]
     },
     {
       "empresa": "Anguila",
@@ -5460,8 +5452,7 @@
         "39",
         "45",
         "85"
-      ],
-      "fuente": "https://turifamax.com/api/v1/resultados"
+      ]
     },
     {
       "empresa": "La Suerte",
@@ -5681,6 +5672,114 @@
         "07",
         "67",
         "11"
+      ],
+      "fuente": "https://turifamax.com/api/v1/resultados"
+    },
+    {
+      "empresa": "Anguila",
+      "juego": "Anguila 1:00 PM",
+      "fecha": "08-11",
+      "fecha_iso": "2026-11-08",
+      "numeros": [
+        "98",
+        "20",
+        "63"
+      ],
+      "fuente": "https://turifamax.com/api/v1/resultados"
+    },
+    {
+      "empresa": "Americanas (NY)",
+      "juego": "Florida Día",
+      "fecha": "08-11",
+      "fecha_iso": "2026-11-08",
+      "numeros": [
+        "99",
+        "27",
+        "89"
+      ],
+      "fuente": "https://turifamax.com/api/v1/resultados"
+    },
+    {
+      "empresa": "Lotería Nacional",
+      "juego": "Gana Más",
+      "fecha": "08-11",
+      "fecha_iso": "2026-11-08",
+      "numeros": [
+        "59",
+        "14",
+        "00"
+      ],
+      "fuente": "https://turifamax.com/api/v1/resultados"
+    },
+    {
+      "empresa": "King Lottery",
+      "juego": "King Lottery Día",
+      "fecha": "08-11",
+      "fecha_iso": "2026-11-08",
+      "numeros": [
+        "43",
+        "12",
+        "76"
+      ],
+      "fuente": "https://turifamax.com/api/v1/resultados"
+    },
+    {
+      "empresa": "LoteDom",
+      "juego": "LoteDom Día",
+      "fecha": "08-11",
+      "fecha_iso": "2026-11-08",
+      "numeros": [
+        "66",
+        "55",
+        "12"
+      ],
+      "fuente": "https://turifamax.com/api/v1/resultados"
+    },
+    {
+      "empresa": "Americanas (NY)",
+      "juego": "New York Tarde",
+      "fecha": "08-11",
+      "fecha_iso": "2026-11-08",
+      "numeros": [
+        "31",
+        "14",
+        "23"
+      ],
+      "fuente": "https://turifamax.com/api/v1/resultados"
+    },
+    {
+      "empresa": "La Primera",
+      "juego": "La Primera Día",
+      "fecha": "08-11",
+      "fecha_iso": "2026-11-08",
+      "numeros": [
+        "60",
+        "30",
+        "75"
+      ],
+      "fuente": "https://turifamax.com/api/v1/resultados"
+    },
+    {
+      "empresa": "Lotería Real",
+      "juego": "Quiniela Real",
+      "fecha": "08-11",
+      "fecha_iso": "2026-11-08",
+      "numeros": [
+        "59",
+        "08",
+        "17"
+      ],
+      "fuente": "https://turifamax.com/api/v1/resultados"
+    },
+    {
+      "empresa": "La Suerte",
+      "juego": "La Suerte Día",
+      "fecha": "08-11",
+      "fecha_iso": "2026-11-08",
+      "numeros": [
+        "47",
+        "64",
+        "69"
       ],
       "fuente": "https://turifamax.com/api/v1/resultados"
     }
