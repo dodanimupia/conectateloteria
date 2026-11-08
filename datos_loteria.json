@@ -1,5 +1,5 @@
 {
-  "actualizado": "2026-11-08T04:05:28-04:00",
+  "actualizado": "2026-11-08T11:07:27-04:00",
   "zona_horaria": "America/Santo_Domingo",
   "fuente": "https://turifamax.com/api/v1/resultados",
   "en_vivo": true,
@@ -7,12 +7,12 @@
     {
       "empresa": "Anguila",
       "juego": "Anguila 10:00 AM",
-      "fecha": "07-11",
-      "fecha_iso": "2026-11-07",
+      "fecha": "08-11",
+      "fecha_iso": "2026-11-08",
       "numeros": [
-        "37",
-        "30",
-        "23"
+        "07",
+        "67",
+        "11"
       ],
       "fuente": "https://turifamax.com/api/v1/resultados"
     },
@@ -5341,8 +5341,7 @@
         "37",
         "30",
         "23"
-      ],
-      "fuente": "https://turifamax.com/api/v1/resultados"
+      ]
     },
     {
       "empresa": "Anguila",
@@ -5670,6 +5669,18 @@
         "84",
         "51",
         "81"
+      ],
+      "fuente": "https://turifamax.com/api/v1/resultados"
+    },
+    {
+      "empresa": "Anguila",
+      "juego": "Anguila 10:00 AM",
+      "fecha": "08-11",
+      "fecha_iso": "2026-11-08",
+      "numeros": [
+        "07",
+        "67",
+        "11"
       ],
       "fuente": "https://turifamax.com/api/v1/resultados"
     }
