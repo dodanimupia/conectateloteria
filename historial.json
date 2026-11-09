@@ -6695,6 +6695,18 @@
      "51",
      "81"
     ]
+   },
+   {
+    "empresa": "Americanas (NY)",
+    "juego": "PowerBall",
+    "numeros": [
+     "37",
+     "56",
+     "36",
+     "03",
+     "61",
+     "21"
+    ]
    }
   ],
   "2026-11-08": [
@@ -6915,6 +6927,24 @@
      "06",
      "79",
      "09"
+    ]
+   },
+   {
+    "empresa": "Americanas (NY)",
+    "juego": "Florida Noche",
+    "numeros": [
+     "14",
+     "93",
+     "65"
+    ]
+   },
+   {
+    "empresa": "Americanas (NY)",
+    "juego": "New York Noche",
+    "numeros": [
+     "45",
+     "22",
+     "14"
     ]
    }
   ]
