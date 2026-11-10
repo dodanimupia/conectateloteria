@@ -1,5 +1,5 @@
 {
-  "actualizado": "2026-11-09T16:58:59-04:00",
+  "actualizado": "2026-11-09T23:26:25-04:00",
   "zona_horaria": "America/Santo_Domingo",
   "fuente": "https://turifamax.com/api/v1/resultados",
   "en_vivo": true,
@@ -31,24 +31,24 @@
     {
       "empresa": "Anguila",
       "juego": "Anguila 9:00 PM",
-      "fecha": "08-11",
-      "fecha_iso": "2026-11-08",
+      "fecha": "09-11",
+      "fecha_iso": "2026-11-09",
       "numeros": [
-        "64",
-        "57",
-        "72"
+        "03",
+        "99",
+        "43"
       ],
       "fuente": "https://turifamax.com/api/v1/resultados"
     },
     {
       "empresa": "Anguila",
       "juego": "Anguila 6:00 PM",
-      "fecha": "08-11",
-      "fecha_iso": "2026-11-08",
+      "fecha": "09-11",
+      "fecha_iso": "2026-11-09",
       "numeros": [
-        "03",
-        "84",
-        "42"
+        "27",
+        "13",
+        "15"
       ],
       "fuente": "https://turifamax.com/api/v1/resultados"
     },
@@ -67,12 +67,12 @@
     {
       "empresa": "Americanas (NY)",
       "juego": "Florida Noche",
-      "fecha": "08-11",
-      "fecha_iso": "2026-11-08",
+      "fecha": "09-11",
+      "fecha_iso": "2026-11-09",
       "numeros": [
-        "14",
-        "93",
-        "65"
+        "04",
+        "08",
+        "89"
       ],
       "fuente": "https://turifamax.com/api/v1/resultados"
     },
@@ -91,12 +91,12 @@
     {
       "empresa": "King Lottery",
       "juego": "King Lottery Noche",
-      "fecha": "08-11",
-      "fecha_iso": "2026-11-08",
+      "fecha": "09-11",
+      "fecha_iso": "2026-11-09",
       "numeros": [
-        "42",
-        "36",
-        "55"
+        "40",
+        "55",
+        "65"
       ],
       "fuente": "https://turifamax.com/api/v1/resultados"
     },
@@ -115,12 +115,12 @@
     {
       "empresa": "Leidsa",
       "juego": "Quiniela Leidsa",
-      "fecha": "08-11",
-      "fecha_iso": "2026-11-08",
+      "fecha": "09-11",
+      "fecha_iso": "2026-11-09",
       "numeros": [
-        "20",
-        "94",
-        "97"
+        "62",
+        "41",
+        "63"
       ],
       "fuente": "https://turifamax.com/api/v1/resultados"
     },
@@ -139,26 +139,26 @@
     {
       "empresa": "Loteka",
       "juego": "Quiniela Loteka Noche",
-      "fecha": "08-11",
-      "fecha_iso": "2026-11-08",
+      "fecha": "09-11",
+      "fecha_iso": "2026-11-09",
       "numeros": [
-        "30",
-        "41",
-        "78"
+        "03",
+        "50",
+        "19"
       ],
       "fuente": "https://turifamax.com/api/v1/resultados"
     },
     {
       "empresa": "Leidsa",
       "juego": "Loto Pool",
-      "fecha": "08-11",
-      "fecha_iso": "2026-11-08",
+      "fecha": "09-11",
+      "fecha_iso": "2026-11-09",
       "numeros": [
-        "22",
         "03",
-        "28",
-        "24",
-        "18"
+        "25",
+        "16",
+        "01",
+        "12"
       ],
       "fuente": "https://turifamax.com/api/v1/resultados"
     },
@@ -180,14 +180,14 @@
     {
       "empresa": "Loteka",
       "juego": "Mega Chances",
-      "fecha": "08-11",
-      "fecha_iso": "2026-11-08",
+      "fecha": "09-11",
+      "fecha_iso": "2026-11-09",
       "numeros": [
+        "61",
         "32",
-        "77",
-        "07",
-        "93",
-        "81"
+        "62",
+        "03",
+        "21"
       ],
       "fuente": "https://turifamax.com/api/v1/resultados"
     },
@@ -209,12 +209,12 @@
     {
       "empresa": "Lotería Nacional",
       "juego": "Lotería Nacional",
-      "fecha": "08-11",
-      "fecha_iso": "2026-11-08",
+      "fecha": "09-11",
+      "fecha_iso": "2026-11-09",
       "numeros": [
-        "08",
-        "73",
-        "11"
+        "60",
+        "48",
+        "99"
       ],
       "fuente": "https://turifamax.com/api/v1/resultados"
     },
@@ -245,12 +245,12 @@
     {
       "empresa": "Leidsa",
       "juego": "Pega 3 Más",
-      "fecha": "08-11",
-      "fecha_iso": "2026-11-08",
+      "fecha": "09-11",
+      "fecha_iso": "2026-11-09",
       "numeros": [
-        "06",
-        "28",
-        "09"
+        "38",
+        "40",
+        "15"
       ],
       "fuente": "https://turifamax.com/api/v1/resultados"
     },
@@ -269,12 +269,12 @@
     {
       "empresa": "La Primera",
       "juego": "Primera Noche",
-      "fecha": "08-11",
-      "fecha_iso": "2026-11-08",
+      "fecha": "09-11",
+      "fecha_iso": "2026-11-09",
       "numeros": [
-        "19",
-        "84",
-        "35"
+        "41",
+        "34",
+        "16"
       ],
       "fuente": "https://turifamax.com/api/v1/resultados"
     },
@@ -293,12 +293,12 @@
     {
       "empresa": "La Suerte",
       "juego": "La Suerte Tarde",
-      "fecha": "08-11",
-      "fecha_iso": "2026-11-08",
+      "fecha": "09-11",
+      "fecha_iso": "2026-11-09",
       "numeros": [
-        "06",
-        "79",
-        "09"
+        "67",
+        "21",
+        "95"
       ],
       "fuente": "https://turifamax.com/api/v1/resultados"
     },
@@ -317,29 +317,29 @@
     {
       "empresa": "Leidsa",
       "juego": "Super Kino TV",
-      "fecha": "08-11",
-      "fecha_iso": "2026-11-08",
+      "fecha": "09-11",
+      "fecha_iso": "2026-11-09",
       "numeros": [
-        "12",
         "27",
-        "02",
-        "24",
-        "14",
-        "39",
-        "08",
-        "66",
-        "64",
-        "32",
-        "20",
-        "06",
-        "07",
-        "51",
-        "18",
+        "05",
         "69",
-        "37",
-        "59",
-        "11",
-        "49"
+        "31",
+        "58",
+        "75",
+        "26",
+        "48",
+        "60",
+        "52",
+        "04",
+        "49",
+        "41",
+        "15",
+        "09",
+        "10",
+        "17",
+        "68",
+        "39",
+        "24"
       ],
       "fuente": "https://turifamax.com/api/v1/resultados"
     },
@@ -378,15 +378,15 @@
     {
       "empresa": "Loteka",
       "juego": "MegaLotto",
-      "fecha": "05-11",
-      "fecha_iso": "2026-11-05",
+      "fecha": "09-11",
+      "fecha_iso": "2026-11-09",
       "numeros": [
-        "16",
-        "24",
-        "28",
-        "31",
-        "06",
-        "36"
+        "20",
+        "01",
+        "34",
+        "17",
+        "08",
+        "38"
       ],
       "fuente": "https://turifamax.com/api/v1/resultados"
     },
@@ -4426,8 +4426,7 @@
         "31",
         "06",
         "36"
-      ],
-      "fuente": "https://turifamax.com/api/v1/resultados"
+      ]
     },
     {
       "empresa": "Lotería Nacional",
@@ -5273,8 +5272,7 @@
         "03",
         "84",
         "42"
-      ],
-      "fuente": "https://turifamax.com/api/v1/resultados"
+      ]
     },
     {
       "empresa": "Leidsa",
@@ -5285,8 +5283,7 @@
         "20",
         "94",
         "97"
-      ],
-      "fuente": "https://turifamax.com/api/v1/resultados"
+      ]
     },
     {
       "empresa": "Leidsa",
@@ -5299,8 +5296,7 @@
         "28",
         "24",
         "18"
-      ],
-      "fuente": "https://turifamax.com/api/v1/resultados"
+      ]
     },
     {
       "empresa": "Lotería Nacional",
@@ -5311,8 +5307,7 @@
         "08",
         "73",
         "11"
-      ],
-      "fuente": "https://turifamax.com/api/v1/resultados"
+      ]
     },
     {
       "empresa": "Leidsa",
@@ -5323,8 +5318,7 @@
         "06",
         "28",
         "09"
-      ],
-      "fuente": "https://turifamax.com/api/v1/resultados"
+      ]
     },
     {
       "empresa": "La Primera",
@@ -5335,8 +5329,7 @@
         "19",
         "84",
         "35"
-      ],
-      "fuente": "https://turifamax.com/api/v1/resultados"
+      ]
     },
     {
       "empresa": "Leidsa",
@@ -5364,8 +5357,7 @@
         "59",
         "11",
         "49"
-      ],
-      "fuente": "https://turifamax.com/api/v1/resultados"
+      ]
     },
     {
       "empresa": "Anguila",
@@ -5376,8 +5368,7 @@
         "64",
         "57",
         "72"
-      ],
-      "fuente": "https://turifamax.com/api/v1/resultados"
+      ]
     },
     {
       "empresa": "King Lottery",
@@ -5388,8 +5379,7 @@
         "42",
         "36",
         "55"
-      ],
-      "fuente": "https://turifamax.com/api/v1/resultados"
+      ]
     },
     {
       "empresa": "Loteka",
@@ -5400,8 +5390,7 @@
         "30",
         "41",
         "78"
-      ],
-      "fuente": "https://turifamax.com/api/v1/resultados"
+      ]
     },
     {
       "empresa": "Loteka",
@@ -5414,8 +5403,7 @@
         "07",
         "93",
         "81"
-      ],
-      "fuente": "https://turifamax.com/api/v1/resultados"
+      ]
     },
     {
       "empresa": "La Suerte",
@@ -5426,8 +5414,7 @@
         "06",
         "79",
         "09"
-      ],
-      "fuente": "https://turifamax.com/api/v1/resultados"
+      ]
     },
     {
       "empresa": "Americanas (NY)",
@@ -5453,8 +5440,7 @@
         "14",
         "93",
         "65"
-      ],
-      "fuente": "https://turifamax.com/api/v1/resultados"
+      ]
     },
     {
       "empresa": "Americanas (NY)",
@@ -5585,6 +5571,198 @@
         "65",
         "96",
         "05"
+      ],
+      "fuente": "https://turifamax.com/api/v1/resultados"
+    },
+    {
+      "empresa": "Anguila",
+      "juego": "Anguila 9:00 PM",
+      "fecha": "09-11",
+      "fecha_iso": "2026-11-09",
+      "numeros": [
+        "03",
+        "99",
+        "43"
+      ],
+      "fuente": "https://turifamax.com/api/v1/resultados"
+    },
+    {
+      "empresa": "Anguila",
+      "juego": "Anguila 6:00 PM",
+      "fecha": "09-11",
+      "fecha_iso": "2026-11-09",
+      "numeros": [
+        "27",
+        "13",
+        "15"
+      ],
+      "fuente": "https://turifamax.com/api/v1/resultados"
+    },
+    {
+      "empresa": "Americanas (NY)",
+      "juego": "Florida Noche",
+      "fecha": "09-11",
+      "fecha_iso": "2026-11-09",
+      "numeros": [
+        "04",
+        "08",
+        "89"
+      ],
+      "fuente": "https://turifamax.com/api/v1/resultados"
+    },
+    {
+      "empresa": "King Lottery",
+      "juego": "King Lottery Noche",
+      "fecha": "09-11",
+      "fecha_iso": "2026-11-09",
+      "numeros": [
+        "40",
+        "55",
+        "65"
+      ],
+      "fuente": "https://turifamax.com/api/v1/resultados"
+    },
+    {
+      "empresa": "Leidsa",
+      "juego": "Quiniela Leidsa",
+      "fecha": "09-11",
+      "fecha_iso": "2026-11-09",
+      "numeros": [
+        "62",
+        "41",
+        "63"
+      ],
+      "fuente": "https://turifamax.com/api/v1/resultados"
+    },
+    {
+      "empresa": "Loteka",
+      "juego": "Quiniela Loteka Noche",
+      "fecha": "09-11",
+      "fecha_iso": "2026-11-09",
+      "numeros": [
+        "03",
+        "50",
+        "19"
+      ],
+      "fuente": "https://turifamax.com/api/v1/resultados"
+    },
+    {
+      "empresa": "Leidsa",
+      "juego": "Loto Pool",
+      "fecha": "09-11",
+      "fecha_iso": "2026-11-09",
+      "numeros": [
+        "03",
+        "25",
+        "16",
+        "01",
+        "12"
+      ],
+      "fuente": "https://turifamax.com/api/v1/resultados"
+    },
+    {
+      "empresa": "Loteka",
+      "juego": "Mega Chances",
+      "fecha": "09-11",
+      "fecha_iso": "2026-11-09",
+      "numeros": [
+        "61",
+        "32",
+        "62",
+        "03",
+        "21"
+      ],
+      "fuente": "https://turifamax.com/api/v1/resultados"
+    },
+    {
+      "empresa": "Loteka",
+      "juego": "MegaLotto",
+      "fecha": "09-11",
+      "fecha_iso": "2026-11-09",
+      "numeros": [
+        "20",
+        "01",
+        "34",
+        "17",
+        "08",
+        "38"
+      ],
+      "fuente": "https://turifamax.com/api/v1/resultados"
+    },
+    {
+      "empresa": "Lotería Nacional",
+      "juego": "Lotería Nacional",
+      "fecha": "09-11",
+      "fecha_iso": "2026-11-09",
+      "numeros": [
+        "60",
+        "48",
+        "99"
+      ],
+      "fuente": "https://turifamax.com/api/v1/resultados"
+    },
+    {
+      "empresa": "Leidsa",
+      "juego": "Pega 3 Más",
+      "fecha": "09-11",
+      "fecha_iso": "2026-11-09",
+      "numeros": [
+        "38",
+        "40",
+        "15"
+      ],
+      "fuente": "https://turifamax.com/api/v1/resultados"
+    },
+    {
+      "empresa": "La Primera",
+      "juego": "Primera Noche",
+      "fecha": "09-11",
+      "fecha_iso": "2026-11-09",
+      "numeros": [
+        "41",
+        "34",
+        "16"
+      ],
+      "fuente": "https://turifamax.com/api/v1/resultados"
+    },
+    {
+      "empresa": "La Suerte",
+      "juego": "La Suerte Tarde",
+      "fecha": "09-11",
+      "fecha_iso": "2026-11-09",
+      "numeros": [
+        "67",
+        "21",
+        "95"
+      ],
+      "fuente": "https://turifamax.com/api/v1/resultados"
+    },
+    {
+      "empresa": "Leidsa",
+      "juego": "Super Kino TV",
+      "fecha": "09-11",
+      "fecha_iso": "2026-11-09",
+      "numeros": [
+        "27",
+        "05",
+        "69",
+        "31",
+        "58",
+        "75",
+        "26",
+        "48",
+        "60",
+        "52",
+        "04",
+        "49",
+        "41",
+        "15",
+        "09",
+        "10",
+        "17",
+        "68",
+        "39",
+        "24"
       ],
       "fuente": "https://turifamax.com/api/v1/resultados"
     }
