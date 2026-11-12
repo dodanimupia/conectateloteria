@@ -7708,6 +7708,71 @@
      "85"
     ]
    }
+  ],
+  "2026-11-12": [
+   {
+    "empresa": "Anguila",
+    "juego": "Anguila 10:00 AM",
+    "numeros": [
+     "28",
+     "56",
+     "52"
+    ]
+   },
+   {
+    "empresa": "Anguila",
+    "juego": "Anguila 1:00 PM",
+    "numeros": [
+     "10",
+     "83",
+     "34"
+    ]
+   },
+   {
+    "empresa": "King Lottery",
+    "juego": "King Lottery Día",
+    "numeros": [
+     "05",
+     "48",
+     "39"
+    ]
+   },
+   {
+    "empresa": "LoteDom",
+    "juego": "LoteDom Día",
+    "numeros": [
+     "17",
+     "12",
+     "94"
+    ]
+   },
+   {
+    "empresa": "La Primera",
+    "juego": "La Primera Día",
+    "numeros": [
+     "46",
+     "71",
+     "90"
+    ]
+   },
+   {
+    "empresa": "Lotería Real",
+    "juego": "Quiniela Real",
+    "numeros": [
+     "46",
+     "49",
+     "85"
+    ]
+   },
+   {
+    "empresa": "La Suerte",
+    "juego": "La Suerte Día",
+    "numeros": [
+     "06",
+     "88",
+     "17"
+    ]
+   }
   ]
  }
 }
