@@ -7772,6 +7772,51 @@
      "88",
      "17"
     ]
+   },
+   {
+    "empresa": "Anguila",
+    "juego": "Anguila 6:00 PM",
+    "numeros": [
+     "56",
+     "07",
+     "09"
+    ]
+   },
+   {
+    "empresa": "Americanas (NY)",
+    "juego": "Florida Día",
+    "numeros": [
+     "54",
+     "22",
+     "34"
+    ]
+   },
+   {
+    "empresa": "Lotería Nacional",
+    "juego": "Gana Más",
+    "numeros": [
+     "29",
+     "73",
+     "84"
+    ]
+   },
+   {
+    "empresa": "Americanas (NY)",
+    "juego": "New York Tarde",
+    "numeros": [
+     "56",
+     "15",
+     "68"
+    ]
+   },
+   {
+    "empresa": "La Suerte",
+    "juego": "La Suerte Tarde",
+    "numeros": [
+     "72",
+     "55",
+     "20"
+    ]
    }
   ]
  }
