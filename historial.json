@@ -7725,6 +7725,18 @@
      "18",
      "85"
     ]
+   },
+   {
+    "empresa": "Americanas (NY)",
+    "juego": "PowerBall",
+    "numeros": [
+     "57",
+     "45",
+     "08",
+     "51",
+     "42",
+     "17"
+    ]
    }
   ],
   "2026-11-12": [
@@ -8139,6 +8151,36 @@
      "73",
      "60",
      "11"
+    ]
+   },
+   {
+    "empresa": "Loteka",
+    "juego": "Quiniela Loteka Noche",
+    "numeros": [
+     "53",
+     "10",
+     "25"
+    ]
+   },
+   {
+    "empresa": "Loteka",
+    "juego": "MegaLotto",
+    "numeros": [
+     "21",
+     "15",
+     "18",
+     "12",
+     "08",
+     "19"
+    ]
+   },
+   {
+    "empresa": "Americanas (NY)",
+    "juego": "New York Noche",
+    "numeros": [
+     "56",
+     "24",
+     "79"
     ]
    }
   ]
