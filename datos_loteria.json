@@ -1,5 +1,5 @@
 {
-  "actualizado": "2026-11-14T12:58:02-04:00",
+  "actualizado": "2026-11-14T17:21:03-04:00",
   "zona_horaria": "America/Santo_Domingo",
   "fuente": "https://turifamax.com/api/v1/resultados",
   "en_vivo": true,
@@ -19,12 +19,12 @@
     {
       "empresa": "Anguila",
       "juego": "Anguila 1:00 PM",
-      "fecha": "13-11",
-      "fecha_iso": "2026-11-13",
+      "fecha": "14-11",
+      "fecha_iso": "2026-11-14",
       "numeros": [
-        "23",
-        "72",
-        "60"
+        "92",
+        "60",
+        "90"
       ],
       "fuente": "https://turifamax.com/api/v1/resultados"
     },
@@ -55,12 +55,12 @@
     {
       "empresa": "Americanas (NY)",
       "juego": "Florida Día",
-      "fecha": "13-11",
-      "fecha_iso": "2026-11-13",
+      "fecha": "14-11",
+      "fecha_iso": "2026-11-14",
       "numeros": [
-        "90",
-        "42",
-        "57"
+        "76",
+        "06",
+        "50"
       ],
       "fuente": "https://turifamax.com/api/v1/resultados"
     },
@@ -79,12 +79,12 @@
     {
       "empresa": "Lotería Nacional",
       "juego": "Gana Más",
-      "fecha": "13-11",
-      "fecha_iso": "2026-11-13",
+      "fecha": "14-11",
+      "fecha_iso": "2026-11-14",
       "numeros": [
-        "33",
-        "97",
-        "20"
+        "03",
+        "21",
+        "83"
       ],
       "fuente": "https://turifamax.com/api/v1/resultados"
     },
@@ -203,12 +203,12 @@
     {
       "empresa": "Americanas (NY)",
       "juego": "New York Tarde",
-      "fecha": "13-11",
-      "fecha_iso": "2026-11-13",
+      "fecha": "14-11",
+      "fecha_iso": "2026-11-14",
       "numeros": [
+        "40",
         "97",
-        "36",
-        "49"
+        "57"
       ],
       "fuente": "https://turifamax.com/api/v1/resultados"
     },
@@ -251,12 +251,12 @@
     {
       "empresa": "Lotería Real",
       "juego": "Quiniela Real",
-      "fecha": "13-11",
-      "fecha_iso": "2026-11-13",
+      "fecha": "14-11",
+      "fecha_iso": "2026-11-14",
       "numeros": [
-        "88",
-        "29",
-        "11"
+        "67",
+        "33",
+        "84"
       ],
       "fuente": "https://turifamax.com/api/v1/resultados"
     },
@@ -4876,8 +4876,7 @@
         "23",
         "72",
         "60"
-      ],
-      "fuente": "https://turifamax.com/api/v1/resultados"
+      ]
     },
     {
       "empresa": "King Lottery",
@@ -4921,8 +4920,7 @@
         "88",
         "29",
         "11"
-      ],
-      "fuente": "https://turifamax.com/api/v1/resultados"
+      ]
     },
     {
       "empresa": "La Suerte",
@@ -4944,8 +4942,7 @@
         "33",
         "97",
         "20"
-      ],
-      "fuente": "https://turifamax.com/api/v1/resultados"
+      ]
     },
     {
       "empresa": "Lotería Nacional",
@@ -5029,8 +5026,7 @@
         "90",
         "42",
         "57"
-      ],
-      "fuente": "https://turifamax.com/api/v1/resultados"
+      ]
     },
     {
       "empresa": "Americanas (NY)",
@@ -5041,8 +5037,7 @@
         "97",
         "36",
         "49"
-      ],
-      "fuente": "https://turifamax.com/api/v1/resultados"
+      ]
     },
     {
       "empresa": "La Primera",
@@ -5446,6 +5441,66 @@
         "74",
         "05",
         "89"
+      ],
+      "fuente": "https://turifamax.com/api/v1/resultados"
+    },
+    {
+      "empresa": "Anguila",
+      "juego": "Anguila 1:00 PM",
+      "fecha": "14-11",
+      "fecha_iso": "2026-11-14",
+      "numeros": [
+        "92",
+        "60",
+        "90"
+      ],
+      "fuente": "https://turifamax.com/api/v1/resultados"
+    },
+    {
+      "empresa": "Americanas (NY)",
+      "juego": "Florida Día",
+      "fecha": "14-11",
+      "fecha_iso": "2026-11-14",
+      "numeros": [
+        "76",
+        "06",
+        "50"
+      ],
+      "fuente": "https://turifamax.com/api/v1/resultados"
+    },
+    {
+      "empresa": "Lotería Nacional",
+      "juego": "Gana Más",
+      "fecha": "14-11",
+      "fecha_iso": "2026-11-14",
+      "numeros": [
+        "03",
+        "21",
+        "83"
+      ],
+      "fuente": "https://turifamax.com/api/v1/resultados"
+    },
+    {
+      "empresa": "Americanas (NY)",
+      "juego": "New York Tarde",
+      "fecha": "14-11",
+      "fecha_iso": "2026-11-14",
+      "numeros": [
+        "40",
+        "97",
+        "57"
+      ],
+      "fuente": "https://turifamax.com/api/v1/resultados"
+    },
+    {
+      "empresa": "Lotería Real",
+      "juego": "Quiniela Real",
+      "fecha": "14-11",
+      "fecha_iso": "2026-11-14",
+      "numeros": [
+        "67",
+        "33",
+        "84"
       ],
       "fuente": "https://turifamax.com/api/v1/resultados"
     }
