@@ -1,5 +1,5 @@
 {
-  "actualizado": "2026-11-15T03:53:21-04:00",
+  "actualizado": "2026-11-15T11:23:54-04:00",
   "zona_horaria": "America/Santo_Domingo",
   "fuente": "https://turifamax.com/api/v1/resultados",
   "en_vivo": true,
@@ -7,12 +7,12 @@
     {
       "empresa": "Anguila",
       "juego": "Anguila 10:00 AM",
-      "fecha": "14-11",
-      "fecha_iso": "2026-11-14",
+      "fecha": "15-11",
+      "fecha_iso": "2026-11-15",
       "numeros": [
-        "92",
-        "48",
-        "98"
+        "89",
+        "17",
+        "09"
       ],
       "fuente": "https://turifamax.com/api/v1/resultados"
     },
@@ -5092,8 +5092,7 @@
         "92",
         "48",
         "98"
-      ],
-      "fuente": "https://turifamax.com/api/v1/resultados"
+      ]
     },
     {
       "empresa": "King Lottery",
@@ -5421,6 +5420,18 @@
         "48",
         "39",
         "06"
+      ],
+      "fuente": "https://turifamax.com/api/v1/resultados"
+    },
+    {
+      "empresa": "Anguila",
+      "juego": "Anguila 10:00 AM",
+      "fecha": "15-11",
+      "fecha_iso": "2026-11-15",
+      "numeros": [
+        "89",
+        "17",
+        "09"
       ],
       "fuente": "https://turifamax.com/api/v1/resultados"
     }
