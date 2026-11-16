@@ -8858,6 +8858,18 @@
      "39",
      "06"
     ]
+   },
+   {
+    "empresa": "Americanas (NY)",
+    "juego": "PowerBall",
+    "numeros": [
+     "49",
+     "09",
+     "68",
+     "51",
+     "44",
+     "04"
+    ]
    }
   ],
   "2026-11-15": [
@@ -9060,6 +9072,42 @@
      "53",
      "78",
      "57"
+    ]
+   },
+   {
+    "empresa": "Anguila",
+    "juego": "Anguila 9:00 PM",
+    "numeros": [
+     "10",
+     "73",
+     "87"
+    ]
+   },
+   {
+    "empresa": "Americanas (NY)",
+    "juego": "Florida Noche",
+    "numeros": [
+     "98",
+     "60",
+     "04"
+    ]
+   },
+   {
+    "empresa": "Americanas (NY)",
+    "juego": "New York Noche",
+    "numeros": [
+     "51",
+     "76",
+     "85"
+    ]
+   },
+   {
+    "empresa": "La Suerte",
+    "juego": "La Suerte Tarde",
+    "numeros": [
+     "19",
+     "66",
+     "90"
     ]
    }
   ]
