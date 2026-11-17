@@ -1,5 +1,5 @@
 {
-  "actualizado": "2026-11-16T20:39:43-04:00",
+  "actualizado": "2026-11-17T04:32:22-04:00",
   "zona_horaria": "America/Santo_Domingo",
   "fuente": "https://turifamax.com/api/v1/resultados",
   "en_vivo": true,
@@ -31,12 +31,12 @@
     {
       "empresa": "Anguila",
       "juego": "Anguila 9:00 PM",
-      "fecha": "15-11",
-      "fecha_iso": "2026-11-15",
+      "fecha": "16-11",
+      "fecha_iso": "2026-11-16",
       "numeros": [
-        "10",
-        "73",
-        "87"
+        "14",
+        "82",
+        "17"
       ],
       "fuente": "https://turifamax.com/api/v1/resultados"
     },
@@ -67,12 +67,12 @@
     {
       "empresa": "Americanas (NY)",
       "juego": "Florida Noche",
-      "fecha": "15-11",
-      "fecha_iso": "2026-11-15",
+      "fecha": "16-11",
+      "fecha_iso": "2026-11-16",
       "numeros": [
-        "98",
-        "60",
-        "04"
+        "99",
+        "09",
+        "55"
       ],
       "fuente": "https://turifamax.com/api/v1/resultados"
     },
@@ -115,12 +115,12 @@
     {
       "empresa": "Leidsa",
       "juego": "Quiniela Leidsa",
-      "fecha": "15-11",
-      "fecha_iso": "2026-11-15",
+      "fecha": "16-11",
+      "fecha_iso": "2026-11-16",
       "numeros": [
-        "78",
-        "85",
-        "22"
+        "01",
+        "47",
+        "51"
       ],
       "fuente": "https://turifamax.com/api/v1/resultados"
     },
@@ -150,30 +150,32 @@
     },
     {
       "empresa": "Leidsa",
-      "juego": "Loto Pool",
-      "fecha": "15-11",
-      "fecha_iso": "2026-11-15",
+      "juego": "Loto - Loto Más",
+      "fecha": "14-11",
+      "fecha_iso": "2026-11-14",
       "numeros": [
-        "22",
-        "31",
-        "08",
-        "16",
-        "06"
+        "39",
+        "20",
+        "10",
+        "27",
+        "24",
+        "37",
+        "11",
+        "04"
       ],
       "fuente": "https://turifamax.com/api/v1/resultados"
     },
     {
-      "empresa": "Lotería Real",
-      "juego": "Loto Real",
-      "fecha": "13-11",
-      "fecha_iso": "2026-11-13",
+      "empresa": "Leidsa",
+      "juego": "Loto Pool",
+      "fecha": "16-11",
+      "fecha_iso": "2026-11-16",
       "numeros": [
-        "29",
-        "19",
-        "06",
-        "03",
+        "17",
         "01",
-        "35"
+        "12",
+        "06",
+        "23"
       ],
       "fuente": "https://turifamax.com/api/v1/resultados"
     },
@@ -192,41 +194,26 @@
       "fuente": "https://turifamax.com/api/v1/resultados"
     },
     {
-      "empresa": "Americanas (NY)",
-      "juego": "Mega Millions",
-      "fecha": "13-11",
-      "fecha_iso": "2026-11-13",
-      "numeros": [
-        "57",
-        "49",
-        "10",
-        "22",
-        "33",
-        "18"
-      ],
-      "fuente": "https://turifamax.com/api/v1/resultados"
-    },
-    {
       "empresa": "Lotería Nacional",
       "juego": "Lotería Nacional",
-      "fecha": "15-11",
-      "fecha_iso": "2026-11-15",
+      "fecha": "16-11",
+      "fecha_iso": "2026-11-16",
       "numeros": [
-        "03",
-        "30",
-        "80"
+        "43",
+        "94",
+        "34"
       ],
       "fuente": "https://turifamax.com/api/v1/resultados"
     },
     {
       "empresa": "Americanas (NY)",
       "juego": "New York Noche",
-      "fecha": "15-11",
-      "fecha_iso": "2026-11-15",
+      "fecha": "16-11",
+      "fecha_iso": "2026-11-16",
       "numeros": [
-        "51",
-        "76",
-        "85"
+        "27",
+        "21",
+        "21"
       ],
       "fuente": "https://turifamax.com/api/v1/resultados"
     },
@@ -245,12 +232,27 @@
     {
       "empresa": "Leidsa",
       "juego": "Pega 3 Más",
-      "fecha": "15-11",
-      "fecha_iso": "2026-11-15",
+      "fecha": "16-11",
+      "fecha_iso": "2026-11-16",
       "numeros": [
-        "01",
-        "50",
-        "46"
+        "23",
+        "19",
+        "14"
+      ],
+      "fuente": "https://turifamax.com/api/v1/resultados"
+    },
+    {
+      "empresa": "Americanas (NY)",
+      "juego": "PowerBall",
+      "fecha": "14-11",
+      "fecha_iso": "2026-11-14",
+      "numeros": [
+        "49",
+        "09",
+        "68",
+        "51",
+        "44",
+        "04"
       ],
       "fuente": "https://turifamax.com/api/v1/resultados"
     },
@@ -317,61 +319,29 @@
     {
       "empresa": "Leidsa",
       "juego": "Super Kino TV",
-      "fecha": "15-11",
-      "fecha_iso": "2026-11-15",
+      "fecha": "16-11",
+      "fecha_iso": "2026-11-16",
       "numeros": [
-        "52",
-        "69",
-        "22",
-        "38",
-        "49",
-        "76",
-        "65",
+        "05",
+        "06",
+        "11",
+        "01",
+        "07",
+        "21",
         "61",
-        "11",
-        "74",
-        "08",
-        "71",
-        "60",
-        "33",
-        "43",
-        "40",
-        "13",
-        "48",
-        "47",
-        "30"
-      ],
-      "fuente": "https://turifamax.com/api/v1/resultados"
-    },
-    {
-      "empresa": "Leidsa",
-      "juego": "Loto - Loto Más",
-      "fecha": "14-11",
-      "fecha_iso": "2026-11-14",
-      "numeros": [
-        "39",
-        "20",
-        "10",
-        "27",
-        "24",
+        "75",
         "37",
-        "11",
-        "04"
-      ],
-      "fuente": "https://turifamax.com/api/v1/resultados"
-    },
-    {
-      "empresa": "Americanas (NY)",
-      "juego": "PowerBall",
-      "fecha": "14-11",
-      "fecha_iso": "2026-11-14",
-      "numeros": [
-        "49",
-        "09",
-        "68",
-        "51",
+        "66",
+        "45",
+        "82",
         "44",
-        "04"
+        "69",
+        "74",
+        "55",
+        "33",
+        "16",
+        "80",
+        "64"
       ],
       "fuente": "https://turifamax.com/api/v1/resultados"
     },
@@ -387,6 +357,36 @@
         "07",
         "30",
         "23"
+      ],
+      "fuente": "https://turifamax.com/api/v1/resultados"
+    },
+    {
+      "empresa": "Lotería Real",
+      "juego": "Loto Real",
+      "fecha": "13-11",
+      "fecha_iso": "2026-11-13",
+      "numeros": [
+        "29",
+        "19",
+        "06",
+        "03",
+        "01",
+        "35"
+      ],
+      "fuente": "https://turifamax.com/api/v1/resultados"
+    },
+    {
+      "empresa": "Americanas (NY)",
+      "juego": "Mega Millions",
+      "fecha": "13-11",
+      "fecha_iso": "2026-11-13",
+      "numeros": [
+        "57",
+        "49",
+        "10",
+        "22",
+        "33",
+        "18"
       ],
       "fuente": "https://turifamax.com/api/v1/resultados"
     },
@@ -506,18 +506,6 @@
         "32",
         "62",
         "20"
-      ],
-      "fuente": "https://www.loteriasdominicanas.com.do/"
-    },
-    {
-      "empresa": "Americanas (NY)",
-      "juego": "New Jersey Noche",
-      "fecha": "09-11",
-      "fecha_iso": "2026-11-09",
-      "numeros": [
-        "34",
-        "77",
-        "33"
       ],
       "fuente": "https://www.loteriasdominicanas.com.do/"
     },
@@ -677,294 +665,6 @@
   ],
   "historial_reciente": [
     {
-      "empresa": "Anguila",
-      "juego": "Anguila 10:00 AM",
-      "fecha": "03-11",
-      "fecha_iso": "2026-11-03",
-      "numeros": [
-        "89",
-        "31",
-        "21"
-      ]
-    },
-    {
-      "empresa": "Anguila",
-      "juego": "Anguila 1:00 PM",
-      "fecha": "03-11",
-      "fecha_iso": "2026-11-03",
-      "numeros": [
-        "02",
-        "27",
-        "69"
-      ]
-    },
-    {
-      "empresa": "King Lottery",
-      "juego": "King Lottery Día",
-      "fecha": "03-11",
-      "fecha_iso": "2026-11-03",
-      "numeros": [
-        "32",
-        "86",
-        "25"
-      ]
-    },
-    {
-      "empresa": "LoteDom",
-      "juego": "LoteDom Día",
-      "fecha": "03-11",
-      "fecha_iso": "2026-11-03",
-      "numeros": [
-        "40",
-        "46",
-        "70"
-      ]
-    },
-    {
-      "empresa": "La Primera",
-      "juego": "La Primera Día",
-      "fecha": "03-11",
-      "fecha_iso": "2026-11-03",
-      "numeros": [
-        "97",
-        "80",
-        "35"
-      ]
-    },
-    {
-      "empresa": "Lotería Real",
-      "juego": "Quiniela Real",
-      "fecha": "03-11",
-      "fecha_iso": "2026-11-03",
-      "numeros": [
-        "32",
-        "38",
-        "23"
-      ]
-    },
-    {
-      "empresa": "La Suerte",
-      "juego": "La Suerte Día",
-      "fecha": "03-11",
-      "fecha_iso": "2026-11-03",
-      "numeros": [
-        "70",
-        "76",
-        "89"
-      ]
-    },
-    {
-      "empresa": "Anguila",
-      "juego": "Anguila 6:00 PM",
-      "fecha": "03-11",
-      "fecha_iso": "2026-11-03",
-      "numeros": [
-        "33",
-        "20",
-        "58"
-      ]
-    },
-    {
-      "empresa": "Americanas (NY)",
-      "juego": "Florida Día",
-      "fecha": "03-11",
-      "fecha_iso": "2026-11-03",
-      "numeros": [
-        "64",
-        "67",
-        "34"
-      ]
-    },
-    {
-      "empresa": "Lotería Nacional",
-      "juego": "Gana Más",
-      "fecha": "03-11",
-      "fecha_iso": "2026-11-03",
-      "numeros": [
-        "34",
-        "70",
-        "58"
-      ]
-    },
-    {
-      "empresa": "King Lottery",
-      "juego": "King Lottery Noche",
-      "fecha": "03-11",
-      "fecha_iso": "2026-11-03",
-      "numeros": [
-        "07",
-        "33",
-        "83"
-      ]
-    },
-    {
-      "empresa": "Americanas (NY)",
-      "juego": "New York Tarde",
-      "fecha": "03-11",
-      "fecha_iso": "2026-11-03",
-      "numeros": [
-        "06",
-        "62",
-        "58"
-      ]
-    },
-    {
-      "empresa": "La Primera",
-      "juego": "Primera Noche",
-      "fecha": "03-11",
-      "fecha_iso": "2026-11-03",
-      "numeros": [
-        "61",
-        "34",
-        "62"
-      ]
-    },
-    {
-      "empresa": "La Suerte",
-      "juego": "La Suerte Tarde",
-      "fecha": "03-11",
-      "fecha_iso": "2026-11-03",
-      "numeros": [
-        "88",
-        "99",
-        "08"
-      ]
-    },
-    {
-      "empresa": "Anguila",
-      "juego": "Anguila 9:00 PM",
-      "fecha": "03-11",
-      "fecha_iso": "2026-11-03",
-      "numeros": [
-        "12",
-        "21",
-        "08"
-      ]
-    },
-    {
-      "empresa": "Americanas (NY)",
-      "juego": "Florida Noche",
-      "fecha": "03-11",
-      "fecha_iso": "2026-11-03",
-      "numeros": [
-        "01",
-        "53",
-        "63"
-      ]
-    },
-    {
-      "empresa": "Leidsa",
-      "juego": "Quiniela Leidsa",
-      "fecha": "03-11",
-      "fecha_iso": "2026-11-03",
-      "numeros": [
-        "76",
-        "00",
-        "89"
-      ]
-    },
-    {
-      "empresa": "Loteka",
-      "juego": "Quiniela Loteka Noche",
-      "fecha": "03-11",
-      "fecha_iso": "2026-11-03",
-      "numeros": [
-        "93",
-        "17",
-        "95"
-      ]
-    },
-    {
-      "empresa": "Leidsa",
-      "juego": "Loto Pool",
-      "fecha": "03-11",
-      "fecha_iso": "2026-11-03",
-      "numeros": [
-        "07",
-        "26",
-        "22",
-        "18",
-        "08"
-      ]
-    },
-    {
-      "empresa": "Lotería Real",
-      "juego": "Loto Real",
-      "fecha": "03-11",
-      "fecha_iso": "2026-11-03",
-      "numeros": [
-        "05",
-        "20",
-        "02",
-        "26",
-        "08",
-        "06"
-      ]
-    },
-    {
-      "empresa": "Loteka",
-      "juego": "Mega Chances",
-      "fecha": "03-11",
-      "fecha_iso": "2026-11-03",
-      "numeros": [
-        "85",
-        "55",
-        "50",
-        "47",
-        "67"
-      ]
-    },
-    {
-      "empresa": "Lotería Nacional",
-      "juego": "Lotería Nacional",
-      "fecha": "03-11",
-      "fecha_iso": "2026-11-03",
-      "numeros": [
-        "61",
-        "36",
-        "50"
-      ]
-    },
-    {
-      "empresa": "Leidsa",
-      "juego": "Pega 3 Más",
-      "fecha": "03-11",
-      "fecha_iso": "2026-11-03",
-      "numeros": [
-        "02",
-        "17",
-        "17"
-      ]
-    },
-    {
-      "empresa": "Leidsa",
-      "juego": "Super Kino TV",
-      "fecha": "03-11",
-      "fecha_iso": "2026-11-03",
-      "numeros": [
-        "53",
-        "67",
-        "68",
-        "29",
-        "57",
-        "12",
-        "18",
-        "80",
-        "37",
-        "66",
-        "15",
-        "28",
-        "74",
-        "51",
-        "64",
-        "50",
-        "42",
-        "17",
-        "61",
-        "33"
-      ]
-    },
-    {
       "empresa": "Lotería Nacional",
       "juego": "Juega + Pega +",
       "fecha": "04-11",
@@ -991,18 +691,6 @@
     },
     {
       "empresa": "Lotería Real",
-      "juego": "Lotería Real Noche",
-      "fecha": "03-11",
-      "fecha_iso": "2026-11-03",
-      "numeros": [
-        "79",
-        "51",
-        "95"
-      ],
-      "fuente": "https://www.loteriasdominicanas.com.do/"
-    },
-    {
-      "empresa": "Lotería Real",
       "juego": "Loto Pool",
       "fecha": "04-11",
       "fecha_iso": "2026-11-04",
@@ -1021,16 +709,6 @@
       "fecha_iso": "2026-11-04",
       "numeros": [
         "10"
-      ],
-      "fuente": "https://www.loteriasdominicanas.com.do/"
-    },
-    {
-      "empresa": "Loteka",
-      "juego": "La Repartidera",
-      "fecha": "03-11",
-      "fecha_iso": "2026-11-03",
-      "numeros": [
-        "11"
       ],
       "fuente": "https://www.loteriasdominicanas.com.do/"
     },
@@ -1070,29 +748,6 @@
       ]
     },
     {
-      "empresa": "Americanas (NY)",
-      "juego": "Georgia Tarde",
-      "fecha": "03-11",
-      "fecha_iso": "2026-11-03",
-      "numeros": [
-        "53",
-        "99",
-        "43"
-      ],
-      "fuente": "https://www.loteriasdominicanas.com.do/"
-    },
-    {
-      "empresa": "Americanas (NY)",
-      "juego": "New York Noche",
-      "fecha": "03-11",
-      "fecha_iso": "2026-11-03",
-      "numeros": [
-        "33",
-        "15",
-        "13"
-      ]
-    },
-    {
       "empresa": "La Primera",
       "juego": "La Primera Día",
       "fecha": "04-11",
@@ -1110,31 +765,6 @@
       "fecha_iso": "2026-11-04",
       "numeros": [
         "63"
-      ],
-      "fuente": "https://www.loteriasdominicanas.com.do/"
-    },
-    {
-      "empresa": "La Primera",
-      "juego": "Quinielón Noche",
-      "fecha": "03-11",
-      "fecha_iso": "2026-11-03",
-      "numeros": [
-        "58"
-      ],
-      "fuente": "https://www.loteriasdominicanas.com.do/"
-    },
-    {
-      "empresa": "La Primera",
-      "juego": "Loto 5",
-      "fecha": "03-11",
-      "fecha_iso": "2026-11-03",
-      "numeros": [
-        "06",
-        "13",
-        "19",
-        "33",
-        "20",
-        "04"
       ],
       "fuente": "https://www.loteriasdominicanas.com.do/"
     },
@@ -1253,42 +883,6 @@
       "fuente": "https://www.loteriasdominicanas.com.do/"
     },
     {
-      "empresa": "Haiti Bolet",
-      "juego": "Haiti Bolet 5:30 PM",
-      "fecha": "03-11",
-      "fecha_iso": "2026-11-03",
-      "numeros": [
-        "25",
-        "28",
-        "37"
-      ],
-      "fuente": "https://www.loteriasdominicanas.com.do/"
-    },
-    {
-      "empresa": "Haiti Bolet",
-      "juego": "Haiti Bolet 6:30 PM",
-      "fecha": "03-11",
-      "fecha_iso": "2026-11-03",
-      "numeros": [
-        "47",
-        "48",
-        "11"
-      ],
-      "fuente": "https://www.loteriasdominicanas.com.do/"
-    },
-    {
-      "empresa": "Haiti Bolet",
-      "juego": "Haiti Bolet 7:30 PM",
-      "fecha": "03-11",
-      "fecha_iso": "2026-11-03",
-      "numeros": [
-        "08",
-        "07",
-        "02"
-      ],
-      "fuente": "https://www.loteriasdominicanas.com.do/"
-    },
-    {
       "empresa": "Anguila",
       "juego": "Anguila 10:00 AM",
       "fecha": "04-11",
@@ -1362,20 +956,6 @@
       "numeros": [
         "37",
         "90",
-        "03"
-      ]
-    },
-    {
-      "empresa": "Americanas (NY)",
-      "juego": "Mega Millions",
-      "fecha": "03-11",
-      "fecha_iso": "2026-11-03",
-      "numeros": [
-        "70",
-        "31",
-        "04",
-        "24",
-        "62",
         "03"
       ]
     },
@@ -5149,8 +4729,7 @@
         "78",
         "85",
         "22"
-      ],
-      "fuente": "https://turifamax.com/api/v1/resultados"
+      ]
     },
     {
       "empresa": "LoteDom",
@@ -5174,8 +4753,7 @@
         "08",
         "16",
         "06"
-      ],
-      "fuente": "https://turifamax.com/api/v1/resultados"
+      ]
     },
     {
       "empresa": "Americanas (NY)",
@@ -5197,8 +4775,7 @@
         "01",
         "50",
         "46"
-      ],
-      "fuente": "https://turifamax.com/api/v1/resultados"
+      ]
     },
     {
       "empresa": "La Primera",
@@ -5259,8 +4836,7 @@
         "48",
         "47",
         "30"
-      ],
-      "fuente": "https://turifamax.com/api/v1/resultados"
+      ]
     },
     {
       "empresa": "Anguila",
@@ -5317,8 +4893,7 @@
         "03",
         "30",
         "80"
-      ],
-      "fuente": "https://turifamax.com/api/v1/resultados"
+      ]
     },
     {
       "empresa": "La Primera",
@@ -5355,8 +4930,7 @@
         "10",
         "73",
         "87"
-      ],
-      "fuente": "https://turifamax.com/api/v1/resultados"
+      ]
     },
     {
       "empresa": "Americanas (NY)",
@@ -5367,8 +4941,7 @@
         "98",
         "60",
         "04"
-      ],
-      "fuente": "https://turifamax.com/api/v1/resultados"
+      ]
     },
     {
       "empresa": "Americanas (NY)",
@@ -5379,8 +4952,7 @@
         "51",
         "76",
         "85"
-      ],
-      "fuente": "https://turifamax.com/api/v1/resultados"
+      ]
     },
     {
       "empresa": "La Suerte",
@@ -5599,6 +5171,121 @@
         "22",
         "31",
         "05"
+      ],
+      "fuente": "https://turifamax.com/api/v1/resultados"
+    },
+    {
+      "empresa": "Anguila",
+      "juego": "Anguila 9:00 PM",
+      "fecha": "16-11",
+      "fecha_iso": "2026-11-16",
+      "numeros": [
+        "14",
+        "82",
+        "17"
+      ],
+      "fuente": "https://turifamax.com/api/v1/resultados"
+    },
+    {
+      "empresa": "Americanas (NY)",
+      "juego": "Florida Noche",
+      "fecha": "16-11",
+      "fecha_iso": "2026-11-16",
+      "numeros": [
+        "99",
+        "09",
+        "55"
+      ],
+      "fuente": "https://turifamax.com/api/v1/resultados"
+    },
+    {
+      "empresa": "Leidsa",
+      "juego": "Quiniela Leidsa",
+      "fecha": "16-11",
+      "fecha_iso": "2026-11-16",
+      "numeros": [
+        "01",
+        "47",
+        "51"
+      ],
+      "fuente": "https://turifamax.com/api/v1/resultados"
+    },
+    {
+      "empresa": "Leidsa",
+      "juego": "Loto Pool",
+      "fecha": "16-11",
+      "fecha_iso": "2026-11-16",
+      "numeros": [
+        "17",
+        "01",
+        "12",
+        "06",
+        "23"
+      ],
+      "fuente": "https://turifamax.com/api/v1/resultados"
+    },
+    {
+      "empresa": "Lotería Nacional",
+      "juego": "Lotería Nacional",
+      "fecha": "16-11",
+      "fecha_iso": "2026-11-16",
+      "numeros": [
+        "43",
+        "94",
+        "34"
+      ],
+      "fuente": "https://turifamax.com/api/v1/resultados"
+    },
+    {
+      "empresa": "Americanas (NY)",
+      "juego": "New York Noche",
+      "fecha": "16-11",
+      "fecha_iso": "2026-11-16",
+      "numeros": [
+        "27",
+        "21",
+        "21"
+      ],
+      "fuente": "https://turifamax.com/api/v1/resultados"
+    },
+    {
+      "empresa": "Leidsa",
+      "juego": "Pega 3 Más",
+      "fecha": "16-11",
+      "fecha_iso": "2026-11-16",
+      "numeros": [
+        "23",
+        "19",
+        "14"
+      ],
+      "fuente": "https://turifamax.com/api/v1/resultados"
+    },
+    {
+      "empresa": "Leidsa",
+      "juego": "Super Kino TV",
+      "fecha": "16-11",
+      "fecha_iso": "2026-11-16",
+      "numeros": [
+        "05",
+        "06",
+        "11",
+        "01",
+        "07",
+        "21",
+        "61",
+        "75",
+        "37",
+        "66",
+        "45",
+        "82",
+        "44",
+        "69",
+        "74",
+        "55",
+        "33",
+        "16",
+        "80",
+        "64"
       ],
       "fuente": "https://turifamax.com/api/v1/resultados"
     }
