@@ -1,5 +1,5 @@
 {
-  "actualizado": "2026-11-18T03:49:45-04:00",
+  "actualizado": "2026-11-18T12:48:33-04:00",
   "zona_horaria": "America/Santo_Domingo",
   "fuente": "https://turifamax.com/api/v1/resultados",
   "en_vivo": true,
@@ -7,12 +7,12 @@
     {
       "empresa": "Anguila",
       "juego": "Anguila 10:00 AM",
-      "fecha": "17-11",
-      "fecha_iso": "2026-11-17",
+      "fecha": "18-11",
+      "fecha_iso": "2026-11-18",
       "numeros": [
-        "68",
-        "73",
-        "05"
+        "48",
+        "85",
+        "16"
       ],
       "fuente": "https://turifamax.com/api/v1/resultados"
     },
@@ -103,12 +103,12 @@
     {
       "empresa": "King Lottery",
       "juego": "King Lottery Día",
-      "fecha": "17-11",
-      "fecha_iso": "2026-11-17",
+      "fecha": "18-11",
+      "fecha_iso": "2026-11-18",
       "numeros": [
-        "71",
-        "86",
-        "13"
+        "04",
+        "44",
+        "36"
       ],
       "fuente": "https://turifamax.com/api/v1/resultados"
     },
@@ -127,12 +127,12 @@
     {
       "empresa": "LoteDom",
       "juego": "LoteDom Día",
-      "fecha": "17-11",
-      "fecha_iso": "2026-11-17",
+      "fecha": "18-11",
+      "fecha_iso": "2026-11-18",
       "numeros": [
-        "18",
-        "40",
-        "52"
+        "81",
+        "00",
+        "89"
       ],
       "fuente": "https://turifamax.com/api/v1/resultados"
     },
@@ -242,12 +242,12 @@
     {
       "empresa": "La Primera",
       "juego": "La Primera Día",
-      "fecha": "17-11",
-      "fecha_iso": "2026-11-17",
+      "fecha": "18-11",
+      "fecha_iso": "2026-11-18",
       "numeros": [
-        "55",
-        "08",
-        "74"
+        "48",
+        "16",
+        "83"
       ],
       "fuente": "https://turifamax.com/api/v1/resultados"
     },
@@ -290,12 +290,12 @@
     {
       "empresa": "La Suerte",
       "juego": "La Suerte Día",
-      "fecha": "17-11",
-      "fecha_iso": "2026-11-17",
+      "fecha": "18-11",
+      "fecha_iso": "2026-11-18",
       "numeros": [
-        "52",
-        "63",
-        "24"
+        "95",
+        "92",
+        "39"
       ],
       "fuente": "https://turifamax.com/api/v1/resultados"
     },
@@ -4804,8 +4804,7 @@
         "68",
         "73",
         "05"
-      ],
-      "fuente": "https://turifamax.com/api/v1/resultados"
+      ]
     },
     {
       "empresa": "Anguila",
@@ -4828,8 +4827,7 @@
         "71",
         "86",
         "13"
-      ],
-      "fuente": "https://turifamax.com/api/v1/resultados"
+      ]
     },
     {
       "empresa": "LoteDom",
@@ -4840,8 +4838,7 @@
         "18",
         "40",
         "52"
-      ],
-      "fuente": "https://turifamax.com/api/v1/resultados"
+      ]
     },
     {
       "empresa": "La Primera",
@@ -4852,8 +4849,7 @@
         "55",
         "08",
         "74"
-      ],
-      "fuente": "https://turifamax.com/api/v1/resultados"
+      ]
     },
     {
       "empresa": "Lotería Real",
@@ -4876,8 +4872,7 @@
         "52",
         "63",
         "24"
-      ],
-      "fuente": "https://turifamax.com/api/v1/resultados"
+      ]
     },
     {
       "empresa": "Anguila",
@@ -5131,6 +5126,66 @@
         "54",
         "84",
         "48"
+      ],
+      "fuente": "https://turifamax.com/api/v1/resultados"
+    },
+    {
+      "empresa": "Anguila",
+      "juego": "Anguila 10:00 AM",
+      "fecha": "18-11",
+      "fecha_iso": "2026-11-18",
+      "numeros": [
+        "48",
+        "85",
+        "16"
+      ],
+      "fuente": "https://turifamax.com/api/v1/resultados"
+    },
+    {
+      "empresa": "King Lottery",
+      "juego": "King Lottery Día",
+      "fecha": "18-11",
+      "fecha_iso": "2026-11-18",
+      "numeros": [
+        "04",
+        "44",
+        "36"
+      ],
+      "fuente": "https://turifamax.com/api/v1/resultados"
+    },
+    {
+      "empresa": "LoteDom",
+      "juego": "LoteDom Día",
+      "fecha": "18-11",
+      "fecha_iso": "2026-11-18",
+      "numeros": [
+        "81",
+        "00",
+        "89"
+      ],
+      "fuente": "https://turifamax.com/api/v1/resultados"
+    },
+    {
+      "empresa": "La Primera",
+      "juego": "La Primera Día",
+      "fecha": "18-11",
+      "fecha_iso": "2026-11-18",
+      "numeros": [
+        "48",
+        "16",
+        "83"
+      ],
+      "fuente": "https://turifamax.com/api/v1/resultados"
+    },
+    {
+      "empresa": "La Suerte",
+      "juego": "La Suerte Día",
+      "fecha": "18-11",
+      "fecha_iso": "2026-11-18",
+      "numeros": [
+        "95",
+        "92",
+        "39"
       ],
       "fuente": "https://turifamax.com/api/v1/resultados"
     }
