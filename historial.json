@@ -9425,6 +9425,101 @@
      "63",
      "24"
     ]
+   },
+   {
+    "empresa": "Anguila",
+    "juego": "Anguila 6:00 PM",
+    "numeros": [
+     "55",
+     "38",
+     "44"
+    ]
+   },
+   {
+    "empresa": "Americanas (NY)",
+    "juego": "Florida Día",
+    "numeros": [
+     "28",
+     "55",
+     "64"
+    ]
+   },
+   {
+    "empresa": "Lotería Nacional",
+    "juego": "Gana Más",
+    "numeros": [
+     "25",
+     "69",
+     "11"
+    ]
+   },
+   {
+    "empresa": "King Lottery",
+    "juego": "King Lottery Noche",
+    "numeros": [
+     "89",
+     "28",
+     "61"
+    ]
+   },
+   {
+    "empresa": "Loteka",
+    "juego": "Quiniela Loteka Noche",
+    "numeros": [
+     "09",
+     "15",
+     "36"
+    ]
+   },
+   {
+    "empresa": "Lotería Real",
+    "juego": "Loto Real",
+    "numeros": [
+     "35",
+     "03",
+     "09",
+     "02",
+     "15",
+     "26"
+    ]
+   },
+   {
+    "empresa": "Loteka",
+    "juego": "Mega Chances",
+    "numeros": [
+     "06",
+     "51",
+     "94",
+     "37",
+     "14"
+    ]
+   },
+   {
+    "empresa": "Americanas (NY)",
+    "juego": "New York Tarde",
+    "numeros": [
+     "00",
+     "49",
+     "65"
+    ]
+   },
+   {
+    "empresa": "La Primera",
+    "juego": "Primera Noche",
+    "numeros": [
+     "20",
+     "21",
+     "72"
+    ]
+   },
+   {
+    "empresa": "La Suerte",
+    "juego": "La Suerte Tarde",
+    "numeros": [
+     "65",
+     "38",
+     "16"
+    ]
    }
   ]
  }
