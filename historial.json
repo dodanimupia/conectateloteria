@@ -10174,6 +10174,156 @@
      "93",
      "40"
     ]
+   },
+   {
+    "empresa": "Anguila",
+    "juego": "Anguila 10:00 AM",
+    "numeros": [
+     "50",
+     "62",
+     "68"
+    ]
+   },
+   {
+    "empresa": "Anguila",
+    "juego": "Anguila 9:00 PM",
+    "numeros": [
+     "43",
+     "87",
+     "56"
+    ]
+   },
+   {
+    "empresa": "Anguila",
+    "juego": "Anguila 6:00 PM",
+    "numeros": [
+     "62",
+     "94",
+     "33"
+    ]
+   },
+   {
+    "empresa": "King Lottery",
+    "juego": "King Lottery Noche",
+    "numeros": [
+     "03",
+     "80",
+     "61"
+    ]
+   },
+   {
+    "empresa": "Leidsa",
+    "juego": "Quiniela Leidsa",
+    "numeros": [
+     "27",
+     "62",
+     "94"
+    ]
+   },
+   {
+    "empresa": "Loteka",
+    "juego": "Quiniela Loteka Noche",
+    "numeros": [
+     "21",
+     "07",
+     "46"
+    ]
+   },
+   {
+    "empresa": "Leidsa",
+    "juego": "Loto Pool",
+    "numeros": [
+     "01",
+     "05",
+     "23",
+     "15",
+     "31"
+    ]
+   },
+   {
+    "empresa": "Loteka",
+    "juego": "Mega Chances",
+    "numeros": [
+     "46",
+     "38",
+     "36",
+     "96",
+     "10"
+    ]
+   },
+   {
+    "empresa": "Loteka",
+    "juego": "MegaLotto",
+    "numeros": [
+     "26",
+     "30",
+     "35",
+     "05",
+     "01",
+     "08"
+    ]
+   },
+   {
+    "empresa": "Lotería Nacional",
+    "juego": "Lotería Nacional",
+    "numeros": [
+     "47",
+     "80",
+     "80"
+    ]
+   },
+   {
+    "empresa": "Leidsa",
+    "juego": "Pega 3 Más",
+    "numeros": [
+     "00",
+     "01",
+     "39"
+    ]
+   },
+   {
+    "empresa": "La Primera",
+    "juego": "Primera Noche",
+    "numeros": [
+     "72",
+     "30",
+     "88"
+    ]
+   },
+   {
+    "empresa": "La Suerte",
+    "juego": "La Suerte Tarde",
+    "numeros": [
+     "98",
+     "56",
+     "64"
+    ]
+   },
+   {
+    "empresa": "Leidsa",
+    "juego": "Super Kino TV",
+    "numeros": [
+     "68",
+     "07",
+     "33",
+     "45",
+     "49",
+     "62",
+     "20",
+     "27",
+     "25",
+     "32",
+     "19",
+     "81",
+     "05",
+     "26",
+     "30",
+     "70",
+     "28",
+     "31",
+     "38",
+     "15"
+    ]
    }
   ]
  }
