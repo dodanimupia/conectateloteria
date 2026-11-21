@@ -1,5 +1,5 @@
 {
-  "actualizado": "2026-11-20T14:49:41-04:00",
+  "actualizado": "2026-11-20T20:26:36-04:00",
   "zona_horaria": "America/Santo_Domingo",
   "fuente": "https://turifamax.com/api/v1/resultados",
   "en_vivo": true,
@@ -43,12 +43,12 @@
     {
       "empresa": "Anguila",
       "juego": "Anguila 6:00 PM",
-      "fecha": "19-11",
-      "fecha_iso": "2026-11-19",
+      "fecha": "20-11",
+      "fecha_iso": "2026-11-20",
       "numeros": [
-        "62",
-        "94",
-        "33"
+        "99",
+        "44",
+        "15"
       ],
       "fuente": "https://turifamax.com/api/v1/resultados"
     },
@@ -91,12 +91,12 @@
     {
       "empresa": "King Lottery",
       "juego": "King Lottery Noche",
-      "fecha": "19-11",
-      "fecha_iso": "2026-11-19",
+      "fecha": "20-11",
+      "fecha_iso": "2026-11-20",
       "numeros": [
-        "03",
-        "80",
-        "61"
+        "79",
+        "75",
+        "50"
       ],
       "fuente": "https://turifamax.com/api/v1/resultados"
     },
@@ -139,12 +139,12 @@
     {
       "empresa": "Loteka",
       "juego": "Quiniela Loteka Noche",
-      "fecha": "19-11",
-      "fecha_iso": "2026-11-19",
+      "fecha": "20-11",
+      "fecha_iso": "2026-11-20",
       "numeros": [
-        "21",
-        "07",
-        "46"
+        "87",
+        "37",
+        "34"
       ],
       "fuente": "https://turifamax.com/api/v1/resultados"
     },
@@ -182,14 +182,14 @@
     {
       "empresa": "Loteka",
       "juego": "Mega Chances",
-      "fecha": "19-11",
-      "fecha_iso": "2026-11-19",
+      "fecha": "20-11",
+      "fecha_iso": "2026-11-20",
       "numeros": [
-        "46",
-        "38",
-        "36",
-        "96",
-        "10"
+        "31",
+        "63",
+        "44",
+        "58",
+        "97"
       ],
       "fuente": "https://turifamax.com/api/v1/resultados"
     },
@@ -220,12 +220,12 @@
     {
       "empresa": "Americanas (NY)",
       "juego": "New York Tarde",
-      "fecha": "19-11",
-      "fecha_iso": "2026-11-19",
+      "fecha": "20-11",
+      "fecha_iso": "2026-11-20",
       "numeros": [
-        "71",
-        "54",
-        "44"
+        "16",
+        "50",
+        "86"
       ],
       "fuente": "https://turifamax.com/api/v1/resultados"
     },
@@ -271,12 +271,12 @@
     {
       "empresa": "La Primera",
       "juego": "Primera Noche",
-      "fecha": "19-11",
-      "fecha_iso": "2026-11-19",
+      "fecha": "20-11",
+      "fecha_iso": "2026-11-20",
       "numeros": [
-        "72",
-        "30",
-        "88"
+        "51",
+        "01",
+        "90"
       ],
       "fuente": "https://turifamax.com/api/v1/resultados"
     },
@@ -295,12 +295,12 @@
     {
       "empresa": "La Suerte",
       "juego": "La Suerte Tarde",
-      "fecha": "19-11",
-      "fecha_iso": "2026-11-19",
+      "fecha": "20-11",
+      "fecha_iso": "2026-11-20",
       "numeros": [
-        "98",
-        "56",
-        "64"
+        "35",
+        "38",
+        "10"
       ],
       "fuente": "https://turifamax.com/api/v1/resultados"
     },
@@ -363,15 +363,15 @@
     {
       "empresa": "Lotería Real",
       "juego": "Loto Real",
-      "fecha": "17-11",
-      "fecha_iso": "2026-11-17",
+      "fecha": "20-11",
+      "fecha_iso": "2026-11-20",
       "numeros": [
-        "35",
-        "03",
-        "09",
-        "02",
-        "15",
-        "26"
+        "33",
+        "28",
+        "30",
+        "17",
+        "05",
+        "16"
       ],
       "fuente": "https://turifamax.com/api/v1/resultados"
     },
@@ -4336,8 +4336,7 @@
         "02",
         "15",
         "26"
-      ],
-      "fuente": "https://turifamax.com/api/v1/resultados"
+      ]
     },
     {
       "empresa": "Loteka",
@@ -4972,8 +4971,7 @@
         "71",
         "54",
         "44"
-      ],
-      "fuente": "https://turifamax.com/api/v1/resultados"
+      ]
     },
     {
       "empresa": "Americanas (NY)",
@@ -5227,8 +5225,7 @@
         "62",
         "94",
         "33"
-      ],
-      "fuente": "https://turifamax.com/api/v1/resultados"
+      ]
     },
     {
       "empresa": "King Lottery",
@@ -5239,8 +5236,7 @@
         "03",
         "80",
         "61"
-      ],
-      "fuente": "https://turifamax.com/api/v1/resultados"
+      ]
     },
     {
       "empresa": "Leidsa",
@@ -5263,8 +5259,7 @@
         "21",
         "07",
         "46"
-      ],
-      "fuente": "https://turifamax.com/api/v1/resultados"
+      ]
     },
     {
       "empresa": "Leidsa",
@@ -5291,8 +5286,7 @@
         "36",
         "96",
         "10"
-      ],
-      "fuente": "https://turifamax.com/api/v1/resultados"
+      ]
     },
     {
       "empresa": "Loteka",
@@ -5342,8 +5336,7 @@
         "72",
         "30",
         "88"
-      ],
-      "fuente": "https://turifamax.com/api/v1/resultados"
+      ]
     },
     {
       "empresa": "La Suerte",
@@ -5354,8 +5347,7 @@
         "98",
         "56",
         "64"
-      ],
-      "fuente": "https://turifamax.com/api/v1/resultados"
+      ]
     },
     {
       "empresa": "Leidsa",
@@ -5530,6 +5522,107 @@
         "97",
         "41",
         "68"
+      ],
+      "fuente": "https://turifamax.com/api/v1/resultados"
+    },
+    {
+      "empresa": "Anguila",
+      "juego": "Anguila 6:00 PM",
+      "fecha": "20-11",
+      "fecha_iso": "2026-11-20",
+      "numeros": [
+        "99",
+        "44",
+        "15"
+      ],
+      "fuente": "https://turifamax.com/api/v1/resultados"
+    },
+    {
+      "empresa": "King Lottery",
+      "juego": "King Lottery Noche",
+      "fecha": "20-11",
+      "fecha_iso": "2026-11-20",
+      "numeros": [
+        "79",
+        "75",
+        "50"
+      ],
+      "fuente": "https://turifamax.com/api/v1/resultados"
+    },
+    {
+      "empresa": "Loteka",
+      "juego": "Quiniela Loteka Noche",
+      "fecha": "20-11",
+      "fecha_iso": "2026-11-20",
+      "numeros": [
+        "87",
+        "37",
+        "34"
+      ],
+      "fuente": "https://turifamax.com/api/v1/resultados"
+    },
+    {
+      "empresa": "Lotería Real",
+      "juego": "Loto Real",
+      "fecha": "20-11",
+      "fecha_iso": "2026-11-20",
+      "numeros": [
+        "33",
+        "28",
+        "30",
+        "17",
+        "05",
+        "16"
+      ],
+      "fuente": "https://turifamax.com/api/v1/resultados"
+    },
+    {
+      "empresa": "Loteka",
+      "juego": "Mega Chances",
+      "fecha": "20-11",
+      "fecha_iso": "2026-11-20",
+      "numeros": [
+        "31",
+        "63",
+        "44",
+        "58",
+        "97"
+      ],
+      "fuente": "https://turifamax.com/api/v1/resultados"
+    },
+    {
+      "empresa": "Americanas (NY)",
+      "juego": "New York Tarde",
+      "fecha": "20-11",
+      "fecha_iso": "2026-11-20",
+      "numeros": [
+        "16",
+        "50",
+        "86"
+      ],
+      "fuente": "https://turifamax.com/api/v1/resultados"
+    },
+    {
+      "empresa": "La Primera",
+      "juego": "Primera Noche",
+      "fecha": "20-11",
+      "fecha_iso": "2026-11-20",
+      "numeros": [
+        "51",
+        "01",
+        "90"
+      ],
+      "fuente": "https://turifamax.com/api/v1/resultados"
+    },
+    {
+      "empresa": "La Suerte",
+      "juego": "La Suerte Tarde",
+      "fecha": "20-11",
+      "fecha_iso": "2026-11-20",
+      "numeros": [
+        "35",
+        "38",
+        "10"
       ],
       "fuente": "https://turifamax.com/api/v1/resultados"
     }
