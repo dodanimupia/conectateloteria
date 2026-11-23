@@ -10793,11 +10793,11 @@
     "empresa": "Loteka",
     "juego": "Mega Chances",
     "numeros": [
-     "46",
-     "64",
      "83",
-     "91",
-     "93"
+     "46",
+     "93",
+     "64",
+     "91"
     ]
    },
    {
@@ -11192,6 +11192,71 @@
      "75",
      "27",
      "27"
+    ]
+   },
+   {
+    "empresa": "Anguila",
+    "juego": "Anguila 9:00 PM",
+    "numeros": [
+     "28",
+     "31",
+     "36"
+    ]
+   },
+   {
+    "empresa": "King Lottery",
+    "juego": "King Lottery Noche",
+    "numeros": [
+     "32",
+     "55",
+     "12"
+    ]
+   },
+   {
+    "empresa": "Loteka",
+    "juego": "Quiniela Loteka Noche",
+    "numeros": [
+     "27",
+     "82",
+     "61"
+    ]
+   },
+   {
+    "empresa": "Loteka",
+    "juego": "Mega Chances",
+    "numeros": [
+     "90",
+     "67",
+     "80",
+     "52",
+     "69"
+    ]
+   },
+   {
+    "empresa": "Lotería Nacional",
+    "juego": "Lotería Nacional",
+    "numeros": [
+     "46",
+     "42",
+     "94"
+    ]
+   },
+   {
+    "empresa": "La Primera",
+    "juego": "Primera Noche",
+    "numeros": [
+     "16",
+     "60",
+     "60"
+    ]
+   },
+   {
+    "empresa": "La Suerte",
+    "juego": "La Suerte Tarde",
+    "numeros": [
+     "04",
+     "69",
+     "71"
     ]
    }
   ]
