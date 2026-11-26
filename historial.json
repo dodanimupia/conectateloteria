@@ -11811,6 +11811,18 @@
      "51",
      "25"
     ]
+   },
+   {
+    "empresa": "Americanas (NY)",
+    "juego": "Mega Millions",
+    "numeros": [
+     "44",
+     "42",
+     "38",
+     "45",
+     "62",
+     "16"
+    ]
    }
   ],
   "2026-11-25": [
@@ -12221,6 +12233,89 @@
      "32",
      "96",
      "89"
+    ]
+   }
+  ],
+  "2026-11-26": [
+   {
+    "empresa": "Anguila",
+    "juego": "Anguila 10:00 AM",
+    "numeros": [
+     "09",
+     "86",
+     "53"
+    ]
+   },
+   {
+    "empresa": "Anguila",
+    "juego": "Anguila 1:00 PM",
+    "numeros": [
+     "20",
+     "70",
+     "98"
+    ]
+   },
+   {
+    "empresa": "Americanas (NY)",
+    "juego": "Florida Día",
+    "numeros": [
+     "88",
+     "68",
+     "29"
+    ]
+   },
+   {
+    "empresa": "Lotería Nacional",
+    "juego": "Gana Más",
+    "numeros": [
+     "31",
+     "88",
+     "01"
+    ]
+   },
+   {
+    "empresa": "King Lottery",
+    "juego": "King Lottery Día",
+    "numeros": [
+     "27",
+     "47",
+     "92"
+    ]
+   },
+   {
+    "empresa": "LoteDom",
+    "juego": "LoteDom Día",
+    "numeros": [
+     "19",
+     "18",
+     "22"
+    ]
+   },
+   {
+    "empresa": "La Primera",
+    "juego": "La Primera Día",
+    "numeros": [
+     "24",
+     "64",
+     "99"
+    ]
+   },
+   {
+    "empresa": "Lotería Real",
+    "juego": "Quiniela Real",
+    "numeros": [
+     "92",
+     "42",
+     "95"
+    ]
+   },
+   {
+    "empresa": "La Suerte",
+    "juego": "La Suerte Día",
+    "numeros": [
+     "23",
+     "71",
+     "00"
     ]
    }
   ]
